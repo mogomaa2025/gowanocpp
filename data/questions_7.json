@@ -1,0 +1,265 @@
+[
+  {
+    "id": 213,
+    "question": "What does the following piece of code do?\n```cpp\nvoid main()\n{\n    float *ptr;\n    ptr = new float(15);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Allocate space for a float variable that is initialized to 15"
+      },
+      {
+        "id": "B",
+        "text": "Allocate space for an array of 15 float elements that are not initialized"
+      },
+      {
+        "id": "C",
+        "text": "Allocate space for an array of 15 float elements that is initialized by the value 0"
+      },
+      {
+        "id": "D",
+        "text": "Allocate space for an array of 15 float elements where all the elements are initialized by the value 15"
+      },
+      {
+        "id": "E",
+        "text": "Compiler Error."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "The syntax `new type(initializer)` allocates memory for a single object of `type` and initializes it with the value in the parentheses. `new float(15)` allocates a single float and initializes its value to 15. The syntax for an uninitialized array would be `new float[15];`.",
+    "page": 7
+  },
+  {
+    "id": 214,
+    "question": "Which steps will allow Sub to compile correctly?\n```cpp\nclass Super\n{\nprotected:\n    Super(int a)\n    {\n        this->a = a; // Line 1\n    }\npublic:\n    int a; // Line 2\n};\nclass Sub: public Super\n{\npublic:\n    Sub(int a):Super(a) {}\npublic:\n    Sub():Super(5) //Line 3\n    {\n        this->a= 5; //Line 4\n    }\n};\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Class Sub compile successfully."
+      },
+      {
+        "id": "B",
+        "text": "Comment Line 2"
+      },
+      {
+        "id": "C",
+        "text": "In Line 1 and 4, use this.a instead of this->a"
+      },
+      {
+        "id": "D",
+        "text": "Change Line 3 to, Sub(): Super(5)"
+      },
+      {
+        "id": "E",
+        "text": "Change Line 3 to, Sub(): this(5)"
+      },
+      {
+        "id": "F",
+        "text": "All the above."
+      }
+    ],
+    "correct_answer": [
+      "A"
+    ],
+    "explanation": "Sub(): This is the constructor for the child class, Sub. When you create an object of Sub, this code is executed.\n\n:Super(5): This is the initializer list. It's used to initialize member variables or call the constructor of a parent class before the body of the child class's constructor is executed. In this case, it calls the Super class's constructor and passes 5 as an argument.\n\nthis->a = 5;: This line is within the constructor's body. It assigns the value 5 to the member variable a of the current Sub object.",
+    "page": 7,
+    "updated_at": "2025-08-10T04:46:35.208798"
+  },
+  {
+    "id": 215,
+    "question": "What is the output?\n```cpp\nclass Card\n{\n    int a;\npublic:\n    Card()\n    {\n        a = 0;\n        cout<<\"I am the default constructor \";\n    }\n    Card(Card & myN)\n    {\n        this -> a = myN.a;\n        cout <<\"I am the copy constructor \";\n    }\n    void setA(int m)\n    {\n        a = m;\n    }\n    int getA()\n    {\n        return a;\n    }\n};\nvoid show(Card obj)\n{\n    cout <<\"I am the show function, value is: \" << obj.getA();\n}\nvoid main()\n{\n    Card n1;\n    n1.setA(15);\n    show(n1);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "I am the default constructor I am the show function, value is: 15."
+      },
+      {
+        "id": "B",
+        "text": "I am the default constructor I am the show function, value is: 15. I am the copy constructor."
+      },
+      {
+        "id": "C",
+        "text": "I am the default constructor I am the copy constructor. I am the show function, value is: 15."
+      },
+      {
+        "id": "D",
+        "text": "I am the copy constructor. I am the default constructor"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "```img\nhttps://i.ibb.co/HL60XQnx/image.png\n```",
+    "page": 7,
+    "updated_at": "2025-08-10T04:52:50.508673"
+  },
+  {
+    "id": 216,
+    "question": "The relation between the car object and the driver object is represented as ............relation",
+    "options": [
+      {
+        "id": "A",
+        "text": "Composition"
+      },
+      {
+        "id": "B",
+        "text": "Aggregation"
+      },
+      {
+        "id": "C",
+        "text": "Association"
+      },
+      {
+        "id": "D",
+        "text": "Inheritance"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "A driver 'uses' a car, but a driver is not a car (no inheritance) and a car does not own the driver (no composition). They are separate objects with their own lifecycles that are related or linked. This general 'uses-a' relationship is best described as an association.",
+    "page": 7
+  },
+  {
+    "id": 217,
+    "question": "When inheriting from a Parent class, the Child class will inherit the private members of the parent class",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```arabic\n‫غلط، الـ Child class مش بيرث الـ private members من الـ Parent class بحيث إنه يقدر يستخدمهم مباشرة. الـ private members بتبقى موجودة في الـ Parent بس مينفعش الـ Child يوصلها إلا لو فيه functions (زي getters) في الـ Parent تسمح بكده. اللي بيترث فعلًا هو الـ public و protected members بس.\n```‬",
+    "page": 7,
+    "updated_at": "2025-08-10T04:54:45.367297"
+  },
+  {
+    "id": 218,
+    "question": "The relation between the Lecture object and the Instructor object is represented as ............relation",
+    "options": [
+      {
+        "id": "A",
+        "text": "Composition"
+      },
+      {
+        "id": "B",
+        "text": "Aggregation"
+      },
+      {
+        "id": "C",
+        "text": "Association"
+      },
+      {
+        "id": "D",
+        "text": "Inheritance"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```arabic\n‫العلاقة بين Lecture و Instructor هي علاقة Aggregation. يعني إيه؟ الـ Lecture عندها Instructor كجزء منها (زي إن المحاضرة متعيّن لها دكتور معين)، بس الـ Instructor ممكن يكون موجود لوحده ويدرّس محاضرات تانية. مش زي الـ Composition اللي فيها الـ Instructor لو اتدمر الـ Lecture يتدمر. ومش Inheritance لأن الـ Lecture مش نوع من Instructor. فالـ Aggregation هي الإجابة الصح، عشان الـ Lecture بتحتوي على Instructor بس من غير ملكية كاملة.\n```‬",
+    "page": 7,
+    "updated_at": "2025-08-10T04:56:31.784986"
+  },
+  {
+    "id": 219,
+    "question": "The \"this\" pointer is a reference send as a hidden parameter to the object member.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The `this` keyword is a *pointer* (`ClassName *const this`), not a reference. It is implicitly passed as a hidden parameter to non-static member functions.\n\n-- special pointer not a reference",
+    "page": 7,
+    "updated_at": "2025-08-10T04:57:53.653153"
+  },
+  {
+    "id": 220,
+    "question": "The term \" Composition \" refers to an object of a class that contains a pointer to another object",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Composition implies a strong 'has-a' or 'part-of' relationship where the contained object is part of the container and its lifetime is managed by the container. This is typically implemented by including the object by value as a member. Using a pointer is more indicative of aggregation or a weaker association, where lifetimes are not necessarily coupled.",
+    "page": 7
+  },
+  {
+    "id": 221,
+    "question": "Assume you have a class M that contains an object of class N. Assume that we declare an object of M in the main() function. When will the body of the constructor of class N be executed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "When any member function of the class M is called."
+      },
+      {
+        "id": "B",
+        "text": "After the body of the constructor of class M is executed."
+      },
+      {
+        "id": "C",
+        "text": "Before the body of the constructor of class M is executed."
+      },
+      {
+        "id": "D",
+        "text": "None of the above."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "This describes composition. When an object of the container class `M` is constructed, all its member objects (including the `N` object) must be constructed first. The member initializations happen before the body of the container's constructor is executed.",
+    "page": 7
+  },
+  {
+    "id": 222,
+    "question": "Which of the following statements are true about constructor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A constructor can not be overloaded."
+      },
+      {
+        "id": "B",
+        "text": "A constructor is a special member function with the same name of the class."
+      },
+      {
+        "id": "C",
+        "text": "A constructor can return void."
+      },
+      {
+        "id": "D",
+        "text": "All the above."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```arabic\n‫الـ constructor مينفعش يتعمل overload: غلط، في C++ الـ constructor ينفع يتعمل overload بسهولة. يعني تقدر تعمل أكتر من constructor بنفس الاسم بس بـ parameters مختلفة (زي عدد أو نوع الـ parameters).‬\n‫الـ constructor هو special member function بنفس اسم الكلاس: صح، الـ constructor لازم يكون اسمه زي اسم الكلاس بالظبط، وهو اللي بيستدعى تلقائيًا لما تعمل كائن جديد عشان يعمل initialize للداتا.‬\n‫الـ constructor يقدر يرجّع void: غلط، الـ constructor في C++ مابيرجعش أي نوع، ولا حتى void. لو حاولت تحط return type زي void، هيطلّع compilation error.‬\n‫‬\n‫‬\n‫كل اللي فوق: غلط، عشان مش كل الجمل صح (بس الجملة التانية هي الصح).‬\n‫‬\n‫الإجابة الصح: الـ constructor هو special member function بنفس اسم الكلاس.\n\n```‬\n\n\"A constructor cannot be overloaded.\" – False\nConstructors can be overloaded in C++. This means that you can have multiple constructors with the same name but different parameters (different signatures). For example:\n\n```cpp\nclass MyClass {\npublic:\n    MyClass() { /* default constructor */ }\n    MyClass(int x) { /* parameterized constructor */ }\n};\n```\n\"A constructor is a special member function with the same name as the class.\" – True\nThis is correct. The constructor must have the same name as the class and is used to initialize objects of that class.\n\n\"A constructor can return void.\" – False\nA constructor cannot return any value, not even void. It does not have a return type. The primary purpose of a constructor is to initialize an object, and returning a value is not part of that process.\n\n\"All the above.\" – False\nSince not all the statements are true, this option is incorrect.",
+    "page": 7,
+    "updated_at": "2025-08-10T20:55:45.802754"
+  },
+  {
+    "id": 223,
+    "question": "The Destructor of a class is responsible for removing the object from the memory .",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "‫‬```arabic\n‫الـ destructor في الكلاس مش مسؤول عن إزالة الكائن من الذاكرة بشكل مباشر. الـ destructor بيتم استدعاؤه عند تدمير الكائن، وهدفه الرئيسي هو تحرير الموارد التي تم تخصيصها ديناميكيًا (زي الذاكرة التي تم تخصيصها باستخدام new أو إغلاق الملفات المفتوحة) أو أي تنظيف لازم يتعمل قبل تدمير الكائن.‬\n‫‬\n‫إزالة الكائن من الذاكرة بيتم بشكل تلقائي من قبل النظام عند انتهاء الكائن أو عند الخروج من نطاقه، إذا كان الكائن مُخصص على الستاك (stack). أما إذا كان مُخصص باستخدام new (على الهيابا)، فالـ destructor ممكن يتعامل مع تحرير الذاكرة باستخدام delete.‬\n‫‬\n‫الخلاصة: الـ destructor مش مسؤول عن إزالة الكائن من الذاكرة مباشرة، لكنه مسؤول عن تنظيف أي موارد تم تخصيصها قبل تدمير الكائن.‬\n‫‬```",
+    "page": 7
+  }
+]

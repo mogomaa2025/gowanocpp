@@ -1,0 +1,16 @@
+[
+  {
+    "sessionId": "3d4ace06-2f98-44b4-990c-160be439a390",
+    "deviceInfo": {
+      "os": "Unknown OS",
+      "model": "Unknown Model"
+    },
+    "ip": "66.249.79.135",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1758202571222
+    }
+  }
+]

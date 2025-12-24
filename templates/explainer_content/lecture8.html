@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المحاضرة الثامنة: تعدد الأشكال، الدوال الافتراضية، والفئات المجردة</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+ body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Traditional Arabic';
+        direction: rtl;
+        /* This is key: we align the container itself to the right */
+        text-align: right;
+        background-color: #f8f9fa;
+        line-height: 1.8;
+        padding: 1rem;
+        /* Important: Prevents the body from creating its own scrollbars prematurely */
+        overflow-x: hidden;
+    }
+
+    /* --- START OF THE MAIN FIX --- */
+    .container {
+        /* This makes the container shrink-to-fit its widest child (the code block) */
+        display: inline-block;
+        /* Ensure text inside the container is aligned right by default */
+        text-align: right;
+
+        /* These are from your original Bootstrap, we keep them */
+        padding-left: 15px;
+        padding-right: 15px;
+
+        /* We remove any 'max-width' that might limit the container from growing */
+        max-width: none;
+    }
+    /* --- END OF THE MAIN FIX --- */
+
+    /* العناوين */
+    h1, h2, h3, h4, h5 {
+        color: #0d6efd;
+        margin-top: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.5rem;
+    }
+
+    /* الفقرات والقوائم */
+    p, li {
+        margin-bottom: 1rem;
+    }
+    ol, ul {
+          padding-left: 0rem;
+
+    }
+
+    /* كود البرمجة */
+    code {
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 90%;
+        color: #d63384;
+        direction: ltr;
+        text-align: left;
+        display: inline-block;
+    }
+    pre code {
+        color: inherit;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    pre {
+        /* 'display: block' is fine now, it will just fill the width of its parent (.container) */
+        display: block;
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        white-space: pre;
+        text-align: left;
+
+        /* We still let the code content overflow */
+        overflow-x: visible;
+    }
+
+    /* ملاحظات توضيحية */
+    .note, .warning {
+
+        background-color: #fff3cd;
+        border-right: 5px solid #ffc107;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 3px;
+    }
+    .summary-box {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <!-- === NEW BUTTON ADDED HERE === -->
+<div id="action-buttons-container">
+    <a href="#" class="btn btn-secondary shadow" onclick="window.close(); return false;">رجوع</a>
+    <a href="#" class="btn btn-info shadow" onclick="openInNewTab(); return false;">فتح في تبويب جديد</a>
+</div>
+<script>
+function openInNewTab() {
+  window.open(window.location.href );
+}
+</script>
+<!-- ======================================= -->
+<div class="container py-4">
+
+    <h3>المحاضرة الثامنة: مفاهيم متقدمة في C++ (Polymorphism)</h3>
+    <p>أهلاً بك! في هذه المحاضرة، ركز المحاضر على مفاهيم متقدمة ومهمة جداً في C++، خاصةً تلك المتعلقة بالـ <code>Object-Oriented Programming (OOP)</code> مثل الـ <code>Polymorphism</code>، والـ <code>Virtual Functions</code>، والـ <code>Abstract Classes</code>. هذه المفاهيم ضرورية جداً للفهم وستكون جزءاً أساسياً من أي اختبار.</p>
+
+    <h4>1. مراجعة سريعة على الـ Inheritance والـ Pointers مع الـ Objects</h4>
+    <p>تذكر أن الـ <code>Object</code> الذي يتم إنشاؤه من <code>Derived Class</code> يحتوي بداخله على نسخ من جميع الـ <code>Base Classes</code> التي يرث منها. مثال: إذا كان لديك <code>Class Base</code>، و<code>Class Derived1</code> يرث من <code>Base</code>، و <code>Class Derived2</code> يرث من <code>Derived1</code>. عند إنشاء <code>Object</code> من <code>Derived2</code>، فإنه يحجز مكاناً لـ <code>Base</code> أولاً، ثم لـ <code>Derived1</code>، ثم لـ <code>Derived2</code>. كل هذا يشكل الـ <code>Object</code> الكامل.</p>
+
+    <h5>Upcasting: مؤشر من الفئة الأساسية يشير إلى كائن من فئة مشتقة</h5>
+    <p>إحدى القواعد الأساسية في الـ OOP هي أنه يمكنك تعريف مؤشر إلى فئة أساسية (<code>Pointer to a Base Class</code>) وجعله يشير إلى كائن من فئة مشتقة (<code>Object from a Derived Class</code>). هذه العملية تسمى <strong><code>Upcasting</code></strong>.</p>
+    <div class="note">
+        <strong>ملاحظة هامة جداً (للامتحان):</strong> عندما يستخدم مؤشر من <code>Parent Class</code> للإشارة إلى <code>Object</code> من <code>Child Class</code>، فإن هذا المؤشر لن يرى أو يتعامل إلا مع الأعضاء (<code>Members</code>) التي تخص الـ <code>Parent Class</code>. أي أنه "يرى" فقط الجزء الخاص بالفئة الأساسية من الكائن، حتى لو كان الكائن الذي يشير إليه يحتوي على المزيد من الأعضاء أو الدوال المعاد تعريفها (<code>Overridden Methods</code>).
+    </div>
+    <pre><code>// Class Hierarchy Example
+class Base { /* ... members x, y, Product() ... */ };
+class Derived1 : public Base { /* ... member a, overridden Product() ... */ };
+class Derived2 : public Derived1 { /* ... member b, overridden Product() ... */ };
+
+int main() {
+    Derived2 drb(3, 4, 5, 6);
+
+    // Pointer to Base (Upcasting)
+    Base* pb = &drb;
+
+    // When pb (Base*) calls Product(), it will execute Base's Product
+    // because the pointer type determines what it "sees" at compile time.
+    std::cout &lt;&lt; pb->Product(); // Output: 12 (3*4)
+}</code></pre>
+
+    <h5>Downcasting: مؤشر من فئة مشتقة يشير إلى كائن من فئة أساسية</h5>
+    <p><strong>العكس غير صحيح تماماً.</strong> لا يمكنك تعريف مؤشر إلى فئة مشتقة (<code>Pointer to a Derived Class</code>) وجعله يشير إلى كائن من فئة أساسية (<code>Object from a Base Class</code>). السبب هو أن مؤشر الفئة المشتقة يتوقع أن يجد بداخله الأعضاء الخاصة بالفئة المشتقة، ولكن كائن الفئة الأساسية لا يحتوي عليها، مما يؤدي إلى خطأ في الترجمة (<code>Compilation Error</code>).</p>
+
+    <h4>2. الـ Virtual Functions والربط الديناميكي (Dynamic Binding)</h4>
+    <p><strong>المشكلة:</strong> كما رأينا، مؤشر الفئة الأساسية (<code>Parent</code>) ينفذ دائماً الدالة الخاصة بنوعه (<code>Parent Type</code>)، حتى لو كان يشير إلى كائن من فئة مشتقة (<code>Child</code>) لديها نسخة معاد تعريفها (<code>overridden</code>) من نفس الدالة. هذا يسمى <strong>الربط المبكر (<code>Early Binding</code>)</strong> أو <strong><code>Static Binding</code></strong>، حيث يتم تحديد الدالة التي سيتم استدعاؤها في وقت الترجمة (<code>Compilation</code>).</p>
+    <p><strong>الحل: الـ <code>Virtual Functions</code></strong>. عبر تعريف الدالة كـ <code>virtual</code> في الـ <code>Base Class</code>، فإن الدالة التي سيتم استدعاؤها ستتم "ربطها" (<code>Binding</code>) في وقت التشغيل (<code>Runtime</code>) بناءً على النوع الفعلي للكائن (<code>Actual Object Type</code>) الذي يشير إليه المؤشر، وليس على نوع المؤشر نفسه. هذه العملية تسمى <strong>الربط الديناميكي (<code>Dynamic Binding</code>)</strong> أو <strong><code>Late Binding</code></strong>.</p>
+    <h5>كيف تعمل الـ <code>Virtual Functions</code>؟</h5>
+    <ol>
+        <li>يجب تعريف الدالة كـ <code>virtual</code> في الـ <code>Base Class</code>.</li>
+        <li>إذا تم عمل <code>override</code> لهذه الدالة في الـ <code>Derived Classes</code>، فإن هذه النسخ الجديدة تصبح <code>virtual</code> تلقائيًا (رغم أنه يفضل كتابة <code>virtual</code> أو <code>override</code> لتوضيح الكود).</li>
+        <li>عندما يتم استدعاء <code>virtual method</code> عبر مؤشر أو مرجع لـ <code>Base Class</code>، فإن نظام التشغيل يبحث في وقت التشغيل عن أكثر نسخة مشتقة (<code>overridden</code>) من الدالة متوفرة في الكائن الفعلي (<code>Child Object</code>) وينفذها.</li>
+    </ol>
+    <div class="warning">
+        <strong>نقطة مهمة جداً (للامتحان):</strong> عندما يسألك المحاضر في كود مثل <code>PrintProduct</code> الذي يأخذ مؤشر لـ <code>Base Class</code>، "ماذا سينفذ <code>p_obj->Product()</code>؟"، الإجابة هي: "لا أعرف في وقت الترجمة (<code>Compile Time</code>). سيعرف في وقت التشغيل (<code>Run Time</code>) بناءً على الـ <code>Object</code> الذي تم تمريره". هذه هي جوهر الـ <code>Dynamic Binding</code>.
+    </div>
+
+    <h4>3. مثال عملي: Shape Hierarchy (تطبيق على Polymorphism)</h4>
+    <p><strong>المشكلة:</strong> كيفية حساب مجموع مساحات لأشكال مختلفة (دائرة، مستطيل، إلخ) بطريقة مرنة.</p>
+    <p><strong>التصميم المحسن (مع Polymorphism):</strong></p>
+    <ol>
+        <li>ننشئ <code>Base Class</code> اسمه <code>Shape</code> يحتوي على البيانات المشتركة ودالة <code>virtual float Area()</code>.</li>
+        <li>نجعل جميع الأشكال الأخرى (<code>Circle</code>, <code>Rectangle</code>, <code>Triangle</code>) ترث من <code>Shape</code> وتعمل <code>override</code> لدالة <code>Area()</code>.</li>
+        <li>الكود الذي يتعامل مع الأشكال (مثل دالة <code>TotalArea</code>) سيستخدم مصفوفة من مؤشرات إلى <code>Shape</code> (<code>Shape*</code>)، مما يسمح له باستقبال أي كائن يرث من <code>Shape</code>.</li>
+    </ol>
+    <h5>الفوائد التي نحصل عليها (مهمة للامتحان)</h5>
+    <ul>
+        <li><strong>الربط الديناميكي (Dynamic Binding):</strong> القدرة على تحديد الدالة (<code>Method</code>) التي سيتم استدعاؤها في وقت التشغيل (<code>Runtime</code>) بناءً على النوع الفعلي للكائن.</li>
+        <li><strong>الهيكل المفتوح (Open-Ended Hierarchy):</strong> يسمح لك بإضافة <code>Classes</code> جديدة (أشكال جديدة مثل <code>Pentagon</code>) دون الحاجة لتعديل الكود الحالي الذي يتعامل معها (مثل دالة <code>TotalArea</code>)، وهذا يطبق مبدأ <strong>Open for Extension, Closed for Modification</strong>.</li>
+    </ul>
+
+    <h4>4. الفئات المجردة (Abstract Classes) والوظائف الافتراضية الخالصة (Pure Virtual Functions)</h4>
+    <p><strong>السؤال:</strong> ما فائدة <code>Class Shape</code> نفسه؟ هو لا يمثل شكلاً حقيقياً يمكن حساب مساحته بشكل عام، وليس من المنطقي أن ننشئ <code>Object</code> منه مباشرة.</p>
+    <p><strong>الحل:</strong> اجعل <code>Class Shape</code> فئة مجردة (<code>Abstract Class</code>).</p>
+    <ul>
+        <li>الـ <strong><code>Abstract Class</code></strong> هو <code>Class</code> لا يمكنك إنشاء كائنات (<code>Objects</code>) منه مباشرة.</li>
+        <li><strong>كيف نجعل الـ <code>Class</code> مجردًا في C++؟</strong> عن طريق تعريف وظيفة افتراضية خالصة (<code>Pure Virtual Function</code>) واحدة على الأقل فيه.</li>
+        <li><strong>Pure Virtual Function:</strong> هي <code>Virtual Function</code> يتم الإعلان عنها بـ <code>= 0;</code> في الـ <code>Base Class</code>، ويعني أنها لا تحتوي على تعريف (<code>Implementation</code>) في الـ <code>Base Class</code>.</li>
+        <li><strong>الهدف:</strong>
+            <ul>
+                <li>أن يعمل كـ <code>Base Class</code> فقط، ليُرث منه.</li>
+                <li>أن يجبر (يعمل كعقد أو شرط) كل الـ <code>Derived Classes</code> (غير المجردة) على توفير تعريف (<code>override</code>) لهذه الدالة.</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="note">
+        <strong>النقاط الهامة حول الـ Abstract Classes:</strong>
+        <ul>
+            <li>إذا كان الـ <code>Class</code> يحتوي على <code>Pure Virtual Function</code> واحدة على الأقل، فإنه يصبح <code>Abstract Class</code>.</li>
+            <li>لا يمكن إنشاء كائنات مباشرة من الـ <code>Abstract Class</code>.</li>
+            <li>يمكنك تعريف مؤشرات أو مراجع إلى <code>Abstract Class</code>، وهذا هو أساس استخدامها لتمكين الربط الديناميكي.</li>
+            <li>إذا لم تقم فئة مشتقة بتعريف جميع الوظائف الافتراضية الخالصة الموروثة، فإن الفئة المشتقة نفسها ستصبح مجردة.</li>
+        </ul>
+    </div>
+
+    <div class="summary-box">
+        <h3>ملخص سريع لنقاط الامتحان (MCQ Tricky Points)</h3>
+
+        <h5>1. الوراثة وتكوين الكائنات (Inheritance & Object Creation)</h5>
+        <p>عند إنشاء كائن من فئة مشتقة، يتم حجز مكان للكائن بأكمله، بدءًا بالفئة الأساسية ثم المشتقة منها، وهكذا. المُنشئ الخاص بالفئة المشتقة يستدعي منشئ الفئة الأساسية أولاً.</p>
+
+        <h5>2. مؤشرات الكائنات (Pointers to Objects)</h5>
+        <ul>
+            <li><strong>Upcasting:</strong> مؤشر من نوع <code>Base Class</code> يمكن أن يشير إلى كائن <code>Child Class</code>.</li>
+            <li><strong>ماذا "يرى" المؤشر؟ (نقطة مهمة جداً):</strong> مؤشر الفئة الأساسية لا يرى أو يصل إلا إلى الأعضاء والوظائف المعرفة في الفئة الأساسية نفسها، حتى لو كان يشير لكائن مشتق.</li>
+            <li><strong>Downcasting:</strong> مؤشر من نوع <code>Child Class</code> لا يمكن أن يشير إلى كائن <code>Base Class</code> (يسبب خطأ في الترجمة).</li>
+        </ul>
+
+        <h5>3. الوظائف الافتراضية والربط الديناميكي (Virtual Methods & Dynamic Binding)</h5>
+        <ul>
+            <li><strong>الهدف:</strong> التغلب على قيود مؤشرات الفئة الأساسية والسماح باستدعاء الوظيفة الصحيحة (المعاد تعريفها) في وقت التشغيل.</li>
+            <li><strong>الفرق بين virtual و لا-virtual:</strong> إذا كانت الوظيفة <strong>ليست</strong> <code>virtual</code>، فإن استدعاءها عبر مؤشر سينفذ دائمًا وظيفة نوع المؤشر. إذا كانت <code>virtual</code>، سيتم تحديد التنفيذ في وقت التشغيل بناءً على نوع الكائن الفعلي.</li>
+            <li><strong>متى يتم تحديد التنفيذ؟ (سؤال شائع):</strong> <code>Early Binding</code> (وقت الترجمة) للوظائف غير الافتراضية، <code>Dynamic Binding</code> (وقت التشغيل) للوظائف الافتراضية عند استدعائها عبر مؤشر أو مرجع.</li>
+        </ul>
+
+        <h5>4. الفئات المجردة والوظائف الخالصة (Abstract Classes & Pure Virtual Functions)</h5>
+        <ul>
+            <li><strong>متى تصبح الفئة مجردة؟</strong> عند وجود <code>Pure Virtual Function</code> واحدة على الأقل.</li>
+            <li><strong>هل يمكن إنشاء كائن من فئة مجردة؟</strong> لا.</li>
+            <li><strong>هل يمكن إنشاء مؤشر إليها؟</strong> نعم، وهذا هو استخدامها الرئيسي.</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

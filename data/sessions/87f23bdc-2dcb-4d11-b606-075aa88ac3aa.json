@@ -1,0 +1,1108 @@
+[
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221291371
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 16,
+      "url": "/",
+      "timestamp": 1761221306379
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221308505
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221309442
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 31,
+      "url": "/",
+      "timestamp": 1761221321374
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 46,
+      "url": "/",
+      "timestamp": 1761221336379
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 61,
+      "url": "/",
+      "timestamp": 1761221351383
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 76,
+      "url": "/",
+      "timestamp": 1761221366376
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221372118
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221373000
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageUnload",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221375204
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221375211
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221375384
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221375846
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221376880
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15,
+      "url": "/",
+      "timestamp": 1761221390860
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221403120
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageUnload",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221403114
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221403300
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221403666
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221405741
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221405853
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 16,
+      "url": "/",
+      "timestamp": 1761221419587
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 31,
+      "url": "/",
+      "timestamp": 1761221434577
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221438235
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221438243
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221438993
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221439147
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 46,
+      "url": "/",
+      "timestamp": 1761221449578
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 61,
+      "url": "/",
+      "timestamp": 1761221464585
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 76,
+      "url": "/",
+      "timestamp": 1761221479588
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 91,
+      "url": "/",
+      "timestamp": 1761221494580
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 146,
+      "url": "/",
+      "timestamp": 1761221549590
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 206,
+      "url": "/",
+      "timestamp": 1761221609590
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 266,
+      "url": "/",
+      "timestamp": 1761221669576
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221674784
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 271,
+      "url": "/",
+      "timestamp": 1761221674787
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221676096
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221677739
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221677773
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221679537
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761221679545
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 286,
+      "url": "/",
+      "timestamp": 1761221689577
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 301,
+      "url": "/",
+      "timestamp": 1761221704591
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 316,
+      "url": "/",
+      "timestamp": 1761221719589
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 331,
+      "url": "/",
+      "timestamp": 1761221734588
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 386,
+      "url": "/",
+      "timestamp": 1761221789588
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 446,
+      "url": "/",
+      "timestamp": 1761221849591
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 506,
+      "url": "/",
+      "timestamp": 1761221909592
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 566,
+      "url": "/",
+      "timestamp": 1761221969584
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 626,
+      "url": "/",
+      "timestamp": 1761222029585
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 686,
+      "url": "/",
+      "timestamp": 1761222089578
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 746,
+      "url": "/",
+      "timestamp": 1761222149579
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 806,
+      "url": "/",
+      "timestamp": 1761222209583
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 866,
+      "url": "/",
+      "timestamp": 1761222269590
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 926,
+      "url": "/",
+      "timestamp": 1761222329578
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 986,
+      "url": "/",
+      "timestamp": 1761222389592
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1017,
+      "url": "/",
+      "timestamp": 1761222420409
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1021,
+      "url": "/",
+      "timestamp": 1761222424582
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1036,
+      "url": "/",
+      "timestamp": 1761222439590
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1051,
+      "url": "/",
+      "timestamp": 1761222454576
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222463349
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222463354
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222465012
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222465021
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1066,
+      "url": "/",
+      "timestamp": 1761222469584
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1081,
+      "url": "/",
+      "timestamp": 1761222484588
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1096,
+      "url": "/",
+      "timestamp": 1761222499587
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1111,
+      "url": "/",
+      "timestamp": 1761222514577
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222542882
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1139,
+      "url": "/",
+      "timestamp": 1761222542883
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222542885
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1140,
+      "url": "/",
+      "timestamp": 1761222543678
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222546494
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageUnload",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222547451
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222547462
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222547483
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761222547483
+    }
+  },
+  {
+    "sessionId": "87f23bdc-2dcb-4d11-b606-075aa88ac3aa",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.110.64",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1761243064429
+    }
+  }
+]

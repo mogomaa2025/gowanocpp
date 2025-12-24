@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to C++ Learn Corner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .landing-container {
+            max-width: 600px;
+        }
+        .btn-custom {
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <h1 class="display-3 fw-bold">Welcome to C++ Learning Corner</h1>
+        <p class="lead my-4">Your one-stop destination for learning C++</p> 
+        <p class="lead my-1">Eng. Gomaa All Rights Reserved</p>
+
+
+        <div>
+            <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg btn-custom">
+                <i class="bi bi-question-circle"></i> Go to Quiz
+            </a>
+            <a href="{{ url_for('videos') }}" class="btn btn-secondary btn-lg btn-custom">
+                <i class="bi bi-camera-video"></i> Watch Lectures
+            </a>
+            <a href="{{ url_for('explainer') }}" class="btn btn-info btn-lg btn-custom">
+                <i class="bi bi-book"></i> Explainer
+            </a>
+            <button id="reset-btn" class="btn btn-danger btn-lg btn-custom">
+                <i class="bi bi-arrow-counterclockwise"></i> Reset Progress
+            </button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('reset-btn').addEventListener('click', function() {
+            if (confirm('Are you sure you want to reset all your progress? This will clear all your answers.')) {
+                const cookies = document.cookie.split(";");
+
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i];
+                    const eqPos = cookie.indexOf("=");
+                    const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+                }
+                
+                location.reload();
+            }
+        });
+    </script>
+    <script src="{{ url_for('static', filename='tracking.js') }}"></script>
+</body>
+</html>

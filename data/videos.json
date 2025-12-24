@@ -1,0 +1,58 @@
+[
+  {
+    "lecture": 1,
+    "arabic_title": "C++ Lec1 Arabic",
+    "arabic_id": "INBHvXAOIo0",
+    "english_title": "C++ Lec1 English",
+    "english_id": "t3pt514tdI4"
+  },
+  {
+    "lecture": 2,
+    "arabic_title": "C++ lec2 arabic",
+    "arabic_id": "BsxrVsTmtrU",
+    "english_title": "C++ Lec2 english",
+    "english_id": "um2KXf5ivf8"
+  },
+  {
+    "lecture": 3,
+    "arabic_title": "C++ Lec3 Arabic",
+    "arabic_id": "BC8O46-nlYU",
+    "english_title": "C++ Lec3 english",
+    "english_id": "NqJuY0aFBss"
+  },
+  {
+    "lecture": 4,
+    "arabic_title": "C++ Lec4 arabic",
+    "arabic_id": "LfI34xVnQ00",
+    "english_title": "C++ Lec4 english",
+    "english_id": "YBsyJsatPtg"
+  },
+  {
+    "lecture": 5,
+    "arabic_title": "C++ Lec5 Arabic",
+    "arabic_id": "u4wxEaeKswM",
+    "english_title": "C++ Lec5 english",
+    "english_id": "cL2nDUzLqHw"
+  },
+  {
+    "lecture": 6,
+    "arabic_title": "C++ Lec6 arabic",
+    "arabic_id": "ni6pfmYGrEk",
+    "english_title": "C++ Lec6 english",
+    "english_id": "2HN2s6BVkxI"
+  },
+  {
+    "lecture": 7,
+    "arabic_title": "C++ Lec7 Arabic",
+    "arabic_id": "eqynbdgx3g4",
+    "english_title": "C++ Lec7 english",
+    "english_id": "oDTWXUdBUwY"
+  },
+  {
+    "lecture": 8,
+    "arabic_title": "C++ Lec8 arabic",
+    "arabic_id": "Vto8FXPivAA",
+    "english_title": "C++ Lec8 English",
+    "english_id": "pd8zmbkn8Hg"
+  }
+]

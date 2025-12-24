@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المحاضرة الرابعة: المصفوفات، السلاسل النصية، والمؤشرات</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Traditional Arabic';
+        direction: rtl;
+        /* This is key: we align the container itself to the right */
+        text-align: right;
+        background-color: #f8f9fa;
+        line-height: 1.8;
+        padding: 1rem;
+        /* Important: Prevents the body from creating its own scrollbars prematurely */
+        overflow-x: hidden;
+    }
+
+    /* --- START OF THE MAIN FIX --- */
+    .container {
+        /* This makes the container shrink-to-fit its widest child (the code block) */
+        display: inline-block;
+        /* Ensure text inside the container is aligned right by default */
+        text-align: right;
+
+        /* These are from your original Bootstrap, we keep them */
+        padding-left: 15px;
+        padding-right: 15px;
+
+        /* We remove any 'max-width' that might limit the container from growing */
+        max-width: none;
+    }
+    /* --- END OF THE MAIN FIX --- */
+
+    /* العناوين */
+    h1, h2, h3, h4, h5 {
+        color: #0d6efd;
+        margin-top: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.5rem;
+    }
+
+    /* الفقرات والقوائم */
+    p, li {
+        margin-bottom: 1rem;
+    }
+    ol, ul {
+          padding-left: 0rem;
+
+    }
+
+    /* كود البرمجة */
+    code {
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 90%;
+        color: #d63384;
+        direction: ltr;
+        text-align: left;
+        display: inline-block;
+    }
+    pre code {
+        color: inherit;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    pre {
+        /* 'display: block' is fine now, it will just fill the width of its parent (.container) */
+        display: block;
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        white-space: pre;
+        text-align: left;
+
+        /* We still let the code content overflow */
+        overflow-x: visible;
+    }
+
+    /* ملاحظات توضيحية */
+    .note, .warning {
+
+        background-color: #fff3cd;
+        border-right: 5px solid #ffc107;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 3px;
+    }
+    .summary-box {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+
+</style>
+</head>
+<body>
+    <!-- === NEW BUTTON ADDED HERE === -->
+<div id="action-buttons-container">
+    <a href="#" class="btn btn-secondary shadow" onclick="window.close(); return false;">رجوع</a>
+    <a href="#" class="btn btn-info shadow" onclick="openInNewTab(); return false;">فتح في تبويب جديد</a>
+</div>
+<script>
+function openInNewTab() {
+  window.open(window.location.href );
+}
+</script>
+<!-- ======================================= -->
+<div class="container py-4">
+
+    <h3>المحاضرة الرابعة تتناول بشكل أساسي:</h3>
+    <ol>
+        <li>Multi-Dimensional Arrays (المصفوفات متعددة الأبعاد)</li>
+        <li>Character Arrays (Strings) (مصفوفات الأحرف أو السلاسل النصية)</li>
+        <li>Pointers (المؤشرات)</li>
+        <li>Passing Arrays to Functions (تمرير المصفوفات للدوال)</li>
+    </ol>
+
+    <hr>
+
+    <h4>1. Multi-Dimensional Arrays (المصفوفات متعددة الأبعاد)</h4>
+    <p>تستخدم المصفوفات متعددة الأبعاد عندما تكون البيانات مرتبطة بأكثر من بعد واحد. المثال الشائع هو المصفوفات ثنائية الأبعاد (Two-Dimensional Arrays)، والتي يمكن تصورها كـ جداول (Tables) أو مصفوفات (Matrices).</p>
+    <ul>
+        <li><strong>تعريف (Declaration):</strong> الصيغة العامة لتعريف مصفوفة متعددة الأبعاد هي:
+            <br><code>data_type array_name[size1][size2]...[sizeN];</code>
+            <br>وللمصفوفة ثنائية الأبعاد:
+            <br><code>data_type array_name[rows][columns];</code>
+            <ul>
+                <li><code>rows</code>: عدد الصفوف.</li>
+                <li><code>columns</code>: عدد الأعمدة.</li>
+            </ul>
+        </li>
+        <li><strong>الوصول إلى العناصر (Accessing Elements):</strong> يتم الوصول إلى العناصر باستخدام مؤشرين (<code>indices</code>) للصفوف والأعمدة. تبدأ المؤشرات دائمًا من 0. مثال: <code>matrix[0][1]</code> يصل إلى العنصر في الصف الأول والعمود الثاني.</li>
+        <li><strong>التهيئة (Initialization):</strong> يمكن تهيئة المصفوفات ثنائية الأبعاد باستخدام أقواس متعرجة متداخلة (<code>nested curly braces</code>)، حيث يمثل كل قوس داخلي صفًا. العناصر غير المحددة في التهيئة ستتم تعبئتها بـ 0.</li>
+        <li><strong>التجوال (Traversal):</strong> للتجوال على جميع عناصر المصفوفة، نحتاج إلى حلقات متداخلة (<code>Nested Loops</code>). لكل بعد في المصفوفة، ستحتاج إلى حلقة تكرارية (Loop).</li>
+    </ul>
+    <div class="note">
+        <strong>نقطة مهمة للاختبار (Inner Loop vs. Outer Loop):</strong>
+        <p>يعتمد ترتيب الحلقات المتداخلة على كيفية رغبتك في التجوال على المصفوفة:</p>
+        <ul>
+            <li><strong>Row by Row (صفًا بصف):</strong> الحلقة الخارجية (<code>Outer Loop</code>) ستكون للصفوف (<code>rows</code>)، والحلقة الداخلية (<code>Inner Loop</code>) ستكون للأعمدة (<code>columns</code>). هذا هو الترتيب الأكثر شيوعًا.</li>
+            <li><strong>Column by Column (عمودًا بعمود):</strong> الحلقة الخارجية ستكون للأعمدة، والحلقة الداخلية للصفوف.</li>
+        </ul>
+    </div>
+    <pre><code>// مثال: تهيئة وطباعة مصفوفة 2x3
+#include &lt;iostream&gt;
+
+int main() {
+    // Initialization
+    int matrix[2][3] = {
+        {1, 2, 3},  // Row 0
+        {4, 5, 6}   // Row 1
+    };
+
+    // Traversal (Row by Row)
+    for (int i = 0; i &lt; 2; i++) { // Outer loop for rows
+        for (int j = 0; j &lt; 3; j++) { // Inner loop for columns
+            std::cout &lt;&lt; matrix[i][j] &lt;&lt; " ";
+        }
+        std::cout &lt;&lt; std::endl; // New line after each row
+    }
+    return 0;
+}</code></pre>
+
+    <h4>2. Character Arrays (Strings) (مصفوفات الأحرف أو السلاسل النصية)</h4>
+    <p>في C++ (بالطريقة التقليدية C-style)، لا يوجد نوع بيانات <code>string</code> كنوع أساسي، بل يتم تمثيل السلاسل النصية كـ <code>Array of Characters</code> (مصفوفة من الأحرف).</p>
+    <ul>
+        <li><strong>تعريف (Definition):</strong> يتم تعريفها كمصفوفة من نوع <code>char</code>.</li>
+        <li><strong>التعامل مع String:</strong> يمكن التعامل مع الـ <code>char array</code> بطريقتين:
+            <ol>
+                <li><strong>As an Array (كمصفوفة):</strong> التعامل مع كل حرف بشكل منفصل باستخدام الـ <code>index</code>، مثل أي مصفوفة أخرى.</li>
+                <li><strong>As a Special type of Array (كنوع خاص من المصفوفات):</strong> التعامل معها كوحدة واحدة باستخدام بعض الوظائف الخاصة بالـ <code>strings</code>.</li>
+            </ol>
+        </li>
+    </ul>
+    <div class="note">
+        <strong>نقطة مهمة جدًا للاختبار (String Terminator <code>\0</code>):</strong>
+        <p>يجب أن تكون السلاسل النصية منتهية بـ <code>Null Character</code> (<code>\0</code>). هذا الحرف هو الذي يشير إلى نهاية الـ <code>string</code>. عند تعريف مصفوفة الأحرف، يجب عليك تخصيص مساحة إضافية واحدة لـ <code>Null Terminator</code>.
+        <br>مثال: لتخزين كلمة "ITI" (3 أحرف)، ستحتاج إلى <code>char str[4];</code> (3 للأحرف + 1 للـ <code>\0</code>).
+        </p>
+    </div>
+    <div class="warning">
+        <strong>ملاحظة هامة:</strong> إذا حاولت قراءة أو تخزين <code>string</code> أطول من المساحة المخصصة لها (بما في ذلك مكان الـ <code>\0</code>)، فسيؤدي ذلك إلى الكتابة خارج حدود المصفوفة (<code>Out of Bounds</code>)، مما قد يسبب سلوكًا غير متوقع أو انهيار البرنامج.
+    </div>
+
+    <h5>دوال معالجة الـ Strings (String Manipulation Functions)</h5>
+    <p>لا يمكنك استخدام عمليات مثل <code>=</code>, <code>+</code>, <code>==</code> مباشرة مع <code>char arrays</code>. بدلاً من ذلك، هناك دوال خاصة بالـ <code>strings</code> متوفرة في ملف الهيدر <code>&lt;cstring&gt;</code> أو <code>&lt;string.h&gt;</code>.</p>
+    <ul>
+        <li><code>strcpy(destination, source)</code>: تستخدم لنسخ سلسلة نصية من <code>source</code> إلى <code>destination</code>. <strong>تحذير:</strong> يجب أن تتأكد أن <code>destination</code> كبيرة بما يكفي لاستيعاب <code>source</code>.</li>
+        <li><code>strcat(destination, source)</code>: تستخدم لدمج (إضافة) <code>source</code> إلى نهاية <code>destination</code>. <strong>تحذير:</strong> يجب أن تحتوي <code>destination</code> على مساحة كافية لكلتا السلسلتين.</li>
+        <li><code>strcmp(str1, str2)</code>: تستخدم لمقارنة سلسلتين نصيتين (Lexicographically). تعود بـ 0 إذا كانتا متساويتين، قيمة سالبة إذا كانت <code>str1</code> أصغر، وقيمة موجبة إذا كانت <code>str1</code> أكبر. المقارنة حساسة لحالة الأحرف.</li>
+        <li><code>strlen(string)</code>: تعود بعدد الأحرف في الـ <code>string</code>، باستثناء الـ <code>Null Terminator</code>.</li>
+    </ul>
+
+    <h4>3. Character Library (<code>&lt;cctype&gt;</code>) (مكتبة الأحرف)</h4>
+    <p>هذه المكتبة توفر دوالاً مفيدة للتحقق من أنواع الأحرف وتحويلها.</p>
+    <ul>
+        <li><strong>Check Functions (دوال التحقق):</strong> تعود بقيمة غير صفرية (<code>true</code>) إذا كان الشرط صحيحًا، أو 0 (<code>false</code>) إذا كان خطأ.
+            <ul>
+                <li><code>isalpha(c)</code>: تتحقق مما إذا كان الحرف أبجديًا (a-z, A-Z).</li>
+                <li><code>isdigit(c)</code>: تتحقق مما إذا كان الحرف رقمًا (0-9).</li>
+                <li><code>isalnum(c)</code>: تتحقق مما إذا كان الحرف حرفًا أو رقمًا.</li>
+                <li><code>isprint(c)</code>: تتحقق مما إذا كان الحرف قابلاً للطباعة.</li>
+            </ul>
+        </li>
+        <li><strong>Conversion Functions (دوال التحويل):</strong>
+            <ul>
+                <li><code>tolower(c)</code>: تحول الحرف إلى حرف صغير (lowercase).</li>
+                <li><code>toupper(c)</code>: تحول الحرف إلى حرف كبير (uppercase).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>4. Pointers (المؤشرات)</h4>
+    <p>المؤشر (<code>Pointer</code>) هو متغير (<code>Variable</code>) يحتفظ بـ عنوان (<code>Address</code>) في الذاكرة (<code>Memory</code>) لمتغير آخر. الفرق الوحيد بينه وبين المتغير العادي هو أن قيمته (<code>Content</code>) هي عنوان لموقع آخر في الذاكرة.</p>
+    <ul>
+        <li><strong>تعريف المؤشر (Pointer Declaration):</strong> <code>data_type *pointer_name;</code>. الـ <code>asterisk (*)</code> يشير إلى أن المتغير هو مؤشر.</li>
+        <li><strong>العمليات (Operators):</strong> يوجد معاملان أساسيان للتعامل مع الـ <code>Pointers</code>:
+            <ol>
+                <li><strong><code>&</code> (Address-of Operator):</strong> يعود بـ عنوان الذاكرة (<code>Memory Address</code>) للمتغير.</li>
+                <li><strong><code>*</code> (Dereference / Indirection Operator):</strong> يعود بـ المحتوى (<code>Content</code>) الموجود في عنوان الذاكرة الذي يشير إليه المؤشر.</li>
+            </ol>
+        </li>
+    </ul>
+    <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    int x = 25;
+    int *ptr; // Declare a pointer to an integer
+
+    ptr = &x; // Assign the address of x to the pointer ptr
+
+    std::cout &lt;&lt; "Value of x: " &lt;&lt; x &lt;&lt; std::endl;         // Outputs 25
+    std::cout &lt;&lt; "Address of x: " &lt;&lt; &x &lt;&lt; std::endl;       // Outputs memory address of x
+    std::cout &lt;&lt; "Value of ptr: " &lt;&lt; ptr &lt;&lt; std::endl;     // Outputs memory address of x
+    std::cout &lt;&lt; "Value at address ptr points to: " &lt;&lt; *ptr &lt;&lt; std::endl; // Outputs 25
+
+    return 0;
+}</code></pre>
+    <div class="warning">
+        <strong>تحذيرات مهمة جداً عند التعامل مع Pointers (Exam/Important point):</strong>
+        <p>هذه النقطة شدد عليها المحاضر كثيرًا لأنها تسبب مشاكل خطيرة في البرمجة:</p>
+        <ul>
+            <li><strong>خطر المؤشرات غير المهيأة (Uninitialized Pointers):</strong> المؤشر غير المهيأ يحتوي على قيمة عشوائية (<code>garbage value</code>) كعنوان. إذا حاولت استخدام معامل الـ <code>*</code> على هذا المؤشر، فستحاول الوصول إلى عنوان عشوائي في الذاكرة.</li>
+            <li><strong>يمكن أن يؤدي ذلك إلى:</strong>
+                <ul>
+                    <li><strong>Undefined Behavior (سلوك غير محدد).</strong></li>
+                    <li><strong>Application Crash (انهيار التطبيق).</strong></li>
+                    <li><strong>System Instability (عدم استقرار النظام):</strong> قد يكتب فوق بيانات مهمة لتطبيقك، أو حتى لتطبيقات أخرى تعمل على النظام.</li>
+                </ul>
+            </li>
+            <li><strong>نصيحة:</strong> يجب عليك دائمًا رسم ما يحدث في الذاكرة (<code>Draw Diagrams</code>) عند التعامل مع المؤشرات. هذا يساعد على فهم مكان تخزين القيم والعناوين، ومنع الأخطاء.</li>
+        </ul>
+    </div>
+
+    <h4>5. Passing Arrays to Functions (تمرير المصفوفات للدوال)</h4>
+    <ul>
+        <li>يمكن لدوال (<code>Functions</code>) أن تستقبل مصفوفات كـ <code>arguments</code>. عند تمرير مصفوفة إلى دالة، فإنك تمرر <strong>اسم المصفوفة (Array Name)</strong>، وهو في الأساس عنوان أول عنصر فيها.</li>
+        <li>لاحظ أن حجم المصفوفة الذي يتم تحديده في <code>parameter</code> الدالة هو مجرد <code>shape</code>، ولا يمنع تجاوز الحدود (<code>Out of Bounds</code>) داخل الدالة.</li>
+    </ul>
+    <div class="note">
+        <strong>نقطة مهمة (Functions Cannot Return an Array):</strong>
+        <p>لا يمكن لدالة في C++ أن تعيد مصفوفة (<code>Array</code>) مباشرة. إذا احتجت إلى تعديل مصفوفة داخل دالة وعكس التغييرات إلى الـ <code>caller</code>، يمكنك:</p>
+        <ul>
+            <li>تعديل محتويات المصفوفة مباشرة (لأنك تمرر عنوانها).</li>
+            <li>تمرير المصفوفة بواسطة <code>reference</code> أو <code>pointers</code>.</li>
+            <li>إذا احتجت لإرجاع مجموعة من القيم، يمكنك استخدام <code>std::vector</code> أو <code>struct</code> أو <code>class</code> (وهي مواضيع متقدمة).</li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

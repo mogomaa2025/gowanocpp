@@ -1,0 +1,44 @@
+[
+  {
+    "sessionId": "a134918e-7e6f-42b6-8887-ebd89994cb35",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "154.239.209.145",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755604324960
+    }
+  },
+  {
+    "sessionId": "a134918e-7e6f-42b6-8887-ebd89994cb35",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "154.239.209.145",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755604330649
+    }
+  },
+  {
+    "sessionId": "a134918e-7e6f-42b6-8887-ebd89994cb35",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "154.239.209.145",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755604330654
+    }
+  }
+]

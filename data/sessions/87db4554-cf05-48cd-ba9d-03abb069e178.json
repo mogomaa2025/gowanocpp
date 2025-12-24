@@ -1,0 +1,6016 @@
+[
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755634009110
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3093,
+      "url": "/",
+      "timestamp": 1755637102229
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3109,
+      "url": "/",
+      "timestamp": 1755637117320
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755728457135
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755728457154
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755728458091
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755728459244
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755728462090
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728462688
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizPageNavigation",
+    "eventData": {
+      "fromPage": null,
+      "toPage": 0,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728462977
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 2,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463282
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 3,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463283
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 1,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463282
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 4,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463283
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 7,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463284
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 8,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463284
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 9,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463284
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 10,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463285
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 11,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463285
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 5,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463283
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 12,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463285
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 6,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463284
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 13,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463285
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 14,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463286
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 15,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463286
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 17,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463286
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 16,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463286
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 18,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463286
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 19,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463287
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 20,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463287
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 21,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463287
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 22,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463287
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 23,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463287
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 24,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463288
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 25,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463288
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 26,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463288
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 27,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463288
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 28,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463289
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 29,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463289
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 30,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463289
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 31,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463289
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 32,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463289
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 33,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463290
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 34,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463290
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 35,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463290
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 36,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463290
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 37,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463290
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 38,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463290
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 39,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463291
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 40,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463291
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 41,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463291
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 42,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463291
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 43,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463291
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 44,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463291
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 45,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463292
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 46,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463292
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 47,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463292
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 48,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463292
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 49,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463293
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 50,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463293
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 51,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463293
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 52,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463293
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 53,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463293
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 54,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463293
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 55,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463293
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 56,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463294
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 57,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463294
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 58,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463294
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 59,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463294
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 60,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463294
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 61,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463294
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 62,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463294
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 63,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463295
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 64,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463295
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 65,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463295
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 66,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463295
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 67,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463295
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 68,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728463295
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "1",
+      "selectedAnswer": "D",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728468666
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "1",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728468668
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728477690
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "2",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728479633
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "2",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728479635
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "3",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728488322
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "3",
+      "selectedAnswer": "C",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728488321
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 30,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728492690
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "4",
+      "selectedAnswer": "A",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728496097
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "4",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728496099
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "5",
+      "selectedAnswer": "A",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728499281
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "5",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728499282
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "6",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728504884
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "6",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728504885
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 45,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728507691
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "7",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728508170
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "7",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728508171
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "8",
+      "selectedAnswer": "E",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728516135
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "8",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728516136
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 60,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728522692
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "9",
+      "selectedAnswer": "C",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728528022
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "9",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728528023
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 75,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728537694
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "10",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728539591
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "10",
+      "selectedAnswer": [
+        "A"
+      ],
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728539591
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 90,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728552693
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "11",
+      "selectedAnswer": "A",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728563019
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "11",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728563021
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 105,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728567695
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 120,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728582694
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 135,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728597696
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "12",
+      "selectedAnswer": "C",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728599724
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "12",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728599726
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 150,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728612695
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "13",
+      "selectedAnswer": "C",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728625204
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "13",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728625205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 165,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728627698
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "14",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728637097
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "14",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728637098
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 180,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728642688
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "15",
+      "selectedAnswer": "E",
+      "isCorrect": false,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728652679
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "15",
+      "isCorrect": false,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728652680
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 195,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728657681
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 210,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728672679
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "16",
+      "isCorrect": false,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728682538
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "16",
+      "selectedAnswer": "D",
+      "isCorrect": false,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728682537
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 225,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728687679
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 240,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728702679
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 255,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728717680
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 270,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728732679
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 285,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728747682
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 300,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728762682
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 315,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728777683
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 330,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728792684
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "17",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728799615
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "17",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728799614
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 345,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728807684
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 360,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728822685
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 375,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728837685
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 390,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728852688
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 405,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728867689
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "18",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728870617
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "18",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728870619
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 420,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728882689
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "19",
+      "selectedAnswer": [
+        "B",
+        "C",
+        "E"
+      ],
+      "isCorrect": false,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728889881
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "19",
+      "isCorrect": false,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728889880
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 435,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728897691
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 450,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728912690
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 465,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728927690
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 480,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728942692
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728946661
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728946662
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 507,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728969178
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728969180
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728969179
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728969201
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728973559
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728973560
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 528,
+      "url": "/quiz/page/0",
+      "timestamp": 1755728990874
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728990874
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728990874
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755728990891
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 543,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729005872
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729006000
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729006003
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729006698
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729006697
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729006723
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "20",
+      "selectedAnswer": "D",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729009034
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "20",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729009036
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 558,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729020874
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 573,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729035874
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729044273
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729044275
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 610,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729072903
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729072914
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729072904
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729072904
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 625,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729087900
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 640,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729102900
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 655,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729117902
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 670,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729132903
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 685,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729147903
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 700,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729162903
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 715,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729177906
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 730,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729192906
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729193540
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729193541
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 894,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729356477
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729356477
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729356477
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729356490
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 909,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729371468
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 924,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729386468
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 939,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729401470
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 954,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729416467
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 969,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729431471
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "21",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729437517
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "21",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729437514
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 984,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729446472
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 999,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729461472
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1014,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729476471
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1029,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729491474
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1044,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729506474
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1059,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729521475
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1074,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729536476
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1089,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729551477
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1104,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729566478
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "22",
+      "isCorrect": false,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729568905
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "22",
+      "selectedAnswer": "C",
+      "isCorrect": false,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729568903
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1119,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729581479
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "23",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729591484
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "23",
+      "selectedAnswer": [
+        "C",
+        "D"
+      ],
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729591485
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1134,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729596478
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "24",
+      "selectedAnswer": "A",
+      "isCorrect": false,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729600705
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "24",
+      "isCorrect": false,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729600707
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 1,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608883
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 2,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608884
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 3,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608884
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 4,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608884
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 5,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608885
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 6,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608885
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 7,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608885
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 8,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608886
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 9,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608886
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 10,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608887
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 11,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608887
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 12,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608887
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 13,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608888
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 14,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608888
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 15,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608888
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 16,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608889
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 17,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608889
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 18,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608889
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 19,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608890
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 20,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608890
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 21,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608890
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 22,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608891
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 23,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608891
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 24,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608891
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 25,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608892
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 26,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608892
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 27,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608892
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 28,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608892
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 30,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608892
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 31,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608893
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 29,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608892
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 32,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608893
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 33,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608893
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 34,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608893
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 35,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608893
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 36,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608893
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 37,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608893
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 38,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608894
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 39,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608894
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 40,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608894
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 41,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608894
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 42,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608894
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 43,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608894
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 44,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608894
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 45,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608894
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 46,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608895
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 47,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608895
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 48,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608895
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 49,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608895
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 50,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608895
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 51,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608895
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 52,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608895
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 53,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608896
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 54,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608896
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 55,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608896
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 56,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608896
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 57,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608896
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 58,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608896
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 59,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608896
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 60,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608897
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 61,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608897
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 62,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608897
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 63,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608897
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 64,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608897
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 65,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608897
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 66,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608897
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 67,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608898
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 68,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729608898
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1149,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729611478
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "24",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729622857
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "24",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729622859
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1164,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729626479
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "25",
+      "isCorrect": false,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729638615
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "25",
+      "selectedAnswer": [
+        "B",
+        "D"
+      ],
+      "isCorrect": false,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729638616
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1179,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729641482
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1194,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729656480
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1209,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729671495
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1224,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729686507
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1239,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729701514
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1254,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729716516
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "26",
+      "isCorrect": false,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729729690
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "26",
+      "selectedAnswer": "B",
+      "isCorrect": false,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729729688
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1269,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729731516
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1284,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729746516
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1299,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729761517
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1314,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729776518
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1344,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729806519
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1359,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729821522
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1329,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729791519
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "27",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729832622
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "27",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729832620
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1374,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729836522
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1389,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729851524
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "28",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729855226
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "28",
+      "selectedAnswer": "C",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729855225
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 2550,
+      "url": "/quiz/page/0",
+      "timestamp": 1755731012200
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755731012205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1404,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729866522
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "29",
+      "selectedAnswer": "A",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729875132
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "29",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729875134
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755731012205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755731020963
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729920925
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 1449,
+      "url": "/quiz/page/0",
+      "timestamp": 1755729911525
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "32",
+      "selectedAnswer": "C",
+      "isCorrect": true,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755731018097
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755731021151
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 2595,
+      "url": "/quiz/page/0",
+      "timestamp": 1755731057460
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755731012209
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "32",
+      "isCorrect": true,
+      "url": "/quiz/page/0",
+      "timestamp": 1755731018102
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755729920933
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 20698,
+      "url": "/quiz/page/0",
+      "timestamp": 1755749160856
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755749160881
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755749168661
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 21367,
+      "url": "/quiz/page/0",
+      "timestamp": 1755749829904
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755749829911
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755749830363
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782778357
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "quizPageNavigation",
+    "eventData": {
+      "fromPage": null,
+      "toPage": 0,
+      "url": "/quiz/page/0",
+      "timestamp": 1755782778890
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 1,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779195
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 2,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779196
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 7,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779196
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 8,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779197
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 4,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779196
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 3,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779196
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 5,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779196
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 6,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779196
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 9,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779197
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 10,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779197
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 11,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779197
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 12,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779197
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 13,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779198
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 14,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779198
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 15,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779198
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 16,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779198
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 17,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779198
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 18,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779198
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 19,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779198
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 20,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779199
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 21,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779199
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 22,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779199
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 23,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779199
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 24,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779199
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 25,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779199
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 26,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779199
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 27,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779200
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 28,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779200
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 29,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779200
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 30,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779200
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 31,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779200
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 32,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779200
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 33,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779201
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 34,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779201
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 35,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779201
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 36,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779201
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 37,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779201
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 38,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779201
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 39,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779202
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 40,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779203
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 41,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779203
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 42,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779203
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 43,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779203
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 44,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779203
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 45,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779203
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 46,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779203
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 47,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779204
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 48,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779204
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 49,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779204
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 50,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779204
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 51,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779204
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 52,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779204
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 53,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779204
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 54,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 55,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 56,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 57,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 58,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 59,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 60,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779205
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 61,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779206
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 62,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779206
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 63,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779206
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 64,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779206
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 65,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779206
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 66,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779206
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 67,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779206
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 68,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779206
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 293,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779207
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 294,
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782779207
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755782783228
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755863587007
+    }
+  },
+  {
+    "sessionId": "87db4554-cf05-48cd-ba9d-03abb069e178",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "156.192.129.129",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755863590215
+    }
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 255,
+    "question": "It is not recommended to make the function inline when the function is return value.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Whether a function returns a value has little to do with whether it should be inlined. The recommendation against inlining applies to large functions, recursive functions, or functions with complex control flow (loops, switches), as inlining them can lead to code bloat without performance benefits.",
+    "page": 10,
+    "updated_at": "2025-08-19T19:05:18.933399"
+  },
+  {
+    "id": 256,
+    "question": "The child must inherit all parent member.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "```img\nhttps://i.postimg.cc/J7vfWmnJ/image.png\n```\n```img\nhttps://i.postimg.cc/rF5PXr7X/image.png\n```",
+    "page": 10,
+    "updated_at": "2025-08-19T18:38:03.756001"
+  },
+  {
+    "id": 257,
+    "question": "The class contains pure virtual function is called abstract class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This is the definition of an abstract class in C++. A class becomes abstract if it has one or more pure virtual functions (`= 0`), and it cannot be instantiated.",
+    "page": 10
+  },
+  {
+    "id": 258,
+    "question": "The virtual function must be overridden in any Derived class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A regular virtual function does not need to be overridden; if it's not, the derived class simply inherits the base class's implementation. Only a *pure* virtual function must be overridden for the derived class to be concrete.",
+    "page": 10
+  },
+  {
+    "id": 259,
+    "question": "A pointer to a base class can point to objects of a derived class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This is a fundamental principle of polymorphism in C++. It allows for writing generic code that can operate on objects of different derived types through a common base class interface.",
+    "page": 10
+  },
+  {
+    "id": 260,
+    "question": "Consider the following code:\n```cpp\nvoid main()\n{\n    int *p;\n    p=new int[5];\n}\n```\nThe above code:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allocate for an integer that is not initialized."
+      },
+      {
+        "id": "b",
+        "text": "Allocate for an array of integers of 5 elements that is not initialized."
+      },
+      {
+        "id": "c",
+        "text": "Allocate for an integer that is initialized by 5."
+      },
+      {
+        "id": "d",
+        "text": "Allocate for an array of integers where all its elements is initialized by 5."
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "The syntax `new int[5]` allocates a dynamic array of 5 integer elements on the heap. For fundamental types like `int`, this form of `new` does not initialize the elements; they will contain garbage values.",
+    "page": 10
+  },
+  {
+    "id": 261,
+    "question": "Virtual functions allow you to",
+    "options": [
+      {
+        "id": "a",
+        "text": "create an array of type pointer-to-base class that can hold pointers to derived classes."
+      },
+      {
+        "id": "b",
+        "text": "create functions that can never be accessed."
+      },
+      {
+        "id": "c",
+        "text": "group objects of different classes so they can all be accessed by the same function code."
+      },
+      {
+        "id": "d",
+        "text": "use the same function call to execute member functions of objects from different classes."
+      }
+    ],
+    "correct_answer": "d",
+    "explanation": "Virtual functions are the mechanism for runtime polymorphism. They allow a single function call through a base class pointer (e.g., `ptr->draw()`) to execute the specific version of that function belonging to the actual derived object the pointer points to.",
+    "page": 10
+  },
+  {
+    "id": 262,
+    "question": "A static function",
+    "options": [
+      {
+        "id": "e",
+        "text": "should be called when an object is destroyed."
+      },
+      {
+        "id": "f",
+        "text": "is closely connected to an individual object of a class."
+      },
+      {
+        "id": "g",
+        "text": "can be called using the class name and function name."
+      },
+      {
+        "id": "h",
+        "text": "is used when a dummy object must be created."
+      }
+    ],
+    "correct_answer": "g",
+    "explanation": "A static member function belongs to the class itself, not to any particular object. Therefore, it can be called directly using the class name and the scope resolution operator (e.g., `ClassName::myStaticFunction();`).",
+    "page": 10
+  },
+  {
+    "id": 263,
+    "question": "The protected members access specifier for the class user is equivalent to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "public member"
+      },
+      {
+        "id": "b",
+        "text": "private member"
+      },
+      {
+        "id": "c",
+        "text": "global variable"
+      },
+      {
+        "id": "d",
+        "text": "local variable"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "From the perspective of a 'class user' (i.e., code outside the class and its derived classes), protected members are inaccessible, just as private members are. Their special access is only granted to derived classes.",
+    "page": 10
+  },
+  {
+    "id": 264,
+    "question": "Design and implement the following functions using C++ Programming Language.\nIn the Geometry Science, the Circle, Triangle, Rectangle are Shapes. Each Shape consists of 2 dimensions, and the area of each shape is defined by the following formula: \"Area = dimension1 * dimension2 * const\". The const depends on the Shape itself\n1. Extract the classes from the last sentences\n2. state their relation between them\n3. Design and Implement a new class named PICTURE that consists of 5 shapes (Circle and/or Triangle and/or Rectangle)",
+    "options": [
+      {
+        "id": "A",
+        "text": "View Solution"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. **Classes:** Shape (base class), Circle, Triangle, Rectangle (derived classes), and PICTURE (composition class).\n2. **Relation:** Circle, Triangle, and Rectangle have an 'is-a' relationship with Shape (Inheritance). PICTURE has a 'has-a' relationship with Shape (Composition).\n3. **Implementation:**\n```cpp\n#include <iostream>\n\n// 1. Base Class with pure virtual function for Area\nclass Shape {\nprotected:\n    double dim1, dim2;\npublic:\n    Shape(double d1 = 0, double d2 = 0) : dim1(d1), dim2(d2) {}\n    virtual double calcArea() = 0; // Pure virtual function makes Shape abstract\n    virtual ~Shape() {}\n};\n\n// 2. Derived Classes\nclass Rectangle : public Shape {\npublic:\n    Rectangle(double length, double width) : Shape(length, width) {}\n    double calcArea() override {\n        // Area = dim1 * dim2 * 1\n        return dim1 * dim2;\n    }\n};\n\nclass Triangle : public Shape {\npublic:\n    Triangle(double base, double height) : Shape(base, height) {}\n    double calcArea() override {\n        // Area = dim1 * dim2 * 0.5\n        return dim1 * dim2 * 0.5;\n    }\n};\n\nclass Circle : public Shape {\npublic:\n    // For a circle, we only need the radius. We can store it in dim1.\n    Circle(double radius) : Shape(radius, radius) {}\n    double calcArea() override {\n        // Area = r * r * PI (dim1 * dim1 * 3.14159)\n        return dim1 * dim1 * 3.14159;\n    }\n};\n\n// 3. PICTURE class\nclass PICTURE {\nprivate:\n    Shape* shapes[5]; // Array of 5 pointers to Shape\npublic:\n    PICTURE(Shape* s1, Shape* s2, Shape* s3, Shape* s4, Shape* s5) {\n        shapes[0] = s1;\n        shapes[1] = s2;\n        shapes[2] = s3;\n        shapes[3] = s4;\n        shapes[4] = s5;\n    }\n\n    double getTotalArea() {\n        double total = 0.0;\n        for (int i = 0; i < 5; ++i) {\n            if (shapes[i] != nullptr) {\n                total += shapes[i]->calcArea();\n            }\n        }\n        return total;\n    }\n};\n\nint main() {\n    Rectangle r(10, 5); // Area = 50\n    Circle c(7);      // Area = 153.9\n    Triangle t(10, 5); // Area = 25\n\n    // Create a picture with 5 shapes\n    PICTURE myPicture(&r, &c, &t, new Rectangle(4, 4), new Triangle(6, 8));\n    // Areas: 50 + 153.9 + 25 + 16 + 24 = 268.9\n\n    std::cout << \"Total area of shapes in the picture: \" << myPicture.getTotalArea() << std::endl;\n\n    // Note: Proper memory management for the 'new' objects would be needed in a real application.\n    return 0;\n}\n```",
+    "page": 10
+  }
+]

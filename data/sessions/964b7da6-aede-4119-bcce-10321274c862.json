@@ -1,0 +1,226 @@
+[
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755482209539
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755482211599
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755482211641
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 16,
+      "url": "/",
+      "timestamp": 1755482225263
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 31,
+      "url": "/",
+      "timestamp": 1755482240251
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 46,
+      "url": "/",
+      "timestamp": 1755482255260
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 61,
+      "url": "/",
+      "timestamp": 1755482270256
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 76,
+      "url": "/",
+      "timestamp": 1755482285262
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 137,
+      "url": "/",
+      "timestamp": 1755482346253
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 198,
+      "url": "/",
+      "timestamp": 1755482407262
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "197.48.82.92",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 259,
+      "url": "/",
+      "timestamp": 1755482468252
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "41.45.152.145",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1756278006942
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "41.45.152.145",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1756278012582
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "41.45.152.145",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1756278012544
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "41.45.152.145",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1756278013894
+    }
+  },
+  {
+    "sessionId": "964b7da6-aede-4119-bcce-10321274c862",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "10"
+    },
+    "ip": "41.45.152.145",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1756278013901
+    }
+  }
+]

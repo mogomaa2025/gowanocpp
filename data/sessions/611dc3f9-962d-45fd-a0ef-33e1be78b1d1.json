@@ -1,0 +1,100 @@
+[
+  {
+    "sessionId": "611dc3f9-962d-45fd-a0ef-33e1be78b1d1",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "173.252.127.0",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1757474618561
+    }
+  },
+  {
+    "sessionId": "611dc3f9-962d-45fd-a0ef-33e1be78b1d1",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "173.252.127.0",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1757474624627
+    }
+  },
+  {
+    "sessionId": "611dc3f9-962d-45fd-a0ef-33e1be78b1d1",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "173.252.127.0",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15,
+      "url": "/",
+      "timestamp": 1757474633562
+    }
+  },
+  {
+    "sessionId": "611dc3f9-962d-45fd-a0ef-33e1be78b1d1",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "173.252.127.0",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1757474641737
+    }
+  },
+  {
+    "sessionId": "611dc3f9-962d-45fd-a0ef-33e1be78b1d1",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "173.252.127.0",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 30,
+      "url": "/",
+      "timestamp": 1757474648562
+    }
+  },
+  {
+    "sessionId": "611dc3f9-962d-45fd-a0ef-33e1be78b1d1",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "173.252.127.0",
+    "eventName": "pageUnload",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1757474649242
+    }
+  },
+  {
+    "sessionId": "611dc3f9-962d-45fd-a0ef-33e1be78b1d1",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "173.252.127.0",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1757474649249
+    }
+  }
+]

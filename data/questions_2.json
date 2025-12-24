@@ -1,0 +1,310 @@
+[
+  {
+    "id": 147,
+    "question": "You can have more than a constructor in the same class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is true. A class can have multiple constructors as long as they have different parameter lists (different number or types of parameters). This feature is known as constructor overloading and allows objects to be created in various ways.",
+    "page": 2
+  },
+  {
+    "id": 148,
+    "question": "A destructor is a member function that removes object from memory.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. A destructor is a member function that is automatically called just before an object's memory is deallocated. Its primary role is to release resources that the object might have acquired (like heap memory, file handles, etc.). The actual memory deallocation is handled by the C++ runtime (for stack objects) or by the `delete` operator (for heap objects).",
+    "page": 2
+  },
+  {
+    "id": 149,
+    "question": "An abstract class is a class that contains any virtual functions.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. An abstract class is a class that contains at least one *pure* virtual function (e.g., `virtual void func() = 0;`). A class can have regular virtual functions and still be a concrete class that can be instantiated.",
+    "page": 2
+  },
+  {
+    "id": 150,
+    "question": "You can use more than a template for one class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is true. A class can be a template with multiple parameters (e.g., `template <class T, class U> class MyClass { ... };`). Additionally, a non-template class can have member functions that are themselves templates.",
+    "page": 2
+  },
+  {
+    "id": 151,
+    "question": "A constructor is always declared void because it doesn't return a value.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. A constructor does not have a return type *at all*, not even `void`. The compiler identifies it as a constructor because it has the same name as the class and lacks a return type. Explicitly declaring it with `void` is a syntax error.",
+    "page": 2
+  },
+  {
+    "id": 152,
+    "question": "Aggregation and association are types of relationships between a base class and derived classes.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. The relationship between a base class and a derived class is called Inheritance ('is-a' relationship). Aggregation and Association are 'has-a' or 'uses-a' relationships between potentially unrelated classes, not a parent-child relationship.",
+    "page": 2
+  },
+  {
+    "id": 153,
+    "question": "The embedded object is an object declared with default constructor.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. An embedded object (part of a composition relationship) is an object that is a member variable of another class. It can be initialized using any available constructor (default, parameterized, etc.), often specified in the containing class's member initializer list. Its definition is not tied to the default constructor.",
+    "page": 2
+  },
+  {
+    "id": 154,
+    "question": "You cannot overload the scope operator (::).",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is true. C++ does not allow the scope resolution operator `::` to be overloaded. Other non-overloadable operators include `.` (member access), `.*` (member access through pointer to member), and `?:` (ternary conditional).",
+    "page": 2
+  },
+  {
+    "id": 155,
+    "question": "You can define a copy constructor in class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is true. A programmer can and should define a custom copy constructor for a class, especially if the class manages resources like dynamic memory. This ensures correct copying behavior (e.g., deep copy) and avoids issues like shallow copies of pointers.",
+    "page": 2
+  },
+  {
+    "id": 156,
+    "question": "Design Question.\n```cpp\nDesign a set of classes to calculate the volume of the following shapes:\nCylinder ( πr2l ), where r: radius, l: length.\nCube ( l3 ), where l: length.\nBox ( w*h*l ), where w: width, h: height, l: length.\n```\n```img\nhttps://i.postimg.cc/sXGSqVhX/image.png\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Select Answer To See The Code"
+      },
+      {
+        "id": "B",
+        "text": "Select Answer To See The Code"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "```cpp\n#include <iostream>\nusing namespace std;\n\nclass Shape\n{\npublic:\n    void showVolume(double volume)\n    {\n        cout << \" Volume: \" << volume << endl;\n    }\n};\n\nclass Cylinder : public Shape\n{\nprotected:\n    double radius, length;\npublic:\n    Cylinder(double r, double l) : radius(r), length(l) {}\n\n    double GetVolume() {return 3.14 * radius * radius * length;}\n};\n\nclass Cube : public Shape\n{\nprotected:\n    double length;\npublic:\n    Cube(double l) : length(l) {}\n\n    double GetVolume() {return length * length * length;}\n\n\n\n};\n\nclass Box : public Shape\n{\nprotected:\n    double width, height, length;\npublic:\n    Box(double w,double h,double l) : width(w), height(h), length(l) {}\n    double GetVolume() {return width*height*length;}\n};\n\n\n\nint main()\n{\n\n    //way 1 output\n    Cylinder cy(2,5);\n    Cube cu(3);\n    Box bx(2,4,6);\n    cout << \"Volume of Cylinder = \" << cy.GetVolume() << endl;\n    cout << \"Volume of Cube = \" << cu.GetVolume() << endl;\n    cout << \"Volume of Box = \" << bx.GetVolume() << endl;\n\n    /*\nVolume of Cylinder = 62.8\nVolume of Cube = 27\nVolume of Box = 48\n    */\n cout << \"----------------\" << endl;\n//way 2 output\n      cout << \"Cylinder\";\n      cy.showVolume(cy.GetVolume());\n      cout << \"Cube\";\n      cu.showVolume(cu.GetVolume());\n      cout << \"Box\";\n      bx.showVolume(bx.GetVolume());\n\n      /*\nCylinder Volume: 62.8\nCube Volume: 27\nBox Volume: 48\n      */\n\n    return 0;\n}\n\n ```\nor\n ```cpp\n#include <iostream>\nusing namespace std;\n\nclass Shape\n{\n    protected:\n    double length;\n    public:\n    Shape(double l) : length(l) {}\n\n\n\n};\n\nclass Cylinder : public Shape\n{\nprotected:\n    double radius;\npublic:\n    Cylinder(double r, double l) : radius(r), Shape(l) {} // as you see instead of l we used shape\n\n    double GetVolume() {return 3.14 * radius * radius * length;}\n};\n\nclass Cube : public Shape\n{\n\npublic:\n    Cube(double l) : Shape(l) {}\n\n    double GetVolume() {return length * length * length;}\n\n\n\n};\n\nclass Box : public Shape\n{\nprotected:\n    double width, height;\npublic:\n    Box(double w,double h,double l) : width(w), height(h), Shape(l) {}\n    double GetVolume() {return width*height*length;}\n};\n\n\n\nint main()\n{\n\n    //way 1 output\n    Cylinder cy(2,5);\n    Cube cu(3);\n    Box bx(2,4,6);\n    cout << \"Volume of Cylinder = \" << cy.GetVolume() << endl;\n    cout << \"Volume of Cube = \" << cu.GetVolume() << endl;\n    cout << \"Volume of Box = \" << bx.GetVolume() << endl;\n\n    /*\nVolume of Cylinder = 62.8\nVolume of Cube = 27\nVolume of Box = 48\n    */\n\n\n    return 0;\n}\n ```",
+    "page": 2,
+    "updated_at": "2025-08-21T01:03:04.098799"
+  },
+  {
+    "id": 157,
+    "question": "A public member of a class can not be directly accessed by its name in the main() function.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```arabic\n‫غلط، الـ public member في الكلاس ينفع تـ accessه مباشرة باسمه في main() لو عندك object من الكلاس. يعني لو عندك obj.x و x public، هيشتغل عادي من main() أو أي حتة برا الكلاس.‬\n```\n```cpp\n\n#include <iostream>\nusing namespace std;\n\nclass MyClass {\npublic:\n    int x = 10; // Public member\n};\n\nint main() {\n    MyClass obj;\n    cout << obj.x; // Directly accessing public member x in main()\n    return 0;\n}\n```\nHere, obj.x is valid because x is a public member of MyClass.\n",
+    "page": 2,
+    "updated_at": "2025-08-10T17:23:23.599619"
+  },
+  {
+    "id": 158,
+    "question": "A friend function is allowed to access the private members of a class, but not the protected members of the class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. A friend function is granted special access to *all* non-public members of the class that declares it as a friend, which includes both `private` and `protected` members.",
+    "page": 2
+  },
+  {
+    "id": 159,
+    "question": "If a programmer does not declare a constructor for a certain class, then the compiler will automatically create a default constructor for that class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is true. If no constructors are explicitly defined by the programmer, the C++ compiler will generate a public, non-parameterized default constructor to allow for the creation of objects of that class.",
+    "page": 2
+  },
+  {
+    "id": 160,
+    "question": "In order to access a static variable of a class we have to write the class name before the variable name.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is true. The standard way to access a public static member variable is by using the class name followed by the scope resolution operator (`::`), for example: `ClassName::static_variable`. This is because the variable belongs to the class itself, not to any specific object.",
+    "page": 2
+  },
+  {
+    "id": 161,
+    "question": "The this pointer is a pointer that points to the object that the method has been called for.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is true. This is the definition of the `this` pointer. It is an implicit parameter to every non-static member function and holds the memory address of the object on which the function was invoked.",
+    "page": 2
+  },
+  {
+    "id": 162,
+    "question": "Function overloading is considered as one of the ways of polymorphism in object oriented programming.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is true. Function overloading is a form of compile-time polymorphism (or static polymorphism), where multiple functions can have the same name but different parameters. The correct function is chosen by the compiler based on the arguments used in the call.",
+    "page": 2
+  },
+  {
+    "id": 163,
+    "question": "The constructor of a class is a member function that returns void.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. Constructors are unique in that they do not have a return type, not even `void`. The compiler recognizes them by the fact that they share the same name as the class and lack any return type specification.",
+    "page": 2
+  },
+  {
+    "id": 164,
+    "question": "Encapsulation means extending a class to increase more member functions and member variables in a derived class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. This description refers to inheritance. Encapsulation is the principle of bundling data (attributes) and the methods that operate on the data into a single unit (a class) and restricting direct access to some of the object's components.",
+    "page": 2
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "sessionId": "988aa696-d464-476e-ba2b-5e0cf79d72a7",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.10",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1759808029367
+    }
+  },
+  {
+    "sessionId": "988aa696-d464-476e-ba2b-5e0cf79d72a7",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.10",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 16,
+      "url": "/",
+      "timestamp": 1759808045085
+    }
+  },
+  {
+    "sessionId": "988aa696-d464-476e-ba2b-5e0cf79d72a7",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.10",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1759808053040
+    }
+  },
+  {
+    "sessionId": "988aa696-d464-476e-ba2b-5e0cf79d72a7",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.10",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 31,
+      "url": "/",
+      "timestamp": 1759808060085
+    }
+  },
+  {
+    "sessionId": "988aa696-d464-476e-ba2b-5e0cf79d72a7",
+    "deviceInfo": {
+      "os": "macOS",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.10",
+    "eventName": "pageUnload",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1759808060553
+    }
+  }
+]

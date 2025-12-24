@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المحاضرة السابعة: مفاهيم متقدمة في البرمجة الكائنية (OOP)</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Traditional Arabic';
+        direction: rtl;
+        /* This is key: we align the container itself to the right */
+        text-align: right;
+        background-color: #f8f9fa;
+        line-height: 1.8;
+        padding: 1rem;
+        /* Important: Prevents the body from creating its own scrollbars prematurely */
+        overflow-x: hidden;
+    }
+
+    /* --- START OF THE MAIN FIX --- */
+    .container {
+        /* This makes the container shrink-to-fit its widest child (the code block) */
+        display: inline-block;
+        /* Ensure text inside the container is aligned right by default */
+        text-align: right;
+
+        /* These are from your original Bootstrap, we keep them */
+        padding-left: 15px;
+        padding-right: 15px;
+
+        /* We remove any 'max-width' that might limit the container from growing */
+        max-width: none;
+    }
+    /* --- END OF THE MAIN FIX --- */
+
+    /* العناوين */
+    h1, h2, h3, h4, h5 {
+        color: #0d6efd;
+        margin-top: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.5rem;
+    }
+
+    /* الفقرات والقوائم */
+    p, li {
+        margin-bottom: 1rem;
+    }
+    ol, ul {
+          padding-left: 0rem;
+
+    }
+
+    /* كود البرمجة */
+    code {
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 90%;
+        color: #d63384;
+        direction: ltr;
+        text-align: left;
+        display: inline-block;
+    }
+    pre code {
+        color: inherit;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    pre {
+        /* 'display: block' is fine now, it will just fill the width of its parent (.container) */
+        display: block;
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        white-space: pre;
+        text-align: left;
+
+        /* We still let the code content overflow */
+        overflow-x: visible;
+    }
+
+    /* ملاحظات توضيحية */
+    .note, .warning {
+
+        background-color: #fff3cd;
+        border-right: 5px solid #ffc107;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 3px;
+    }
+    .summary-box {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <!-- === NEW BUTTON ADDED HERE === -->
+<div id="action-buttons-container">
+    <a href="#" class="btn btn-secondary shadow" onclick="window.close(); return false;">رجوع</a>
+    <a href="#" class="btn btn-info shadow" onclick="openInNewTab(); return false;">فتح في تبويب جديد</a>
+</div>
+<script>
+function openInNewTab() {
+  window.open(window.location.href );
+}
+</script>
+<!-- ======================================= -->
+<div class="container py-4">
+
+    <h3>المحاضرة السابعة: مفاهيم متقدمة في البرمجة الكائنية (OOP)</h3>
+    <p>تتناول هذه المحاضرة العديد من المفاهيم المتقدمة في البرمجة الكائنية (<code>Object-Oriented Programming - OOP</code>)، بدءًا من فهم أعمق لكيفية عمل الدوال (<code>methods</code>) في C++، مرورًا بـ <code>Constructors</code> و <code>Destructors</code>، ووصولاً إلى <code>Static Members</code> و <code>Inheritance</code>.</p>
+
+    <h4>1. استدعاء الدوال (Method Calls) ومؤشر <code>this</code></h4>
+    <ul>
+        <li>عند استدعاء أي <code>method</code> (دالة عضو في <code>class</code>)، يتم تمرير عنوان الكائن الذي قام بالاستدعاء ضمنيًا كأول باراميتر. يتم استقبال هذا العنوان في مؤشر ضمني (<code>implicit pointer</code>) يسمى <code>this</code>.</li>
+        <li><strong>دور <code>this</code>:</strong> يستخدم <code>this</code> للإشارة إلى الكائن الحالي الذي يتم تنفيذ الـ <code>method</code> من خلاله.</li>
+        <li>ضروري جدًا عندما يكون لديك <code>local parameter</code> و <code>member variable</code> لهما نفس الاسم؛ ففي هذه الحالة، يجب استخدام <code>this->member_name</code> للتمييز بين الـ <code>member variable</code> الخاص بالكائن والـ <code>local parameter</code>.</li>
+    </ul>
+<pre><code>class Complex {
+private:
+    int Real, Imag; // Member variables
+public:
+    void SetReal(int Real) { // 'Real' here is a local parameter
+        this->Real = Real; // Using 'this' to distinguish the member variable
+    }
+    // Alternatively, if no ambiguity:
+    void SetImag(int i) {
+        Imag = i; // This is fine if 'i' is only a local parameter and not a member variable
+    }
+};</code></pre>
+
+    <h4>2. حجم الكائنات (Object Size) وتخصيص الذاكرة (Memory Allocation)</h4>
+    <ul>
+        <li>حجم الكائن (<code>Object</code>) في الذاكرة يعتمد على حجم البيانات (<code>data</code>) التي يحتويها الـ <code>member variables</code> الخاصة به. (مثال: إذا كان الكائن يحتوي على <code>int Real</code> و <code>int Imag</code>، فإن حجمه سيكون 8 بايت).</li>
+        <li>الكائن هو ببساطة متغير (<code>variable</code>) من نوع <code>class</code>.</li>
+        <li>عند استدعاء أي <code>method</code>، يتم حجز مكان جديد في الذاكرة على الـ <code>Stack</code> لـ <code>method</code> نفسها ولـ <code>parameter list</code> الخاصة بها (بما في ذلك <code>this pointer</code>).</li>
+    </ul>
+
+    <h4>3. المنشئات (Constructors)</h4>
+    <p>الـ <code>Constructor</code> هو <code>method</code> خاص يتم استدعاؤه تلقائيًا عند إنشاء كائن جديد من الـ <code>class</code>. ويهدف بشكل أساسي إلى تهيئة (<code>initialize</code>) الـ <code>member variables</code> الخاصة بالكائن. من المستحيل أن يتم إنشاء كائن بدون استدعاء <code>Constructor</code>.</p>
+    <div class="note">
+        <strong>شروط الـ Constructor (ضرورية جدا للامتحان):</strong>
+        <ul>
+            <li>يجب أن يحمل نفس اسم الـ <code>class</code>.</li>
+            <li>ليس له أي نوع إرجاع (<code>no return type</code>)، حتى <code>void</code> لا تكتب.</li>
+            <li>يجب أن يكون <code>public</code> للسماح بإنشاء الكائنات من خارج الـ <code>class</code>.</li>
+        </ul>
+    </div>
+    <h5>أنواع الـ Constructors</h5>
+    <ul>
+        <li><strong>Default Constructor:</strong> هو <code>Constructor</code> لا يأخذ أي باراميترات.</li>
+        <li><strong>Parameterized Constructor:</strong> هو <code>Constructor</code> يأخذ باراميترات.</li>
+        <li><strong>Overloading Constructors:</strong> يمكن أن يكون للـ <code>class</code> الواحد أكثر من <code>Constructor</code> طالما أن لديهم تعداد أو أنواع باراميترات مختلفة.</li>
+    </ul>
+    <h5>قواعد إنشاء الـ Constructor التلقائي (بناءً على الرسم التوضيحي في المصادر):</h5>
+    <ol>
+        <li>إذا كنت بحاجة إلى <code>Parameterized Constructor</code>، يجب أن يكون موجودًا. إذا لم يكن موجودًا، سيؤدي ذلك إلى <code>compile-time error</code>.</li>
+        <li>إذا كنت بحاجة إلى <code>Default Constructor</code>:
+            <ul>
+                <li><strong>إذا كان <code>Default Constructor</code> موجودًا:</strong> سيتم استخدامه.</li>
+                <li><strong>إذا لم يكن <code>Default Constructor</code> موجودًا، ولكن يوجد <code>Parameterized Constructor</code> واحد على الأقل:</strong> سيؤدي ذلك إلى <code>compile-time error</code>. والسبب هو أنك كمطور للـ <code>class</code> قد حددت أن الكائن يجب أن يُنشأ بباراميترات، وبالتالي فإن منع إنشاء كائن بـ <code>Default Constructor</code> هو اختيارك كـ <code>designer</code> للـ <code>class</code>.</li>
+                <li><strong>إذا لم يكن هناك أي <code>Constructor</code> معرف (لا <code>Default</code> ولا <code>Parameterized</code>):</strong> سيقوم المترجم (<code>compiler</code>) تلقائيًا بإنشاء <strong><code>empty default constructor</code></strong>. هذا هو السبب في أن الكائنات كان يمكن إنشاؤها في المحاضرات السابقة بدون تعريف <code>Constructor</code>، وكانت تحتوي على <code>garbage data</code>.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>4. المهلكات (Destructors)</h4>
+    <p>الـ <code>Destructor</code> هو <code>method</code> خاص يتم استدعاؤه تلقائيًا عندما يتم إزالة الكائن من الذاكرة (<code>destructing the object</code>). عادة ما يستخدم <code>Destructor</code> لتحرير الموارد التي حجزها الكائن (مثل إغلاق الملفات المفتوحة أو تحرير الذاكرة الديناميكية).</p>
+    <div class="note">
+        <strong>شروط الـ Destructor (ضرورية جدا للامتحان):</strong>
+        <ul>
+            <li>يجب أن يحمل نفس اسم الـ <code>class</code>، مسبوقًا بعلامة <strong>tilde (~)</strong>.</li>
+            <li>ليس له أي نوع إرجاع (<code>no return type</code>).</li>
+            <li>لا يأخذ أي باراميترات (<code>no parameter list</code>).</li>
+            <li>يجب أن يكون <code>public</code>.</li>
+            <li><strong>وقت التنفيذ:</strong> يتم استدعاؤه تلقائيًا عند انتهاء صلاحية الكائن (مثل نهاية الـ <code>scope</code> للدوال المحلية).</li>
+        </ul>
+    </div>
+
+    <h4>5. الأعضاء الـ Static</h4>
+    <p>الـ <code>Static Members</code> هي أعضاء تنتمي إلى الـ <code>class</code> نفسه، وليس إلى كائنات فردية من هذا الـ <code>class</code>. هذا يعني أنه توجد نسخة واحدة فقط من الـ <code>static member</code> لجميع الكائنات التي يتم إنشاؤها من الـ <code>class</code>.</p>
+    <h5>Static Data Members (Class Variables / Shared Members)</h5>
+    <ul>
+        <li><strong>الإعلان (Declaration):</strong> يتم إعلانها داخل الـ <code>class</code> باستخدام الكلمة المفتاحية <code>static</code>.</li>
+        <li><strong>التهيئة (Initialization):</strong> يجب تهيئتها خارج تعريف الـ <code>class</code>، عادة في ملف <code>.cpp</code>، باستخدام <code>scope resolution operator (::)</code>. هذه النقطة مهمة جدا للامتحان.</li>
+    </ul>
+
+    <h5>Static Methods</h5>
+    <ul>
+        <li>هي <code>methods</code> تنتمي إلى الـ <code>class</code> ولا تتطلب كائنًا لاستدعائها.</li>
+        <li><strong>لا تحتوي على مؤشر <code>this</code>.</strong></li>
+        <li>يمكن استدعاؤها باستخدام اسم الـ <code>class</code> و <code>scope resolution operator (::)</code>.</li>
+        <li>يمكنها فقط الوصول إلى <code>static members</code> أخرى أو <code>local variables</code> داخل الـ <code>method</code> نفسها. لا يمكنها الوصول إلى <code>non-static members</code> (أو <code>instance members</code>) لأنها لا تملك <code>this pointer</code> يشير إلى كائن معين.</li>
+    </ul>
+
+    <h5>Non-Static Methods</h5>
+    <ul>
+        <li>هي <code>methods</code> تنتمي إلى كائن معين، وتتطلب كائنًا لاستدعائها.</li>
+        <li>تحتوي على مؤشر <code>this</code>.</li>
+        <li>يمكنها الوصول إلى جميع أنواع الـ <code>members</code> (<code>static</code>, <code>non-static</code>) بالإضافة إلى <code>local variables</code>.</li>
+    </ul>
+
+    <h4>6. الوراثة (Inheritance) - علاقة "IS-A"</h4>
+    <p>الوراثة هي آلية في OOP تسمح لفئة (<code>class</code>) جديدة (تسمى <code>child class</code> أو <code>derived class</code>) باكتساب الخصائص والسلوكيات من فئة موجودة (تسمى <code>parent class</code> أو <code>base class</code>). يتم التعبير عن الوراثة بعبارة "IS-A" (هو نوع من).</p>
+    <ul>
+        <li><strong>العلاقات الهرمية:</strong> الـ <code>child class</code> يرى ويرث مباشرة من الـ <code>parent class</code> الخاص به فقط.</li>
+        <li><strong>تخصيص الذاكرة عند إنشاء كائن وراثي:</strong> عند إنشاء كائن من <code>derived class</code>، يتم تخصيص الذاكرة لـ <code>parent class</code> أولاً، ثم لـ <code>derived class</code>.</li>
+    </ul>
+
+    <h5>استدعاء الـ Constructors في الوراثة</h5>
+    <ul>
+        <li>عندما يتم استدعاء <code>Constructor</code> لـ <code>derived class</code>، فإنه يستدعي أولاً <code>Constructor</code> الـ <code>parent</code>.</li>
+        <li>إذا لم يتم تحديد <code>Constructor</code> معين للـ <code>parent</code>، يتم استدعاء الـ <code>Default Constructor</code> للـ <code>parent</code>.</li>
+        <li><strong>استدعاء <code>Constructor</code> الـ <code>parent</code> صراحةً:</strong> يمكنك تحديد أي <code>Constructor</code> لـ <code>parent</code> لاستدعائه وتمرير الباراميترات إليه باستخدام <strong>قائمة التهيئة (<code>initializer list</code>)</strong> بعد توقيع <code>Constructor</code> الـ <code>derived</code>.</li>
+    </ul>
+
+    <h5>محدد الوصول <code>protected</code></h5>
+    <ul>
+        <li>الـ <code>protected</code> هو مستوى وصول وسيط بين <code>private</code> و <code>public</code>.</li>
+        <li>بالنسبة للكائنات من خارج الـ <code>class</code>، يتصرف الـ <code>protected member</code> كـ <code>private</code> (لا يمكن الوصول إليه مباشرة).</li>
+        <li>بالنسبة للـ <code>derived classes</code>، يتصرف الـ <code>protected member</code> كـ <code>public</code> (يمكن الوصول إليه مباشرة).</li>
+        <li>استخدام <code>protected</code> مهم للسماح للـ <code>child classes</code> بالوصول إلى بيانات الـ <code>parent</code> دون جعلها عامة (<code>public</code>) بالكامل.</li>
+    </ul>
+
+    <h4>تجاوز الدوال (Method Overriding)</h4>
+    <ul>
+        <li>يحدث الـ <code>Method Overriding</code> عندما يكون لديك أكثر من <code>method</code> بنفس الاسم ونفس الباراميترات في الـ <code>parent class</code> وفي الـ <code>child class</code>.</li>
+        <li><strong>شرط أساسي:</strong> يجب أن تكون هناك علاقة وراثة (<code>Inheritance</code>) بين الـ <code>classes</code>.</li>
+        <li>عند استدعاء الـ <code>method</code> على كائن من الـ <code>derived class</code>، يقوم المترجم بالبحث عن الـ <code>method</code> من الـ <code>class</code> الأقل (الأكثر اشتقاقًا - <code>lowest child</code>) أولاً. إذا وجدها، قام بتنفيذها. إذا لم يجدها، يصعد إلى <code>parent</code>.</li>
+        <li>للوصول إلى الـ <code>overridden method</code> في الـ <code>parent class</code> من داخل الـ <code>child class</code>، يمكنك استخدام <code>scope resolution operator (::)</code> مع اسم الـ <code>parent class</code>.</li>
+    </ul>
+
+    <div class="summary-box">
+        <h4>نقاط أساسية للامتحان (Exam Focus Points)</h4>
+        <ul>
+            <li><strong>فهم دور <code>this pointer</code></strong> جيدًا، خاصة في حالات الغموض بين <code>member variables</code> والـ <code>local parameters</code>.</li>
+            <li>جميع <strong>شروط وقواعد الـ <code>Constructors</code> و <code>Destructors</code></strong>.</li>
+            <li>الـ <strong><code>flowchart</code> الخاص بقواعد إنشاء الـ <code>Constructor</code> التلقائي</strong>؛ متى يتم إنشاء <code>empty default constructor</code>، ومتى يحدث <code>compile-time error</code>.</li>
+            <li>كيفية <strong>إعلان وتهيئة الـ <code>Static Data Members</code></strong> (خاصة نقطة التهيئة خارج الـ <code>class</code>).</li>
+            <li>الاختلافات بين <strong><code>Static Methods</code> و <code>Non-Static Methods</code></strong> (ماذا يمكن أن يصلوا إليه، وكيف يتم استدعاؤهم).</li>
+            <li>ترتيب <strong>تخصيص الذاكرة واستدعاء الـ <code>Constructors</code> في الوراثة</strong> (الـ <code>parent</code> أولاً ثم الـ <code>child</code>).</li>
+            <li>كيفية استدعاء <code>Constructor</code> محدد للـ <code>parent</code> من الـ <code>child constructor</code> باستخدام قائمة التهيئة.</li>
+            <li>فهم محدد الوصول <strong><code>protected</code> ودوره في الوراثة</strong>.</li>
+            <li>الفرق بين <strong><code>Overloading</code> و <code>Overriding</code></strong>، وكيفية الوصول إلى الـ <code>overridden method</code> في الـ <code>parent</code>.</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

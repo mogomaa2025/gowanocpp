@@ -1,0 +1,30 @@
+[
+  {
+    "sessionId": "bf982a80-652c-48d3-be23-cec49593c1ba",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "105.203.250.5",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755594696719
+    }
+  },
+  {
+    "sessionId": "bf982a80-652c-48d3-be23-cec49593c1ba",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "105.203.250.5",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15,
+      "url": "/",
+      "timestamp": 1755594711719
+    }
+  }
+]

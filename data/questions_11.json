@@ -1,0 +1,43 @@
+[
+  {
+    "id": 265,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass A\n{   int x;\nprotected: int y;\npublic:\n    A(int x1=5,int y1=3) {x=x1;y=y1; }\n    void M1() {cout <<\"\\n This is M1() in class A:Base class\";}\n    void M3() {cout <<\"\\n This is M3() in class A:Base class\";}\n};\nclass B:private A\n{   int w;\nprotected: int v;\npublic:\n    B(int v1=3, int w1=9) { v=v1;w=w1; }\n    void M3()\n    {   M1(); //Line 1\n        y++; //Line 2\n    }\n};\nclass C: public B\n{ public:\n    void M4()\n    {   M1(); //Line 3\n        y++; //Line 4\n    }\n};\nvoid main()\n{   B b1;\n    b1.M3(); //Line 5\n    b1.M1(); //Line 6\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compilation Error at Line 1."
+      },
+      {
+        "id": "B",
+        "text": "Compilation Error at Line 2."
+      },
+      {
+        "id": "C",
+        "text": "Compilation Error at Line 3."
+      },
+      {
+        "id": "D",
+        "text": "Compilation Error at Line 4."
+      },
+      {
+        "id": "E",
+        "text": "Compilation Error at Line 5."
+      },
+      {
+        "id": "F",
+        "text": "Compilation Error at Line 6."
+      },
+      {
+        "id": "G",
+        "text": "The code compiles successfully."
+      }
+    ],
+    "correct_answer": [
+      "C",
+      "D",
+      "F"
+    ],
+    "explanation": "- **Error at Line 3 & 4:** `B` inherits privately from `A`, so `A`'s public and protected members (`M1`, `y`) become private to `B`. Class `C`, which inherits from `B`, cannot access the private members of its base class `B`.\n- **Error at Line 6:** Since `M1()` became private in `B` due to private inheritance, it cannot be called from `main` on a `B` object.",
+    "page": 11
+  }
+]

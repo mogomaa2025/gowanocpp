@@ -1,0 +1,2030 @@
+[
+  {
+    "id": 69,
+    "question": "What is the easiest error to detect?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Run time error"
+      },
+      {
+        "id": "B",
+        "text": "Compilation error or syntax error"
+      },
+      {
+        "id": "C",
+        "text": "Logical error"
+      },
+      {
+        "id": "D",
+        "text": "None of the above"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Compilation errors (or syntax errors) are caught by the compiler before the program runs. The compiler typically provides a specific error message and line number, making them the easiest to find and fix.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 70,
+    "question": "Which of the following is not a valid variable name declaration?",
+    "options": [
+      {
+        "id": "A",
+        "text": "float PI = 3.14;"
+      },
+      {
+        "id": "B",
+        "text": "double PI = 3.14;"
+      },
+      {
+        "id": "C",
+        "text": "int PI = 3.14;"
+      },
+      {
+        "id": "D",
+        "text": "#define PI 3.14"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "`#define` is a preprocessor directive that creates a macro for text substitution. It is not a variable declaration. The other options are all valid variable declarations.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 71,
+    "question": "What is the size of an int data type?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 Bytes"
+      },
+      {
+        "id": "B",
+        "text": "8 Bytes"
+      },
+      {
+        "id": "C",
+        "text": "Depends on the system/compiler"
+      },
+      {
+        "id": "D",
+        "text": "Cannot be determined"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "The C standard does not mandate a specific size for `int`. It only specifies a minimum range it must be able to hold. The actual size is implementation-defined and depends on the computer architecture and compiler.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 72,
+    "question": "You can easily compile a C file in Windows and run it again in Mac.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Compilation creates a machine-specific executable file tailored for the operating system and architecture it was compiled on. A Windows executable cannot run directly on macOS. The C source code itself is portable and can be recompiled on a Mac to create a Mac-specific executable.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 73,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nint main()\n{\n    int a = 10;\n    double b = 5.6;\n    int c;\n    c = a + b;\n    printf(\"%d\", c);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "16"
+      },
+      {
+        "id": "C",
+        "text": "15.6"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "The expression `a + b` results in a `double` with the value 15.6. When this is assigned to the integer variable `c`, the fractional part is truncated, so `c` holds the value 15.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 74,
+    "question": "_________ are used to organize code into logical groups and to prevent name collisions.",
+    "options": [
+      {
+        "id": "A",
+        "text": "struct"
+      },
+      {
+        "id": "B",
+        "text": "Namespaces"
+      },
+      {
+        "id": "C",
+        "text": "Array"
+      },
+      {
+        "id": "D",
+        "text": "Class"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Namespaces are a feature in C++ that provide a scope for identifiers (types, functions, variables, etc.) to prevent name clashes that can occur when different libraries use the same identifier names.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 75,
+    "question": "Which of the following are new data types in C++ (compared to C)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pointer"
+      },
+      {
+        "id": "B",
+        "text": "bool"
+      },
+      {
+        "id": "C",
+        "text": "string"
+      },
+      {
+        "id": "D",
+        "text": "Array"
+      },
+      {
+        "id": "E",
+        "text": "B and C"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "C++ introduced the `bool` type and the `std::string` class in its standard library. Pointers and arrays are fundamental types that C++ inherited from C.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 76,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nint main()\n{\n    int var = 010;\n    printf(\"%d\", var);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "9"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "010 is an integer constant (i.e. literal), encoded in octal:\n\n001 == 1\n002 == 2\n...\n007 == 7\n010 == 8\n\n\nIn C, an integer literal that starts with `0` is an octal (base-8) number. The octal number 10 is equal to (1 * 8^1) + (0 * 8^0), which is 8 in decimal.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:12:48.957274"
+  },
+  {
+    "id": 77,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nint main()\n{\n    const int p;\n    p = 4;\n    printf(\"p is %d\", p);\n    return 0;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "p is 4"
+      },
+      {
+        "id": "B",
+        "text": "Compile time error"
+      },
+      {
+        "id": "C",
+        "text": "Run time error"
+      },
+      {
+        "id": "D",
+        "text": "p is followed by a garbage value"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "constant variable has to be declared and defined at the same time\n\nA `const` variable must be initialized at the time of its declaration. Declaring it without an initializer and then attempting to assign a value later is illegal and results in a compile-time error.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:14:41.140463"
+  },
+  {
+    "id": 78,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nint main()\n{\n    int a = 10, b = 5, c = 5;\n    int d;\n    d = a == (b + c);\n    printf(\"%d\", d);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Syntax error"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "10"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The expression `(b + c)` evaluates to 10. The comparison `a == 10` is therefore true. In C, the result of a true relational expression is the integer `1`. So, `d` is assigned the value 1.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 79,
+    "question": "What will be the final value of d in the following C code?\n```cpp\n#include <stdio.h>\nint main()\n{\n    int a = 10, b = 5, c = 5;\n    int d;\n    d = b + c == a;\n    printf(\"%d\", d);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Syntax error"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Due to operator precedence, addition `+` is performed before comparison `==`. So, `b + c` evaluates to 10. Then `10 == a` (where `a` is 10) evaluates to true. In C, a true expression results in the integer value 1.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 80,
+    "question": "In C++, what is used when we want to use a global variable that is hidden by a local variable with the same name?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Operator overloading"
+      },
+      {
+        "id": "B",
+        "text": "Function overloading"
+      },
+      {
+        "id": "C",
+        "text": "Scope resolution operator (::)"
+      },
+      {
+        "id": "D",
+        "text": "Inserting operator"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "The scope resolution operator `::` can be used with a leading `::` to explicitly access an identifier in the global namespace, even if it is hidden by a local identifier of the same name.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 81,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nvoid main()\n{\n    int x = 1, y = 0, z = 5;\n    int a = x && y || z++;\n    printf(\"%d %d\", a, z);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 6"
+      },
+      {
+        "id": "B",
+        "text": "1 5"
+      },
+      {
+        "id": "C",
+        "text": "0 6"
+      },
+      {
+        "id": "D",
+        "text": "Varies"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "The `&&` operator has higher precedence than `||`. `x && y` (1 && 0) evaluates to false (0). The expression becomes `0 || z++`. Due to short-circuiting, since the left operand of `||` is false, the right operand `z++` is evaluated. The value of `z++` is 5 (which is true), and as a side effect, `z` is incremented to 6. The result of `false || true` is true (1), so `a` is 1. The output is `1 6`.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 82,
+    "question": "What will be the output of the following C code on a 32-bit machine?\n```cpp\n#include <stdio.h>\nint main()\n{\n    int x = 10000;\n    double y = 56;\n    int *p = &x;\n    double *q = &y;\n    printf(\"p and q are %d and %d\", sizeof(p), sizeof(q));\n    return 0;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "p and q are 4 and 4"
+      },
+      {
+        "id": "B",
+        "text": "p and q are 4 and 8"
+      },
+      {
+        "id": "C",
+        "text": "compiler error"
+      },
+      {
+        "id": "D",
+        "text": "p and q are 2 and 8"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Option A : p and q are 4 and 4\n Or 8 and 8\n\nThe `sizeof` operator, when applied to a pointer, returns the size of the pointer itself, not the object it points to. On a 32-bit architecture, any pointer variable occupies 32 bits, which is 4 bytes.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:17:57.231217"
+  },
+  {
+    "id": 83,
+    "question": "The operator in C++ used to dynamically allocate memory is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "malloc"
+      },
+      {
+        "id": "B",
+        "text": "allocate"
+      },
+      {
+        "id": "C",
+        "text": "new"
+      },
+      {
+        "id": "D",
+        "text": "free"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "`new` is the standard C++ operator for dynamic memory allocation. It allocates memory and also calls the constructor for objects. `malloc` is the corresponding function from the C standard library.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 84,
+    "question": "To implement a variable-length array in C++, we can use:",
+    "options": [
+      {
+        "id": "A",
+        "text": "int array[n]"
+      },
+      {
+        "id": "B",
+        "text": "int *array = new int[n]"
+      },
+      {
+        "id": "C",
+        "text": "int *array"
+      },
+      {
+        "id": "D",
+        "text": "int * array[n]"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The standard way to create an array whose size is determined at runtime is to use dynamic allocation with the `new` operator. `int *array = new int[n];` allocates an array of `n` integers on the heap.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 85,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nint main()\n{\n    int i = 10;\n    int *p = &i;\n    printf(\"%d\\n\", *p++);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "10"
+      },
+      {
+        "id": "B",
+        "text": "11"
+      },
+      {
+        "id": "C",
+        "text": "Garbage value"
+      },
+      {
+        "id": "D",
+        "text": "Address of i"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Due to operator precedence, the postfix increment `++` is evaluated before the dereference `*`. The expression `*p++` is equivalent to `*(p++)`. It dereferences the original value of `p` (printing 10) and then increments the pointer `p` to point to the next memory address.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 86,
+    "question": "In implementing a stack using a linked list in C++, what operation does this function perform?\n```cpp\nvoid func(int val)\n{\n    Node *newnode = new Node;\n    newnode->data = val;\n    newnode->next = top;\n    top = newnode;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "POP"
+      },
+      {
+        "id": "B",
+        "text": "PUSH"
+      },
+      {
+        "id": "C",
+        "text": "ISEMPTY"
+      },
+      {
+        "id": "D",
+        "text": "ISFULL"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The function creates a new node, places it at the current top of the list, and updates the `top` pointer to point to this new node. This is the definition of a PUSH operation on a stack implemented as a linked list.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 87,
+    "question": "we can overload an operator in string type where s1 and s2 are strings\nwhich statement use the operator overloading\n1: s1 = s2\n2: s1==s2\n3: s1>s2\n4: s3=s1+s2",
+    "options": [
+      {
+        "id": "A",
+        "text": "1, 2 and 3"
+      },
+      {
+        "id": "B",
+        "text": "1, 2 and 4"
+      },
+      {
+        "id": "C",
+        "text": "1 and 3 only"
+      },
+      {
+        "id": "D",
+        "text": "1, 2, 3 and 4"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "The C++ `std::string` class overloads the assignment (`=`), comparison (`==`, `>`), and concatenation (`+`) operators to allow string objects to be manipulated with intuitive, familiar syntax.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:19:44.089198"
+  },
+  {
+    "id": 88,
+    "question": "In C++, the compiler can be requested to optimize a function call by substituting the function's code at the point of the call. This is done using a/an _______.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Function"
+      },
+      {
+        "id": "B",
+        "text": "Inline function"
+      },
+      {
+        "id": "C",
+        "text": "macro"
+      },
+      {
+        "id": "D",
+        "text": "#define"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The `inline` keyword suggests to the compiler that a function's body should be inserted directly at the call site, potentially eliminating function call overhead and allowing for further optimizations.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 89,
+    "question": "Inline functions must not contain ……….",
+    "options": [
+      {
+        "id": "A",
+        "text": "static variables"
+      },
+      {
+        "id": "B",
+        "text": "loop statements"
+      },
+      {
+        "id": "C",
+        "text": "switch statements"
+      },
+      {
+        "id": "D",
+        "text": "recursion"
+      },
+      {
+        "id": "E",
+        "text": "All of the above"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "The `inline` keyword is only a suggestion. Compilers will often refuse to inline complex functions, including those with loops, recursion, switch statements, or static variables, as inlining them could increase code size without improving performance.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:20:56.352843"
+  },
+  {
+    "id": 90,
+    "question": " In C++, functions may be ………….. there may be two or more functions\nwith the same name but with differences between their parameters.",
+    "options": [
+      {
+        "id": "A",
+        "text": "overriding"
+      },
+      {
+        "id": "B",
+        "text": "overloaded"
+      },
+      {
+        "id": "C",
+        "text": "inheritance"
+      },
+      {
+        "id": "D",
+        "text": "abstract"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This is the definition of function overloading, a form of compile-time polymorphism where multiple functions share the same name but have distinct signatures (parameter lists).",
+    "page": 1,
+    "updated_at": "2025-08-09T20:21:25.273318"
+  },
+  {
+    "id": 91,
+    "question": "in c++ a parameter in the called function may be assigned a default value\nif there is no matching argument in the function call. This called",
+    "options": [
+      {
+        "id": "A",
+        "text": "overriding"
+      },
+      {
+        "id": "B",
+        "text": "overloaded"
+      },
+      {
+        "id": "C",
+        "text": "inheritance"
+      },
+      {
+        "id": "D",
+        "text": "abstract"
+      },
+      {
+        "id": "E",
+        "text": "Default Arguments"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Default arguments provide flexibility by allowing callers to omit arguments for which a reasonable default value exists, simplifying function calls.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:22:12.454915"
+  },
+  {
+    "id": 92,
+    "question": "OOP introduce ………",
+    "options": [
+      {
+        "id": "A",
+        "text": "hide implementation details"
+      },
+      {
+        "id": "B",
+        "text": "reuse code"
+      },
+      {
+        "id": "C",
+        "text": "increase security"
+      },
+      {
+        "id": "D",
+        "text": "simulate the activity of the real world"
+      },
+      {
+        "id": "E",
+        "text": "all of the above"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Object-Oriented Programming, through its core principles, achieves all these goals: Abstraction hides details, Inheritance promotes reuse, Encapsulation increases security, and the overall paradigm is well-suited for modeling real-world entities.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:22:47.830151"
+  },
+  {
+    "id": 93,
+    "question": "A ________ is a user-defined data type in C++ that holds its own data members and member functions.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Object"
+      },
+      {
+        "id": "B",
+        "text": "Class"
+      },
+      {
+        "id": "C",
+        "text": "Array"
+      },
+      {
+        "id": "D",
+        "text": "Pointer"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This is the definition of a Class. It acts as a blueprint for creating objects, bundling data (members) and functions (methods) into a single unit.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 94,
+    "question": "Which of the following is not a pointer declaration?",
+    "options": [
+      {
+        "id": "A",
+        "text": "char a[10];"
+      },
+      {
+        "id": "B",
+        "text": "char a[] = {'1', '2', '3', '4'};"
+      },
+      {
+        "id": "C",
+        "text": "char *str;"
+      },
+      {
+        "id": "D",
+        "text": "char a;"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "`char a;` declares a single character variable. `char *str;` declares a pointer. `char a[10];` and `char a[] = ...;` declare arrays, not pointers, although array names often decay into pointers.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 95,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nvoid main()\n{\n    char a = 'a';\n    int x = (a % 10)++;\n    printf(\"%d\\n\", x);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "Junk value"
+      },
+      {
+        "id": "C",
+        "text": "Compile time error"
+      },
+      {
+        "id": "D",
+        "text": "7"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "The result of the modulo operator `%` is an rvalue (a temporary value, not a stored variable). The increment operator `++` requires an lvalue (a modifiable location in memory) as its operand. Trying to modify an rvalue is a compile-time error.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 96,
+    "question": "……… is an instance of a class. All data members and member functions\nof the class can be accessed with the help of it.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Class"
+      },
+      {
+        "id": "B",
+        "text": "Object"
+      },
+      {
+        "id": "C",
+        "text": "Static"
+      },
+      {
+        "id": "D",
+        "text": "Reference"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "An object is a concrete entity created from a class blueprint. It has state (data members) and behavior (member functions) as defined by its class.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:23:53.918701"
+  },
+  {
+    "id": 97,
+    "question": "The four pillars of OOP are:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Object"
+      },
+      {
+        "id": "B",
+        "text": "Class"
+      },
+      {
+        "id": "C",
+        "text": "Encapsulation"
+      },
+      {
+        "id": "D",
+        "text": "Abstraction"
+      },
+      {
+        "id": "E",
+        "text": "Inheritance"
+      },
+      {
+        "id": "F",
+        "text": "Polymorphism"
+      }
+    ],
+    "correct_answer": [
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "explanation": "The four widely recognized pillars of Object-Oriented Programming are Encapsulation, Abstraction, Inheritance, and Polymorphism. The correct answer would include C, D, E, and F.",
+    "page": 1,
+    "updated_at": "2025-08-10T18:20:32.115807"
+  },
+  {
+    "id": 98,
+    "question": "………. occurs when a programmer hides any irrelevant data about an\nobject or an instantiated class to reduce complexity and help other\nprogrammers interact with an object more efficiently and easily.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encapsulation"
+      },
+      {
+        "id": "B",
+        "text": "Abstraction"
+      },
+      {
+        "id": "C",
+        "text": "Inheritance"
+      },
+      {
+        "id": "D",
+        "text": "Aggregation"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This describes abstraction, which involves simplifying complex systems by modeling classes appropriate to the problem and providing a clear, simple interface to work with those classes.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:53:29.943684"
+  },
+  {
+    "id": 99,
+    "question": "The ________ keyword means that the class members declared following it are only accessible to member functions of the class and its friend functions.",
+    "options": [
+      {
+        "id": "A",
+        "text": "private"
+      },
+      {
+        "id": "B",
+        "text": "Public"
+      },
+      {
+        "id": "C",
+        "text": "Protected"
+      },
+      {
+        "id": "D",
+        "text": "Default"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "The `private` access specifier provides the highest level of protection. Private members are only accessible from within the class itself or by its explicitly declared friends.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 100,
+    "question": "When a ________ is defined, no memory is allocated, but when it is instantiated, memory is allocated.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Object"
+      },
+      {
+        "id": "B",
+        "text": "Class"
+      },
+      {
+        "id": "C",
+        "text": "Function"
+      },
+      {
+        "id": "D",
+        "text": "Variable"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A class is a blueprint. Defining it does not use memory for any instances. Memory is allocated only when an object of that class is created (instantiated).",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 101,
+    "question": "A ________ is a blueprint that defines the variables and methods common to all objects of a certain kind.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Object"
+      },
+      {
+        "id": "B",
+        "text": "Class"
+      },
+      {
+        "id": "C",
+        "text": "Function"
+      },
+      {
+        "id": "D",
+        "text": "Variable"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This is the definition of a class. It serves as a template from which individual objects, each with its own state but sharing the same structure and behaviors, are created.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 102,
+    "question": "The ……. which is enforced by the private part of the class means that the\nprivate members cannot be directly used by code other than that defined in\nthe member functions of the same class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Data integration"
+      },
+      {
+        "id": "B",
+        "text": "data hiding"
+      },
+      {
+        "id": "C",
+        "text": "data protection"
+      },
+      {
+        "id": "D",
+        "text": "data objective"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Data hiding is a fundamental principle of encapsulation. By declaring data members `private`, a class hides its internal state and requires all interaction to occur through its public methods, ensuring data integrity.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:54:52.086493"
+  },
+  {
+    "id": 103,
+    "question": "A ________ is a member function of a class which normally initializes objects of that class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Destructor"
+      },
+      {
+        "id": "B",
+        "text": "Constructor"
+      },
+      {
+        "id": "C",
+        "text": "Static variable"
+      },
+      {
+        "id": "D",
+        "text": "Auto variable"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A constructor is a special member function that is automatically called when an object is created. Its primary job is to initialize the object's data members to a valid state.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 104,
+    "question": "A constructor is different from a normal method in which of the following ways?",
+    "options": [
+      {
+        "id": "A",
+        "text": "it has the same name as the class itself."
+      },
+      {
+        "id": "B",
+        "text": "it doesn't have a return type."
+      },
+      {
+        "id": "C",
+        "text": "it is automatically called when an object is created."
+      },
+      {
+        "id": "D",
+        "text": "All of the above"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "All the listed points are key characteristics that distinguish a constructor from a regular member function. It shares the class name, has no return type (not even `void`), and is invoked automatically upon object instantiation.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 105,
+    "question": " In C++, We can have more than one constructor in a class with same\nname, as long as each has a different list of arguments. This concept is\nknown as ………..and is quite similar to function overloading",
+    "options": [
+      {
+        "id": "A",
+        "text": "Constructor Overloading"
+      },
+      {
+        "id": "B",
+        "text": "Constructor Overriding"
+      },
+      {
+        "id": "C",
+        "text": "copy Constructor"
+      },
+      {
+        "id": "D",
+        "text": "Default Constructor"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Just like regular functions, constructors can be overloaded. This allows an object to be created in different ways, for example, with default values, or with specific initial values provided as arguments.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:55:47.678182"
+  },
+  {
+    "id": 106,
+    "question": "A ________ is a member function which initializes an object using another object of the same class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Constructor Overloading"
+      },
+      {
+        "id": "B",
+        "text": "Constructor Overriding"
+      },
+      {
+        "id": "C",
+        "text": "copy Constructor"
+      },
+      {
+        "id": "D",
+        "text": "Default Constructor"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "A copy constructor is used to create a new object as a copy of an existing object. It is called when an object is initialized with another object of the same type.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 107,
+    "question": "Which one is an example of an Initializer List used in initializing the data members of a class?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Point(int i = 0, int j = 0) { x = i; y = j; };"
+      },
+      {
+        "id": "B",
+        "text": "Point() { x = 0; y = 0; };"
+      },
+      {
+        "id": "C",
+        "text": "Point(int i, int j): x(i),y(j){ };"
+      },
+      {
+        "id": "D",
+        "text": "Point(int i, int j) { x = i; y = j; };"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "A member initializer list is specified after the constructor's parameter list, separated by a colon. It is the preferred way to initialize members as it performs initialization directly, whereas assigning inside the constructor body performs assignment after default initialization.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 108,
+    "question": "In general, if the variables of an object have been dynamically allocated, it is required to do a ________ in order to create a proper copy of the object.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deep Copy"
+      },
+      {
+        "id": "B",
+        "text": "Shallow Copy"
+      },
+      {
+        "id": "C",
+        "text": "Copy constructor"
+      },
+      {
+        "id": "D",
+        "text": "Default constructor"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "If an object contains pointers to dynamically allocated memory, a shallow copy (the default) will only copy the pointer addresses, leading to two objects sharing the same memory. A deep copy allocates new memory for the copy and copies the content, ensuring the two objects are independent.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 109,
+    "question": " In………., an object is created by simply copying the data of all variables of\nthe original object. This works well if none of the variables of the object are\ndefined in the heap section memory.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deep Copy"
+      },
+      {
+        "id": "B",
+        "text": "Shallow Copy"
+      },
+      {
+        "id": "C",
+        "text": "Copy constructor"
+      },
+      {
+        "id": "D",
+        "text": "Default constructor"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A shallow copy performs a member-wise copy of the data. For pointers, this means the memory address is copied, not the data being pointed to. This is the default behavior of the compiler-generated copy constructor.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:56:52.711955"
+  },
+  {
+    "id": 110,
+    "question": "A ________ of a class is defined outside that class' scope but has the right to access all private and protected members of the class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Default argument function"
+      },
+      {
+        "id": "B",
+        "text": "Function overloading"
+      },
+      {
+        "id": "C",
+        "text": "friend function"
+      },
+      {
+        "id": "D",
+        "text": "static function"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "A friend function (or friend class) is a non-member that is granted special access to the private and protected members of the class that declares it as a friend.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 111,
+    "question": "one common and good use of a ……….. occurs when two different types\nof classes have some quantity in common that needs to be compared",
+    "options": [
+      {
+        "id": "A",
+        "text": "friend function"
+      },
+      {
+        "id": "B",
+        "text": "static function"
+      },
+      {
+        "id": "C",
+        "text": "Default argument function"
+      },
+      {
+        "id": "D",
+        "text": "Function overloading"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A friend function is ideal for operations that need to access the private members of two different classes, such as a comparison function that compares a value from `ClassA` with a value from `ClassB`.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:57:32.564648"
+  },
+  {
+    "id": 112,
+    "question": "In C++, ……… are usually used for Classes. In this, the class is pre-defined\nbefore its use so that it can be called and used by other classes that are\ndefined before this.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Backward declarations"
+      },
+      {
+        "id": "B",
+        "text": "Forward declarations"
+      },
+      {
+        "id": "C",
+        "text": "Static declarations"
+      },
+      {
+        "id": "D",
+        "text": "Friend declarations"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A forward declaration (e.g., `class MyClass;`) tells the compiler about the existence of a class without providing its full definition. This is necessary to resolve circular dependencies or to use pointers/references to a class before it's defined.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:58:15.697648"
+  },
+  {
+    "id": 113,
+    "question": "………. cannot access ordinary data members and member functions, but\nonly static data members and static member functions. It doesn't have any\n\"this\" keyword which is the reason it cannot access ordinary members",
+    "options": [
+      {
+        "id": "A",
+        "text": "Static function"
+      },
+      {
+        "id": "B",
+        "text": "Recursion function"
+      },
+      {
+        "id": "C",
+        "text": "Normal function"
+      },
+      {
+        "id": "D",
+        "text": "Constructor"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A static member function belongs to the class rather than an object. Since it's not called on a specific object, it has no `this` pointer and can only access other static members of the class.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:58:38.348384"
+  },
+  {
+    "id": 114,
+    "question": "C++ provides which kinds of overloading?",
+    "options": [
+      {
+        "id": "A",
+        "text": "function overloading"
+      },
+      {
+        "id": "B",
+        "text": "variable overloading"
+      },
+      {
+        "id": "C",
+        "text": "operator overloading."
+      },
+      {
+        "id": "D",
+        "text": "Const overloading"
+      },
+      {
+        "id": "E",
+        "text": "A & C"
+      },
+      {
+        "id": "F",
+        "text": "B & D"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "language. The types of overloading available in C++ are:\n\n\nFunction Overloading:\n\nThis allows you to define multiple functions with the same name but with different parameters (different type, number, or order of parameters). The correct function to call is determined at compile time based on the arguments passed.\n\n\n\nOperator Overloading:\n\nThis allows you to redefine the way operators work for user-defined types (classes). With operator overloading, you can use operators with class objects in a similar way to how they are used with fundamental data types.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:01:37.466176"
+  },
+  {
+    "id": 115,
+    "question": "………….. allows a standard C++ operator to take on a new meaning.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Function overloading"
+      },
+      {
+        "id": "B",
+        "text": "Operator overloading"
+      },
+      {
+        "id": "C",
+        "text": "Polymorphism"
+      },
+      {
+        "id": "D",
+        "text": "Aggregation"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This is the definition of operator overloading. It allows operators like `+`, `-`, `==`, etc., to be given special meaning when used with objects of a class.",
+    "page": 1,
+    "updated_at": "2025-08-09T20:59:52.326348"
+  },
+  {
+    "id": 116,
+    "question": "When binary operators are overloaded through a member function, it takes ________.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two explicit arguments"
+      },
+      {
+        "id": "B",
+        "text": "one explicit argument"
+      },
+      {
+        "id": "C",
+        "text": "no argument"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "When overloading a binary operator (like `+` or `-`) as a member function, the left-hand operand is implicitly the object itself (passed via the `this` pointer), and the right-hand operand is passed as the single explicit argument.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 117,
+    "question": "The unary operators overloading its operate on the object for which they\nwere called and normally, this operator appears on the right side of the object\n(as postfix operator).",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "In C++, unary operators can be overloaded to operate on the object for which they are called. However, the position of the operator relative to the object depends on whether it is a prefix or postfix operator.\n\n\nPrefix Unary Operators: These operators appear before the object they operate on. Examples include prefix increment (++x) and prefix decrement (--x). When overloading these operators, they are typically implemented as member functions without additional parameters.\n\n\nPostfix Unary Operators: These operators appear after the object they operate on. Examples include postfix increment (x++) and postfix decrement (x--). When overloading postfix operators, an additional int parameter is used to distinguish them from their prefix counterparts. This int parameter is not used in the function body; it merely serves as a marker to indicate that the postfix version of the operator is being called.\n\n\nThus, unary operators do not exclusively appear on the right side of the object. They can appear on either side, depending on whether they are prefix or postfix operators.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:03:23.146756"
+  },
+  {
+    "id": 118,
+    "question": "Which of the following variable types cannot be used in a switch-case statement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "char"
+      },
+      {
+        "id": "B",
+        "text": "int"
+      },
+      {
+        "id": "C",
+        "text": "float"
+      },
+      {
+        "id": "D",
+        "text": "double"
+      },
+      {
+        "id": "E",
+        "text": "char & int"
+      },
+      {
+        "id": "F",
+        "text": "float & double"
+      }
+    ],
+    "correct_answer": "F",
+    "explanation": "The `switch` statement in C/C++ can only operate on integral types (like `int`, `char`, `enum`) and types convertible to them. Floating-point types like `float` and `double` are not allowed.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:04:37.118565"
+  },
+  {
+    "id": 119,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nvoid main()\n{\n    int x = 0;\n    if (x = 0)\n    {\n        printf(\"Its zero\\n\");\n    }\n    else\n    {\n        printf(\"Its not zero\\n\");\n    }\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Its not zero"
+      },
+      {
+        "id": "B",
+        "text": "Its zero"
+      },
+      {
+        "id": "C",
+        "text": "Run time error"
+      },
+      {
+        "id": "D",
+        "text": "None"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "it’s not a double ‘==’ sign). Hence, the if-condition becomes false and the printf() function of the else condition will be executed which will display “Its not zero”.\n\nThe expression in the `if` statement is `x = 0`, which is an assignment, not a comparison. The value of an assignment expression is the value being assigned, which is 0. In C, 0 is treated as false, so the `else` block is executed.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:05:06.878256"
+  },
+  {
+    "id": 120,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nint main()\n{\n    int a = 1;\n    if (a)\n        printf(\"All is Well \");\n        printf(\"I am Well\\n\");\n    else\n        printf(\"I am not a River\\n\");\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Output will be All is Well I am Well"
+      },
+      {
+        "id": "B",
+        "text": "Output will be I am Well I am not a River"
+      },
+      {
+        "id": "C",
+        "text": "Output will be I am Well"
+      },
+      {
+        "id": "D",
+        "text": "Compile time errors during compilation"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "The `else` statement does not have a matching `if`. Without curly braces `{}`, the `if (a)` only controls the first `printf`. The second `printf` stands alone, separating the `if` from its `else`, which is a syntax error known as a 'dangling else' problem.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 121,
+    "question": " In unary operator overloading to get the effect of operator in current\nobject we must return …..",
+    "options": [
+      {
+        "id": "A",
+        "text": "this"
+      },
+      {
+        "id": "B",
+        "text": "*this"
+      },
+      {
+        "id": "C",
+        "text": "NULL"
+      },
+      {
+        "id": "D",
+        "text": "Object from the same class"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "n unary operator overloading, if you want the operator to have an effect on the current object and you want to return the object itself, you should return *this.\nHere's a brief explanation of why:\n\n\nthis: This is a pointer to the current object. Returning this would return a pointer to the object, which is not typically what you want when overloading unary operators.\n\n\n*this: This dereferences the this pointer, returning the actual object itself. This is the correct way to return the current object when overloading unary operators, allowing for method chaining and other operations that expect an object rather than a pointer.\n\n\nNULL: Returning NULL is not applicable in this context, as it represents a null pointer and does not refer to any object.\n\n\nObject from the same class: While you could create and return a new object of the same class, this is generally not what you want when overloading unary operators for the current object. You typically want to modify and return the existing object itself.\n\n\nThus, the correct choice is to return *this.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:06:16.477123"
+  },
+  {
+    "id": 122,
+    "question": "The class that inherits properties from another class is called a ________.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Super class"
+      },
+      {
+        "id": "B",
+        "text": "Base class"
+      },
+      {
+        "id": "C",
+        "text": "Sub class"
+      },
+      {
+        "id": "D",
+        "text": "Parent class"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "The class that does the inheriting is known as the subclass or derived class. The class being inherited from is the superclass, base class, or parent class.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 123,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nvoid main()\n{\n    int k;\n    for (k = -3; k < -5; k++)\n    {\n        printf(\"Hello\");\n    }\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hello"
+      },
+      {
+        "id": "B",
+        "text": "Infinite hello"
+      },
+      {
+        "id": "C",
+        "text": "Run time error"
+      },
+      {
+        "id": "D",
+        "text": "Nothing"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "The `for` loop condition is `k < -5`. Initially, `k` is -3. Since -3 is not less than -5, the condition is false from the start, and the loop body never executes.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 124,
+    "question": "Which loop is most suitable to first perform the operation and then test the condition?",
+    "options": [
+      {
+        "id": "A",
+        "text": "for loop"
+      },
+      {
+        "id": "B",
+        "text": "while loop"
+      },
+      {
+        "id": "C",
+        "text": "do-while loop"
+      },
+      {
+        "id": "D",
+        "text": "none of the mentioned"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "A `do-while` loop is an exit-controlled loop. It executes the loop body at least once before checking the condition at the end.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 125,
+    "question": "An entire array is always passed by ________ to a called function.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Call by value"
+      },
+      {
+        "id": "B",
+        "text": "Call by reference"
+      },
+      {
+        "id": "C",
+        "text": "Address relocation"
+      },
+      {
+        "id": "D",
+        "text": "Address restructure"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "In C/C++, when an array is passed to a function, what is actually passed is the address of its first element. This means the function receives a pointer to the original array, effectively working as a 'call by reference' (or more accurately, call by pointer), and can modify the original array's contents.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 126,
+    "question": "When a base class is privately inherited by a derived class, public members of the base class become ________ members of the derived class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Private"
+      },
+      {
+        "id": "B",
+        "text": "Public"
+      },
+      {
+        "id": "C",
+        "text": "Protected"
+      },
+      {
+        "id": "D",
+        "text": "No inheritance"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "With private inheritance, all public and protected members of the base class become private members of the derived class. They are not accessible by subclasses of the derived class.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 127,
+    "question": "_________ is the process of deriving a new class that inherits attributes from two or more classes.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Single Inheritance"
+      },
+      {
+        "id": "B",
+        "text": "Multi Level Inheritance"
+      },
+      {
+        "id": "C",
+        "text": "Multiple inheritance"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Multiple inheritance is a C++ feature that allows a class to inherit from more than one base class, combining the features of all parents.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 128,
+    "question": "Ambiguity can be occurred in using the multiple inheritance when a\nfunction with the same name occurs in more than one base class. The above\nissue can be resolved by using the Scope resolution operator with the\nfunction",
+    "options": [
+      {
+        "id": "A",
+        "text": "False"
+      },
+      {
+        "id": "B",
+        "text": "True"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This is true. If two base classes have a method with the same name, a call from the derived class is ambiguous. The ambiguity is resolved by explicitly specifying which base class's method to call, e.g., `BaseClassName::method()`. This is known as the 'Diamond Problem' when it involves a common ancestor.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:08:20.871554"
+  },
+  {
+    "id": 129,
+    "question": "If derived class defines same function as defined in its base class, it is\nknown as ………………….in C++.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Function overloading"
+      },
+      {
+        "id": "B",
+        "text": "function overriding"
+      },
+      {
+        "id": "C",
+        "text": "operator overloading"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This is the definition of function overriding (or method overriding). It allows a derived class to provide its own specific implementation of a function that is already provided by one of its base classes.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:08:46.614875"
+  },
+  {
+    "id": 130,
+    "question": "To overriding method must be …………",
+    "options": [
+      {
+        "id": "A",
+        "text": "the same return type"
+      },
+      {
+        "id": "B",
+        "text": "same function name"
+      },
+      {
+        "id": "C",
+        "text": "same parameters"
+      },
+      {
+        "id": "D",
+        "text": "same return type, same function name, and same parameters"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "For a function to override a base class function, it must have the exact same name, parameter list (signature), and a compatible return type (in C++, the return type can be covariant for pointers and references).",
+    "page": 1,
+    "updated_at": "2025-08-09T21:09:04.868800"
+  },
+  {
+    "id": 131,
+    "question": "To access the overridden function of the base class, we use",
+    "options": [
+      {
+        "id": "A",
+        "text": "Operator overloading"
+      },
+      {
+        "id": "B",
+        "text": "the scope resolution operator ::"
+      },
+      {
+        "id": "C",
+        "text": "function overloading"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The scope resolution operator allows a derived class to explicitly call a member function from a specific base class, e.g., `BaseClassName::functionName()`. This is useful when the derived class's overridden function needs to extend, rather than replace, the base class's functionality.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:09:31.185666"
+  },
+  {
+    "id": 132,
+    "question": "If you created a pointer of Base type. This pointer points to the Derived\nobject . When we call a function using this pointer, it calls the overridden\nfunction from Base In order to override the Base function instead of\naccessing it, we need to use ……….",
+    "options": [
+      {
+        "id": "A",
+        "text": "virtual functions in the Derived class"
+      },
+      {
+        "id": "B",
+        "text": "pure virtual functions in the Base class"
+      },
+      {
+        "id": "C",
+        "text": "virtual functions in the Base class"
+      },
+      {
+        "id": "D",
+        "text": "pure virtual functions in the Derived class"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Declaring the function as `virtual` in the base class enables dynamic dispatch (runtime polymorphism). This ensures that when the function is called through a base class pointer, the version of the function corresponding to the actual type of the object is invoked.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:09:48.098226"
+  },
+  {
+    "id": 133,
+    "question": " ………………… is a function in C++ for which we need not to write any\nfunction definition and only we have to declare it. It is declared by assigning 0\nin the declaration.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A pure virtual function"
+      },
+      {
+        "id": "B",
+        "text": "A virtual function"
+      },
+      {
+        "id": "C",
+        "text": "Static function"
+      },
+      {
+        "id": "D",
+        "text": "Overriding function"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A pure virtual function (e.g., `virtual void draw() = 0;`) has no implementation in the base class. It acts as a placeholder that forces any concrete derived class to provide its own implementation.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:10:16.150856"
+  },
+  {
+    "id": 134,
+    "question": " An …………… is a class that is designed to be specifically used as a base\nclass. An …….. contains at least one pure virtual function.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Normal class"
+      },
+      {
+        "id": "B",
+        "text": "Abstract class"
+      },
+      {
+        "id": "C",
+        "text": "Class with friend function"
+      },
+      {
+        "id": "D",
+        "text": "Class with overriding method"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A class that has one or more pure virtual functions is called an abstract class. It cannot be instantiated and serves as a common interface for its derived classes.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:10:44.056256"
+  },
+  {
+    "id": 135,
+    "question": "A class derived from an abstract base class will also be abstract unless ………",
+    "options": [
+      {
+        "id": "A",
+        "text": "You Create a friend function in the derived class"
+      },
+      {
+        "id": "B",
+        "text": "you override each pure virtual function in the derived class."
+      },
+      {
+        "id": "C",
+        "text": "You call the base constructor"
+      },
+      {
+        "id": "D",
+        "text": "You make the call of the base constructor in derived constructor"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "For a derived class to become a concrete (non-abstract) class, it must provide implementations for all of the pure virtual functions it inherited from its base class(es).",
+    "page": 1,
+    "updated_at": "2025-08-09T21:11:22.926415"
+  },
+  {
+    "id": 136,
+    "question": "One of the advantages of Object-Oriented programming is code reuse. This reusability is primarily possible due to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inheritance"
+      },
+      {
+        "id": "B",
+        "text": "Association"
+      },
+      {
+        "id": "C",
+        "text": "Composition"
+      },
+      {
+        "id": "D",
+        "text": "Aggregation"
+      },
+      {
+        "id": "E",
+        "text": "All of the above"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Inheritance is the primary feature in Object-Oriented Programming (OOP) that enables code reuse. It allows a new class (the subclass) to inherit properties and methods from an existing class (the superclass), which means you can reuse existing code and build on top of it without rewriting it.\n\nOther options:\nAssociation: Refers to the relationship between objects, where one object uses or is connected to another, but it doesn't directly contribute to code reuse.\n\nComposition: Refers to building complex objects from simpler ones, typically involving \"has-a\" relationships, but it's more about structuring objects, not directly about code reuse.\n\nAggregation: Is a special form of association where objects are part of larger objects, often referred to as \"whole-part\" relationships. Like composition, it’s related to object relationships, not directly to code reuse.\n\nWhile all of these contribute to different aspects of structuring and reusing relationships in OOP, inheritance is specifically the mechanism that makes direct code reuse possible.\n",
+    "page": 1,
+    "updated_at": "2025-08-09T21:13:39.283071"
+  },
+  {
+    "id": 137,
+    "question": "_________ is an “IS-A” type of relationship.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inheritance"
+      },
+      {
+        "id": "B",
+        "text": "Association"
+      },
+      {
+        "id": "C",
+        "text": "Composition"
+      },
+      {
+        "id": "D",
+        "text": "Aggregation"
+      },
+      {
+        "id": "E",
+        "text": "All of the above"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Inheritance models an 'is-a' relationship, where a derived class is a more specialized version of its base class (e.g., a 'Car' is a 'Vehicle').",
+    "page": 1,
+    "updated_at": "2025-08-09T21:14:09.375369"
+  },
+  {
+    "id": 138,
+    "question": " the relationship between a doctor and a patient. A doctor can be\nassociated with multiple patients. At the same time, one patient can visit\nmultiple doctors for treatment or consultation. these objects have its own life\ncycle and there is no “owner” or parent. It is called ………",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inheritance"
+      },
+      {
+        "id": "B",
+        "text": "Association"
+      },
+      {
+        "id": "C",
+        "text": "Composition"
+      },
+      {
+        "id": "D",
+        "text": "Aggregation"
+      },
+      {
+        "id": "E",
+        "text": "All of the above"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This describes an association, a relationship where objects are linked but have independent lifecycles. It's not composition or aggregation because neither object 'owns' the other. It's a many-to-many 'uses-a' or 'knows-a' relationship.",
+    "page": 1,
+    "updated_at": "2025-08-09T21:14:38.835860"
+  },
+  {
+    "id": 139,
+    "question": "The strcmp() function compares two strings and returns an ________ value based on the comparison.",
+    "options": [
+      {
+        "id": "A",
+        "text": "string"
+      },
+      {
+        "id": "B",
+        "text": "int"
+      },
+      {
+        "id": "C",
+        "text": "char"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The `strcmp()` function from `<string.h>` returns an `int`. It returns 0 if the strings are equal, a negative value if the first string is lexicographically less than the second, and a positive value otherwise.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 140,
+    "question": "```img\nhttps://i.postimg.cc/RV11rfTH/edit-logo.gif\n```\nWhat will be the output of the following C code?\n```cpp\n#include <stdio.h>\nvoid main()\n{\n    m();\n}\nvoid m()\n{\n    printf(\"hi\");\n    m();\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compile time error"
+      },
+      {
+        "id": "B",
+        "text": "hi"
+      },
+      {
+        "id": "C",
+        "text": "Infinite hi"
+      },
+      {
+        "id": "D",
+        "text": "Nothing"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "❌ Infinite hi\n‫الـ function m() بتطبع \"hi\" وبترجع تنادي نفسها من غير شرط للإيقاف، فهتفضل تطبع \"hi\" لحد ما الـ stack يخلص ويحصل crash.\n\nولكن\n‬\n‫فعلاً، الكود ده ما فيهوش function prototype لـ m() قبل ما تتنادى في main()، وده بيعمل compile-time warning أو error في بعض الـ compilers.‬\n‫‬\n‫لكن لو الـ compiler بيعدّي من غير prototype (زي بعض الإصدارات القديمة من GCC)، الكود هيشتغل وهيطبع \"hi\" بشكل لا نهائي.‬\n‫‬\n‫يعني:‬\n‫‬\n‫لو بنستخدم compiler صارم → ❌ Compile-time error‬\n‫‬\n‫لو compiler متسامح → ✅ Infinite hi‬\n‫‬\n‫فالإجابة تعتمد على الـ compiler، بس الأفضل دايمًا نكتب الـ prototype قبل الاستخدام.‬",
+    "page": 1,
+    "updated_at": "2025-08-18T20:21:03.346512"
+  },
+  {
+    "id": 141,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nvoid foo()\n{\n    return 1;\n}\nvoid main()\n{\n    int x = 0;\n    x = foo();\n    printf(\"%d\", x);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "0"
+      },
+      {
+        "id": "C",
+        "text": "Runtime error"
+      },
+      {
+        "id": "D",
+        "text": "Compile time error"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "The function `foo` is declared with a `void` return type, which means it cannot return a value. The statement `return 1;` inside `foo` contradicts the function's declaration, leading to a compile-time error.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 142,
+    "question": "What will be the output of the following C code?\n```cpp\n#include <stdio.h>\nvoid foo(int[]);\nint main()\n{\n    int ary[4] = {1, 2, 3, 4};\n    foo(ary);\n    printf(\"%d \", ary[0]);\n}\nvoid foo(int p[4])\n{\n    int i = 10;\n    p = &i;\n    printf(\"%d \", p[0]);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 10"
+      },
+      {
+        "id": "B",
+        "text": "Compile time error"
+      },
+      {
+        "id": "C",
+        "text": "10 1"
+      },
+      {
+        "id": "D",
+        "text": "Undefined behavior"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Inside `foo`, `p` is a local pointer variable that initially holds the address of `ary[0]`. The line `p = &i;` changes this local pointer `p` to point to the local variable `i`. It does NOT change the original `ary`. `printf` in `foo` prints `p[0]` which is `i`, so it prints 10. Back in `main`, `ary` is unchanged, so `printf` prints `ary[0]`, which is 1. The output is '10 1'.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 143,
+    "question": "What is an Array in C language?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A group of elements of same data type."
+      },
+      {
+        "id": "B",
+        "text": "An array contains more than one element"
+      },
+      {
+        "id": "C",
+        "text": "An array is a data structure that stores a fixed-size sequential collection of elements of the same type."
+      },
+      {
+        "id": "D",
+        "text": "All of the mentioned"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "All the statements correctly describe different aspects of an array in C.",
+    "page": 1,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 144,
+    "question": " complete the following function to solve Tower of Hanoi problem by\nreplace the comment\nhint: where the source is a , Target is c and helper dish is b.\n ```cpp\nvoid move (int n,char a,char c,char b)\n{\nif (n==1)\nprintf(\" Move from %c To %c\\n\",a,c);\nelse\n{\n/* ……………………..*/\nprintf(\" Move from %c To %c\\n\",a,c);\nmove(n-1,b,c,a);\n}\n}\n ```",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) move(n,a,b,c);"
+      },
+      {
+        "id": "B",
+        "text": "b) move(n-1,a,b,c);"
+      },
+      {
+        "id": "C",
+        "text": "a) move(n-1,b,a,c);"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "To complete the function for solving the Tower of Hanoi problem, you need to understand the recursive approach used in this classic problem. The goal is to move n disks from the source peg (a) to the target peg (c) using a helper peg (b). The solution involves moving n-1 disks from the source peg to the helper peg, moving the largest disk from the source peg to the target peg, and then moving the n-1 disks from the helper peg to the target peg.\nHere's the completed function:\n ```cpp\n void move(int n, char a, char c, char b)\n{\n    if (n == 1)\n        printf(\" Move from %c to %c\\n\", a, c);\n    else\n    {\n        move(n - 1, a, b, c); // Move n-1 disks from source to helper\n        printf(\" Move from %c to %c\\n\", a, c); // Move the largest disk from source to target\n        move(n - 1, b, c, a); // Move the n-1 disks from helper to target\n    }\n}\n\n ```\n\nThe correct choice to replace the comment is:\nb) move(n-1, a, b, c);\nThis recursive call moves the top n-1 disks from the source peg a to the helper peg b, using the target peg c as a temporary peg.",
+    "page": 1,
+    "updated_at": "2025-08-09T23:41:47.183723"
+  },
+  {
+    "id": 145,
+    "question": "when the data is almost sorted which is the better algorithm to sort data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bubble sort"
+      },
+      {
+        "id": "B",
+        "text": "Selection sort"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "When the data is almost sorted, Bubble Sort is generally more efficient than Selection Sort. This is because Bubble Sort can detect when the list is already sorted and terminate early, making it more suitable for nearly sorted data.\nHere's a brief explanation of both algorithms:\n\n\nBubble Sort: This algorithm repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. If the list is already sorted, Bubble Sort can complete in just one pass through the list, making it efficient for nearly sorted data.\n\n\nSelection Sort: This algorithm divides the list into a sorted and an unsorted region. It repeatedly selects the smallest (or largest) element from the unsorted region and moves it to the sorted region. Selection Sort always goes through all the elements, regardless of whether the list is already sorted or not, making it less efficient for nearly sorted data.\n\n\nTherefore, the better algorithm to sort nearly sorted data is:\nA. Bubble Sort\nHere's a simple implementation of Bubble Sort in C++:\n ```cpp\n #include <vector>\n#include <algorithm>\n\nvoid bubbleSort(std::vector<int>& arr) {\n    bool swapped;\n    for (size_t i = 0; i < arr.size() - 1; ++i) {\n        swapped = false;\n        for (size_t j = 0; j < arr.size() - i - 1; ++j) {\n            if (arr[j] > arr[j + 1]) {\n                std::swap(arr[j], arr[j + 1]);\n                swapped = true;\n            }\n        }\n        // If no two elements were swapped, the array is sorted\n        if (!swapped) break;\n    }\n}\n\n ```",
+    "page": 1,
+    "updated_at": "2025-08-09T23:43:00.370494"
+  },
+  {
+    "id": 146,
+    "question": "```cpp\nvoid main()\n{\n    int friend;\n    friend+=5;\n}\n```\nThe above code is",
+    "options": [
+      {
+        "id": "a",
+        "text": "C valid only."
+      },
+      {
+        "id": "b",
+        "text": "C and C++ valid."
+      },
+      {
+        "id": "c",
+        "text": "C++ valid only."
+      },
+      {
+        "id": "d",
+        "text": "C and C++ invalid"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "In C++, `friend` is a keyword used for friend functions and classes, and thus cannot be used as a variable name. This would result in a compilation error in C++. However, in C, `friend` is not a keyword, making the code valid C syntax. The `void main()` signature is also more common in C or older C++ compilers, but the keyword conflict is the primary reason it's C-valid only.",
+    "page": 1
+  }
+]

@@ -1,0 +1,529 @@
+[
+  {
+    "id": 230,
+    "question": "When you run the following piece of code, the output will be:\n```cpp\nfor (i=10; i >=0; i-= 5)\n{\n    cout<<\"i = \"<<10-(i-1);\n}\n```",
+    "options": [
+      {
+        "id": "a",
+        "text": "i = 1 i = 5 i = 10"
+      },
+      {
+        "id": "b",
+        "text": "i = 1 i = 6 i = 11"
+      },
+      {
+        "id": "c",
+        "text": "i = 1 i = 6"
+      },
+      {
+        "id": "d",
+        "text": "i = 1 i = 2 i = 3"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "The loop executes for i = 10, 5, and 0.\n- When i = 10, it prints 10 - (10 - 1) = 1.\n- When i = 5, it prints 10 - (5 - 1) = 6.\n- When i = 0, it prints 10 - (0 - 1) = 11.",
+    "page": 9
+  },
+  {
+    "id": 231,
+    "question": "A destructor is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A member function removes object from memory."
+      },
+      {
+        "id": "b",
+        "text": "A member function called automatically when an object is being removed from the memory."
+      },
+      {
+        "id": "c",
+        "text": "A private member function can never be called."
+      },
+      {
+        "id": "d",
+        "text": "None of the above."
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "A destructor is a special member function that is automatically called just before an object's memory is deallocated. Its role is to clean up any resources the object acquired, not to deallocate the memory itself.",
+    "page": 9
+  },
+  {
+    "id": 232,
+    "question": "You have the following piece of code:\n```cpp\nint x = 0, y = 4;\nwhile (x < 11)\n{\n    y--;\n    x += 2*y;\n}\n```\nwhen the loop has finished the value of x is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "12"
+      },
+      {
+        "id": "c",
+        "text": "13"
+      },
+      {
+        "id": "d",
+        "text": "14"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "1. Iteration 1: y becomes 3, x becomes 0 + 2*3 = 6.\n2. Iteration 2: y becomes 2, x becomes 6 + 2*2 = 10.\n3. Iteration 3: y becomes 1, x becomes 10 + 2*1 = 12.\nThe loop terminates as x (12) is no longer less than 11.",
+    "page": 9
+  },
+  {
+    "id": 233,
+    "question": "In the array below, how can you access the element which has the value 4:\n```cpp int Arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};```",
+    "options": [
+      {
+        "id": "a",
+        "text": "Arr[0][0]"
+      },
+      {
+        "id": "b",
+        "text": "Arr[0][1]"
+      },
+      {
+        "id": "c",
+        "text": "Arr[1][0]"
+      }
+    ],
+    "correct_answer": "c",
+    "explanation": "In a 2D array, the first index represents the row and the second represents the column. The value 4 is in the second row (index 1) and the first column (index 0).",
+    "page": 9,
+    "updated_at": "2025-08-10T06:11:59.906324"
+  },
+  {
+    "id": 234,
+    "question": "The compiler translates the code into machine language immediately and performs the instruction",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "This describes an interpreter. A compiler translates the entire source code into an executable file first, which is then run separately.",
+    "page": 9
+  },
+  {
+    "id": 235,
+    "question": "The static members in a class can be used in static Methods of the same class only",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "Static members can be used in both static and non-static (instance) methods of the same class.",
+    "page": 9
+  },
+  {
+    "id": 236,
+    "question": "The switch statement can deal with integer and character types.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The `switch` statement in C++ works with any integral type, which includes `int`, `char`, `short`, `long`, and `enum` types.",
+    "page": 9
+  },
+  {
+    "id": 237,
+    "question": "We use the inheritance for extending the base class and increasing more member functions and member variables.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "This is a primary use of inheritance. A derived class inherits the members of the base class and can add its own new members to extend functionality.",
+    "page": 9
+  },
+  {
+    "id": 238,
+    "question": "Control always return to the caller when the function terminates normally",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "When a function completes its execution (reaches the end or a `return` statement), program control returns to the point where the function was called.",
+    "page": 9
+  },
+  {
+    "id": 239,
+    "question": "The class contains virtual function is called abstract class",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "A class is defined as abstract only if it contains at least one *pure* virtual function (e.g., `virtual void func() = 0;`). A class can have regular virtual functions and still be a concrete class.",
+    "page": 9
+  },
+  {
+    "id": 240,
+    "question": "Consider the following class:\n```cpp\nclass XX\n{\n    int i;\n    char c;\npublic:\n    void seti(int r){}\n    char getc(){return c;}\n    void printITI(){cout<<\"ITI\";}\n};\nvoid printITI(){\"Information Technology Institute\";}\nvoid main()\n{\n    XX x;\n    x.printITI();\n}\n```\nThe previous code prints:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Information Technology Institute"
+      },
+      {
+        "id": "b",
+        "text": "ITI"
+      },
+      {
+        "id": "c",
+        "text": "ITI then Information Technology Institute"
+      },
+      {
+        "id": "d",
+        "text": "None of the above"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "The call `x.printITI()` is a member function call on an object of class `XX`. It unambiguously calls the `printITI` method defined inside the `XX` class, which prints \"ITI\". The global `printITI` function is never called (and has a syntax error as it doesn't print anything).",
+    "page": 9
+  },
+  {
+    "id": 241,
+    "question": "The constructor of base class called automatically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "When any member function of the derived class called."
+      },
+      {
+        "id": "b",
+        "text": "After the constructor of the derived class started."
+      },
+      {
+        "id": "c",
+        "text": "Before the constructor of the derived class started."
+      },
+      {
+        "id": "d",
+        "text": "We do not know when exactly will be started."
+      }
+    ],
+    "correct_answer": "c",
+    "explanation": "When a derived class object is created, the C++ object model requires the base class part to be constructed first. The base class constructor is always called and completed before the body of the derived class constructor begins execution.",
+    "page": 9
+  },
+  {
+    "id": 242,
+    "question": "When you run the following piece of code, the output will be:\n```cpp\nint x=35;\nswitch(x)\n{\n    case 20:\n        cout<<\"value of X < 20 and equal: \"<< x;\n        break;\n    case 30:\n        cout<<\"value of X > 30 and equal: \"<< x;\n        break;\n    default:\n        cout<<\"value of X is: \"<< x;\n        break;\n}\n```",
+    "options": [
+      {
+        "id": "a",
+        "text": "value of X < 20 and equal: 35"
+      },
+      {
+        "id": "b",
+        "text": "value of X > 30 and equal: 35"
+      },
+      {
+        "id": "c",
+        "text": "value of X is: 35"
+      }
+    ],
+    "correct_answer": "c",
+    "explanation": "The `switch` statement evaluates the variable `x`, which is 35. Since there is no `case` for the value 35, the program execution jumps to the `default` block and prints \"value of X is: 35\".",
+    "page": 9
+  },
+  {
+    "id": 243,
+    "question": "A class D can be derived from a class C, which is derived from a class B, which is derived from a class A.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "This describes multilevel inheritance, which is fully supported in C++.",
+    "page": 9
+  },
+  {
+    "id": 244,
+    "question": "All elements in the array must be of the same data type",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "By definition, a C++ array is a collection of elements of a single, fixed data type.",
+    "page": 9
+  },
+  {
+    "id": 245,
+    "question": "A pointer to a derived class can point to objects of a base class.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "```arabic\n‫غلط، الـ pointer من نوع Derived* مينفعش يشاور على كائن من الـ Base class. العكس هو الصح: Base* يقدر يشاور على كائن من Derived عشان الـ Derived فيه كل حاجة موجودة في Base (علاقة is-a). لو حاولت تخلّي Derived* يشاور على Base من غير casting، هيطلّع compilation error، عشان الـ Base ممكن مالهوش الـ members الزيادة بتاعة Derived. الإجابة: False.‬\n```\n",
+    "page": 9,
+    "updated_at": "2025-08-10T06:16:04.790276"
+  },
+  {
+    "id": 246,
+    "question": "The do..while loop, executes at least once.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "A `do..while` loop is an exit-controlled loop, meaning the condition is checked after the loop body is executed. Therefore, the body always runs at least one time.",
+    "page": 9
+  },
+  {
+    "id": 247,
+    "question": "The derived class can access protected member of the base class only",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "A derived class can access both the `protected` and `public` members of its base class.",
+    "page": 9
+  },
+  {
+    "id": 248,
+    "question": "We can change the array size during the program execution.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True"
+      },
+      {
+        "id": "b",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "The size of a standard C-style array (e.g., `int arr[10];`) is fixed at compile time and cannot be changed during execution. To have a resizable array, one must use dynamic memory allocation (`new[]`/`delete[]`) or a container class like `std::vector`.",
+    "page": 9
+  },
+  {
+    "id": 249,
+    "question": "We use the pure virtual function for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Overriding the function inherited from the base class by a function in the derived class with the same name but different arguments."
+      },
+      {
+        "id": "b",
+        "text": "Overriding the function from the derived class by a function in the base class with the same name and the same arguments"
+      },
+      {
+        "id": "c",
+        "text": "Overriding the function inherited from the base class by a function in the derived class with the same name and the same arguments."
+      }
+    ],
+    "correct_answer": "c",
+    "explanation": "A pure virtual function in a base class acts as a contract, forcing any concrete derived class to provide an implementation (override) for that function with the exact same name and parameters.",
+    "page": 9
+  },
+  {
+    "id": 250,
+    "question": "How many times will the statement x = 1 be executed?\n```cpp\nfor(j = 1; j <= n; j++)\n{\n    for(j = 1; j <= n; j++)\n    {\n        x = 1;\n    }\n}\n```",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 time"
+      },
+      {
+        "id": "b",
+        "text": "0 times"
+      },
+      {
+        "id": "c",
+        "text": "n times"
+      },
+      {
+        "id": "d",
+        "text": "n*n times"
+      }
+    ],
+    "correct_answer": "c",
+    "explanation": "There is a common mistake in this code: both the outer and inner loops use the same variable `j`. When the inner loop finishes, `j` will be `n+1`. This value will then be used by the outer loop's condition (`j <= n`), which will be false. Therefore, the outer loop only executes once, and the inner loop runs `n` times during that single execution. The statement `x = 1` will be executed `n` times.",
+    "page": 9
+  },
+  {
+    "id": 251,
+    "question": "To expose a data member to the program, you must declare the data member in the __________ section of the class",
+    "options": [
+      {
+        "id": "a",
+        "text": "Common"
+      },
+      {
+        "id": "b",
+        "text": "Exposed"
+      },
+      {
+        "id": "c",
+        "text": "Public"
+      },
+      {
+        "id": "d",
+        "text": "Private"
+      },
+      {
+        "id": "e",
+        "text": "Protected"
+      }
+    ],
+    "correct_answer": "c",
+    "explanation": "The `public` access specifier makes class members accessible from any code outside the class.",
+    "page": 9
+  },
+  {
+    "id": 252,
+    "question": "A C++ program contains a function with the header `int function(double d, char c)`. Which of the following function headers could be used within the same program?",
+    "options": [
+      {
+        "id": "a",
+        "text": "char function(double d, char c)"
+      },
+      {
+        "id": "b",
+        "text": "int function(int d, char c)"
+      },
+      {
+        "id": "c",
+        "text": "both (a) and (b)"
+      },
+      {
+        "id": "d",
+        "text": "neither (a) nor (b)"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "To overload a function, the parameter list must be different. Option (a) differs only by return type, which is not allowed. Option (b) has a different parameter list (`int`, `char` instead of `double`, `char`), so it is a valid overload.",
+    "page": 9
+  },
+  {
+    "id": 253,
+    "question": "When you pass a variable __________, C++ passes only the contents of the variable to the receiving function",
+    "options": [
+      {
+        "id": "a",
+        "text": "by reference"
+      },
+      {
+        "id": "b",
+        "text": "by value"
+      },
+      {
+        "id": "c",
+        "text": "globally"
+      },
+      {
+        "id": "d",
+        "text": "locally"
+      }
+    ],
+    "correct_answer": "b",
+    "explanation": "This is the definition of pass-by-value. A copy of the variable's value is made and passed to the function, so the original variable is not affected.",
+    "page": 9
+  },
+  {
+    "id": 254,
+    "question": "Consider the following code:\n```cpp\nclass myclass\n{\n    int x;\nprotected:\n    int y;\n};\nvoid main()\n{\n    myclass c1;\n    c1.x=100;\n    c1.y=500;\n}\n```\nThe above code generates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "An error, x is private."
+      },
+      {
+        "id": "b",
+        "text": "An error, y is protected."
+      },
+      {
+        "id": "c",
+        "text": "No error"
+      },
+      {
+        "id": "d",
+        "text": "An error, myclass is an abstract class"
+      },
+      {
+        "id": "e",
+        "text": "both a and b"
+      }
+    ],
+    "correct_answer": "e",
+    "explanation": "In a C++ class, members are `private` by default. Thus, `int x;` is private. `int y;` is explicitly `protected`. Both `private` and `protected` members are inaccessible from outside the class (like in `main`), so both assignments will cause compilation errors.",
+    "page": 9
+  }
+]

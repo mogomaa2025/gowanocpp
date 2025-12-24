@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المحاضرة الثالثة: الدوال، الذاكرة، العودية، والمصفوفات</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+   body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Traditional Arabic';
+        direction: rtl;
+        /* This is key: we align the container itself to the right */
+        text-align: right;
+        background-color: #f8f9fa;
+        line-height: 1.8;
+        padding: 1rem;
+        /* Important: Prevents the body from creating its own scrollbars prematurely */
+        overflow-x: hidden;
+    }
+
+    /* --- START OF THE MAIN FIX --- */
+    .container {
+        /* This makes the container shrink-to-fit its widest child (the code block) */
+        display: inline-block;
+        /* Ensure text inside the container is aligned right by default */
+        text-align: right;
+
+        /* These are from your original Bootstrap, we keep them */
+        padding-left: 15px;
+        padding-right: 15px;
+
+        /* We remove any 'max-width' that might limit the container from growing */
+        max-width: none;
+    }
+    /* --- END OF THE MAIN FIX --- */
+
+    /* العناوين */
+    h1, h2, h3, h4, h5 {
+        color: #0d6efd;
+        margin-top: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.5rem;
+    }
+
+    /* الفقرات والقوائم */
+    p, li {
+        margin-bottom: 1rem;
+    }
+    ol, ul {
+          padding-left: 0rem;
+
+    }
+
+    /* كود البرمجة */
+    code {
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 90%;
+        color: #d63384;
+        direction: ltr;
+        text-align: left;
+        display: inline-block;
+    }
+    pre code {
+        color: inherit;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    pre {
+        /* 'display: block' is fine now, it will just fill the width of its parent (.container) */
+        display: block;
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        white-space: pre;
+        text-align: left;
+
+        /* We still let the code content overflow */
+        overflow-x: visible;
+    }
+
+    /* ملاحظات توضيحية */
+    .note, .warning {
+
+        background-color: #fff3cd;
+        border-right: 5px solid #ffc107;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 3px;
+    }
+    .summary-box {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+
+</style>
+</head>
+<body>
+    <!-- === NEW BUTTON ADDED HERE === -->
+<div id="action-buttons-container">
+    <a href="#" class="btn btn-secondary shadow" onclick="window.close(); return false;">رجوع</a>
+    <a href="#" class="btn btn-info shadow" onclick="openInNewTab(); return false;">فتح في تبويب جديد</a>
+</div>
+<script>
+function openInNewTab() {
+  window.open(window.location.href );
+}
+</script>
+<!-- ======================================= -->
+<div class="container py-4">
+
+    <h3>المحاضرة الثالثة: الدوال (Functions)، الذاكرة (Memory)، العودية (Recursion)، والمصفوفات (Arrays)</h3>
+    <p>بدأت المحاضرة بالحديث عن مفهوم أساسي في البرمجة يهدف إلى تنظيم الكود وتجنب تكراره، وهو Functions.</p>
+
+    <h4>1. الدوال (Functions)</h4>
+    <p>الـ <code>Function</code> هي <code>block of code</code> يُنفّذ مهمة محددة (<code>specific task</code>). الهدف الأساسي منها هو تجنب تكرار كتابة نفس الـ <code>Code</code> عدة مرات. فبدلاً من ذلك، يمكنك كتابة الـ <code>Function</code> مرة واحدة واستدعائها (<code>call</code>) كلما احتجتها. كمثال، <code>sqrt()</code> (Square Root) هي <code>Function</code> جاهزة نستخدمها لحساب الجذر التربيعي دون الحاجة لكتابة الـ <code>Code</code> الخاص به في كل مرة.</p>
+
+    <h5>عناصر الـ Function الأساسية</h5>
+    <p>أي <code>Function</code> في C++ يجب أن تحتوي على العناصر التالية:</p>
+    <ul>
+        <li><strong>Function Name:</strong> يجب أن يكون لها اسم معبّر، ويتكون من حروف وأرقام و underscores، ويفضل أن يبدأ بحرف.</li>
+        <li><strong>Parameter List:</strong> هي مجموعة من الـ <code>Variables</code> تُستخدم لاستقبال الـ <code>Data</code> التي تُرسل إلى الـ <code>Function</code> من خارجها. تُكتب داخل الأقواس <code>()</code> بعد اسم الـ <code>Function</code>.</li>
+        <li><strong>Return Type:</strong> يُحدد نوع الـ <code>Data</code> التي سترجعها الـ <code>Function</code> بعد الانتهاء من تنفيذها. الـ <code>Function</code> ترجع <code>single value</code> فقط. إذا كانت الـ <code>Function</code> لا تُرجع أي قيمة، يكون الـ <code>Return Type</code> الخاص بها هو <code>void</code>.</li>
+        <li><strong>Function Body (Implementation):</strong> هو الـ <code>Block of code</code> الفعلي الذي يحتوي على الـ <code>Instructions</code> التي تنفذها الـ <code>Function</code>.</li>
+    </ul>
+
+    <h5>أنواع الـ Function</h5>
+    <ul>
+        <li><strong>Function Prototype (Declaration):</strong> هو مجرد إعلان عن شكل (<code>shape</code>) الـ <code>Function</code> (الـ <code>Return Type</code>، الـ <code>Name</code>، والـ <code>Parameter List</code>)، وينتهي بـ <code>semicolon</code>. الـ <code>Prototype</code> ضروري ليتمكن الـ <code>Compiler</code> من معرفة الـ <code>Function</code> قبل أن يُصادف استدعاءها في الـ <code>Code</code>.</li>
+        <li><strong>Function Definition (Implementation):</strong> هو الـ <code>Full code</code> للـ <code>Function</code>.</li>
+    </ul>
+<pre><code>#include &lt;iostream&gt;
+
+// Function Prototype
+void PrintMsg();
+
+// Main function (The program entry point)
+int main() {
+    // Function Call
+    PrintMsg();
+    return 0;
+}
+
+// Function Definition
+void PrintMsg() {
+    std::cout &lt;&lt; "Welcome to C++" &lt;&lt; std::endl;
+}</code></pre>
+    <div class="note">
+        <strong>كيفية عمل الـ Function Call (خطوات هامة للامتحان):</strong> عندما يُصادف الـ <code>Program</code> استدعاء <code>Function</code>، تحدث مجموعة من الخطوات بالترتيب، وهذا ينطبق على جميع لغات البرمجة:
+        <ol>
+            <li><strong>Stop Execution:</strong> يتوقف تنفيذ الـ <code>Calling function</code> (مثل <code>main()</code>).</li>
+            <li><strong>Mark Calling Point:</strong> يتم وضع علامة (<code>Mark</code>) على المكان الذي حدث منه الـ <code>Call</code> في الـ <code>Calling function</code> (الـ <code>Caller</code>).</li>
+            <li><strong>Transfer Execution to Called Function:</strong> يتم نقل التنفيذ إلى الـ <code>Called function</code>. هذه الخطوة تتضمن:
+                <ul>
+                    <li><strong>Allocate Memory for Function:</strong> يتم حجز مكان جديد في الذاكرة (على الـ <code>Stack</code>) للـ <code>Called function</code>.</li>
+                    <li><strong>Allocate Parameters:</strong> يتم حجز أماكن لكل الـ <code>Parameters</code> في قائمة الـ <code>Called function</code>.</li>
+                    <li><strong>Transfer Data:</strong> يتم نقل الـ <code>Data</code> من الـ <code>Arguments</code> في الـ <code>Call</code> إلى الـ <code>Parameters</code> بالترتيب.</li>
+                </ul>
+            </li>
+            <li><strong>Execute Function Code:</strong> يتم تنفيذ الـ <code>Code</code> الخاص بالـ <code>Called function</code>.</li>
+            <li><strong>Return to Caller:</strong> عند انتهاء الـ <code>Function</code> من تنفيذها، تعود الـ <code>Execution</code> إلى الـ <code>Caller</code> (المكان الذي تم وضع علامة عليه). هذه الخطوة تتضمن أيضاً:
+                <ul>
+                    <li><strong>Delete Local Variables:</strong> يتم مسح كل الـ <code>Local Variables</code> الخاصة بالـ <code>Function</code> من الذاكرة.</li>
+                    <li><strong>Remove Function from Memory:</strong> يتم إزالة الـ <code>Function</code> نفسها من الذاكرة.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <h4>2. الذاكرة (Memory) والمتغيرات (Variables)</h4>
+    <p>أي برنامج لكي يعمل في الـ <code>Memory</code>، يحجز مكانين: الـ <code>Data Segment / Stack</code> هو المكان الذي تُخزن فيه الـ <code>Variables</code> (الـ <code>Data</code>). كل <code>Function Call</code> تحجز مكانًا خاصًا بها في الـ <code>Memory</code>.</p>
+    <h5>Local Variables vs. Global Variables</h5>
+    <ul>
+        <li><strong>Local Variables:</strong> هي الـ <code>Variables</code> التي تُعرّف داخل <code>Code block</code> (مثلاً داخل <code>Function</code>). لا يمكن رؤيتها أو التعامل معها إلا وأنت واقف داخل هذا الـ <code>Block</code>.</li>
+        <li><strong>Scope:</strong> هو المنطقة التي يمكن فيها التعامل مع الـ <code>Variable</code>. الـ <code>Scope</code> للـ <code>Local Variable</code> هو داخل الـ <code>Block</code> الذي تم تعريفه فيه فقط.</li>
+        <li><strong>Lifetime:</strong> هي فترة تواجد الـ <code>Variable</code> في الـ <code>Memory</code>. الـ <code>Variable</code> قد يكون موجودًا في الـ <code>Memory</code> (<code>Lifetime</code> مستمرة) لكنك لا تستطيع رؤيته لأنه خارج الـ <code>Scope</code> الخاص بك.</li>
+        <li><strong>Global Variables:</strong> هي الـ <code>Variables</code> التي تُعرّف خارج أي <code>Function</code> وتكون متاحة للـ <code>Program</code> بأكمله.</li>
+    </ul>
+    <div class="note">
+        <strong>نصيحة هامة (موضع اختبار):</strong> الـ <code>Global Variables</code> مكروهة (<code>discouraged</code>). مشكلتها الرئيسية أن أي جزء من الـ <code>Program</code> يمكنه تغيير قيمتها في أي وقت، مما يجعل تتبع الأخطاء (<code>Bugs</code>) صعبًا جدًا. يفضل دائمًا تمرير الـ <code>Data</code> عبر الـ <code>Parameters</code> أو الـ <code>Return Values</code> بدلاً من استخدام الـ <code>Global Variables</code>.
+    </div>
+
+    <h4>3. العودية (Recursion)</h4>
+    <p>هي تقنية برمجة تقوم فيها الـ <code>Function</code> باستدعاء نفسها (<code>calling itself</code>).</p>
+    <div class="note">
+        <strong>شروط الـ Recursive Function (هامة للامتحان):</strong> لكي تكون أي <code>Function</code> قابلة لأن تكون <code>Recursive</code>، يجب أن يتوافر فيها شرطان:
+        <ol>
+            <li><strong>Base Case:</strong> يجب أن يكون هناك قيمة معروفة (<code>Value</code>) تكون قيمة الـ <code>Function</code> عندها معروفة مباشرة دون الحاجة لمزيد من الـ <code>Recursive Calls</code>. هذه هي نقطة التوقف للـ <code>Recursion</code>.</li>
+            <li><strong>Recursive Step (Condition for Call):</strong> يجب أن يكون الـ <code>Condition</code> داخل <code>Recursive Call</code> يتغير في كل مرة بحيث يصل في النهاية إلى الـ <code>Base Case</code> ويتوقف الـ <code>Recursion</code>.</li>
+        </ol>
+    </div>
+    <pre><code>// مثال على Factorial باستخدام Recursion
+long Fact(int num) {
+    // Base Case Check
+    if (num &lt;= 1) {
+        return 1; // Base case for factorial 0! = 1, 1! = 1
+    } else {
+        // Recursive Step (Function calls itself)
+        return num * Fact(num - 1);
+    }
+}</code></pre>
+
+    <h5>مقارنة الـ Recursion بالـ Iteration (Loops) (نقطة هامة جداً للامتحان)</h5>
+    <p>على الرغم من أن الـ <code>Recursion</code> أنيقة لبعض المشاكل، إلا أنها غالبًا ما تكون أقل كفاءة من الـ <code>Iterative solutions</code> (باستخدام الـ <code>Loops</code>).</p>
+    <ul>
+        <li><strong>Memory Usage (استهلاك الذاكرة):</strong>
+            <ul>
+                <li><strong>Iterative (Loop):</strong> تحتاج إلى مقدار ثابت من الذاكرة بغض النظر عن حجم الـ <code>Input</code>.</li>
+                <li><strong>Recursive:</strong> كل <code>Recursive Call</code> تقوم بحجز مكان جديد في الذاكرة (على الـ <code>Stack</code>). هذا يعني أن استهلاك الذاكرة يزداد مع كل <code>Call</code>، مما قد يؤدي إلى استهلاك كبير للذاكرة وخطأ <code>Stack Overflow</code>.</li>
+            </ul>
+        </li>
+        <li><strong>Execution Speed (Performance):</strong>
+            <ul>
+                <li><strong>Iterative (Loop):</strong> أسرع لأنها تتجنب الـ <code>Overhead</code> المرتبط بكل <code>Function Call</code>.</li>
+                <li><strong>Recursive:</strong> كل <code>Function Call</code> (سواء كانت <code>Recursive</code> أم لا) تتضمن <code>overhead</code> (مثل الخطوات الثمانية المذكورة سابقًا). هذا الـ <code>Overhead</code> يتكرر مع كل <code>Recursive Call</code>، مما يجعل الـ <code>Recursive solution</code> أبطأ بكثير.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>4. المصفوفات (Arrays)</h4>
+    <p>عندما نحتاج إلى عدد كبير من الـ <code>Variables</code> من نفس النوع (مثلاً 1000 مرتب موظف)، يصبح تعريف كل <code>Variable</code> على حدة أمرًا غير عملي. هنا يأتي دور الـ <code>Arrays</code>.</p>
+    <ul>
+        <li><strong>تعريف الـ Array:</strong> هي مجموعة من المتغيرات (<code>collection of variables</code>) من نفس نوع البيانات (<code>same data type</code>)، تُحجز في الذاكرة بشكل متجاور (<code>contiguously</code>) تحت اسم واحد (<code>single name</code>).</li>
+        <li><strong>تعريف الـ Array (Declaration):</strong> الشكل العام هو: <code>dataType arrayName[size];</code>.
+            <div class="note"><strong>نقطة هامة (موضع اختبار):</strong> الـ <code>Array</code> يجب أن يكون لها حجم ثابت (<code>must have a fixed size</code>) يتم تحديده عند تعريفها. مثال: <code>int sal[5];</code> سيحجز 5 أماكن متجاورة في الذاكرة لتخزين أعداد صحيحة.</div>
+        </li>
+        <li><strong>التعامل مع عناصر الـ Array (Accessing Elements):</strong> يتم الوصول إلى عناصر الـ <code>Array</code> باستخدام <code>Index</code>. الـ <code>Index</code> دائمًا يبدأ من 0 (<code>zero-based</code>). مثال: <code>cout << arr[0];</code></li>
+    </ul>
+    <div class="note">
+        <h5>ملاحظات هامة جداً للامتحان حول الـ Arrays:</h5>
+        <ul>
+            <li><strong>ليس لتحسين الأداء:</strong> الـ <code>Arrays</code> ليست وسيلة لتحسين الـ <code>Performance</code> أو تقليل استهلاك الذاكرة. وظيفتها الأساسية هي تنظيم الـ <code>Data</code> وتسهيل التعامل مع مجموعات كبيرة من المتغيرات من نفس النوع.</li>
+            <li><strong>Out-of-Bounds Access (خطأ شائع ومهم):</strong> لغات مثل C++ لا تمنعك من الوصول إلى أماكن خارج حدود الـ <code>Array</code>. إذا حاولت الوصول إلى <code>sal[5]</code> في <code>Array</code> حجمها 5 (التي لديها indices من 0 إلى 4)، فإن الـ <code>Compiler</code> لن يُعطيك خطأ، وقد يعمل الـ <code>Program</code> بشكل غير متوقع (<code>Glitches</code>) أو يتعطل. يجب عليك كمبرمج أن تكون حذرًا وتتأكد دائمًا من عدم تجاوز حدود الـ <code>Array</code>.</li>
+            <li><strong>Initialization of Arrays:</strong>
+                <ul>
+                    <li><strong>Full Initialization:</strong> <code>int arr[3] = {10, 20, 30};</code></li>
+                    <li><strong>Implicit Sizing:</strong> <code>int arr[] = {10, 20, 30};</code> // الحجم يُحدد تلقائياً بـ 3</li>
+                    <li><strong>Partial Initialization:</strong> <code>int arr[5] = {10, 20};</code> // العناصر المتبقية (arr[2], arr[3], arr[4]) تهيأ تلقائيًا بـ 0.</li>
+                    <li><strong>Uninitialized Arrays:</strong> إذا تم تعريف الـ <code>Array</code> بدون تهيئة أولية، فإن عناصرها تحتوي على قيم عشوائية (<code>Garbage values</code>).</li>
+                </ul>
+            </li>
+            <li><strong>فرق بين Initialization و Assignment:</strong> <code>Initialization</code> تعني إعطاء قيمة أولية للمتغير أو الـ <code>Array</code> في لحظة تعريفها. <code>Assignment</code> تعني تغيير قيمة متغير أو عنصر <code>Array</code> بعد تعريفه.</li>
+        </ul>
+    </div>
+
+    <h4>5. نصائح عامة في البرمجة (هامة جداً للامتحان)</h4>
+    <ul>
+        <li><strong>فصل الـ Code (Input, Processing, Output):</strong> يوصى بشدة بفصل مراحل الـ <code>Program</code> إلى كتل واضحة: <strong>Input</strong> (قراءة الـ <code>Data</code>)، <strong>Processing</strong> (معالجة الـ <code>Data</code>)، و <strong>Output</strong> (طباعة النتائج). حتى في الـ <code>Codes</code> الصغيرة، هذا النهج يُحسن من وضوح الـ <code>Code</code> ويسهل عملية تتبع الـ <code>Bugs</code> وإصلاحها.</li>
+        <li><strong>لا تخلط بين الـ Performance و الـ Code Quality:</strong> لا يجب دائمًا التضحية بجودة الـ <code>Code</code> وقابليته للقراءة والتعديل (<code>Code Readability and Maintainability</code>) من أجل تحسين بسيط في الـ <code>Performance</code>. الـ <code>Functions</code> والـ <code>Arrays</code> قد لا تُحسن الـ <code>Performance</code> بالضرورة، لكنها تُحسن من تنظيم الـ <code>Code</code> وتوضيحه وتسهيل إعادة استخدامه. الشركات الحديثة تبحث عن مبرمجين يكتبون <code>Code</code> واضحًا ومفهومًا، ليس فقط <code>Code</code> يعمل.</li>
+    </ul>
+
+</div>
+</body>
+</html>

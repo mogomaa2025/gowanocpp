@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "button_name": "Lecture 1",
+        "html_file": "lecture1.html"
+    },
+    {
+        "id": 2,
+        "button_name": "Lecture 2",
+        "html_file": "lecture2.html"
+    },
+    {
+        "id": 3,
+        "button_name": "Lecture 3",
+        "html_file": "lecture3.html"
+    },
+    {
+        "id": 4,
+        "button_name": "Lecture 4",
+        "html_file": "lecture4.html"
+    },
+    {
+        "id": 5,
+        "button_name": "Lecture 5",
+        "html_file": "lecture5.html"
+    },
+    {
+        "id": 6,
+        "button_name": "Lecture 6",
+        "html_file": "lecture6.html"
+    },
+    {
+        "id": 7,
+        "button_name": "Lecture 7",
+        "html_file": "lecture7.html"
+    },
+    {
+        "id": 8,
+        "button_name": "Lecture 8",
+        "html_file": "lecture8.html"
+    },
+    {
+        "id": 9,
+        "button_name": "Tricks",
+        "html_file": "tricks.html"
+    },
+    {
+        "id": 10,
+        "button_name": "Problem Solving",
+        "html_file": "problemsolver.html"
+    }
+
+]

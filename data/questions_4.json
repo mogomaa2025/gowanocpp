@@ -1,0 +1,161 @@
+[
+  {
+    "id": 168,
+    "question": "What is the difference between Multi-Level Inheritance and Multiple Inheritance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Choose Any To See The Written Answer"
+      },
+      {
+        "id": "B",
+        "text": "Choose Any To See The Written Answer"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A) Multi-Level Inheritance vs. Multiple Inheritance:\n\n\nMulti-Level Inheritance: In multi-level inheritance, a class is derived from another class, which in turn is derived from another class. It forms a chain of inheritance. For example, if class C is derived from class B, and class B is derived from class A, this is multi-level inheritance.\n\n\nMultiple Inheritance: In multiple inheritance, a class is derived from more than one base class. This means a single class can inherit properties and behaviors from multiple parent classes. For example, if class C is derived from both class A and class B, this is multiple inheritance.",
+    "page": 4,
+    "updated_at": "2025-08-10T00:26:38.564687"
+  },
+  {
+    "id": 169,
+    "question": "What are the core features of Object Oriented Programming?",
+    "options": [
+      {
+        "id": "A",
+        "text": " Choose Any To See The Written Answer"
+      },
+      {
+        "id": "B",
+        "text": " Choose Any To See The Written Answer"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "B) Core Features of Object-Oriented Programming (OOP):\nThe core features of OOP include:\n\n\nEncapsulation: Bundling data and methods that operate on the data within a single unit, typically a class, and restricting access to some of the object's components.\n\n\nInheritance: The ability to create a new class from an existing class, inheriting its properties and methods, and allowing for code reuse and the creation of hierarchical class relationships.\n\n\nPolymorphism: The ability to use a single interface for entities of different types, often allowing a single symbol or method to represent different underlying forms (types).\n\n\nAbstraction: The concept of hiding complex implementation details and showing only the necessary features of an object, allowing the focus to be on what an object does rather than how it does it.\n",
+    "page": 4,
+    "updated_at": "2025-08-10T00:27:20.228625"
+  },
+  {
+    "id": 170,
+    "question": "What is the meaning of aggregation relation? What is the effect of such relation on the sequence of execution of the constructors?",
+    "options": [
+      {
+        "id": "A",
+        "text": " Choose Any To See The Written Answer"
+      },
+      {
+        "id": "B",
+        "text": " Choose Any To See The Written Answer"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "C) Aggregation Relation:\n\n\nAggregation is a special form of association between two classes where one class (the aggregate) contains a collection of instances of another class. It represents a \"has-a\" relationship and implies a weaker relationship than composition, meaning the lifecycle of the contained objects is not managed by the aggregate.\n\n\nIn terms of constructors, aggregation implies that the constructor of the aggregate class may initialize or use instances of the aggregated class, but it does not manage their lifecycle. The aggregated objects can exist independently of the aggregate.\n\n\n",
+    "page": 4,
+    "updated_at": "2025-08-10T00:27:57.402261"
+  },
+  {
+    "id": 171,
+    "question": "What are the characteristics of a constructor?",
+    "options": [
+      {
+        "id": "A",
+        "text": " Choose Any To See The Written Answer"
+      },
+      {
+        "id": "B",
+        "text": " Choose Any To See The Written Answer"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "D) Characteristics of a Constructor:\n\n\nA constructor is a special method in a class that is automatically called when an object of that class is created.\n\n\nIt has the same name as the class and does not have a return type, not even void.\n\n\nConstructors can be overloaded, meaning a class can have multiple constructors with different parameters.\n\n\nThey are used to initialize the object's state, often by setting initial values for the object's attributes.\n\n\nIf no constructor is defined in a class, most programming languages provide a default constructor.\n\n",
+    "page": 4,
+    "updated_at": "2025-08-10T00:28:27.658856"
+  },
+  {
+    "id": 172,
+    "question": "Design the set of classes that would best represent the following situation:\n ```cpp \n(Note: Design means: you can either draw a UML diagram. OR write the class body.\nWhichever way you choose, make sure that you show the data types of the attributes, and write the prototypes of\nthe constructors and methods. YOU DO NOT NEED to write any code inside the body of the methods).\nYou are asked to design a set of classes for an Airlines Company information system. The company has\nmany members of staff: Captains, Co-Pilots, and Hosts. The company also wants to store information\nabout its flight journeys. The required information is shown in details below:\nCaptain: ID, Name, Nationality .\nCo-Pilot: ID, Name, Position.\nHost: ID, Name, DutyDetails.\nFlight: SourceCity, DestinationCity, Time of departure, Time of landing.\n ```\nHint: You can make any additional assumptions when needed. If you do so, then write one sentence about your\nassumption.",
+    "options": [
+      {
+        "id": "A",
+        "text": " Choose Any To See The Written Answer"
+      },
+      {
+        "id": "B",
+        "text": " Choose Any To See The Written Answer"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This is a design question. A good solution would involve an `Employee` base class with common attributes like `ID` and `Name`. `Captain`, `CoPilot`, and `Host` would inherit from `Employee` and add their specific attributes. A separate `Flight` class would manage flight information. It might also have a `Time` class or struct. The relationship between `Flight` and the staff would be an association (a flight has staff members assigned to it).\n\n```cpp\n// Base Class for all employees\nclass Employee {\nprotected:\n    int ID;\n    char* name;\npublic:\n    Employee(int id, const char* n);\n    // ... getters and setters ...\n};\n\n// Derived Classes\nclass Captain : public Employee {\nprivate:\n    char* nationality;\npublic:\n    Captain(int id, const char* n, const char* nat);\n    // ... getters and setters ...\n};\n\nclass CoPilot : public Employee {\nprivate:\n    char* position;\npublic:\n    CoPilot(int id, const char* n, const char* pos);\n    // ... getters and setters ...\n};\n\nclass Host : public Employee {\nprivate:\n    char* dutyDetails;\npublic:\n    Host(int id, const char* n, const char* duty);\n    // ... getters and setters ...\n};\n\n// A helper class for time\nclass Time {\n    // ... members for hour, minute, second ...\n};\n\n// Separate class for Flight information\nclass Flight {\nprivate:\n    char* sourceCity;\n    char* destinationCity;\n    Time departureTime;\n    Time landingTime;\n    // Could also have associations to staff, e.g.,\n    // Captain* flightCaptain;\npublic:\n    Flight(const char* src, const char* dest, Time dt, Time lt);\n    // ... getters and setters ...\n};\n```",
+    "page": 4,
+    "updated_at": "2025-08-10T00:30:58.477011"
+  },
+  {
+    "id": 173,
+    "question": "Multilevel Inheritance is allowed as an object Oriented concept, but it is not allowed in C++;",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The statement is false. C++ fully supports multilevel inheritance, where a derived class serves as a base class for another class (e.g., Class C inherits from Class B, and Class B inherits from Class A).",
+    "page": 4
+  },
+  {
+    "id": 174,
+    "question": "The \"this\" pointer is an array of pointers to all the objects created from a class",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The `this` pointer is a single pointer that is implicitly passed to every non-static member function. It holds the address of the specific object on which the function was called. It is not an array.",
+    "page": 4
+  },
+  {
+    "id": 175,
+    "question": "When inheriting from a Base class, the Derived class will inherit only the protected, and public members of the Base class.\n```img\nhttps://i.postimg.cc/RV11rfTH/edit-logo.gif\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "‫العبارة \"عند الوراثة من Base class، فإن Derived class يرث فقط الأعضاء الـ protected والـ public من Base class\" هي خطأ.‬\n‫‬\nالشرح:‬\n‫الـ Derived class (الفئة المشتقة أو الابن) يرث جميع أعضاء الـ Base class (الفئة الأساسية أو الأب)، بما في ذلك الأعضاء الـ private. ومع ذلك، فإن النقطة الأساسية هي أن الـ Derived class يمكنه الوصول مباشرة فقط إلى الأعضاء الـ `public` والـ `protected` من الـ Base class.‬\n‫‬\n‫أما الأعضاء الـ `private` في الـ Base class، فهي موروثة وتوجد في تخطيط ذاكرة الكائن المشتق، ولكن لا يمكن للـ Derived class الوصول إليها مباشرة باسمها. للتعامل مع الأعضاء الـ `private` في الـ Base class من الـ Derived class، يجب توفير دوال مساعدة (مثل `getters` أو `setters`) في الـ Base class نفسه.‬",
+    "page": 4,
+    "updated_at": "2025-08-20T15:47:12.425027"
+  },
+  {
+    "id": 176,
+    "question": "If a certain function is made friend for class A, then that function can access only the private members of class A.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A friend function of a class is granted access to *all* non-public members of that class, which includes both `private` and `protected` members.",
+    "page": 4
+  }
+]

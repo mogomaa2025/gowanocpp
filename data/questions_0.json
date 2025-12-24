@@ -1,0 +1,1851 @@
+[
+  {
+    "id": 1,
+    "question": "When the compiler cannot differentiate between two overloaded functions, it is called",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overloaded."
+      },
+      {
+        "id": "B",
+        "text": "Destructed."
+      },
+      {
+        "id": "C",
+        "text": "Overridden."
+      },
+      {
+        "id": "D",
+        "text": "Ambiguous."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "```arabic\nالسبب في اختيار \"Ambiguous\" هو أنّه عندما تكون هناك دالتان متشابهتان في التوقيع (signature)، ولا يستطيع المترجم (compiler) التمييز بينهما، يحدث التباس أو \"ambiguity\".\n\nهذا يجعل المترجم يصدر خطأ لعدم قدرته على تحديد أي واحدة منهما يجب أن تُنفّذ.\n\n\n\n\n\n\n\n\n\n```",
+    "page": 0,
+    "updated_at": "2025-08-16T21:57:24.497430"
+  },
+  {
+    "id": 2,
+    "question": "The Instance (non-static) variable",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is a variable declared in the private section and can be accessed by any method in the same class"
+      },
+      {
+        "id": "B",
+        "text": "It is a variable declared in any section in a class and can be accessed by any method in the same class."
+      },
+      {
+        "id": "C",
+        "text": "It is a variable declared inside any function and can be accessed by any other methods in the same class"
+      },
+      {
+        "id": "D",
+        "text": "It is a variable declared inside any function and cannot be accessed by any other methods in the same class"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```arabic\n\n\nالـ instance variable هو متغير بيتم تعريفه داخل الكلاس، وممكن الوصول ليه من أي ميثود داخل نفس الكلاس، سواء كانت الـ private أو public أو protected.\n\n\n\n\n\n\n\n\n\n```",
+    "page": 0,
+    "updated_at": "2025-08-11T00:13:01.318676"
+  },
+  {
+    "id": 3,
+    "question": "If you design a class that needs special initialization tasks, you will have to create a(n):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Setter method."
+      },
+      {
+        "id": "B",
+        "text": "Initializer Method."
+      },
+      {
+        "id": "C",
+        "text": "Constructor."
+      },
+      {
+        "id": "D",
+        "text": "Destructor."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "```arabic\n\nالـ Constructor هو اللي بيتم استخدامه علشان يعمل تهيئة خاصة للكائنات لما يتم إنشائها. هو بيكون عادةً نفس اسم الكلاس وبيشتغل تلقائيًا عند إنشاء الكائن.\n\n\n\n\n\n\n\n```",
+    "page": 0,
+    "updated_at": "2025-08-11T00:13:43.953853"
+  },
+  {
+    "id": 4,
+    "question": "What will be the output of the following C code2?\n```cpp\n#include <stdio.h>\nint main()\n{\n    int y = 10000;\n    int y = 34;\n    printf(\"Hello World! %d\\n\", y);\n    return 0;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compile time error"
+      },
+      {
+        "id": "B",
+        "text": "Hello World! 34"
+      },
+      {
+        "id": "C",
+        "text": "Hello World! 1000"
+      },
+      {
+        "id": "D",
+        "text": "Hello World! followed by a junk value"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "```arabic\n\nالسبب هو إنك مش قادر تعلن عن نفس المتغير (y) مرتين في نفس النطاق (scope). ده هيعمل خطأ أثناء الترجمة (compile time error) لأنك بتحاول تعلن عن متغير بنفس الاسم مرتين.\n\n\n\n\n\n```",
+    "page": 0,
+    "updated_at": "2025-08-11T00:15:06.920216"
+  },
+  {
+    "id": 5,
+    "question": "The best description for the association relation among the classes",
+    "options": [
+      {
+        "id": "A",
+        "text": "When a class using object(s) from other class(es)."
+      },
+      {
+        "id": "B",
+        "text": "Objects that are declared using the default constructor."
+      },
+      {
+        "id": "C",
+        "text": "An object from a class that is inherited from another class"
+      },
+      {
+        "id": "D",
+        "text": "b and c"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "```arabic\nالعلاقة الـ Association بين الكلاسات بتكون لما الكلاس الواحد يستخدم كائنات (objects) من كلاس تاني. ده بيعني إن الكلاس ده بيحتاج يستخدم خصائص أو ميثودات من الكلاسات التانية علشان يكمل شغله.\n\n\n```",
+    "page": 0,
+    "updated_at": "2025-08-11T00:16:31.912519"
+  },
+  {
+    "id": 6,
+    "question": "What will be the output of the following C code? Hint: signed char range is (-128.....127)\n```cpp \n#include <stdio.h>\nint main()\n{\n    signed char chr;\n    chr = 128;\n    printf(\"%d\\n\", chr);\n    return 0;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "128"
+      },
+      {
+        "id": "B",
+        "text": "-128"
+      },
+      {
+        "id": "C",
+        "text": "Depends on the compiler"
+      },
+      {
+        "id": "D",
+        "text": "None of the mentioned"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```arabic\nلأن في C، الـ signed char بيتراوح من -128 لـ 127. لما بتديله قيمة 128، بيحصل overflow وبيلف لـ -128.\n\n\n\n\n\n\n\n```\n\nAssigning 128 to a `signed char` (which has a max value of 127) causes an overflow. On most systems using two's complement representation, this value wraps around to the minimum value, which is -128. Note that signed integer overflow is technically undefined behavior in C.\n\n\n",
+    "page": 0,
+    "updated_at": "2025-08-11T00:20:02.339608"
+  },
+  {
+    "id": 7,
+    "question": "Which of the following refers to \"Hiding data behind class methods?\"",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abstraction."
+      },
+      {
+        "id": "B",
+        "text": "Encapsulation"
+      },
+      {
+        "id": "C",
+        "text": "Polymorphism"
+      },
+      {
+        "id": "D",
+        "text": "Inheritance"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```arabic\n\n\nلأن الـ Encapsulation في البرمجة يعني إخفاء البيانات (data) داخل الكلاس واستخدام الـ methods للوصول ليها أو تعديلها.\n\n\n\n\n\n\n```\n\nEncapsulation refers to \"hiding data behind class methods.\"\nEncapsulation is the object-oriented programming principle that involves bundling data (attributes) and the methods that operate on that data together within a class, while restricting direct access to the internal data. Instead of allowing external code to directly access or modify an object's data, encapsulation requires interaction through controlled interfaces (methods), which can validate input, maintain data integrity, and hide implementation details.\nThe other concepts serve different purposes:\n\nAbstraction focuses on hiding complexity and showing only essential features\n",
+    "page": 0,
+    "updated_at": "2025-08-11T00:24:05.090042"
+  },
+  {
+    "id": 8,
+    "question": "consider the following code:\n```cpp\nclass Base\n{\npublic:\n    int x;\n    Base(int y)\n    {\n        x=y;\n        ++x;\n    }\n};\n\nclass child : public Base\n{\npublic:\n    child(int c)\n    {\n        x+=1;\n    }\n    void print()\n    {\n        cout<<\"x=\"<<x;\n    }\n};\n\nvoid main()\n{\n    child c(1);\n    c.print();\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. x=1"
+      },
+      {
+        "id": "B",
+        "text": "b. x=2"
+      },
+      {
+        "id": "C",
+        "text": "c. x=3"
+      },
+      {
+        "id": "D",
+        "text": "d. x=4"
+      },
+      {
+        "id": "E",
+        "text": "e. Compilation Error."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "```arabic\n\n\nالخطأ اللي ظهر بيقول إن الكونسوتر الافتراضي Base() غير موجود، وده لأنك في الكود الحالي معرفتش الكونسوتر بدون بارامتر في الكلاس Base.\n\nلحل المشكلة دي، لازم تضيف كونسوتر افتراضي (أو كونسوتر فارغ) في الكلاس Base لو كنت عايز تنشئ كائنات من الكلاس Base بدون تمرير بارامتر. لكن في حالتك، بما أنك بتستخدم كونسوتر بيتطلب بارامتر، هنحتاج نعدل الكود بحيث الكائنات اللي بتنشأ من Child لازم تكون بتستدعي كونسوتر Base مع بارامتر.\n\n\n\n\n```\n```img\nhttps://i.ibb.co/Xr9g7jhk/image.png\n```\n\n```arabic\nالتعديلات:\nالكونسوتر في Base بيستقبل بارامتر، وبالتالي لو عايز تنشئ كائن من Child لازم تمرر قيمة للكونسوتر.\n\nفي Child، استخدمت قائمة التهيئة (initializer list) علشان تستدعي الكونسوتر بتاع Base بالبارامتر المطلوب.\n```\n\n```cpp\n\n#include <iostream>\nusing namespace std;\n\nclass Base\n{\nprotected:\n    int x;  \npublic:\n    // الكونسوتر بيستقبل بارامتر\n    Base(int y)\n    {\n        x = y;\n        ++x;\n    }\n};\n\nclass Child : public Base\n{\npublic:\n    // هنا بنستدعي كونسوتر Base مع تمرير القيمة c\n    Child(int c) : Base(c)  \n    {\n        x += 1;\n    }\n\n    void print()\n    {\n        cout << \"x=\" << x;  \n    }\n};\n\nint main()\n{\n    Child c(1);  \n    c.print();   \n\n    return 0;\n}\n\n```\n\n\n// output is : x=3\n\n\n\n\nلاحظ اختلاف التنفيذ\nال base first\nبغض النظر عن تمرير قيمة 1\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Base\n{\nprotected:\n    int x;  \npublic:\n    // الكونسوتر بيستقبل بارامتر\n    Base(int y)\n    {\n           cout << \"Base1\" << endl;\n        x = y;\n        ++x;\n    }\n};\n\nclass Child : public Base\n{\npublic:\n    // هنا بنستدعي كونسوتر Base مع تمرير القيمة c\n    Child(int c) : Base(c)  \n    {\n        x += 1;\n           cout << \"child2\" << endl;\n    }\n\n    void print()\n    {\n        cout << \"x=\" << x;  \n     \n    }\n};\n\nint main()\n{\n    Child c(1);  \n    c.print();   \n\n    return 0;\n}\n```\n\noutput is:\n```cpp\nBase1\nchild2\nx=3\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T19:33:36.552906"
+  },
+  {
+    "id": 9,
+    "question": "What will be the output when you compile and run the following piece of code?\nin cpp\n```cpp\nint sum(int a, int b) { return a+b;}\nfloat sum(float a, float b) { return a+b;}\nvoid main(void)\n{\n   // clrscr();\n    cout<<\"sum =\"<<sum(5,9)<<\"\\t\";\n    cout<<\"sum =\"<<sum(4.3,2.7);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. sum = 14 sum = 7.0"
+      },
+      {
+        "id": "B",
+        "text": "b. Compiler Error: add() function should be overloaded"
+      },
+      {
+        "id": "C",
+        "text": "c. Compiler Error: Ambiguity between 'sum (int, int)' and 'sum (float, float)'"
+      },
+      {
+        "id": "D",
+        "text": "d. sum = 14 sum = 6"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "```img\nhttps://i.ibb.co/ynGbbm5X/image.png\n```\nالحل لو عايز الكود يشتغل:\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint sum(int a, int b) { return a + b; }\nfloat sum(float a, float b) { return a + b; }\n\nint main()\n{\n    // clrscr();  // متستخدمهاش في GCC\n    cout << \"sum = \" << sum(5, 9) << \"\\t\";\n    cout << \"sum = \" << sum(4.3f, 2.7f); // استخدم 'f' علشان تقول له إنها float\n    return 0;\n}\n```\nالناتج بعد التعديل:\n```cpp\nsum = 14    sum = 7\n```\n✅ فـ السبب الحقيقي:\n```arabic\n\nالسبب في اللبس الذي يحدث للمترجم (compiler) هو استخدام `double`.\n\nأما `clrscr`، فهي غير موجودة.\n```",
+    "page": 0,
+    "updated_at": "2025-08-18T11:30:22.385925"
+  },
+  {
+    "id": 10,
+    "question": "what will be the output when you compile the following piece of code?\n```cpp\nclass Test\n{\n    int x;\npublic:\n    float z;\n    int y;\n};\nvoid main()\n{\n    Test t1;\n    t1.x = 100;\n    t1.y = 500;\n    t1.z = 250.43;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. Compiler Error regarding the variable x."
+      },
+      {
+        "id": "B",
+        "text": "b. Compiler Error regarding the variable y."
+      },
+      {
+        "id": "C",
+        "text": "c. Compiler Error regarding the variable z."
+      },
+      {
+        "id": "D",
+        "text": "d. The code will compile successfully."
+      }
+    ],
+    "correct_answer": [
+      "A"
+    ],
+    "explanation": "```img\nhttps://i.ibb.co/nNLzMDMy/image.png\n```\n\nIn a C++ class, members are `private` by default. Since `int x;` is declared before any access specifier, it is a private member of `Test`. The `main` function is outside the class and cannot access private members, so the line `t1.x = 100;` will cause a compilation error.",
+    "page": 0,
+    "updated_at": "2025-08-16T22:01:25.084453"
+  },
+  {
+    "id": 11,
+    "question": "what will be the output when you compile and run the following piece of code?\n```cpp\nclass Test\n{\npublic:\n    virtual void say() { cout<<\"Test\\t\"; }\n};\nclass NewTest : public Test\n{\npublic:\n    void say() { cout<<\"NewTest\\t\"; }\n};\nvoid main()\n{\n    Test *pb;\n    Test myParent;\n    NewTest myChild;\n\n    pb = &myParent;\n    pb->say();\n    pb = &myChild;\n    pb->say();\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Test    NewTest"
+      },
+      {
+        "id": "B",
+        "text": "b. Test    Test"
+      },
+      {
+        "id": "C",
+        "text": "c. NewTest    NewTest"
+      },
+      {
+        "id": "D",
+        "text": "d. NewTest    Test"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "```img\nhttps://i.ibb.co/4k7wwYw/image.png\n```\n```arabic\nايه هيحصل لو مفيش\nvirtual\nالناتج المتوقع: Test Test ❌\n\nلأن الـ binding هيبقى static، والـ pb من نوع Test*، فحتى لو أشار لـ NewTest، هيستخدم say() بتاعة Test.\n\n\nيعني من غير virtual، الـ override مش هيشتغل من خلال الـ pointer.\n```\n```cpp\n\n#include <iostream>\nusing namespace std;\n\n// بدون virtual\nclass Test {\npublic:\n    void say() { cout << \"Test\\t\"; }  // بدون virtual\n};\n\nclass NewTest : public Test {\npublic:\n    void say() { cout << \"NewTest\\t\"; }\n};\n\nint main() {\n    Test *pb;\n    Test myParent;\n    NewTest myChild;\n\n    pb = &myParent;\n    pb->say();  // Test\n\n    pb = &myChild;\n    pb->say();  // !! هيطبع \"Test\" مش \"NewTest\" !!\n\n    return 0;\n}\n```\n\n\n\n\nحل اخر بدون استخدام \nPointers\n```cpp\n#include <iostream>\n\nusing namespace std;\n\n\nclass Test\n{\npublic:\n    virtual void say() { cout<<\"Test\\t\"; }\n};\nclass NewTest : public Test\n{\npublic:\n    void say() { cout<<\"NewTest\\t\"; }\n};\nint main()\n{\n    Test aa;\n\n    NewTest myChild;\n\n    aa.say();\n    myChild.say();\n}\n```\n\n\n\nحل اخر بدون Virtual\nولكن Pointer\n```cpp\n#include <iostream>\n\nusing namespace std;\n\n\nclass Test\n{\npublic:\n    virtual void say() { cout<<\"Test\\t\"; }\n};\nclass NewTest : public Test\n{\npublic:\n    void say() { cout<<\"NewTest\\t\"; }\n};\nint main()\n{\n    Test bb;\n    Test* pbb = &bb;\n    pbb->say();\n\n    NewTest cc;\n    NewTest* pcc = &cc;\n    pcc->say();\n\n\n\n    return 0;\n}\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T19:21:30.078200"
+  },
+  {
+    "id": 12,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass Base\n{\npublic:\n    Base() { cout<<\"Welcome\"<<\"\\t\"; }\n};\nclass Derived: public Base\n{\npublic:\n    Derived() { cout<<\"Hello\"<<\"\\t\"; }\n};\nvoid main()\n{\n    Derived myD;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. Hello"
+      },
+      {
+        "id": "B",
+        "text": "b. Hello Welcome"
+      },
+      {
+        "id": "C",
+        "text": "c. Welcome Hello"
+      },
+      {
+        "id": "D",
+        "text": "d. Welcome"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "```img\nhttps://i.ibb.co/GQJdmmwd/image.png\n```\nWhen an object of a derived class is created, the constructor of the base class is always executed first, followed by the constructor of the derived class. Therefore, `Base()` runs, printing 'Welcome', and then `Derived()` runs, printing 'Hello'.",
+    "page": 0,
+    "updated_at": "2025-08-11T01:33:51.033118"
+  },
+  {
+    "id": 13,
+    "question": "what does the following piece of code do?\n```cpp\nvoid main()\n{\n    float *ptr;\n    ptr = new float(15);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. Allocate space for 15 float contiguous variables that are initialized by 0."
+      },
+      {
+        "id": "B",
+        "text": "b. Allocate space for 15 float contiguous variables that are not initialized"
+      },
+      {
+        "id": "C",
+        "text": "c. Allocate space for a float variable that is initialized by the value 15."
+      },
+      {
+        "id": "D",
+        "text": "d. Allocate space for a float variable that is not initialized."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "```img\nhttps://i.ibb.co/jkCS2yYH/image.png\n```\n```arabic\n‫float *ptr; بيعرّف pointer من نوع float.‬\n‫ptr = new float(15); بيعمل allocate لمكان في الذاكرة لـ float واحد بس ويحط فيه القيمة 15.‬\n‫مش بيعمل array زي new float[15]، ولا بيسيب المكان من غير initialize.‬\n‫الإجابة الصح: c. تخصيص مكان لمتغير float بقيمة 15.\n```‬",
+    "page": 0,
+    "updated_at": "2025-08-11T01:39:04.142104"
+  },
+  {
+    "id": 14,
+    "question": "What does the following piece of code do?\n```cpp\nvoid main()\n{\n    float *ptr;\n    ptr = new float[15];\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Allocate space for a float variable that is not initialized"
+      },
+      {
+        "id": "B",
+        "text": "Allocate space for an array of 15 float elements that are not initialized"
+      },
+      {
+        "id": "C",
+        "text": "Allocate space for an array of 15 float elements that is initialized by the value 0"
+      },
+      {
+        "id": "D",
+        "text": "Allocate space for an array of 15 float elements where all the elements are initialized by the value 15"
+      },
+      {
+        "id": "E",
+        "text": "Compiler Error."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```arabic\nالكود بيعمل new float[15] يعني بيحجز مكان في الذاكرة لـ 15 عنصر من نوع float من غير ما يعطيهم قيم ابتدائية (مش مهيَّئين). لو عايزين نُهيِّئهم بصفر مثلاً، كنا لازم نكتب new float[15]()، لكن هنا مفيش أقواس فالعناصر بتكون قيمها عشوائية (garbage values).\n```\n```img\nhttps://i.ibb.co/k6WRX0pC/image.png\n```",
+    "page": 0,
+    "updated_at": "2025-08-11T01:51:33.717736"
+  },
+  {
+    "id": 15,
+    "question": "In any abstract class, it has to include:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. At least a member function."
+      },
+      {
+        "id": "B",
+        "text": "b. At least a virtual function"
+      },
+      {
+        "id": "C",
+        "text": "c. At least a static function."
+      },
+      {
+        "id": "D",
+        "text": "d. At least a pure virtual function"
+      },
+      {
+        "id": "E",
+        "text": "e. All of the above"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "By definition in C++, a class is considered abstract if and only if it contains at least one pure virtual function (e.g., `virtual void func() = 0;`). Abstract classes cannot be instantiated.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 16,
+    "question": "The body of the destructor of the base class is executed automatically:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. When any member function of the derived class is called."
+      },
+      {
+        "id": "B",
+        "text": "b. After the body of the destructor of the derived class is executed."
+      },
+      {
+        "id": "C",
+        "text": "c. Before the body of the destructor of the derived class is executed."
+      },
+      {
+        "id": "D",
+        "text": "d. We cannot determine exactly when it will be executed."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "في C++، لما بيتم تدمير كائن من كلاس مشتق (derived class)، الـ destructor بتاع الكلاس المشتق بيتنفذ الأول، وبعدين الـ destructor بتاع الكلاس الأساسي (base class) بيتنفذ تلقائيًا. ده بيحصل عشان الكلاس المشتق بيعتمد على الكلاس الأساسي، فالتدمير بيتم بالترتيب العكسي للإنشاء.\n\nمثال للتوضيح\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    ~Base() { cout << \"Base Destructor\" << endl; }\n};\n\nclass Derived : public Base {\npublic:\n    ~Derived() { cout << \"Derived Destructor\" << endl; }\n};\n\nint main() {\n    Derived d;\n    return 0;\n}\n```\nTracing for Execution:\n```img\nhttps://i.ibb.co/tMxY38hh/image.png\n```\nDestruction happens in the reverse order of construction. When a derived class object is destroyed, the derived class's destructor is executed first, followed by the base class's destructor.",
+    "page": 0,
+    "updated_at": "2025-08-11T02:00:08.820768"
+  },
+  {
+    "id": 17,
+    "question": "```cpp\n\"A car is a transportation mean that has a Motor, color and 4 wheels\"\n\"A bicycle is a transportation mean that has a handlebar, color and 2 wheels\"\n```\nWhich of the following best describes the previous statements as a set of classes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. 2 classes: A car class that has two attributes: color, motor and numberOfWheels, and a bicycle class that also has two attributes: color, handlebar and numberOfWheels."
+      },
+      {
+        "id": "B",
+        "text": "b. 3 classes: A Transportation_Mean class that has one attribute: color. A car class that inherits from the Transportation_Mean class and has two attributes: motor and numberOfWheels. And a bicycle class that also inherits from the Transportation_Mean class and has two attributes: handlebar and numberOfWheels."
+      },
+      {
+        "id": "C",
+        "text": "c. 1 class: A Transportation_Mean class that has an attribute for the: typeOfTransport."
+      },
+      {
+        "id": "D",
+        "text": "d. 3 classes: A Transportation_Mean class that has one attribute: numberOfWheels. A car class that inherits from the Transportation_Mean class and has two attributes: motor and color. And a bicycle class that inherits from the car class and has one attribute: handlebar."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```arabic\nالخيار b هو الأفضل لأنه بيعكس العلاقة الوراثية صح: العربة والدراجة دول نوعين من وسائل النقل (Transportation_Mean)، فبنعمل base class للـ color المشترك، وكل واحد فيهم يورث منه ويضيف خصائصه الخاصة (العربة لها motor والدراجة لها handlebar). كمان عدد العجلات (numberOfWheels) مختلف بينهم فكل class يحدده بنفسه.\n```\n```arabic\nتوضيح الخيارات الأخرى:\na: غلط لأنه مبيستخدمش inheritance ومبيعكسش العلاطة \"is-a\" الموجودة في الجمل.\nc: غلط لأنه بيجمع كل حاجة في class واحد ومبيفرقش بين خصائص العربة والدراجة.\nd: غلط لأنه بيجعل الدراجة ترث من العربة، وهذا مش منطقي (الدراجة مش عربية!).\n```\n\n\n\nThis scenario is a classic example of inheritance. A base class `Transportation_Mean` can hold common attributes like `color`. `Car` and `Bicycle` are specialized types of transportation, so they should inherit from the base class and add their specific attributes. This promotes code reuse and logical structure.",
+    "page": 0,
+    "updated_at": "2025-08-16T22:05:21.268570"
+  },
+  {
+    "id": 18,
+    "question": "```cpp\n'A plane is a machine that has a motor and has wings'.\n'A refrigerator is a machine that has a motor and has shelves'. \n```\nWhich of the following best describes the previous statements as a set of classes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) 3 classes: A machine class that has one attribute: motor. A plane class that inherits from the machine class. And a refrigerator class that inherits from the plane class."
+      },
+      {
+        "id": "B",
+        "text": "b) 3 classes: A machine class that has one attribute: motor. A plane class that inherits from the machine class. And a refrigerator class that also inherits from the machine class."
+      },
+      {
+        "id": "C",
+        "text": "c) 2 classes: A plane class that has two attributes, and a refrigerator class that also has two attributes."
+      },
+      {
+        "id": "D",
+        "text": "d) 1 class: A machine class that has an attribute for the type of machine."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```img\nhttps://i.ibb.co/wZ8dt90Z/image.png\n```",
+    "page": 0,
+    "updated_at": "2025-08-16T22:05:51.017570"
+  },
+  {
+    "id": 19,
+    "question": "The following are examples of Object-Oriented advantages: (choose all that applies)",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. Simplicity"
+      },
+      {
+        "id": "B",
+        "text": "b. Reusability"
+      },
+      {
+        "id": "C",
+        "text": "c. Encapsulation"
+      },
+      {
+        "id": "D",
+        "text": "d. Modularity"
+      },
+      {
+        "id": "E",
+        "text": "e. Abstraction"
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "explanation": "```img\nhttps://i.postimg.cc/sxyXkG18/image.png\n```\n🎭 Imagine OOP as a Traditional Egyptian Wedding 🎉\nEach concept is like a role or tradition in the wedding:\n\n🧺 Encapsulation = العروسة اللي مخبية حاجات في شنطتها\nزي ما العروسة بتخبي حاجات في شنطتها ومحدش يعرف إيه اللي جواها، الكلاس في البرمجة بيخبي البيانات جواه ومبيخليش حد يعبث بيها غير بالطرق اللي هو محددها.\n\nTranslation: Just like the bride keeps her stuff private in her handbag, a class hides its internal data and only allows access through defined methods.\n\n🧱 Modularity = كل واحد ليه شغلته في الفرح\nفي الفرح، في اللي بيصور، اللي بيطبخ، اللي بيغني... كل واحد ليه دور مستقل. نفس الكلام في OOP، كل كلاس ليه وظيفة محددة.\n\nTranslation: Just like each person at the wedding has a specific role, each class in OOP has a distinct responsibility.\n\n🔁 Reusability = الطربوش اللي بيتلبس في كل الأفراح\nالطربوش بيتلبس في كل المناسبات، مش لازم نشتري واحد جديد كل مرة. الكلاس كمان ممكن نستخدمه في كذا مشروع من غير ما نعيد كتابته.\n\nTranslation: Like a tarboosh that’s reused in every celebration, classes can be reused across multiple projects.\n\n🧠 Abstraction = العريس اللي بيقول \"أنا جاهز\" من غير ما يشرح التفاصيل\nالعريس بيقول \"أنا جاهز\" بس محدش يعرف هو عمل إيه علشان يجهز. نفس الفكرة في OOP، المستخدم يعرف الوظيفة بس مش لازم يعرف التفاصيل الداخلية.\n\nTranslation: The groom says “I’m ready” without explaining all the behind-the-scenes prep — just like abstraction hides the complexity.\n\n😌 Simplicity = الفرح اللي كله منظم ومفهوم\nلما الفرح يكون منظم، الناس بتنبسط ومتفهمش الدنيا ماشية إزاي. OOP بيخلي الكود منظم وسهل الفهم.",
+    "page": 0,
+    "updated_at": "2025-08-16T22:09:41.157238"
+  },
+  {
+    "id": 20,
+    "question": "The Embedded object is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. An object declared with default constructor."
+      },
+      {
+        "id": "B",
+        "text": "b. An object has function overloading."
+      },
+      {
+        "id": "C",
+        "text": "c. An object from a class inherited from another class."
+      },
+      {
+        "id": "D",
+        "text": "d. An object included by another object."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "An embedded object, representing composition or aggregation, is an object that is a member variable of another class. This models a 'has-a' relationship.\n```cpp\nclass Engine {\n    // Engine details\n};\n\nclass Car {\n    Engine myEngine; // Embedded object\n};\n```\n```img\nhttps://i.postimg.cc/zvBmHqQv/image.png\n```\n🏠 Embedded Object = العفش اللي جوه الشقة\nتخيل إن الكلاس هو شقة، والعفش اللي جواها (كنبة، تلفزيون، تلاجة) هو الـ embedded objects. يعني الكلاس بيحتوي على كائنات تانية جواه، زي ما الشقة بتحتوي على حاجات تانية جواها.\n\nTranslation: Think of a class as an apartment, and the furniture inside (sofa, TV, fridge) are embedded objects. The class contains other objects just like the apartment contains its contents.\n```cpp\nclass Sofa {\n    // Sofa details\n};\n\nclass Apartment {\n    Sofa mySofa; // Embedded object\n};\n```\nHere, mySofa is part of Apartment, just like the sofa is part of the apartment’s contents.",
+    "page": 0,
+    "updated_at": "2025-08-16T22:13:05.867491"
+  },
+  {
+    "id": 21,
+    "question": "what will be the output when you compile and run the following piece of code?\n```cpp\nclass Test\n{\n    int x;\npublic:\n    Test()\n    {\n        x = 0;\n    }\n    Test(int y)\n    {\n        x = y++;\n    }\n    Test(Test &r)\n    {\n        x = r.x++;\n    }\n    void print()\n    {\n        cout<<x;\n    }\n};\nvoid main()\n{\n    Test t(1);\n    t.print();\n    Test x(t);\n    x.print();\n    t.print();\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "121"
+      },
+      {
+        "id": "B",
+        "text": "112"
+      },
+      {
+        "id": "C",
+        "text": "222"
+      },
+      {
+        "id": "D",
+        "text": "122"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "‫‬\n‫#### **1. إنشاء الكائن `t`**‬\n‫‬\n‫  * `Test t(1);`‬\n‫      * هذه الخطوة تستدعي **المُنشئ (constructor)** `Test(int y)`.‬\n‫      * قيمة `y` هي `1`.‬\n‫      * داخل المُنشئ، يتم تنفيذ `x = y++;`.‬\n‫          * أولاً، يتم إسناد قيمة `y` الحالية (وهي `1`) إلى المتغير `x`.‬\n‫          * ثانياً، يتم زيادة قيمة `y` لتصبح `2`.‬\n‫      * نتيجة لذلك، يصبح `t.x` يساوي `1`.‬\n‫‬\n‫-----‬\n‫‬\n‫#### **2. الطباعة الأولى**‬\n‫‬\n‫  * `t.print();`‬\n‫      * هذه الدالة تطبع قيمة `t.x`.‬\n‫      * الناتج: `1`‬\n‫‬\n‫-----‬\n‫‬\n‫#### **3. إنشاء الكائن `x` باستخدام `copy constructor`**‬\n‫‬\n‫  * `Test x(t);`‬\n‫      * هذه الخطوة تستدعي **مُنشئ النسخ (copy constructor)** `Test(const Test& r)`.‬\n‫      * المتغير `r` هو مرجع (reference) إلى الكائن `t`. هذا يعني أن أي تغيير على `r.x` سينعكس مباشرة على `t.x`.‬\n‫      * داخل مُنشئ النسخ، يتم تنفيذ `x = r.x++;`.‬\n‫          * أولاً، يتم إسناد قيمة `r.x` الحالية (وهي `t.x` التي تساوي `1`) إلى المتغير `x` الخاص بالكائن الجديد `x`.‬\n‫          * ثانياً، يتم زيادة قيمة `r.x` (التي هي نفسها `t.x`) بواحد، فتصبح `t.x` تساوي `2`.‬\n‫      * نتيجة لذلك، يصبح `x.x` يساوي `1`، بينما `t.x` يصبح `2`.‬\n‫‬\n‫-----‬\n‫‬\n‫#### **4. الطباعة الثانية**‬\n‫‬\n‫  * `x.print();`‬\n‫      * هذه الدالة تطبع قيمة `x.x`.‬\n‫      * الناتج: `1`‬\n‫‬\n‫-----‬\n‫‬\n‫#### **5. الطباعة الثالثة**‬\n‫‬\n‫  * `t.print();`‬\n‫      * هذه الدالة تطبع قيمة `t.x`.‬\n‫      * الناتج: `2`‬\n‫‬\n‫-----‬\n‫‬\n‫### **الناتج النهائي للكود:**‬\n‫‬\n‫```‬\n‫1‬\n‫1‬\n‫2‬\n‫```‬\n```img\nhttps://i.postimg.cc/J0Z1zrHX/image.png\n```\n```cpp\n\n#include <iostream>\nusing namespace std;\n\nclass Test\n{\n    int x;\npublic:\n    Test()\n    {\n        x = 0;\n    }\n    Test(int y) //1\n    {\n        x = y++;    //x=1 y=2\n    }\n    Test(Test &r)\n    {\n        x = r.x++;  // that mean x=1 y=2 the order of operations is 1. copy r.x to x 2. increment r.x //r.x mean reference to the original object\n    }  //1 to out then 2 after increasing for the new object\n/**\n * Function to print the value of member variable x\n * This is a member function of a class that outputs the value of x to the console\n */\n    void print()\n    {\n    // Output the value of member variable x to the standard output stream\n        cout<<x;\n    }\n};\nint main()\n{\n    Test t(1);\n    t.print();\n    Test x(t);  // call x.x = 1 , Copy Constructor , t.x became 2\n    x.print();\n    t.print(); // t again and x increased to 2 in last step // if x.print() will be 1 not 2\n    return 0;\n}\n\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T20:33:13.876178"
+  },
+  {
+    "id": 22,
+    "question": "Given the class below, what changes do we need to make to the class in order to have a facility to add the values of an object's data to another?\n```cpp\nclass Test\n{\n    int x;\n    int y;\npublic:\n    Test()\n    {\n        x = 0;\n        y = 0;\n    }\n    void setXY(int a, int b)\n    {\n        x = a;\n        y = b;\n    }\n};\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. Do operator + overloading."
+      },
+      {
+        "id": "B",
+        "text": "b. Declare a third temporary member integer."
+      },
+      {
+        "id": "C",
+        "text": "c. Create a new member function: void Add(), that takes no parameters."
+      },
+      {
+        "id": "D",
+        "text": "d. All of the above."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "To define the behavior of the `+` operator for `Test` objects (e.g., `test3 = test1 + test2`), you need to provide a custom implementation by overloading the `+` operator for the `Test` class.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 23,
+    "question": "Object-Oriented is used because: (2 answers)",
+    "options": [
+      {
+        "id": "A",
+        "text": "A. The code is smaller."
+      },
+      {
+        "id": "B",
+        "text": "B. The program is faster."
+      },
+      {
+        "id": "C",
+        "text": "C. The code is reusable."
+      },
+      {
+        "id": "D",
+        "text": "D. The code is easy to maintain."
+      }
+    ],
+    "correct_answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "C. The code is reusable: One of the core benefits of Object-Oriented Programming (OOP) is reusability. Once a class is written, it can be reused in different parts of the program or even in different projects. This avoids redundancy, saves time, and reduces the risk of errors.\n\nD. The code is easy to maintain: OOP helps in creating modular code, where each class is a separate unit of functionality. This modularity makes it easier to maintain, update, or debug parts of the code without affecting the entire program. Changes to one class don’t usually impact others, leading to easier management of the codebase over time.\n```img\nhttps://i.postimg.cc/jdYxk7B4/image.png\n```\n\n🧺 Reusability = زي ما بنستخدم نفس الطاسة في كل طبخة\nمش لازم نشتري طاسة جديدة كل مرة، نفس الطاسة تنفع في كذا أكلة. الكود كمان ممكن نستخدمه في كذا مشروع.\n\n🛠️ Maintainability = زي لما تبني عمارة منظمة، تقدر تصلح أي حاجة بسهولة\nلو كل شقة ليها نظام، تقدر تدخل تصلح التكييف أو الكهرباء بسهولة. نفس الكلام في OOP، الكود المنظم سهل الصيانة.",
+    "page": 0,
+    "updated_at": "2025-08-16T22:19:10.377060"
+  },
+  {
+    "id": 24,
+    "question": "We use the inheritance for:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increasing more member functions only to the base class."
+      },
+      {
+        "id": "B",
+        "text": "Extending base class functionality."
+      },
+      {
+        "id": "C",
+        "text": "Including the base class."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Inheritance is a fundamental OOP mechanism that allows a new class (derived) to inherit properties and behaviors from an existing class (base), and then extend or modify that functionality for more specialized use.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 25,
+    "question": "The following are examples of polymorphism: (2 answers)",
+    "options": [
+      {
+        "id": "A",
+        "text": "a. Operator overloading"
+      },
+      {
+        "id": "B",
+        "text": "b. Function overriding"
+      },
+      {
+        "id": "C",
+        "text": "c. Friend functions"
+      },
+      {
+        "id": "D",
+        "text": "d. Constructor overloading"
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Correct Choices: A, B\n\nOperator overloading (A) supports compile-time polymorphism by allowing operators to behave differently based on types.\nFunction overriding (B) supports run-time polymorphism by allowing derived classes to redefine a base class’s function.\n\n‫الـ Polymorphism (تعدد الأشكال) معناها إن الحاجة ممكن تاخد أكتر من شكل أو تعمل أكتر من وظيفة.‬\n‫‬\n‫أمثلتها الرئيسية:‬\n‫‬\n‫Operator Overloading (تعدد تحميل المعاملات):‬\n‫بتسمح للمعاملات (مثل + أو ==) إنها تتصرف بشكل مختلف حسب نوع البيانات اللي بتشتغل عليها. ده بيعتبر compile-time polymorphism.‬\n‫‬\n‫Function Overriding (إلغاء الدوال):‬\n‫بتحصل لما الـ derived class توفر تطبيق خاص بيها لدالة معينة موجودة في الـ base class. ده بيكون run-time polymorphism.‬\n‫‬\n‫• ليه مش باقي الاختيارات؟‬\n‫‬\n‫Friend functions:‬\n‫دوال ليها صلاحيات وصول خاصة لـ protected وprivate members داخل الكلاس، لكنها مش شكل من أشكال الـ polymorphism.‬\n‫‬\n‫Constructor Overloading:‬\n‫ده نوع من الـ function overloading، لكنه مش مرتبط بـ polymorphism.‬",
+    "page": 0,
+    "updated_at": "2025-08-20T20:52:41.805203"
+  },
+  {
+    "id": 26,
+    "question": "```cpp\nclass XX\n{\n    int i;\n    char c;\n    void seti (int r) { }\n    char getc () { return c; }\n};\nvoid main()\n{\n    XX x;\n    x.seti(8);\n}\n```\nOn running, the previous code:",
+    "options": [
+      {
+        "id": "A",
+        "text": "compiles with no errors"
+      },
+      {
+        "id": "B",
+        "text": "the compiler generates an error because the class XX cannot be instantiated because it has no public constructor."
+      },
+      {
+        "id": "C",
+        "text": "The linker generates an error because the class XX cannot be instantiated because it has no public constructor."
+      },
+      {
+        "id": "D",
+        "text": "The compiler generates an error because the method “seti” is non accessible through object x."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "In a C++ class, members are private by default if no access specifier is used. Thus, `seti` is a private method. The `main` function is outside the class and cannot access private members, leading to a compilation error.\n```cpp\n|15|error: 'void XX::seti(int)' is private within this context|\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T20:46:33.958585"
+  },
+  {
+    "id": 27,
+    "question": "In C++, on calling the previous function:\n```cpp\nvoid printNumber()\n{\n    int num=5;\n    for (i=0; i<10; i++)\n    { cout<<num; }\n    int i;\n    char c;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "An error occurs because i & c cannot be declared after the loop (invalid declaration)."
+      },
+      {
+        "id": "B",
+        "text": "An error occurs because the var i is not visible in the for loop (undefined symbol i)"
+      },
+      {
+        "id": "C",
+        "text": "No error occurs."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The variable `i` is used in the `for` loop `(i=0; ...)` before it is declared. In C++, a variable must be declared before its first use. The declaration `int i;` comes after the loop, causing an 'undefined symbol' or 'not declared in this scope' compiler error.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 28,
+    "question": "The constructor of the base class called automatically:",
+    "options": [
+      {
+        "id": "A",
+        "text": "When any member function of the derived class called."
+      },
+      {
+        "id": "B",
+        "text": "After the constructor of the derived class started."
+      },
+      {
+        "id": "C",
+        "text": "Before the constructor of the derived class started."
+      },
+      {
+        "id": "D",
+        "text": "We do not know when exactly it will be started."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "In C++, when you create an object of a derived class, the base class constructor is called first, automatically, before the derived class constructor begins execution.\n\nThis ensures that the base part of the object is properly initialized before the derived part adds its own behavior.\n\n🔧 Example:\n```cpp\nclass Base {\npublic:\n    Base() { std::cout << \"Base constructor\\n\"; }\n};\n\nclass Derived : public Base {\npublic:\n    Derived() { std::cout << \"Derived constructor\\n\"; }\n};\n\nint main() {\n    Derived d;\n}\n```\n\n\nOutput:\n\n```cpp\nBase constructor\nDerived constructor\n```\n\n🏗️ زي ما بنبني الأساس قبل ما نكمل العمارة\nمينفعش نبدأ بالدور التاني قبل ما نبني الأساس. نفس الكلام في البرمجة، لازم الكلاس الأساسي يتبني الأول قبل ما نكمل بالكلاس المشتق.",
+    "page": 0,
+    "updated_at": "2025-08-16T22:23:35.765452"
+  },
+  {
+    "id": 29,
+    "question": "Which can best be written in the space?\n```cpp\nclass X\n{\n    int k;\npublic:\n    void setK(int k) {........}\n};\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "this->k=k;"
+      },
+      {
+        "id": "B",
+        "text": "k=k;"
+      },
+      {
+        "id": "C",
+        "text": "this.k=k;"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "In the method void setK(int k), the parameter k shadows the member variable k. To distinguish between them, you use the this pointer:\n\n```cpp\nvoid setK(int k) {\n    this->k = k; // Assign parameter k to member variable k\n}\n```\nthis->k refers to the member variable\nk refers to the parameter.\n\n❌ Why the others are incorrect:\nk = k;\t  :    Assigns the parameter to itself — member variable remains unchanged.\nthis.k = k;  :\tInvalid syntax in C++ — this is a pointer, so you must use -> not .\n\n‫في الـ method void setK(int k)، اسم الـ parameter k بيعمل حاجة اسمها \"shadowing\"، يعني بيخفي الـ member variable اللي بنفس الاسم جوه الـ method. عشان تفرق ما بينهم وتوضح إنك عايز تشير للـ member variable، بتستخدم الـ this pointer.‬\n‫الـ this pointer بيشاور على الـ object الحالي.‬\n‫‬\n‫member variable بتشير لـ this->k‬\n‫‬\n‫parameter بتشير لـ k‬\n‫‬\n‫• ليه مش باقي الاختيارات؟‬\n‫‬\n‫k = k: ده هتخلي الـ parameter ياخد قيمة نفسه، والـ member variable مش هتتغير.‬\n‫‬\n‫syntax غلط: ده مش صح في C++، لأنك لازم تستخدم dot operator (.) مش arrow operator (<-) مع الـ this pointer، يعني لازم تكتب this->k = k بدلًا من this.k = k.‬",
+    "page": 0,
+    "updated_at": "2025-08-20T21:11:02.505097"
+  },
+  {
+    "id": 30,
+    "question": "The previous code:\n```cpp\nclass Person\n{\npublic:\n    virtual void talk() = 0;\n};\nclass Adult: public Person\n{\npublic:\n     void talk() { cout << \"Hello\"; }\n};\nclass Female: public Person\n{\npublic:\n       void talk() { cout << \"Hi\"; }\n};\nvoid main()\n{\n    Person p;\n    Adult a;\n    Female f;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compiles successfully."
+      },
+      {
+        "id": "B",
+        "text": "Produces an error."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The line Person p; causes a compilation error because:\n\nPerson is an abstract class. it contains a pure virtual function\n```cpp\nvirtual void talk() = 0;\n```\nYou cannot instantiate an abstract class directly.\n\n\n✅ How to fix it:\nYou can create pointers or references to Person, but not direct objects:\n```cpp\nPerson* p1 = new Adult();   // ✅ OK\nPerson* p2 = new Female();  // ✅ OK\n```\n🚫 زي ما مينفعش تركب عربية من غير موتور\nالكلاس اللي فيه دالة virtual = 0 زي عربية من غير موتور. لازم يكون فيه نسخة كاملة (مشتقة) علشان تشتغل. مينفعش تستخدمها لوحدها.",
+    "page": 0,
+    "updated_at": "2025-08-16T22:30:14.555320"
+  },
+  {
+    "id": 31,
+    "question": "What are the expected constructors that must exist in the base class?\n```cpp\nclass Child: public Base\n{\npublic:\n    Child(int x) { }\n    Child(int x,int y) : Base(x,y)\n    {}\n};\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Base(), Base(int,int)"
+      },
+      {
+        "id": "B",
+        "text": "Base(), Base(int)"
+      },
+      {
+        "id": "C",
+        "text": "Base(int), Base(int,int)"
+      },
+      {
+        "id": "D",
+        "text": "Base(int,int)"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "The constructor `Child(int x)` has no initializer list, so the compiler will implicitly try to call the default constructor of the base class, `Base()`. The constructor `Child(int x, int y)` explicitly calls `Base(x,y)` in its initializer list, which requires a constructor `Base(int, int)`. Therefore, both must exist.\n\n\n‫بناءً على الشرح المقدم، الجواب الصحيح هو أن الـ Base class يجب أن يحتوي على كلا من default constructor (Base()) وconstructor مُعاملي (Base(int, int)) لتجنب أي compilation error.‬\n‫الشرح:‬\n‫‬\n‫Default Constructor (Base()):‬\n‫‬\n‫عند إنشاء كائن من الكلاس المشتق (Child)، الـ compiler يحاول استدعاء الـ default constructor للـ Base class تلقائيًا إذا لم يتم تحديد أي constructor بشكل صريح.‬\n‫إذا لم يكن هناك default constructor مُعرف في الـ Base class، سيحدث compilation error.‬\n‫‬\n‫‬\n‫Parameterized Constructor (Base(int, int)):‬\n‫‬\n‫في حالة وجود constructor في الكلاس المشتق مثل Child(int x, int y) يستدعي صراحةً الـ constructor للـ Base class باستخدام initializer list (مثل Base(x, y))، يجب أن يكون هناك constructor في الـ Base class يقبل هذه الـ parameters (Base(int, int)).‬\n‫إذا لم يكن موجودًا، سيحدث compilation error.‬\n‫‬\n‫‬\n‫‬\n‫الخلاصة:‬\n‫لكي يعمل الكود بدون أخطاء، يجب أن يحتوي الـ Base class على:‬\n‫‬\n‫Default constructor (Base()) لتغطية الحالات التي يتم فيها استدعاء الـ Base class بدون معاملات.‬\n‫Parameterized constructor (Base(int, int)) لتغطية الحالات التي يتم فيها استدعاء الـ Base class بمعاملات من خلال الـ initializer list في الكلاس المشتق.‬‬",
+    "page": 0,
+    "updated_at": "2025-08-20T21:18:42.135225"
+  },
+  {
+    "id": 32,
+    "question": "The class that contains a pure virtual function is called:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Base class."
+      },
+      {
+        "id": "B",
+        "text": "Derived class."
+      },
+      {
+        "id": "C",
+        "text": "Abstract class."
+      },
+      {
+        "id": "D",
+        "text": "Embedded class."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "By definition, a class in C++ that contains one or more pure virtual functions is known as an abstract class. It serves as a blueprint for derived classes and cannot be instantiated on its own.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 33,
+    "question": "The previous code prints:\n```cpp\nclass XX\n{\n    int i;\n    char c;\npublic:\n    void seti(int r) {}\n    void getc() { return c; }\n    void printHi() { cout << \"Hi\"; }\n};\nvoid printHi() { cout << \"Hello\"; }\nvoid main()\n{\n    XX x;\n    x.printHi();\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hello."
+      },
+      {
+        "id": "B",
+        "text": "Hi."
+      },
+      {
+        "id": "C",
+        "text": "Hi then Hello"
+      },
+      {
+        "id": "D",
+        "text": "None of the above, it generates an error."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "void has no return value\n```img\nhttps://i.postimg.cc/bJ7QHhkc/image.png\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T21:25:21.691549"
+  },
+  {
+    "id": 34,
+    "question": "In the previous code:\n```cpp\nclass Student\n{\n    char name[20];\npublic:\n    Student() { strcpy(name, \"Anonymous\"); cout<<name;}\n    Student(char* nm) { strcpy(name,nm); cout<<name;}\n    ~Student() {}\n};\nvoid main()\n{\n    Student s1(\"Mona\");      // ......1\n    Student *s2;             // ......2\n    s2 = new Student(\"Ali\"); // ......3\n    delete s1;               // ......4\n    delete s2;               // ......5\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "It compiles successfully."
+      },
+      {
+        "id": "B",
+        "text": "Line 4 generates an error."
+      },
+      {
+        "id": "C",
+        "text": "Line 5 generates an error."
+      },
+      {
+        "id": "D",
+        "text": "Both lines 4,5 generate errors."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The object `s1` is created on the stack (automatic storage duration). The `delete` operator can only be used on pointers to memory allocated with `new` (dynamic storage duration). Attempting to `delete` a stack object like `s1` is a compilation error.\n\nAfter fixing by commenting stack delete\n```cpp\n#include <iostream>\n#include <cstring>\nusing namespace std;\n\nclass Student\n{\n    char name[20];\npublic:\n    Student() { strcpy(name, \"Anonymous\"); cout<<name;}\n    Student(char* nm) { strcpy(name,nm); cout<<name;}\n    ~Student() {}\n};\nint main()\n{\n  Student s1(\"Mona\");      // ......1\n    Student *s2;             // ......2\n    s2 = new Student(\"Ali\"); // ......3\n    //delete s1;               // ......4\n    delete s2;               // ......5\n}\n```\n\nOutput is : MonaAli",
+    "page": 0,
+    "updated_at": "2025-08-20T21:31:03.747971"
+  },
+  {
+    "id": 35,
+    "question": "Which of the statements below is true?\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Test\n{\npublic:\n    void print(int i)         // ..1\n    { cout << \"int version\"; }  // ..2\n    void print(char *c)       // ..3\n    { cout << \"char version\"; } // ..4\n};\n\nvoid main()\n{\n    Test t;                   // ..5\n    char ch = 'p';            // ..6\n    t.print(ch);              // ..7\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Line 4 will not compile, because void methods cannot be overloaded."
+      },
+      {
+        "id": "B",
+        "text": "Line 7 will not compile, because there is no version of print that takes a char."
+      },
+      {
+        "id": "C",
+        "text": "The code will compile and produce the following output: int version."
+      },
+      {
+        "id": "D",
+        "text": "The code will compile and produce the following output: char version."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "The code compiles and outputs int version because t.print(ch) with char ch = p resolves to void print(int i) via implicit char-to-int conversion, not void print(char *c).\n\n```img\nhttps://i.postimg.cc/g0TgL108/image.png\n```\n\nto try print char version remove pointer argument:\n\n```cpp\n\n\n#include <iostream>\nusing namespace std;\n\nclass Test\n{\npublic:\n    void print(int i)         // ..1\n    { cout << \"int version\"; }  // ..2\n    void print(char c)       // ..3\n    { cout << \"char version\"; } // ..4\n};\nint main()\n{\nTest t;                   // ..5\n    char ch = 'p';            // ..6\n    t.print(ch);              // ..7\n}\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T21:42:33.692162"
+  },
+  {
+    "id": 36,
+    "question": "What happens in program?\n```cpp\nclass Base\n{\npublic:\n    int x;\n};\nclass Child: private Base\n{\npublic:\n    int y;\n};\nvoid main()\n{\n    Child c;\n    c.x=10;\n    cout<<\"x=\"<<x;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compiler error because x is not declared in Child class."
+      },
+      {
+        "id": "B",
+        "text": "Compiler error because of the Child inheritance from private class."
+      },
+      {
+        "id": "C",
+        "text": "x=10"
+      },
+      {
+        "id": "D",
+        "text": "Runtime error."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "When `Child` inherits from `Base` using `private` inheritance, all `public` members of `Base` (like `x`) become `private` members of `Child`. Therefore, `x` cannot be accessed from outside the `Child` class, such as in the `main` function. The line `c.x=10;` will cause a compilation error.\n```img\nhttps://i.postimg.cc/c1MfVVNh/image.png\n```\n\nالتصحيح:\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Base\n{\npublic:\n    int x;\n};\nclass Child: public Base // تغيير إلى public inheritance\n{\npublic:\n    int y;\n};\nint main() // تصحيح إلى int main\n{\n    Child c;\n    c.x = 10; // الآن يعمل لأن x public\n    cout << \"x=\" << c.x; // تصحيح إلى c.x\n    return 0;\n}\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T21:46:07.516810"
+  },
+  {
+    "id": 37,
+    "question": "A constructor is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) A member function that removes an object from the memory."
+      },
+      {
+        "id": "B",
+        "text": "b) A member function that is called automatically when an object is being removed from the memory."
+      },
+      {
+        "id": "C",
+        "text": "c) A member function that is used to initialize variables of a declared object."
+      },
+      {
+        "id": "D",
+        "text": "d) None of the above."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "A constructor is a special member function whose primary purpose is to initialize the data members of an object when it is created. Options (a) and (b) describe a destructor.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 38,
+    "question": "Given the class below, what changes do we need to make to the class in order to have a facility to test if the values of two objects' data are equal?\n```cpp\nclass MyClass\n{\nprivate:\n    float a;\n    float b;\npublic:\n    MyClass()\n    {\n        a = 0 ;\n        b = 0;\n    }\n    void setValues (int x, int y)\n    {\n        a = x;\n        b = y;\n    }\n};\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) Declare a third temporary member integer."
+      },
+      {
+        "id": "B",
+        "text": "b) Do operator == overloading."
+      },
+      {
+        "id": "C",
+        "text": "c) Create a new member function: void testEqual( ), that takes no parameters."
+      },
+      {
+        "id": "D",
+        "text": "d) None of the above"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "To provide a custom comparison for equality between two objects of `MyClass`, you should overload the `==` operator. This allows for intuitive syntax like `if (obj1 == obj2)`.\n```img\nhttps://i.postimg.cc/RFvwFR7K/image.png\n```\n```cpp\nclass MyClass\n{\nprivate:\n    float a;\n    float b;\npublic:\n    MyClass()\n    {\n        a = 0;\n        b = 0;\n    }\n    void setValues(int x, int y)\n    {\n        a = x;\n        b = y;\n    }\n    // تعديل المعامل ==\n    bool operator==(const MyClass& other) const\n    {\n        return (a == other.a && b == other.b);\n    }\n};\n```\n```img\nhttps://i.postimg.cc/wjJNQPFD/image.png\n```\nاستخدام المثال:\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main()\n{\n    MyClass obj1, obj2;\n    obj1.setValues(5, 10);\n    obj2.setValues(5, 10);\n    if (obj1 == obj2)\n        cout << \"Objects are equal\" << endl;\n    else\n        cout << \"Objects are not equal\" << endl;\n    return 0;\n}\n```\n```img\nhttps://i.postimg.cc/sXfZy2zJ/image.png\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T21:54:37.565513"
+  },
+  {
+    "id": 39,
+    "question": "Which of the following statements are true about destructors?",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) Destructors are special functions with the same name of the class and are preceded by a tilde character (~)."
+      },
+      {
+        "id": "B",
+        "text": "b) Destructors cannot be overloaded."
+      },
+      {
+        "id": "C",
+        "text": "c) A destructor has no return type."
+      },
+      {
+        "id": "D",
+        "text": "d) All of the above."
+      },
+      {
+        "id": "E",
+        "text": "e) None of the above."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "All three statements are correct definitions of a destructor's properties in C++. They are named `~ClassName`, a class can only have one (cannot be overloaded), and they have no return type, not even `void`.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 40,
+    "question": "Which of the following most closely describes the process of overloading?",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) A class with the same name replaces the functionality of a class defined earlier in the hierarchy."
+      },
+      {
+        "id": "B",
+        "text": "b) A method with the same name completely replaces the functionality of a method defined earlier in the hierarchy."
+      },
+      {
+        "id": "C",
+        "text": "c) A method with the same name but different parameters gives multiple uses for the same method name."
+      },
+      {
+        "id": "D",
+        "text": "d) A class is prevented from accessing methods in its immediate ancestor."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Function overloading allows multiple functions in the same scope to have the same name, as long as they have different parameter lists (different number, type, or order of parameters). This is a form of compile-time polymorphism.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 41,
+    "question": "What will happen when you attempt to compile the code below?\n```cpp\nclass MyClass\n{\n    int x;\npublic:\n    int y;\n};\nvoid main()\n{\n    MyClass obj;\n    obj.x = 100;\n    obj.y = 500;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) Compiler Error because x is not accessible."
+      },
+      {
+        "id": "B",
+        "text": "b) Compiler Error because y is not accessible."
+      },
+      {
+        "id": "C",
+        "text": "c) Compiler Error because MyClass is an abstract class and can not be instantiated."
+      },
+      {
+        "id": "D",
+        "text": "d) a and b."
+      },
+      {
+        "id": "E",
+        "text": "e) The code will compile successfully."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "In a C++ class, members are `private` by default. Since `int x` is declared before any access specifier, it is private. The `main` function, being outside the class, cannot access private members. The line `obj.x = 100;` will cause a compilation error.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 42,
+    "question": "The following function prototype uses the default arguments feature: ```cpp void myFunc(int x=3, int y);``` is the function valid this way?",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) Yes, it is ok to give a default parameter for x and not for y."
+      },
+      {
+        "id": "B",
+        "text": "b) No, a function must always declare all its variables with default values."
+      },
+      {
+        "id": "C",
+        "text": "c) No, you must only give a default parameter for y but not for x."
+      },
+      {
+        "id": "D",
+        "text": "d) No, there should not be any arguments without default values to the right of the default arguments."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "In C++, parameters with default values must be the trailing (rightmost) parameters in the function's signature. Once you provide a default argument for a parameter, all subsequent parameters must also have default arguments. Here, `y` does not have a default value but follows `x` which does, making the prototype invalid.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 43,
+    "question": "A derived(sub)(child)(inherited) class can directly access:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) The protected and public members of the base class."
+      },
+      {
+        "id": "B",
+        "text": "b) The private and protected members of the base class."
+      },
+      {
+        "id": "C",
+        "text": "c) Only the protected members of the base class."
+      },
+      {
+        "id": "D",
+        "text": "d) Only the private members of the base class."
+      },
+      {
+        "id": "E",
+        "text": "e) The public, private, and protected members of the base class."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A derived class inherits from a base class and can directly access its `public` and `protected` members. It cannot directly access the `private` members of the base class.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 44,
+    "question": "Assume you have a class X that contains an object of class Y. Assume that we declare an object of class X in the main() function. When will the body of the constructor of class Y be executed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) When any member function of the class X is called."
+      },
+      {
+        "id": "B",
+        "text": "b) After the body of the constructor of class X is executed."
+      },
+      {
+        "id": "C",
+        "text": "c) Before the body of the constructor of class X is executed."
+      },
+      {
+        "id": "D",
+        "text": "d) We can not determine exactly when it will be executed."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "This describes composition (a 'has-a' relationship). When an object of the container class `X` is constructed, all its member objects (like the `Y` object) must be fully constructed first. Therefore, the constructor for `Y` runs before the code inside the body of `X`'s constructor.\n ```img\nhttps://i.postimg.cc/zGLstwRC/image.png\n ```\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Y {\npublic:\n    Y() {\n        cout << \"Y constructor called\" << endl;\n    }\n};\n\nclass X {\n    Y y; // كائن من الكلاس Y كعضو\npublic:\n    X() {\n        cout << \"X constructor called\" << endl;\n    }\n};\n\nint main() {\n    X x; // إنشاء كائن من الكلاس X\n    return 0;\n}\n ```\noutput:\n```cpp\nY constructor called\nX constructor called\n```\n```img\nhttps://i.postimg.cc/pdRBhRxm/image.png\n ```",
+    "page": 0,
+    "updated_at": "2025-08-20T22:04:13.093587"
+  },
+  {
+    "id": 45,
+    "question": "An embedded (aggregated) object is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a) An object that s declared with the default constructor."
+      },
+      {
+        "id": "B",
+        "text": "b) An object that is included by another object."
+      },
+      {
+        "id": "C",
+        "text": "c) An object from a class that is inherited from another class."
+      },
+      {
+        "id": "D",
+        "text": "d) b and c."
+      },
+      {
+        "id": "E",
+        "text": "e) None of the above."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "An embedded, or member, object is an instance of one class that is a data member of another class. This represents a 'has-a' relationship, which is a key part of both composition and aggregation.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 46,
+    "question": "To write copy constructor to class point, what would be its signature?\n```cpp\n. class Point\n{\n    float x, y;\n    Point (float a, float b) { x=a; y=b;}\n    Point () { x=0; y=0; }\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Point (Point)"
+      },
+      {
+        "id": "B",
+        "text": "Point (Point &)"
+      },
+      {
+        "id": "C",
+        "text": "Point & Point (Point &)."
+      },
+      {
+        "id": "D",
+        "text": "Point & Point (Point)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A copy constructor is a special constructor used to create a new object as a copy of an existing object.\n\nThe parameter type must be a reference to an existing object, and the object should not be modified, hence it is passed as a const reference.\n\nSo the correct option is:\nPoint(const Point &)\n\nHere's the updated class with a proper copy constructor:\n\n ```cpp\n class Point\n{\n    float x, y;\npublic:\n    Point(float a, float b) { x = a; y = b; }\n    Point() { x = 0; y = 0; }\n    \n    // Copy constructor\n    Point(const Point &p) { x = p.x; y = p.y; }\n};\n ```\n\n\nPoint(Point &) is incorrect because passing by reference without const would allow modification of the original object, which is not the purpose of a copy constructor.\n\nPoint & Point(Point &) is incorrect because copy constructors should return nothing (void return type) and not a reference.\n\nvoid Point(Point) and void Point(Point &) are also incorrect for the same reason — copy constructors don't have a return type.\n\n",
+    "page": 0,
+    "updated_at": "2025-08-10T16:51:52.262969"
+  },
+  {
+    "id": 47,
+    "question": "What is the output of the following code?\n```cpp\n. class Nice\n{ \n    int a;\npublic:\n    Nice() { a = 0; }\n    Nice(Nice & myN)\n    { \n        this-> a = myN.a;\n        cout<<\"I am the copy constructor \";\n    }\n    void setA(int m) { a = m; }\n    int getA() { return a; }\n};\nvoid show(Nice &obj)\n{\n    cout<<\"I am the show function, value is: \" << obj.getA();\n}\nvoid main()\n{ \n    Nice n1;\n    n1.setA(15);\n    show(n1);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "I am the show function, value is: 15."
+      },
+      {
+        "id": "B",
+        "text": "I am the copy constructor I am the show function, value is: 15."
+      },
+      {
+        "id": "C",
+        "text": "I am the show function, value is: 0."
+      },
+      {
+        "id": "D",
+        "text": "Compilation Error."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "The `show` function takes its parameter `obj` by reference (`Nice &obj`). When an object is passed by reference, no copy is made, and the copy constructor is not called. Therefore, only the output from the `show` function itself will be printed.\n\nLet's trace the execution of your code step by step to determine the correct output:\nStep-by-Step Trace:\n\n```cpp\nNice n1;\n```\nThe default constructor Nice() is called.\na is set to 0.\nNo output yet.\n\n\n```cpp\nn1.setA(15);\n```\nThe value of a in n1 is set to 15.\nNo output yet.\n\n```cpp\nshow(n1);\n```\nThe function show(Nice &obj) is called.\nThe argument n1 is passed by reference, so no copy constructor is called.\nInside show(), obj.getA() is called, which returns 15.\nThe output is:\n``cpp\nI am the show function, value is: 15\n``\nKey Point:\n\nThe copy constructor is not called because n1 is passed by reference to show(), not by value.\nIf show() accepted Nice obj (by value), the copy constructor would be called.",
+    "page": 0,
+    "updated_at": "2025-08-16T00:17:21.034980"
+  },
+  {
+    "id": 48,
+    "question": "If we did not specify a constructor to the class, then :",
+    "options": [
+      {
+        "id": "A",
+        "text": "we won't be able to create object of class"
+      },
+      {
+        "id": "B",
+        "text": "we won't be able to create object of class, and compiler will give compilation error"
+      },
+      {
+        "id": "C",
+        "text": "we won't be able to create object of class, and compiler will give warning"
+      },
+      {
+        "id": "D",
+        "text": "it will generate run-time error"
+      },
+      {
+        "id": "E",
+        "text": "None of the above"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "If you do not define any constructors for a class, the compiler will automatically generate a public default (no-argument) constructor for you. This allows you to create objects of the class without any error. Therefore, none of the other statements are correct.\n ```img\nhttps://i.postimg.cc/RFjG8J6N/image.png\n ```\n ```cpp\n#include <iostream>\nusing namespace std;\n\nclass MyClass {\npublic:\n    int x;\n    void print() {\n        cout << \"x = \" << x << endl;\n    }\n};\n\nint main() {\n    MyClass obj; // يعمل بدون مشكلة بفضل الـ default constructor\n    obj.x = 10;\n    obj.print();\n    return 0;\n}\n```\n```cpp\nOutput : x = 10\n```\n\n```img\nhttps://i.postimg.cc/02GZWQ8y/image.png\n ```",
+    "page": 0,
+    "updated_at": "2025-08-20T22:21:03.173112"
+  },
+  {
+    "id": 49,
+    "question": "We can overload Destructor in the class",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A destructor in C++ cannot be overloaded. A class can have only one destructor, which has the fixed signature `~ClassName()` and takes no parameters.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 50,
+    "question": "Which two statements about constructors in C++ are true?\n\nA. A constructor can be overloaded.\nB. A constructor is a special member function with the same name as the class.\nC. A constructor can return a primitive or an object reference.\nD. All the above statements are true.",
+    "options": [
+      {
+        "id": "A",
+        "text": "C, D"
+      },
+      {
+        "id": "B",
+        "text": "A, B"
+      },
+      {
+        "id": "C",
+        "text": "A, D"
+      },
+      {
+        "id": "D",
+        "text": "B, D"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A. A constructor can be overloaded: True. Constructors can be overloaded by defining multiple constructors with different parameter lists in the same class, allowing different ways to initialize objects.\nB. A constructor is a special member function with the same name as the class: True. A constructor is a special member function that has the same name as the class and is automatically called when an object is created to initialize it.\nC. A constructor can return a primitive or an object reference: False. Constructors do not have a return type, not even void. They are meant to initialize objects and cannot return values.\nD. All the above: False. Since option C is false, this option is incorrect.\n\nThus, the correct choices are A and B.",
+    "page": 0,
+    "updated_at": "2025-08-09T18:28:05.344260"
+  },
+  {
+    "id": 51,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass Parent\n{\nprotected:\n    int x;\npublic:\n    Parent(int m) { x = m; }\n    friend void display();\n};\nclass Child: public Parent\n{\nprivate:\n    int y;\npublic:\n    Child(int m, int n): Parent(m) { y = n; }\n};\nvoid display ()\n{\n    Child c(3,4);\n    cout <<\"x=\"<<c.x<<\"y=\"<<c.y; // Line 1\n}\nvoid main ()\n{\n    display();\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compilation Error at Line 1, Child::x is inaccessible"
+      },
+      {
+        "id": "B",
+        "text": "Compilation Error at Line 1, Child::y is inaccessible"
+      },
+      {
+        "id": "C",
+        "text": "A and B"
+      },
+      {
+        "id": "D",
+        "text": "The code compiles successfully."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```img\nhttps://i.postimg.cc/pX9vKgdN/image.png\n```\nFriend Function in C++\nLike friend classes, a friend function can be granted special access to private and protected members of a class in C++. They are not the member functions of the class but can access and manipulate the private and protected members of that class for they are declared as friends.\n```img\nhttps://media.geeksforgeeks.org/wp-content/uploads/20220802105339/FriendFunctioninC-660x328.png\n```\nA friend function can be:\n\nA global function\nA member function of another class\n\n1. Global Function as Friend Function\nWe can declare any global function as a friend function. The following example demonstrates how to declare a global function as a friend function in C++. The keyword “friend” is placed only in the function declaration of the friend function and not in the function definition or call.\n\n\nSource:https://www.geeksforgeeks.org/cpp/friend-class-function-cpp/",
+    "page": 0,
+    "updated_at": "2025-08-16T00:03:42.171511"
+  },
+  {
+    "id": 52,
+    "question": "\n```cpp\nclass Super\n{\nprotected:\n    Super(int a) { \n  this.a = a; // Line 1\n} \nprivate:\n    int a; // Line 2\n};\nclass Sub: public Super\n{\npublic:\n    Sub(int a):Super(a) {}\npublic:\n    Sub() { //Line 3\n        this.a= 5; //Line 4\n    }\n};\n```\n\nWhich steps will allow Sub to compile?\n\n",
+    "options": [
+      {
+        "id": "A",
+        "text": "A) Class Sub compile successfully"
+      },
+      {
+        "id": "B",
+        "text": "B) Comment Line 2"
+      },
+      {
+        "id": "C",
+        "text": "C) In Line 1 and 4, use (*this).a instead of this.a;"
+      },
+      {
+        "id": "D",
+        "text": "D) Change Line 1 and 4 to, this(a);"
+      },
+      {
+        "id": "E",
+        "text": "E) Change Line 3 to, Sub(): Super(5)"
+      },
+      {
+        "id": "F",
+        "text": "F) Change Line 3 to, Sub(): this(5)"
+      },
+      {
+        "id": "G",
+        "text": "G) All of the above"
+      }
+    ],
+    "correct_answer": [
+      "C",
+      "E"
+    ],
+    "explanation": "```arabic\n‫لأن (*this).a بتصلح خطأ syntax في السطرين 1 و4، وSub(): Super(5) بتصلح استدعاء الـ constructor في السطر 3‬\n```\n\n```img\nhttps://i.ibb.co/G4Lqqkz7/image.png\n```\n\n```img\nhttps://i.ibb.co/sv4pNsH9/image.png\n```\n\n```img\nhttps://i.ibb.co/BKHp7ZcY/image.png\n```",
+    "page": 0,
+    "updated_at": "2025-08-10T21:10:07.414621"
+  },
+  {
+    "id": 53,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass Base\n{\npublic:\n    Base() { cout<<\"Welcome \";}\n};\nclass Derived: public Base\n{\npublic:\n    Derived() { cout<<\"Hello \"; }\n};\nvoid main()\n{\n    Base myBase;\n    Derived myDerived;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Welcome Hello"
+      },
+      {
+        "id": "B",
+        "text": "Hello Welcome"
+      },
+      {
+        "id": "C",
+        "text": "Welcome Hello Welcome"
+      },
+      {
+        "id": "D",
+        "text": "Welcome Welcome Hello"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "```img\nhttps://i.ibb.co/7xkRynyJ/image.png\n```",
+    "page": 0,
+    "updated_at": "2025-08-10T16:14:00.498023"
+  },
+  {
+    "id": 54,
+    "question": "In order to turn a class into an abstract class, which of the following do we need to do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Write the abstract keyword before the name of the class."
+      },
+      {
+        "id": "B",
+        "text": "Make the class a pure virtual class."
+      },
+      {
+        "id": "C",
+        "text": "Write one or more pure virtual functions inside the class."
+      },
+      {
+        "id": "D",
+        "text": "A and C."
+      },
+      {
+        "id": "E",
+        "text": "None of the above"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "The definition of an abstract class in C++ is a class that contains at least one pure virtual function. A pure virtual function is declared with the syntax `virtual return_type function_name() = 0;`.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 55,
+    "question": "A protected member of a class can be directly accessed by its name inside another class if and only if that other class is a child of that class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is the definition of the `protected` access level. Protected members are accessible within the class that defines them and within any classes that derive from that class.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 56,
+    "question": "Which of the following most closely describes the process of overriding?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A class with the same name replaces the functionality of a class defined earlier in the hierarchy."
+      },
+      {
+        "id": "B",
+        "text": "A function with the same name replaces the functionality of a function defined earlier in the inheritance hierarchy."
+      },
+      {
+        "id": "C",
+        "text": "A function with the same name but different parameters gives multiple uses for the same function name."
+      },
+      {
+        "id": "D",
+        "text": "Making a class abstract so that no objects can be declared from it."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Function overriding occurs when a derived class provides a specific implementation for a function that is already defined in its base class. This is a key feature for achieving runtime polymorphism.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 57,
+    "question": "```img\nhttps://i.postimg.cc/RV11rfTH/edit-logo.gif\n```\nAssume you have a class M that contains a pointer to an object of class N. Assume that we declare an object of M in the main() function. When will the body of the constructor of class N be executed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "When any member function of the class M is called"
+      },
+      {
+        "id": "B",
+        "text": "After the body of the constructor of class M is executed"
+      },
+      {
+        "id": "C",
+        "text": "Before the body of the constructor of class M is executed"
+      },
+      {
+        "id": "D",
+        "text": "None of the above"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "‫الشرح: السؤال بيقول إن class M بيحتوي على pointer لـ object من class N (N* myN_ptr;). مجرد تعريف الـ pointer ده مش بيعمل object.‬\n‫‬\n‫الـ constructor بتاع class N هيتنفذ فقط لو عملت new N() (عشان تعمل object من N وتخلي الـ pointer يشاور عليه).‬\n‫الـ new ممكن يتم في أي وقت (جوه constructor بتاع M، أو في أي member function، أو حتى في main لو الـ pointer public). يعني مش مرتبط بوقت محدد زي الـ composition اللي شرحناها في سؤال 44.‬\n‫الـ A, B, C options كلها بتفترض إن الـ object بيتنشأ تلقائيًا.‬\n‫\n```img\nhttps://i.postimg.cc/qvssBZtB/image.png\n```\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass N {\npublic:\n    N() {\n        cout << \"N constructor called\" << endl;\n    }\n};\n\nclass M {\n    N* ptr; // مؤشر إلى كائن من الكلاس N\npublic:\n    M() {\n        cout << \"M constructor called\" << endl;\n        // ptr = new N(); // إذا أضفت هذا السطر، سيتم استدعاء constructor الكلاس N\n    }\n};\n\nint main() {\n    M obj; // إنشاء كائن من الكلاس M\n    return 0;\n}\n```\n```cpp\nM constructor called\n```\n```img\nhttps://i.postimg.cc/fb4MCB5d/image.png\n```\n```img\nhttps://i.postimg.cc/T3gzdGqy/image.png\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T22:44:42.434619"
+  },
+  {
+    "id": 58,
+    "question": "What will happen here\n```cpp\nclass Parent\n{\npublic:\n    int x;\n    Parent (int m) { x = m; }\n};\nclass Child: protected Parent\n{\npublic:\n    int y;\n    Child(int m, int n): Parent (m) { y=n; }\n};\nclass GrandChild: public Child\n{\n    int z;\npublic:\n    GrandChild(int a, int b, int c) : Child(a,b) { z = c; }\n};\nvoid main()\n{\n    GrandChild obj(3,5,7);\n    cout<<\"Value of x is: \"<<obj.x <<endl; //Line 1\n    cout<<\"Value of y is: \"<<obj.y <<endl; //Line 2\n    cout<<\"Value of z is: \"<<obj.z <<endl; //Line 3\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compiler Error at Line 1"
+      },
+      {
+        "id": "B",
+        "text": "Compiler Error at Line 2"
+      },
+      {
+        "id": "C",
+        "text": "Compiler Error at Line 3"
+      },
+      {
+        "id": "D",
+        "text": "The code compiles successfully"
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "‫🔍 تحليل الكود:‬\n‫◦ Line 1: cout << \"Value of x is: \" << obj.x;‬\n‫‬\n‫ـ هنا Child ورثت من Parent باستخدام protected inheritance، فـ كل الـ public members زي x في Parent بقت protected جوه Child.‬\n‫‬\n‫ـ لما GrandChild يرث من Child، الـ x تفضل protected، وبالتالي مش ممكن الوصول ليها من خارج الكلاس زي ما بيحصل في main().‬\n‫‬\n‫ـ النتيجة: يحصل Compiler Error في السطر ده.‬\n‫‬\n‫◦ Line 2: cout << \"Value of y is: \" << obj.y;‬\n‫‬\n‫ـ المتغير y متعرف في Child كـ public.‬\n‫‬\n‫ـ لكن Child نفسها ورثت من Parent بـ protected، وده مايأثرش على y لأنها متعرفه مباشرة في Child.‬\n‫‬\n‫ـ لما GrandChild يرث من Child بـ public، يقدر يستخدم y بشكل طبيعي.‬\n‫‬\n‫ـ النتيجة: السطر ده يشتغل تمام ومفيش خطأ.‬\n‫‬\n‫◦ Line 3: cout << \"Value of z is: \" << obj.z;‬\n‫‬\n‫ـ المتغير z متعرف في GrandChild كـ private.‬\n‫‬\n‫ـ وده معناه إن الوصول ليه من خارج الكلاس (زي main()) مش مسموح.‬\n‫‬\n‫ـ النتيجة: يحصل Compiler Error في السطر ده.‬\n‫‬\n‫✅ الإجابة النهائية:‬\n‫❌ Compiler Error at Line 1‬\n‫‬\n‫✅ Line 2 works fine‬\n‫‬\n‫❌ Compiler Error at Line 3‬\n‫‬\n‫يعني الإجابات الصحیحة هي: A و C لأن السطرين 1 و 3 هيطلعوا فيهم أخطاء.‬",
+    "page": 0,
+    "updated_at": "2025-08-20T23:07:41.153346"
+  },
+  {
+    "id": 59,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass Tester\n{\npublic:\n    int x;\n    static int var;\n    Tester(int a) { x = a; }\n    static void myFunction(int a)\n    {\n        Tester obj(9);    // Line 1\n        obj.x=a;         // Line 2\n        cout<<obj.x;\n    }\n};\nint Tester::var=0;\nvoid main()\n{\n    Tester myT(7);\n    Tester::myFunction(15);\n    cout<<myT.x;\n    cout<<Tester::var<<endl; // Line 3\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "15 7 0"
+      },
+      {
+        "id": "B",
+        "text": "7 15 0"
+      },
+      {
+        "id": "C",
+        "text": "15 9 0"
+      },
+      {
+        "id": "D",
+        "text": "9 15 0"
+      },
+      {
+        "id": "E",
+        "text": "Compilation error at line 1"
+      },
+      {
+        "id": "F",
+        "text": "Compilation error at line 2"
+      },
+      {
+        "id": "G",
+        "text": "Compilation error at line 3"
+      },
+      {
+        "id": "H",
+        "text": "None of the above"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. `Tester myT(7);`: Creates an object `myT` with `myT.x` equal to 7.\n2. `Tester::myFunction(15);`: Calls the static function. Inside, a *local* object `obj` is created and its `x` is set to 15. The function then prints `obj.x`, which is `15`.\n3. `cout<<myT.x;`: Back in `main`, `myT` was unaffected by the static function call. Its `x` is still 7. This line prints `7`.\n4. `cout<<Tester::var<<endl;`: The static variable `var` was initialized to 0 and never changed. This line prints `0`.\nThe combined output is `1570`.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 60,
+    "question": "The term \" Composition \" refers to an object of a class that contains another object of another class inside it.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This statement is a correct definition of composition. It describes a 'has-a' relationship where an object is 'composed' of other objects, which are included as member variables.",
+    "page": 0,
+    "updated_at": "2025-08-09T16:52:54.855122"
+  },
+  {
+    "id": 61,
+    "question": "Which of the following is true about an object member function?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It can be called using the name of the class."
+      },
+      {
+        "id": "B",
+        "text": "It can access static variables of the class."
+      },
+      {
+        "id": "C",
+        "text": "It has a this pointer as an implicit parameter passed to it"
+      },
+      {
+        "id": "D",
+        "text": "It can access the instance variables."
+      },
+      {
+        "id": "E",
+        "text": "It cannot be overloaded."
+      },
+      {
+        "id": "F",
+        "text": "It can call other member functions from inside it."
+      }
+    ],
+    "correct_answer": [
+      "B",
+      "C",
+      "D",
+      "F"
+    ],
+    "explanation": "Option A: \"It can be called using the name of the class.\"\nThis is false. Non-static member functions require an object instance for invocation (e.g., obj.function()). Only static member functions can be called with the class name (e.g., ClassName::staticFunction()).\nOption B: \"It can access static variables of the class.\"\nThis is true. Non-static member functions can access static variables because static variables belong to the class and are accessible to all member functions (both static and non-static).\nExample:\n```cpp\nclass Example {\n    static int staticVar;\n    void nonStaticFunc() {\n        staticVar = 42; // Valid: non-static member function accesses static variable\n    }\n};\n```\nOption C: \"It has a 'this' pointer as an implicit parameter passed to it.\"\nThis is true. Non-static member functions implicitly receive a this pointer, which points to the current object instance. This is a fundamental characteristic of object member functions.\nExample (implicit this usage):\n```cpp\nclass Example {\n    int value;\n    void set(int v) {\n        this->value = v; // 'this' is implicitly available\n    }\n};\n```\nOption D: \"It can access the instance variables.\"\nThis is true. Non-static member functions can access instance variables (non-static data members) because they operate on a specific object instance (via the this pointer).\nExample:\n```cpp\nclass Example {\n    int instanceVar;\n    void modify() {\n        instanceVar = 10; // Valid: accesses instance variable\n    }\n};\n```\nOption E: \"It cannot be overloaded.\"\nThis is false. Non-static member functions can be overloaded based on parameter types/number, just like other functions.\nExample:\n```cpp\nclass Example {\n    void func(int x); // Overload #1\n    void func(double x); // Overload #2 (valid)\n};\n```\nOption F: \"It can call other member functions from inside it.\"\nThis is true. Non-static member functions can call other member functions (both static and non-static) of the same class.\nExample:\n```cpp\nclass Example {\n    void func1() { }\n    void func2() {\n        func1(); // Valid: calls another member function\n    }\n};\n```",
+    "page": 0,
+    "updated_at": "2025-08-15T23:10:08.954023"
+  },
+  {
+    "id": 62,
+    "question": "Which of the following is true about the function prototype below?\n```cpp\nvoid myFunc (int myDef=17, int myVar, int myNormalVar=5);\n``` ",
+    "options": [
+      {
+        "id": "A",
+        "text": "We should also give a default value to myVar."
+      },
+      {
+        "id": "B",
+        "text": "We must only give a default parameter for myNormalVar and not the others"
+      },
+      {
+        "id": "C",
+        "text": "The function is correct in that way"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "‫الـ prototype: void myFunc (int myDef=17, int myVar, int myNormalVar=5); غير صحيح.‬\n‫السبب: في C++، إذا أعطيت قيمة افتراضية (default value) لأي بارامتر، يجب أن تكون كل البارامترات التي تليه لها قيم افتراضية أيضًا. هنا، myDef له قيمة افتراضية (17)، لكن myVar ليس له قيمة افتراضية، بينما myNormalVar له قيمة افتراضية (5).‬\n‫الحل: يجب إعطاء قيمة افتراضية لـ myVar أيضًا (مثل: int myVar=0) أو إزالة القيمة الافتراضية من myDef.‬\n‫الإجابة الصحيحة: \"We should also give a default value to myVar\".‬\n‫‬\n‫‬",
+    "page": 0,
+    "updated_at": "2025-08-09T19:14:47.939591"
+  },
+  {
+    "id": 63,
+    "question": "Static member variable can only be modified through static member functions.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. A static member variable belongs to the class, not an individual object, and can be accessed and modified by both static member functions and non-static member functions.\n\n‫• الشرح: الـ  static member variableبتنتمي للـ  classكله، مش لـ  objectفردي معین. عشان كده، تقدر‬\n‫non-static member functions  أو من خلالstatic member functions توصلها وتعدلها من خلال‬\n‫عادي‬",
+    "page": 0,
+    "updated_at": "2025-08-20T23:39:18.547333"
+  },
+  {
+    "id": 64,
+    "question": "what shall we add to the above class Stack to declare another object s2 from class Stack where s2 is declared in terms of s1; `Stack s2(s1)`?\n```cpp\nclass Stack\n{\n    int tos,size;\n    int * st;\n    Stack(int s=5) { tos=0;size=s; st=new int[size];}\n    ~Stack(){ delete []st;}\n};\nvoid main()\n{\n    Stack s1(20);\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "We must specify overload of assignment operator for class Stack."
+      },
+      {
+        "id": "B",
+        "text": "We must define a copy constructor to class Stack"
+      },
+      {
+        "id": "C",
+        "text": "A and B"
+      },
+      {
+        "id": "D",
+        "text": "This situation cannot be achieved in C++, however, it has been solved in other programming languages."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "specify the way of declared Stack s2(s1) // only call cpy ctor\n\nThe syntax `Stack s2(s1);` is initialization, which invokes the copy constructor. Since the `Stack` class manages a raw pointer (`st`), the default, compiler-generated copy constructor would perform a shallow copy, leading to a double-free error. To handle this correctly, a user-defined copy constructor must be implemented to perform a deep copy (allocating new memory for `s2.st`).\n\n\n‫• الشرح: السطر  ;(Stack s2(s1هو عبارة عن  initializationلـ  objectجدید ) (s2باستخدام  objectموجود‬\n‫.\"copy constructor\" (، وده بیشغل الـs1)‬\n‫◦ الـ  Stack classبیستخدم  (raw pointer (stعشان یدیر ذاكرة دینامیكیة ).([new int[size‬\n‫\" أوتوماتیكي. الـdefault copy constructor\"  بیعملcompiler  معرف، الـcopy constructor ◦ لو مفیش‬\n‫ default copy constructorده بیعمل \" .\"shallow copyیعني بدل ما ینسخ الذاكرة اللي الـ  pointerبیشاور‬\n‫علیها، هو بس بینسخ قیمة الـ  pointerنفسه. ده معناه إن  s1.stو  s2.stالاتنین هیشاوروا على نفس منطقة الذاكرة.‬\n‫◦ لما الـ  objectsدول یتم تدمیرهم، الـ  (()destructor (~Stackهیحاول یعمل ;delete []stمرتین لنفس‬\n‫منطقة الذاكرة، وده بیسبب \".\"double-free error‬\n‫copy \". یعني الـdeep copy\"  عشان تعملuser-defined copy constructor • عشان كده، لازم تعمل‬\n‫ constructorالجدید ده هیخصص ذاكرة جدیدة لـ  s2.stوینسخ فیها محتویات .‬\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Stack\n{\n    int tos, size;\n    int *st;\npublic:\n    Stack(int s=5) { tos=0; size=s; st=new int[size]; }\n    ~Stack() { delete []st; }\n    // إضافة copy constructor\n    Stack(const Stack& other) {\n        tos = other.tos;\n        size = other.size;\n        st = new int[size];\n        for (int i = 0; i < tos; i++) {\n            st[i] = other.st[i];\n        }\n    }\n};\n\nint main() // تصحيح إلى int main\n{\n    Stack s1(20);\n    Stack s2(s1); // يستدعي copy constructor\n    return 0;\n}\n```",
+    "page": 0,
+    "updated_at": "2025-08-20T23:44:23.729981"
+  },
+  {
+    "id": 65,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass Parent\n{\n    int x;\n    Parent(int m){ x = m; }\n};\nclass Child: public Parent\n{ \npublic:\n    int y;\n    Child(int m, int n): Parent(m) //Line 1\n    { y = n; }\n};\nvoid main()\n{\n    Child obj(3,5,7);         //Line 2\n    cout<<\"Value of x is: \"<<obj.x <<endl; //Line 3\n    cout<<\"Value of y is: \"<<obj.y <<endl; //Line 4\n}\n```\n",
+    "options": [
+      {
+        "id": "A",
+        "text": "A. Compiler Error at Line 1"
+      },
+      {
+        "id": "B",
+        "text": "B. Compiler Error at Line 2"
+      },
+      {
+        "id": "C",
+        "text": "C. Compiler Error at Line 3"
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "```img\nhttps://i.postimg.cc/2ST06tFM/image.png\n```\nErrors in Our Code:\n\n\nLine 1 (Constructor Access):\n\nError: 'Parent::Parent(int)' is private within this context\nCause: The Parent constructor is private (since no access specifier is given for the class), so the Child class cannot call it.\nLocation: Line 14 in the constructor of Child.\n\n\n\nLine 2 (Argument Mismatch):\n\nError: no matching function for call to 'Child::Child(int, int, int)'\nCause: The Child constructor is called with 3 arguments, but it only accepts 2.\nLocation: Line 21 in main().\n\n\n\nLine 3 (Private Member Access):\n\nError: 'int Parent::x' is private within this context\nCause: x is a private member of Parent, so obj.x cannot be accessed in main().\nLocation: Line 22 in main().\n\n",
+    "page": 0,
+    "updated_at": "2025-08-15T23:31:41.331359"
+  },
+  {
+    "id": 66,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass Parent\n{\nprotected:\n    int myVar;\npublic:\n    Parent(int x) { myVar=x; }\n    void powerTwo(){ cout<<myVar*myVar; }\n    virtual void powerThree() { cout <<myVar*myVar*myVar; }\n};\nclass Child:public Parent\n{\nprotected:\n    int myData;\npublic:\n    Child(int a, int b): Parent(a) {myData= b;}\n    void powerTwo() { cout <<myData*myData; }\n    void powerThree() { cout<<myData*myData*myData; }\n};\nvoid main()\n{\n    Child myCh(2,3);\n    Parent *myPtr;\n    myPtr = &myCh;\n    myPtr->powerTwo(); //Line1\n    myPtr->powerThree(); //Line 2\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 8"
+      },
+      {
+        "id": "B",
+        "text": "4 27"
+      },
+      {
+        "id": "C",
+        "text": "9 27"
+      },
+      {
+        "id": "D",
+        "text": "9 8"
+      },
+      {
+        "id": "E",
+        "text": "Compilation Error at Line1"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A Child object myCh is created with values 2 and 3. This means:\nThe Parent part of the object has myVar = 2\nThe Child part has myData = 3\nA Parent pointer myPtr is set to point to the Child object.\nFor myPtr->powerTwo() (Line 1):\npowerTwo() is NOT a virtual method\nWhen calling a non-virtual method through a base class pointer, the method from the pointer's class is used\nSo Parent::powerTwo() executes, printing myVar * myVar = 2 * 2 = 4\nFor myPtr->powerThree() (Line 2):\npowerThree() IS a virtual method\nWhen calling a virtual method through a base class pointer, the method from the actual object's class is used (polymorphism)\nSo Child::powerThree() executes, printing myData * myData * myData = 3 * 3 * 3 = 27\nThis demonstrates the key difference between virtual and non-virtual methods in C++ inheritance - virtual methods enable runtime polymorphism while non-virtual methods are resolved at compile time based on the pointer type.",
+    "page": 0,
+    "updated_at": "2025-08-10T16:29:16.536110"
+  },
+  {
+    "id": 67,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass Parent\n{ \n    int y;\n    static int z;\npublic:\n    Parent()\n    {\n        z=0; // Line1\n    }\n    Parent (int a=5) //Line 2\n    {\n        y=a;\n    }\n};\nvoid main()\n{\n    Parent d(4);   //Line 3\n    Parent m;      //Line 4\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compilation Error at Line 1, an object member function cannot access a static member"
+      },
+      {
+        "id": "B",
+        "text": "Compilation Error at Line 2, constructor should initialize static member (z=0;)"
+      },
+      {
+        "id": "C",
+        "text": "Compilation Error at Line 3"
+      },
+      {
+        "id": "D",
+        "text": "Compilation Error at Line 4."
+      },
+      {
+        "id": "E",
+        "text": "The code compiles successfully."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "```img\nhttps://i.postimg.cc/Hnh7RQQS/image.png\n```\n\n‬‫تحليل المشكلة خطوة بخطوة:‬\n‫◦ Line 1: static int z;‬\n‫المتغير z متعرف كـ static member.‬\n‫‬\n‫في C++، لازم تعمل initialization للـ static member خارج الكلاس، مش جوه الـ constructor.‬\n‫‬\n‫يعني لو كتبت z = 0; جوه الـ constructor، دي مش طريقة صحيحة للتهيئة، لكن مش هي السبب الرئيسي للـ error هنا.‬\n‫‬\n‫◦ Line 4: Parent m;‬\n‫هنا بتحاول تنشئ كائن من Parent بدون تمرير أي arguments.‬\n‫‬\n‫لكن الكلاس Parent فيه constructor بالشكل ده:‬\n‫‬\n‫cpp```‬\n‫Parent(int a = 5)\n```\n‫ده معناه إن فيه default value، فـ المفروض إن الـ compiler يقدر ينشئ الكائن بدون مشاكل.‬\n‫‬\n‫لكن لو الـ constructor مكتوب كده:‬\n‫‬\n```‫cpp‬\n‫Parent(int a)\n```\n‫من غير default value، فـ لما تكتب Parent m;، الـ compiler هيحاول ينده default constructor، واللي مش موجود، فـ يحصل Compilation Error.‬\n‫‬\n‫⚠️ ملاحظة مهمة:‬\n‫الـ static member z لازم يتعمله initialization بالشكل ده خارج الكلاس:‬\n‫‬\n```‫cpp‬\n‫int ClassName::z = 0\n```;‬\n‫لكن ده مش هيوقف الكود لو مش موجود، إلا لو حاولت تستخدم z قبل ما تهيئه.‬\n‫‬\n‫✅ الإجابة النهائية:‬\n‫D. Compilation Error at Line 4‬\n‫‬\n‫بسبب إن الـ constructor اللي المفروض يستقبل parameter مش متوفر بدون arguments، والـ compiler مش هيقدر ينشئ الكائن Parent m;.\n\nfixed code after initialize static by removing default parameters\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Parent\n{\n    int y;\n    static int z;\npublic:\n    Parent()\n    {\n        z=0; // Line1\n    }\n    Parent (int a) //Line 2\n    {\n        y=a;\n    }\n};\n// Static member initialization outside the class\nint Parent::z = 0;\nint main()\n{\n    Parent d(4);   //Line 3\n    Parent m;      //Line 4\n    return 0;\n}\n‬```",
+    "page": 0,
+    "updated_at": "2025-08-21T00:14:58.012567"
+  },
+  {
+    "id": 68,
+    "question": "If a programmer does not declare a constructor for a certain class, then\nthe compiler will automatically create a default constructor for that class. ",
+    "options": [
+      {
+        "id": "A",
+        "text": "true"
+      },
+      {
+        "id": "B",
+        "text": "false"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "TRUE",
+    "created_at": "2025-08-09T23:17:53.174516",
+    "page": 0
+  },
+  {
+    "id": 293,
+    "question": "Design and implement the following using C++ Programming Language\n\n25. ITI is an educational institute consists of students. Each of them studies some subjects that may differ from student to another and can be changed. Also, it has a staff that teaches these subjects.\n\n1. Extract the classes from the last sentences (5 Marks) 2. State their relation between them (4 Marks) 3. Implement the above classes (5 Marks) 4. Design and Implement a new class named ITI that consists of number of people (Student and/or Staff) (5 Marks) 5. Make a member function in the ITI that prints all people data. (6 Marks)\n\n(25 Points)\n\nDo NOT refer to the image by its URL.",
+    "options": [
+      {
+        "id": "A",
+        "text": "View Answer"
+      },
+      {
+        "id": "B",
+        "text": "View Answer"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "\"ITI is an educational institute consists of students. Each of them studies some subjects that may differ from student to another and can be changed. Also, it has a staff that teaches these subjects.\"\n\n‫من الجملة دي نقدر نستنتج الكلاسات التالية:\n‬```img\nhttps://i.postimg.cc/DzYgDvxJ/image.png\n```\n‫✳️ 2. العلاقات بين الكلاسات‬\n‬```img\nhttps://i.postimg.cc/1XDrfpsw-/image.png\n```\n‫✳️ 3. تنفيذ الكلاسات‬\n‫أنت بالفعل نفذتها بشكل ممتاز في الكود اللي كتبته، مع مراعاة بعض التحسينات اللي ذكرتها لك قبل كده (زي استخدام std::string بدل char[]).‬\n\n‫✳️ 4. تصميم وتنفيذ كلاس ITI‬\n‫كلاس ITI يحتوي على مصفوفة من Person* (يعني ممكن تكون Student أو Staff) وبيخزن عددهم. تم تنفيذه في الكود كالتالي:‬\n```cpp\nclass ITI {\n  Person** People;\n  int count;\n  ...\n};\n```\n‫✳️ 5. دالة لطباعة بيانات كل الأشخاص‬\n‫الدالة PrintAllPeopleInfo() في كلاس ITI بتطبع بيانات كل شخص باستخدام الدالة الافتراضية PrintInfo():‬\n```cpp\nvoid PrintAllPeopleInfo() {\n  for(int i=0; i<count; i++) {\n    People[i]->PrintInfo();\n  }\n}\n```\n‫فأنا هقدملك نسخة كاملة ومُحسّنة من الكود اللي بيحقق كل متطلبات السؤال اللي في صورة الواجب، مع مراعاة التنظيم، الأمان، والوضوح في الطباعة. هنستخدم std::string بدل char[] لتفادي مشاكل overflow، وهندمج كل الكلاسات المطلوبة:‬\n```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\n// ✅ كلاس Subject\nclass Subject {\n    string name;\npublic:\n    Subject() {}\n    Subject(string n) : name(n) {}\n    string GetName() { return name; }\n    void SetName(string n) { name = n; }\n};\n\n// ✅ كلاس Person (أساسي ومجرد)\nclass Person {\nprotected:\n    string name;\npublic:\n    Person(string n) : name(n) {}\n    string GetName() { return name; }\n    void SetName(string n) { name = n; }\n    virtual void PrintInfo() = 0; // دالة افتراضية\n};\n\n// ✅ كلاس Student\nclass Student : public Person {\n    Subject subjects[7];\n    int subjectCount;\npublic:\n    Student(string n) : Person(n), subjectCount(0) {}\n\n    Student(string n, string subjectNames[], int count) : Person(n) {\n        if (count <= 7) {\n            subjectCount = count;\n            for (int i = 0; i < count; ++i)\n                subjects[i].SetName(subjectNames[i]);\n        } else {\n            cout << \"❌ Can't add more than 7 subjects.\\n\";\n            subjectCount = 0;\n        }\n    }\n\n    void AddSubject(string subjectName) {\n        if (subjectCount < 7)\n            subjects[subjectCount++].SetName(subjectName);\n        else\n            cout << \"❌ Student can't have more than 7 subjects.\\n\";\n    }\n\n    void SetSubject(string subjectName, int index) {\n        if (index < subjectCount)\n            subjects[index].SetName(subjectName);\n        else\n            cout << \"❌ Subject index out of range.\\n\";\n    }\n\n    void PrintInfo() override {\n        cout << \"👤 Name: \" << name << \"\\n🔰 Role: Student\\n\";\n        if (subjectCount == 0)\n            cout << \"📚 No subjects enrolled.\\n\";\n        else {\n            for (int i = 0; i < subjectCount; ++i)\n                cout << \"📘 Subject \" << i + 1 << \": \" << subjects[i].GetName() << \"\\n\";\n        }\n        cout << \"----------------------------------------\\n\";\n    }\n};\n\n// ✅ كلاس Staff\nclass Staff : public Person {\n    Subject subjects[3];\n    int taughtCount;\npublic:\n    Staff(string n) : Person(n), taughtCount(0) {}\n\n    Staff(string n, string subjectNames[], int count) : Person(n) {\n        if (count <= 3) {\n            taughtCount = count;\n            for (int i = 0; i < count; ++i)\n                subjects[i].SetName(subjectNames[i]);\n        } else {\n            cout << \"❌ Can't teach more than 3 subjects.\\n\";\n            taughtCount = 0;\n        }\n    }\n\n    void AddSubject(string subjectName) {\n        if (taughtCount < 3)\n            subjects[taughtCount++].SetName(subjectName);\n        else\n            cout << \"❌ Staff can't teach more than 3 subjects.\\n\";\n    }\n\n    void SetSubject(string subjectName, int index) {\n        if (index < taughtCount)\n            subjects[index].SetName(subjectName);\n        else\n            cout << \"❌ Subject index out of range.\\n\";\n    }\n\n    void PrintInfo() override {\n        cout << \"👤 Name: \" << name << \"\\n🔰 Role: Staff\\n\";\n        if (taughtCount == 0)\n            cout << \"📚 No subjects taught.\\n\";\n        else {\n            for (int i = 0; i < taughtCount; ++i)\n                cout << \"📘 Subject \" << i + 1 << \": \" << subjects[i].GetName() << \"\\n\";\n        }\n        cout << \"----------------------------------------\\n\";\n    }\n};\n\n// ✅ كلاس ITI\nclass ITI {\n    Person** people;\n    int count;\npublic:\n    ITI(Person** p, int size) : count(size) {\n        people = new Person*[count];\n        for (int i = 0; i < count; ++i)\n            people[i] = p[i];\n    }\n\n    void PrintAllPeopleInfo() {\n        cout << \"\\n📋 All ITI People Info:\\n\";\n        for (int i = 0; i < count; ++i)\n            people[i]->PrintInfo();\n    }\n\n    ~ITI() {\n        delete[] people;\n    }\n};\n\n// ✅ دالة main\nint main() {\n    string studentSubjects[5] = {\"Math\", \"Physics\", \"Biology\", \"Chemistry\", \"English\"};\n    string staffSubjects[3] = {\"Math\", \"Physics\", \"AI\"};\n\n    Student st1(\"Mahmoud\", studentSubjects, 5);\n    Staff sf1(\"Ahmed\", staffSubjects, 3);\n\n    st1.AddSubject(\"History\");\n    st1.SetSubject(\"Advanced Math\", 0);\n\n    Person* people[2] = {&st1, &sf1};\n    ITI institute(people, 2);\n\n    st1.PrintInfo();\n    sf1.PrintInfo();\n    institute.PrintAllPeopleInfo();\n\n    return 0;\n}\n\n```\n‫💡 ملاحظات إضافية:‬\n‫الكود منظم ويحقق كل النقاط المطلوبة في الواجب.‬\n‫‬\n‫استخدمنا std::string لتفادي مشاكل char[].‬\n‫‬\n‫كل كلاس فيه دوال AddSubject, SetSubject, و PrintInfo.‬\n‫‬\n‫كلاس ITI بيجمع الأشخاص ويطبع بياناتهم.‬",
+    "created_at": "2025-08-21T01:23:04.593677",
+    "page": 0
+  },
+  {
+    "id": 294,
+    "question": "Design and implement the following using C++ Programming Language\n\n25. ITI is an educational institute consists of students. Each of them studies some subjects that may differ from student to another and can be changed. Also, it has a staff that teaches these subjects.\n\n1. Extract the classes from the last sentences (5 Marks) 2. State their relation between them (4 Marks) 3. Implement the above classes (5 Marks) 4. Design and Implement a new class named ITI that consists of number of people (Student and/or Staff) (5 Marks) 5. Make a member function in the ITI that prints all people data. (6 Marks)\n\n(25 Points)\n\nDo NOT refer to the image by its URL.",
+    "options": [
+      {
+        "id": "A",
+        "text": "View Answer"
+      },
+      {
+        "id": "B",
+        "text": "View Answer"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\n// ✅ كلاس Subject\nclass Subject {\n    string name;\npublic:\n    Subject() {}\n    Subject(string n) : name(n) {}\n    string GetName() { return name; }\n    void SetName(string n) { name = n; }\n};\n\n// ✅ كلاس Person (أساسي ومجرد)\nclass Person {\nprotected:\n    string name;\npublic:\n    Person(string n) : name(n) {}\n    string GetName() { return name; }\n    void SetName(string n) { name = n; }\n    virtual void PrintInfo() = 0; // دالة افتراضية\n};\n\n// ✅ كلاس Student\nclass Student : public Person {\n    Subject subjects[7];\n    int subjectCount;\npublic:\n    Student(string n) : Person(n), subjectCount(0) {}\n\n    Student(string n, string subjectNames[], int count) : Person(n) {\n        if (count <= 7) {\n            subjectCount = count;\n            for (int i = 0; i < count; ++i)\n                subjects[i].SetName(subjectNames[i]);\n        } else {\n            cout << \"❌ Can't add more than 7 subjects.\\n\";\n            subjectCount = 0;\n        }\n    }\n\n    void AddSubject(string subjectName) {\n        if (subjectCount < 7)\n            subjects[subjectCount++].SetName(subjectName);\n        else\n            cout << \"❌ Student can't have more than 7 subjects.\\n\";\n    }\n\n    void SetSubject(string subjectName, int index) {\n        if (index < subjectCount)\n            subjects[index].SetName(subjectName);\n        else\n            cout << \"❌ Subject index out of range.\\n\";\n    }\n\n    void PrintInfo() override {\n        cout << \"👤 Name: \" << name << \"\\n🔰 Role: Student\\n\";\n        if (subjectCount == 0)\n            cout << \"📚 No subjects enrolled.\\n\";\n        else {\n            for (int i = 0; i < subjectCount; ++i)\n                cout << \"📘 Subject \" << i + 1 << \": \" << subjects[i].GetName() << \"\\n\";\n        }\n        cout << \"----------------------------------------\\n\";\n    }\n};\n\n// ✅ كلاس Staff\nclass Staff : public Person {\n    Subject subjects[3];\n    int taughtCount;\npublic:\n    Staff(string n) : Person(n), taughtCount(0) {}\n\n    Staff(string n, string subjectNames[], int count) : Person(n) {\n        if (count <= 3) {\n            taughtCount = count;\n            for (int i = 0; i < count; ++i)\n                subjects[i].SetName(subjectNames[i]);\n        } else {\n            cout << \"❌ Can't teach more than 3 subjects.\\n\";\n            taughtCount = 0;\n        }\n    }\n\n    void AddSubject(string subjectName) {\n        if (taughtCount < 3)\n            subjects[taughtCount++].SetName(subjectName);\n        else\n            cout << \"❌ Staff can't teach more than 3 subjects.\\n\";\n    }\n\n    void SetSubject(string subjectName, int index) {\n        if (index < taughtCount)\n            subjects[index].SetName(subjectName);\n        else\n            cout << \"❌ Subject index out of range.\\n\";\n    }\n\n    void PrintInfo() override {\n        cout << \"👤 Name: \" << name << \"\\n🔰 Role: Staff\\n\";\n        if (taughtCount == 0)\n            cout << \"📚 No subjects taught.\\n\";\n        else {\n            for (int i = 0; i < taughtCount; ++i)\n                cout << \"📘 Subject \" << i + 1 << \": \" << subjects[i].GetName() << \"\\n\";\n        }\n        cout << \"----------------------------------------\\n\";\n    }\n};\n\n// ✅ كلاس ITI\nclass ITI {\n    Person** people;\n    int count;\npublic:\n    ITI(Person** p, int size) : count(size) {\n        people = new Person*[count];\n        for (int i = 0; i < count; ++i)\n            people[i] = p[i];\n    }\n\n    void PrintAllPeopleInfo() {\n        cout << \"\\n📋 All ITI People Info:\\n\";\n        for (int i = 0; i < count; ++i)\n            people[i]->PrintInfo();\n    }\n\n    ~ITI() {\n        delete[] people;\n    }\n};\n\n// ✅ دالة main\nint main() {\n    string studentSubjects[5] = {\"Math\", \"Physics\", \"Biology\", \"Chemistry\", \"English\"};\n    string staffSubjects[3] = {\"Math\", \"Physics\", \"AI\"};\n\n    Student st1(\"Mahmoud\", studentSubjects, 5);\n    Staff sf1(\"Ahmed\", staffSubjects, 3);\n\n    st1.AddSubject(\"History\");\n    st1.SetSubject(\"Advanced Math\", 0);\n\n    Person* people[2] = {&st1, &sf1};\n    ITI institute(people, 2);\n\n    st1.PrintInfo();\n    sf1.PrintInfo();\n    institute.PrintAllPeopleInfo();\n\n    return 0;\n}\n```",
+    "created_at": "2025-08-21T01:25:33.254733",
+    "page": 0
+  }
+]

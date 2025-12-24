@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <style>
+        body { background-color: #f8f9fa; }
+        .container { max-width: 900px; }
+        .question-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background-color: white;
+            border: 1px solid #dee2e6;
+            margin-bottom: -1px;
+            cursor: grab;
+        }
+        .question-item:first-child { border-top-left-radius: 0.25rem; border-top-right-radius: 0.25rem; }
+        .question-item:last-child { border-bottom-left-radius: 0.25rem; border-bottom-right-radius: 0.25rem; }
+        .handle { font-size: 1.2rem; margin-right: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1><i class="bi bi-kanban"></i> Question Admin</h1>
+            <a href="{{ url_for('index') }}" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to Quiz
+            </a>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-info">
+                <i class="bi bi-person-lines-fill"></i> Session Dashboard
+            </a>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Drag and drop to reorder questions
+            </div>
+            <div id="question-list" class="list-group">
+                {% for question in questions %}
+                <div class="question-item" data-id="{{ question.id }}">
+                    <i class="bi bi-grip-vertical handle"></i>
+                    <span class="flex-grow-1">{{ question.id }}: {{ question.question|truncate(60) }}</span>
+                    <input type="number" class="form-control form-control-sm me-2" style="width: 70px;" value="{{ question.page | default(0) }}" min="0" data-page-input>
+                    <button class="btn btn-sm btn-outline-secondary" data-delete-btn><i class="bi bi-trash"></i></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <button id="save-order-btn" class="btn btn-primary mt-3">
+            <i class="bi bi-save"></i> Save Order
+        </button>
+    </div>
+
+    <script src="{{ url_for('static', filename='admin.js') }}"></script>
+</body>
+</html>

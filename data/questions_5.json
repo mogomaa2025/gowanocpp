@@ -1,0 +1,397 @@
+[
+  {
+    "id": 177,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass Test\n{\n    int x;\npublic:\n    Test() { x = 0; }\n    Test(int y) { x = y++; }\n    Test(Test &r) { x = ++r.x; }\n    void print() {cout<<x; }\n};\nvoid main()\n{\n    Test t(1);\n    t.print();\n    Test x(t);\n    x.print();\n    t.print();\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "121"
+      },
+      {
+        "id": "B",
+        "text": "122"
+      },
+      {
+        "id": "C",
+        "text": "222"
+      },
+      {
+        "id": "D",
+        "text": "233"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "```cpp\nclass Test\n{\n    int x;\npublic:\n    Test() { x = 0; }\n    Test(int y) { x = y++; }\n    Test(Test &r) { x = ++r.x; }\n    void print()\n    { cout<<x; }\n};\nvoid main()\n{\n    Test t(1); // t.x becomes 1 (post-increment)\n    t.print(); // prints 1\n    Test x(t); // t.x is pre-incremented to 2, then assigned to x.x. Both are 2.\n    x.print(); // prints 2\n    t.print(); // prints 2\n}\n```",
+    "page": 5
+  },
+  {
+    "id": 178,
+    "question": "Assume you have a member function with the following prototype?\n```cpp void myFunc(int x);```\nWhich of the following are valid ways to overload it?",
+    "options": [
+      {
+        "id": "A",
+        "text": "void myFunc(char ch);"
+      },
+      {
+        "id": "B",
+        "text": "int myFunc(int x);"
+      },
+      {
+        "id": "C",
+        "text": "void myFunc(char c1, char c2);"
+      },
+      {
+        "id": "D",
+        "text": "float myFunc(int x, int y);"
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "Function overloading requires functions to have the same name but different parameter lists. \n- **A** is valid: `(char)` is a different parameter list than `(int)`.\n- **B** is invalid: It differs from the original only by its return type, which is not sufficient for overloading.\n- **C** is valid: `(char, char)` is a different parameter list (different number of parameters).\n- **D** is valid: `(int, int)` is a different parameter list (different number of parameters).",
+    "page": 5,
+    "updated_at": "2025-08-10T01:35:22.225420"
+  },
+  {
+    "id": 179,
+    "question": "Any static member can access all static and instance members.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A static member function is associated with the class, not a specific object instance. Therefore, it does not have a 'this' pointer and cannot directly access non-static (instance) members. It can only access other static members.",
+    "page": 5
+  },
+  {
+    "id": 180,
+    "question": "Function Overloading is considering as one of the ways of Polymorphism.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Function overloading is a form of compile-time polymorphism (or static polymorphism). It allows multiple functions to have the same name but with different parameter lists, and the compiler determines which one to call at compile time.",
+    "page": 5
+  },
+  {
+    "id": 181,
+    "question": "The destructor is a function which removes the object from memory.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A destructor is a special member function that is called just before an object's memory is deallocated. Its primary purpose is to release any resources the object has acquired (e.g., heap memory, file handles). The actual memory deallocation is handled by the C++ runtime or the 'delete' operator, not the destructor itself.",
+    "page": 5
+  },
+  {
+    "id": 182,
+    "question": "The copy constructor is called when create an object as a complete copy from another object.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This is the primary purpose of a copy constructor. It is invoked during initialization when a new object is created from an existing object of the same type, such as in `MyClass obj2 = obj1;` or `MyClass obj2(obj1);`.",
+    "page": 5
+  },
+  {
+    "id": 183,
+    "question": "Children classes can override the static function inherited from the parent class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Static functions are tied to the class, not to an object instance, and are resolved at compile time. They cannot be declared 'virtual' and thus cannot be overridden in the polymorphic sense. A derived class can redefine a static function with the same name, but this is known as hiding, not overriding.",
+    "page": 5
+  },
+  {
+    "id": 184,
+    "question": "In Object-Oriented programming, any objects from any type can receive the same messages.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "An object can only receive messages (i.e., have its member functions called) that are defined for its class or one of its base classes. Objects of unrelated types do not share the same interface unless they inherit from a common base class that defines it.",
+    "page": 5
+  },
+  {
+    "id": 185,
+    "question": "if we do not define any constructor for a class, then the compiler creates a constructor by default, which has no input parameters.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "If a programmer provides no constructors for a class, the C++ compiler will implicitly generate a public, non-parameterized constructor, known as the default constructor, to allow for the creation of objects.",
+    "page": 5
+  },
+  {
+    "id": 186,
+    "question": "The operation of adding on the functionalities of an operator is called Operator overriding.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The correct term is Operator Overloading. 'Overriding' refers to redefining a virtual function in a derived class. 'Overloading' refers to providing a new definition for an existing operator or function for a different context (like a user-defined class).",
+    "page": 5
+  },
+  {
+    "id": 187,
+    "question": "In Object-Oriented concept, we may make multiple Inheritance.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Multiple inheritance, where a class can inherit from more than one base class, is a feature of the Object-Oriented paradigm and is supported in C++.",
+    "page": 5
+  },
+  {
+    "id": 188,
+    "question": "If the mode of inheritance is private inheritance, the inherited protected member from a parent class can be accessed directly inside a child class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A derived class can always access the public and protected members of its direct base class from within its own member functions, regardless of the inheritance mode (public, protected, or private). The inheritance mode affects how those inherited members are accessed by further derived classes or by code outside the class.",
+    "page": 5
+  },
+  {
+    "id": 189,
+    "question": "The term \"Association\" refers to a class has an attribute from primitive data type.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Association is a relationship between two or more classes where objects are linked. It's a relationship between objects, not a property related to having primitive data types.",
+    "page": 5
+  },
+  {
+    "id": 190,
+    "question": "In the same class, any instance method can deal with any instance variables declared inside the class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A non-static (instance) member function has access to all member variables (public, protected, and private) of the object it is called on.",
+    "page": 5
+  },
+  {
+    "id": 191,
+    "question": "A protected member of a class can be directly accessed by another class if and only if that other class in the same file of the first class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Access to protected members is governed by inheritance, not file location. A protected member can be accessed by a derived (child) class or a friend class, regardless of which file it is declared in.",
+    "page": 5
+  },
+  {
+    "id": 192,
+    "question": "The goal of making setter and getter of an attribute to simplify the accessibility.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Getters and setters (accessors and mutators) provide a controlled public interface to private data. This simplifies access for the user of the class while allowing the class author to enforce rules, validation, or other logic, thus maintaining encapsulation.",
+    "page": 5
+  },
+  {
+    "id": 193,
+    "question": "All objects that are instance of the same class can perform the same actions.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "All objects (instances) of a single class share the same set of member functions (actions/behaviors). While their individual states (member variable values) can differ, the available actions are the same for all.",
+    "page": 5
+  },
+  {
+    "id": 194,
+    "question": "Association is an \"is-a\" relationship between a class and its parent class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The \"is-a\" relationship describes inheritance. Association describes a \"has-a\", \"uses-a\", or general structural relationship between objects that typically have independent lifecycles.",
+    "page": 5
+  },
+  {
+    "id": 195,
+    "question": "Overriding means that re-implementing of a function inherited from the base class by a function in the derived class with the same name and the same input parameters.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "This is a correct definition of function overriding. A derived class provides its own implementation for a function that is already defined in its base class, using an identical function signature (name and parameters).",
+    "page": 5
+  },
+  {
+    "id": 196,
+    "question": "C++ is a structured programming language supports Object-Oriented paradigm.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "C++ is a multi-paradigm language. It originated as an extension of C (a structured language) and fully supports procedural, structured, and object-oriented programming paradigms.",
+    "page": 5
+  },
+  {
+    "id": 197,
+    "question": "The relation between the class Monkey and the class Animal is association relation.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This is a classic example of an inheritance relationship. A Monkey \"is an\" Animal. Therefore, the `Monkey` class would derive from the `Animal` class.",
+    "page": 5
+  },
+  {
+    "id": 198,
+    "question": "We cannot create an object from a virtual base class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The term 'virtual base class' refers to a base class used in a virtual inheritance hierarchy to solve the diamond problem. You can create an object of a class that is a virtual base, as long as that class is not abstract. The statement confuses 'virtual base class' with 'abstract class'.",
+    "page": 5
+  }
+]

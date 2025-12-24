@@ -1,0 +1,302 @@
+[
+  {
+    "id": 199,
+    "question": "Multilevel inheritance not allowed in c++.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Multilevel inheritance (e.g., class C inherits from B, which inherits from A) is a standard feature of C++ and is fully allowed.",
+    "page": 6
+  },
+  {
+    "id": 200,
+    "question": "Association is a special type of composition.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The relationship is the other way around. Composition is a stronger, more specific type of association. Association is the general term for a structural relationship between classes.",
+    "page": 6
+  },
+  {
+    "id": 201,
+    "question": "The term encapsulation refers to an object of a class that contains another object of another class inside it.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement describes composition. Encapsulation is the principle of bundling data and the methods that operate on that data into a single unit (a class) and controlling access to its internal state (data hiding).",
+    "page": 6
+  },
+  {
+    "id": 202,
+    "question": "```img\nhttps://i.postimg.cc/RV11rfTH/edit-logo.gif\n```\nWhen inherting from a base class, the derived class will inherit only the protected and public members of the base class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "‫✅ True  ‬\n‫الـ derived class بتورّث الـ public و الـ protected بس من الـ base class، إنما الـ private بيكون محجوب ومش بيتورّث مباشرة.\n\n\nTrue. When a class inherits from a base class, it inherits only the protected and public members of the base class. The private members are not inherited directly, but can still be accessed through public or protected member functions of the base class.‬",
+    "page": 6,
+    "updated_at": "2025-08-18T20:36:21.737767"
+  },
+  {
+    "id": 203,
+    "question": "Static member variables can only be modified through static member functions.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Static member variables can be modified by both static member functions and non-static (instance) member functions.",
+    "page": 6
+  },
+  {
+    "id": 204,
+    "question": "If a certain function is mad friend for class A, then that function can acess only the private member of class A.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A friend function of class A is granted access to all non-public members of A, which includes both its private and protected members.",
+    "page": 6
+  },
+  {
+    "id": 205,
+    "question": "Compostion is special type of inheritance; composition is stronger relation between 2 objects than inheritance.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is incorrect. Composition is a 'has-a' relationship, not a type of inheritance ('is-a' relationship). They are fundamentally different concepts and comparing their 'strength' is not meaningful in this context.",
+    "page": 6
+  },
+  {
+    "id": 206,
+    "question": "The this pointer is an array of pointers to all the objects created from a class.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The 'this' pointer is a single pointer, not an array. It is an implicit parameter to every non-static member function and holds the address of the specific object on which the function was called.",
+    "page": 6
+  },
+  {
+    "id": 207,
+    "question": "When overloading a certain function, it is obligatory that we specify a different number of pararmters for the new function.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "To overload a function, its signature must be unique. This can be achieved by having a different number of parameters OR by having parameters of different types. For example, `void func(int)` and `void func(double)` is valid overloading with the same number of parameters.\n\nint myfunction(int a , char c )\nint myfunction(char a , int c )\nchanging their data type or order also overloads \nthem ",
+    "page": 6,
+    "updated_at": "2025-08-10T04:28:51.324249"
+  },
+  {
+    "id": 208,
+    "question": "If the class Y is a sub-class of the class X, then an object of the class Y will only inherit the protected member.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A subclass (Y) inherits both the protected and public members of its base class (X).",
+    "page": 6
+  },
+  {
+    "id": 209,
+    "question": "You cannot overload the square brackets operator ([]).",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "The subscript operator `[]` can be and frequently is overloaded in C++. This is common for classes that act as containers, like arrays or vectors, to provide intuitive element access syntax.",
+    "page": 6
+  },
+  {
+    "id": 210,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass A\n{\n    int x;\nprotected:\n    int y;\npublic:\n    A(int x1=5, int y1=3) {x=x1; y=y1; }\n    void M1() { cout <<\"\\n This is M1() in class A:Base class\";}\n    void M3() { cout <<\"\\n This is M3() in class A:Base class\"; }\n};\nclass B: private A\n{\n    int w;\nprotected:\n    int v;\npublic:\n    B(int v1=3, int w1=9) {v=v1; w=w1;}\n    void M3()\n    {\n        M1(); //Line 1\n        y++; //Line 2\n    }\n};\nclass C: public B\n{\npublic:\n    void M4()\n    {\n        M1(); //Line 3\n        y++; //Line 4\n    }\n};\nvoid main()\n{\n    B b1;\n    b1.M3(); //Line 5\n    b1.M1(); //Line 6\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compilation Error at Line 1"
+      },
+      {
+        "id": "B",
+        "text": "Compilation Error at Line 2"
+      },
+      {
+        "id": "C",
+        "text": "Compilation Error at Line 3"
+      },
+      {
+        "id": "D",
+        "text": "Compilation Error at Line 4"
+      },
+      {
+        "id": "E",
+        "text": "Compilation Error at Line 5"
+      },
+      {
+        "id": "F",
+        "text": "Compilation Error at Line 6"
+      },
+      {
+        "id": "G",
+        "text": "The code compiles successfully"
+      },
+      {
+        "id": "H",
+        "text": "A & B & C"
+      },
+      {
+        "id": "I",
+        "text": "C & D & F"
+      },
+      {
+        "id": "J",
+        "text": "A & C & F"
+      }
+    ],
+    "correct_answer": "I",
+    "explanation": "- **Error at Line 3 & 4:** Class `B` inherits `private`ly from `A`. This makes all inherited members (`y`, `M1`) `private` within `B`. `C` inherits from `B`, but it cannot access the `private` members of its base class `B`. Therefore, the calls to `M1()` and `y++` inside `C::M4` are illegal.\n- **Error at Line 6:** `M1()` is `public` in `A` but becomes `private` in `B` due to `private` inheritance. Therefore, it cannot be called on a `B` object from `main`. `M3` in `B` is public so line 5 is okay.",
+    "page": 6
+  },
+  {
+    "id": 211,
+    "question": "In order for the following piece of code to compile successfully, what are the constructors that are expected to exist in the Base class?\n```cpp\nclass Child: public Base\n{\npublic:\n    Child(int x) { }\n    Child(int x, int y) : Base(x,y) {}\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Base() and Base(int, int)"
+      },
+      {
+        "id": "B",
+        "text": "Base() and Base(int)"
+      },
+      {
+        "id": "C",
+        "text": "Base(int) and Base(int, int)"
+      },
+      {
+        "id": "D",
+        "text": "Base(int, int)"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. `Child(int x)`: This constructor does not explicitly call a base class constructor in its initializer list. Therefore, the compiler will implicitly try to call the default (no-argument) constructor of the base class, `Base()`.\n2. `Child(int x, int y)`: This constructor explicitly calls `Base(x,y)` in its initializer list. This requires the `Base` class to have a constructor that accepts two integers, `Base(int, int)`.\nTherefore, both `Base()` and `Base(int, int)` must exist.",
+    "page": 6
+  },
+  {
+    "id": 212,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass GrandFather\n{\npublic:\n    virtual void displayStuff () = 0;\n    virtual void sayThings() = 0;\n};\nclass Parent: public GrandFather\n{\npublic:\n    void displayStuff ()\n    { cout<<\"Parent's Stuff\"; }\n};\nclass Child: public Parent\n{\npublic:\n    void sayThings() { cout<<\"Child's Things\"; }\n};\nclass GrandChild: public Child\n{\npublic:\n    void displayStuff()\n    { cout<<\"GrandChild's Stuff\"; }\n    void sayThings()\n    { cout<<\"GrandChild's Things\"; }\n};\nvoid main()\n{\n    GrandFather myGP; // Line 1\n    Parent myP;       // Line 2\n    Child myCh;       // Line 3\n    GrandChild myGC;   // Line 4\n    GrandFather * ptr; // Line 5\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "A. Compiler Error at Line 1"
+      },
+      {
+        "id": "B",
+        "text": "B. Compiler Error at Line 2"
+      },
+      {
+        "id": "C",
+        "text": "C. Compiler Error at Line 3"
+      },
+      {
+        "id": "D",
+        "text": "D. Compiler Error at Line 4"
+      },
+      {
+        "id": "E",
+        "text": "E. Compiler Error at Line 5"
+      },
+      {
+        "id": "F",
+        "text": "F. The code compiles successfully"
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "```img\nhttps://i.postimg.cc/Y2mVLm4Y/image.png\n```\n ```img\nhttps://i.ibb.co/wNxQY0Q0/image.png\n ```",
+    "page": 6,
+    "updated_at": "2025-08-16T17:06:17.689129"
+  }
+]

@@ -1,0 +1,3879 @@
+[
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "213",
+      "isCorrect": true,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696765588
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3195,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696770374
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3210,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696785379
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3225,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696800377
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3240,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696815378
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3255,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696830386
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3270,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696845386
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3285,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696860384
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3300,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696875382
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3315,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696890380
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3330,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696905378
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3345,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696920377
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3360,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696935375
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3375,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696950373
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3390,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696965381
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3405,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696980375
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3420,
+      "url": "/quiz/page/7",
+      "timestamp": 1755696995386
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3435,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697010384
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3450,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697025382
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3465,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697040380
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3480,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697055379
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3495,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697070386
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3510,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697085384
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3525,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697100386
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3540,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697115372
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3555,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697130373
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3570,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697145377
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3585,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697160384
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3600,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697175380
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3615,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697190380
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3630,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697205387
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3645,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697220376
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3660,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697235374
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3675,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697250386
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "214",
+      "isCorrect": true,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697259617
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "214",
+      "selectedAnswer": [
+        "A"
+      ],
+      "isCorrect": true,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697259617
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3690,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697265379
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3705,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697280385
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3720,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697295384
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3735,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697310376
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 3750,
+      "url": "/quiz/page/7",
+      "timestamp": 1755697325382
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7230,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700805364
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7245,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700820363
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755700830342
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755700830345
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7261,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700836183
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7276,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700851175
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7291,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700866179
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755700881037
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7306,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700881038
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755700881040
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "217",
+      "selectedAnswer": "B",
+      "isCorrect": true,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700890523
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "217",
+      "isCorrect": true,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700890527
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7320,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700895372
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "219",
+      "selectedAnswer": "A",
+      "isCorrect": false,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700908554
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "quizAnswer",
+    "eventData": {
+      "questionId": "219",
+      "isCorrect": false,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700908558
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7335,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700910366
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7350,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700925362
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755700938693
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755700938698
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7366,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700941184
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7381,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700956177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7396,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700971175
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7411,
+      "url": "/quiz/page/7",
+      "timestamp": 1755700986177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7479,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701054181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7539,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701114180
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7599,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701174179
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755701174255
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755701174257
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755701178106
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755701178109
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7606,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701181177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7621,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701196176
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7636,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701211182
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7651,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701226178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7719,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701294183
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7779,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701354172
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7839,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701414173
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7899,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701474175
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 7959,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701534173
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8019,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701594185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8079,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701654175
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8139,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701714185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8199,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701774178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8259,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701834185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8319,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701894179
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8379,
+      "url": "/quiz/page/7",
+      "timestamp": 1755701954177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8439,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702014187
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8499,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702074172
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8559,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702134193
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8619,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702194182
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8679,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702254178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8739,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702314180
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8799,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702374181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8859,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702434190
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8919,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702494185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 8979,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702554186
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9039,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702614172
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9099,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702674182
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755702726823
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9152,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702726825
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755702726826
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755702731243
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755702731246
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9166,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702741181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9181,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702756181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9196,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702771180
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9211,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702786177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9273,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702848181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9334,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702909186
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9395,
+      "url": "/quiz/page/7",
+      "timestamp": 1755702970178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9456,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703031176
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9517,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703092187
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9578,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703153191
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9639,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703214193
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9699,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703274182
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9759,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703334185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9819,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703394181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9879,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703454183
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9939,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703514180
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 9999,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703574171
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10059,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703634173
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10119,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703694187
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10179,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703754186
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10239,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703814181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10299,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703874185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10359,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703934185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10419,
+      "url": "/quiz/page/7",
+      "timestamp": 1755703994189
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10479,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704054180
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10539,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704114177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10599,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704174177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10659,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704234182
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10719,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704294175
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10779,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704354178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10839,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704414172
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10899,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704474185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 10959,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704534173
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11019,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704594181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11079,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704654188
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11139,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704714177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11199,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704774185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11259,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704834173
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11319,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704894179
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11379,
+      "url": "/quiz/page/7",
+      "timestamp": 1755704954181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11439,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705014192
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11499,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705074184
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11559,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705134177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11619,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705194180
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11679,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705254181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11739,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705314180
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11799,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705374184
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11859,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705434183
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11919,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705494176
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 11979,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705554185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12039,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705614187
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12099,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705674177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12159,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705734174
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12219,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705794175
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12279,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705854184
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12339,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705914185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12399,
+      "url": "/quiz/page/7",
+      "timestamp": 1755705974184
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12459,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706034178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12519,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706094176
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12579,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706154186
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12639,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706214187
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12699,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706274174
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12759,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706334177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12819,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706394178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12879,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706454183
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12939,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706514174
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 12999,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706574179
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13059,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706634178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13119,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706694184
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13179,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706754180
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13239,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706814186
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13299,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706874179
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13359,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706934178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13419,
+      "url": "/quiz/page/7",
+      "timestamp": 1755706994185
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13479,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707054179
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13539,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707114176
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13599,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707174182
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13659,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707234184
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13719,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707294181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13779,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707354172
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13839,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707414188
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13899,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707474179
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 13959,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707534181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14019,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707594177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707632546
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14058,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707632548
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707632549
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707634301
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707634305
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707636136
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707636139
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707637037
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707637041
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14071,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707646177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14086,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707661191
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14101,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707676186
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14116,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707691183
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14139,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707714181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14199,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707774187
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707779647
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707779650
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14205,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707780372
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707780586
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707780590
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14221,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707796177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14236,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707811183
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14251,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707826181
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707874944
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14300,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707874945
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707874947
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707875972
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755707875976
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14311,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707886177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 14326,
+      "url": "/quiz/page/7",
+      "timestamp": 1755707901192
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15702,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709276744
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15759,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709334173
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15819,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709394174
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15879,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709454165
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15939,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709514172
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 15999,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709574171
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 16059,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709634178
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 16119,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709694167
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 16179,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709754177
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 16239,
+      "url": "/quiz/page/7",
+      "timestamp": 1755709814172
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 39879,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733454155
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 39939,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733514167
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 39999,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733574152
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40059,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733634154
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40119,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733694163
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40179,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733754152
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40239,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733814154
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40299,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733874166
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40359,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733934153
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40419,
+      "url": "/quiz/page/7",
+      "timestamp": 1755733994161
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40479,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734054154
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40539,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734114151
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40599,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734174166
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40659,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734234152
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40719,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734294162
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40779,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734354158
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40839,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734414161
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40899,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734474153
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 40959,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734534164
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 41019,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734594152
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 41079,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734654152
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 41139,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734714172
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 41199,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734774166
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 41259,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734834155
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 41319,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734894156
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 41379,
+      "url": "/quiz/page/7",
+      "timestamp": 1755734954158
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 41439,
+      "url": "/quiz/page/7",
+      "timestamp": 1755735014173
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "62.114.176.62",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 41499,
+      "url": "/quiz/page/7",
+      "timestamp": 1755735074166
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755759723054
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "quizPageNavigation",
+    "eventData": {
+      "fromPage": null,
+      "toPage": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724316
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 213,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724584
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 214,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724587
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 216,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724588
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 215,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724587
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 217,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724588
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 218,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724588
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 219,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724589
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 220,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724590
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 221,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724591
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 222,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724592
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "questionView",
+    "eventData": {
+      "questionId": 223,
+      "page": 7,
+      "url": "/quiz/page/7",
+      "timestamp": 1755759724593
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755759727417
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755759727422
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755759727423
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "pageUnload",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755759729625
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "pageBlur",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755759729631
+    }
+  },
+  {
+    "sessionId": "21692bfd-f882-497f-8a4c-09a3fcc7483a",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "41.33.215.66",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "7",
+      "url": "/quiz/page/7",
+      "timestamp": 1755759729626
+    }
+  }
+]

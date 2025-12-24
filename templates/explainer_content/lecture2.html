@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المحاضرة الثانية: التحكم في سير البرنامج والتعامل مع الحروف</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+   body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Traditional Arabic';
+        direction: rtl;
+        /* This is key: we align the container itself to the right */
+        text-align: right;
+        background-color: #f8f9fa;
+        line-height: 1.8;
+        padding: 1rem;
+        /* Important: Prevents the body from creating its own scrollbars prematurely */
+        overflow-x: hidden;
+    }
+
+    /* --- START OF THE MAIN FIX --- */
+    .container {
+        /* This makes the container shrink-to-fit its widest child (the code block) */
+        display: inline-block;
+        /* Ensure text inside the container is aligned right by default */
+        text-align: right;
+
+        /* These are from your original Bootstrap, we keep them */
+        padding-left: 15px;
+        padding-right: 15px;
+
+        /* We remove any 'max-width' that might limit the container from growing */
+        max-width: none;
+    }
+    /* --- END OF THE MAIN FIX --- */
+
+    /* العناوين */
+    h1, h2, h3, h4, h5 {
+        color: #0d6efd;
+        margin-top: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.5rem;
+    }
+
+    /* الفقرات والقوائم */
+    p, li {
+        margin-bottom: 1rem;
+    }
+    ol, ul {
+          padding-left: 0rem;
+
+    }
+
+    /* كود البرمجة */
+    code {
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 90%;
+        color: #d63384;
+        direction: ltr;
+        text-align: left;
+        display: inline-block;
+    }
+    pre code {
+        color: inherit;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    pre {
+        /* 'display: block' is fine now, it will just fill the width of its parent (.container) */
+        display: block;
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        white-space: pre;
+        text-align: left;
+
+        /* We still let the code content overflow */
+        overflow-x: visible;
+    }
+
+    /* ملاحظات توضيحية */
+    .note, .warning {
+
+        background-color: #fff3cd;
+        border-right: 5px solid #ffc107;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 3px;
+    }
+    .summary-box {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <!-- === NEW BUTTON ADDED HERE === -->
+<div id="action-buttons-container">
+    <a href="#" class="btn btn-secondary shadow" onclick="window.close(); return false;">رجوع</a>
+    <a href="#" class="btn btn-info shadow" onclick="openInNewTab(); return false;">فتح في تبويب جديد</a>
+</div>
+<script>
+function openInNewTab() {
+  window.open(window.location.href );
+}
+</script>
+<!-- ======================================= -->
+<div class="container py-4">
+
+    <h3>أهلاً بك! بناءً على المحاضرة الثانية</h3>
+    <p>سنتناول مفاهيم أساسية في C++، مع التركيز على الجمل الشرطية وجمل التكرار، بالإضافة إلى كيفية التعامل مع الـ <code>char</code> كنوع بيانات. سأحرص على استخدام المصطلحات البرمجية بالإنجليزية لضمان الوضوح، مع توفير أمثلة كود وشرح للنقاط الهامة التي ذكر المحاضر أنها قد تكون جزءًا من الامتحان.</p>
+
+    <hr>
+
+    <h4>التحكم في سير البرنامج (Control Statements)</h4>
+    <p>البرنامج ليس مجرد عمليات جمع وطرح وطباعة نتائج، بل غالبًا ما تحتاج إلى توجيه سيره لاتخاذ قرارات أو تكرار عمليات. هذا هو دور <code>Control Statements</code>.</p>
+
+    <h4>الجمل الشرطية (Selection, Conditional, or Branching Statements)</h4>
+    <p>هذه الجمل تتيح لك اختيار مسار معين بناءً على شرط.</p>
+
+    <h5>1. جملة <code>if</code></h5>
+    <ul>
+        <li>تسمح لك بتنفيذ كتلة معينة من الكود <strong>فقط</strong> إذا كان الشرط صحيحًا (قيمة غير صفرية - <code>Non-Zero</code>).</li>
+        <li><strong>تقييم الشرط:</strong> تعتمد جملة <code>if</code> على تقييم القيمة التي تليها. إذا كانت القيمة صفر (<code>Zero</code>)، فإن الشرط يعتبر خاطئًا. إذا كانت القيمة غير صفرية (<code>Non-Zero</code>)، فإن الشرط يعتبر صحيحًا. لا يهم مصدر هذه القيمة (سواء كانت ناتجة عن عملية منطقية، حسابية، أو غيرها).</li>
+        <li><strong>أهمية الأقواس <code>(())</code>:</strong> الأقواس هي ذات الأولوية الأعلى (<code>Highest Priority</code>) ويجب استخدامها دائما لتنظيم العمليات داخل الشرط، مما يساعد على الوضوح وتجنب الأخطاء.</li>
+        <li><strong>مثال: التحقق من عدد فردي أو زوجي.</strong>
+            <ul>
+                <li><strong>تحسين الشرط:</strong> يمكن تبسيط الشرط <code>if (num % 2 != 0)</code> إلى <code>if (num % 2)</code>. ذلك لأن نتيجة <code>num % 2</code> ستكون <code>1</code> (قيمة غير صفرية، تعتبر <code>true</code>) للأعداد الفردية، و <code>0</code> (تعتبر <code>false</code>) للأعداد الزوجية.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h5>2. جملة <code>if...else</code></h5>
+    <ul>
+        <li>تستخدم عندما يكون لديك مساران محتملان للبرنامج. يتم تنفيذ كتلة واحدة فقط: إما كتلة <code>if</code> (إذا كان الشرط صحيحًا) أو كتلة <code>else</code> (إذا كان الشرط خاطئًا).</li>
+        <li><strong>مثال: تقييم درجة طالب (ناجح/راسب)</strong></li>
+    </ul>
+<pre><code>int grade = 75;
+if (grade >= 60) {
+    cout &lt;&lt; "Pass"; // This will be printed
+} else {
+    cout &lt;&lt; "Fail";
+}</code></pre>
+
+    <h5>3. جملة <code>if...else if</code> المتداخلة (Nested if / else if)</h5>
+    <p>تستخدم عندما يكون لديك أكثر من مسارين محتملين، ويتم تقييم الشروط بالتسلسل.</p>
+    <ul>
+        <li><strong>المشكلة الأصلية:</strong> عند محاولة تحديد الدرجات (A, B, C) بناءً على نطاقات متعددة، قد يخطئ المبرمج في فهم الشروط الضمنية.</li>
+        <li><strong>سوء الفهم الأولي:</strong> قد يظن المبرمج أن <code>if (grade >= 80)</code> تعني ضمنيًا "إذا كانت الدرجة بين 80 و 90". لكن هذا ليس صحيحًا، فـ 95 هي أيضًا أكبر من 80.</li>
+        <li><strong>الحل الأمثل (<code>else if</code> المتسلسل):</strong> هذا هو الحل المفضل والأكثر كفاءة، حيث يتم وضع الشروط المتتالية داخل كتل <code>else</code>، مما يضمن أن يتم تنفيذ كتلة واحدة فقط بمجرد تحقق الشرط.
+        <br><strong>مثال:</strong> إذا كانت الدرجة 95، يدخل في الشرط الأول <code>(grade >= 90)</code>، يطبع "A"، ثم يتخطى جميع كتل <code>else</code> المتبقية.
+        </li>
+    </ul>
+<pre><code>int grade = 85;
+if (grade >= 90) {
+    cout &lt;&lt; "A";
+} else if (grade >= 80) {
+    cout &lt;&lt; "B"; // This will be printed
+} else if (grade >= 60) {
+    cout &lt;&lt; "C";
+} else {
+    cout &lt;&lt; "F";
+}</code></pre>
+    <div class="note">
+        <strong>ملاحظة على الأقواس المعقوفة <code>{}</code>:</strong> إذا كانت كتلة الكود داخل <code>if</code> أو <code>else</code> تحتوي على <code>Statement</code> واحد فقط، فيمكنك الاستغناء عن الأقواس. ومع ذلك، يفضل استخدامها دائمًا للحفاظ على وضوح الكود وتجنب الأخطاء.
+    </div>
+
+    <h4>جملة <code>switch</code></h4>
+    <p>تستخدم عندما يكون لديك شرط يعتمد على مقارنة متغير واحد بقيم ثابتة ومحددة (<code>Constants</code>).</p>
+    <ul>
+        <li><strong>شروط الاستخدام:</strong> يفضل استخدام <code>switch</code> عندما تتحقق الشروط التالية:
+            <ol>
+                <li>التحقق من المساواة (Check for Equality).</li>
+                <li>التحقق من قيم ثابتة (Check against Constants).</li>
+                <li>التحقق من متغير من عائلة <code>Integer</code> (مثل <code>int</code>, <code>char</code>, <code>short</code>, <code>long</code>). لا يمكن استخدام <code>float</code>, <code>double</code>, أو <code>string</code>.</li>
+                <li>العمليات منفصلة لكل حالة (Separate Operations).</li>
+            </ol>
+        </li>
+        <li><strong>أهمية <code>break</code>:</strong> عند دخول <code>case</code> معين، يستمر البرنامج في تنفيذ جميع الـ <code>cases</code> التالية (<code>Fall Through</code>) حتى يجد كلمة <code>break</code> أو يصل إلى نهاية <code>switch</code>. وظيفة <code>break</code> هي إنهاء الـ <code>switch statement</code> والخروج منها بالكامل.</li>
+        <li><strong>قسم <code>default</code>:</strong> قسم اختياري يتم تنفيذه إذا لم تتطابق قيمة المتغير مع أي من الـ <code>constants</code> المحددة في الـ <code>cases</code>.</li>
+    </ul>
+    <div class="note">
+        <strong>ملاحظة هامة:</strong> المحاضر شدد على أن <code>break</code> يجب أن تستخدم فقط عندما تكون ضرورية جدًا، مثل داخل <code>switch</code>. لا ينصح باستخدامها بشكل عام للخروج من الـ <code>function</code> أو الـ <code>loop</code> إذا كان هناك حلول بديلة باستخدام الـ <code>control flow</code> الطبيعي (مثل شروط <code>if</code>)، لأنها قد تجعل الكود أقل وضوحًا وأصعب في التتبع.
+    </div>
+
+    <h4>جمل التكرار (Iteration Statements or Looping Statements)</h4>
+    <p>تستخدم لتكرار مجموعة من الأوامر عدة مرات.</p>
+
+    <h5>1. جملة <code>for</code></h5>
+    <p>تستخدم غالبًا عندما تعرف عدد مرات التكرار مسبقًا.</p>
+    <ul>
+        <li><strong>خطوات التنفيذ:</strong>
+            <ol>
+                <li><strong>Initialization Statement:</strong> يتم تنفيذها مرة واحدة فقط عند بداية الـ <code>loop</code>.</li>
+                <li><strong>Condition Statement:</strong> يتم تقييمها في كل تكرار. إذا كانت صحيحة، يستمر التكرار.</li>
+                <li><strong>Code block:</strong> إذا كان الشرط صحيحًا، يتم تنفيذ الكود داخل الـ <code>loop</code>.</li>
+                <li><strong>Update Statement:</strong> يتم تنفيذها بعد كل تكرار.</li>
+            </ol>
+        </li>
+        <li class="note"><strong>نقطة هامة (للامتحان):</strong> تجنب الـ <code>Infinite Loop</code> (مثل <code>for(;;)</code>) إلا في حالات محددة جدًا، مثل تطبيقات IoT أو الـ multi-threading. استخدامها غالبًا ما يشير إلى تصميم غير جيد للكود.</li>
+    </ul>
+
+    <h5>2. جملة <code>while</code></h5>
+    <p>تستخدم عندما لا تعرف عدد مرات التكرار مسبقًا، حيث يستمر التكرار طالما أن الشرط صحيح.</p>
+    <ul>
+        <li><strong>مقارنة بـ <code>for</code>:</strong> من الناحية الفنية، يمكن استبدال أي منهما بالآخر. لكن يفضل استخدام <code>for</code> عندما يكون عدد التكرارات معروفًا، و <code>while</code> عندما يعتمد التكرار على شرط معين قد يتغير أثناء التشغيل.</li>
+    </ul>
+
+    <h5>3. جملة <code>do...while</code></h5>
+    <p>تشبه <code>while</code>، لكنها تضمن تنفيذ كتلة الكود مرة واحدة على الأقل قبل التحقق من الشرط.</p>
+    <div class="note">
+        <strong>نقطة هامة (للامتحان):</strong> الـ <code>do...while loop</code> هي الوحيدة التي تضمن تنفيذ الكود مرة واحدة على الأقل.
+    </div>
+    <pre><code>// مثال: قائمة اختيار (Menu) تتطلب إدخال صحيح
+int choice;
+do {
+    cout &lt;&lt; "1. Start Game" &lt;&lt; endl;
+    cout &lt;&lt; "2. Options" &lt;&lt; endl;
+    cout &lt;&lt; "3. Exit" &lt;&lt; endl;
+    cout &lt;&lt; "Enter your choice: ";
+    cin &gt;&gt; choice;
+} while (choice &lt; 1 || choice &gt; 3);</code></pre>
+
+    <h4>التعامل مع الـ Characters</h4>
+    <p>في C++، يتم تخزين الـ <code>char</code> (الحروف) في الذاكرة كأرقام، وذلك باستخدام نظام ترميز <strong>ASCII</strong>. كل حرف أو رمز على الكيبورد له قيمة رقمية مقابلة (مثال: 'A' يقابله 65، 'a' يقابله 97). لهذا السبب يمكنك معاملة الـ <code>char</code> كـ <code>integer</code> والعكس.</p>
+    <h5>التعامل مع إدخال الـ <code>char</code> والمفاتيح الموسعة</h5>
+    <ul>
+        <li><strong>المشكلة مع <code>std::cin</code>:</strong> عند قراءة حرف، فإنه ينتظر ضغط <code>Enter</code>. عند التعامل مع المفاتيح الموسعة (مثل مفاتيح الأسهم)، التي ترسل بايتين، يقرأ <code>std::cin</code> البايت الأول فقط ويتجاهل الثاني، مما يؤدي إلى فقدان المعلومة.</li>
+        <li><strong>الحل الأفضل (<code>getch</code> و <code>getche</code>):</strong>
+            <ul>
+                <li>هذه الـ <code>functions</code> (موجودة في مكتبة <code>conio.h</code>) لا تنتظر ضغط <code>Enter</code> وتقرأ الحرف فورًا.</li>
+                <li><code>getch()</code>: لا تطبع الحرف على الشاشة (No Echo).</li>
+                <li><code>getche()</code>: تطبع الحرف على الشاشة (Echo).</li>
+                <li><strong>الميزة مع المفاتيح الموسعة:</strong> نظرًا لأنها لا تمسح الـ <code>buffer</code>، يمكنك استدعاؤها مرة أخرى لقراءة البايت الثاني (الكود الفعلي للمفتاح الموسع) بعد قراءة البايت الأول (الذي يكون عادةً <code>null character</code> بقيمة 0).</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="note">
+        <strong>نقطة هامة (للامتحان):</strong> معرفة كيفية التعامل مع المفاتيح الموسعة أمر ضروري. يجب التدرب على معرفة قيم ASCII للمفاتيح المختلفة مثل الأسهم، Delete، Backspace.
+    </div>
+
+    <hr>
+
+    <h4>نقاط هامة وتركيز الامتحان</h4>
+    <p>المحاضر شدد على عدة نقاط يجب التركيز عليها:</p>
+    <ul>
+        <li><strong>قراءة الأخطاء (Errors):</strong> يجب قراءة الأخطاء التي تظهر أثناء الـ <code>compilation</code> والـ <code>runtime</code> وفهمها جيدًا. الأخطاء النحوية (<code>Syntax Errors</code>) تكون واضحة، أما الأخطاء المنطقية (<code>Logical Errors</code>) فهي أصعب وتحدث بسبب خطأ في تصميم الخوارزمية.</li>
+        <li><strong>أولوية العمليات والأقواس:</strong> استخدم الأقواس دائمًا لتحديد أولويات العمليات بوضوح لتجنب الأخطاء.</li>
+        <li><strong>لا يوجد "فارغ" في الذاكرة:</strong> أي متغير يتم تعريفه في الذاكرة يحمل قيمة ما، إما تكون <code>garbage value</code> (قيمة عشوائية) إذا لم يتم تهيئته، أو القيمة التي أسندت إليه.</li>
+        <li><strong>سرعة الكود واستهلاك الذاكرة:</strong> شكل الكود الأقصر أو الأكثر جمالًا ليس بالضرورة هو الأسرع أو الأقل استهلاكًا للذاكرة. استخدام الـ <code>Macro</code> بدلاً من <code>const</code> يؤدي إلى كود أسرع ويستهلك ذاكرة أقل.</li>
+        <li><strong>عملية الـ <code>compilation</code> و <code>linking</code>:</strong> فهم المراحل التي يمر بها الكود من <code>source code</code> إلى <code>executable file</code>.</li>
+    </ul>
+
+</div>
+</body>
+</html>

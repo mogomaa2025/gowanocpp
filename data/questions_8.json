@@ -1,0 +1,123 @@
+[
+  {
+    "id": 224,
+    "question": "What will be the output when you compile and run the following piece of code?\n```cpp\nclass Base\n{\npublic:\n    Base() { cout<<\"Welcome \";}\n};\nclass Derived: public Base\n{\npublic:\n    Derived() { cout<<\"Hello \";}\n};\nvoid main()\n{\n    Derived myDerived;\n    Base myBase;\n}\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Welcome Hello"
+      },
+      {
+        "id": "B",
+        "text": "Hello Welcome"
+      },
+      {
+        "id": "C",
+        "text": "Welcome Hello Welcome"
+      },
+      {
+        "id": "D",
+        "text": "Welcome Welcome Hello"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "```img\nhttps://i.ibb.co/q37CV9FN/image.png\n```",
+    "page": 8,
+    "updated_at": "2025-08-10T16:12:14.309655"
+  },
+  {
+    "id": 225,
+    "question": "Multiple Inheritance is allowed in C++.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "C++ supports multiple inheritance, which allows a class to derive from more than one base class.",
+    "page": 8
+  },
+  {
+    "id": 226,
+    "question": "If a certain function is made friend for class A, then that function can access the private members of class A.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "```arabic\n‫صح، لو عملت function معينة friend لـ class A، الـ function دي هتقدر تدخل على الـ private members بتوع الـ class A زي لو كانت جزء من الكلاس نفسه. يعني الـ friend function بتاخد إذن خاص إنها تشوف وتعدّل على الـ private و protected بتوع الكلاس.‬\n```",
+    "page": 8,
+    "updated_at": "2025-08-10T05:08:22.114777"
+  },
+  {
+    "id": 227,
+    "question": "Object member variable can be modified through static member functions.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "A static member function is not associated with any particular object, so it does not have a `this` pointer and cannot directly access non-static (object/instance) member variables. It can only access them if it is given an explicit object or pointer/reference to an object as a parameter.",
+    "page": 8
+  },
+  {
+    "id": 228,
+    "question": "what is the output when you create object of rectangle. `Rectangle r(5,6,7,8)`:\n```cpp\nclass Point {\n    int x, y;\npublic:\n    void setX(int _x) { x = _x; }\n    void setY(int _y) { y = _y; }\n    int getX() { return x; }\n    int getY() { return y; }\n    Point(int _x, int _y) {\n        x = _x;\n        y = _y;\n        cout << \" Point Constructor\";\n    }\n    Point(int xy) {\n        x = y = xy;\n        cout << \" Point Constructor\";\n    }\n};\nclass Rectangle {\n    Point ul, lr;\npublic:\n    void setUL(int _x, int _y) {\n        ul.setXY(_x, _y);\n    }\n    void setLR(int _x, int _y) {\n        lr.setXY(_x, _y);\n    }\n    Rectangle(int x1, int y1, int x2, int y2) : ul(x1, y1) {\n        cout << \"\\n Rectangle Constructor\";\n    }\n};\n```",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compilation Error"
+      },
+      {
+        "id": "B",
+        "text": "Rectangle Constructor Point Constructor"
+      },
+      {
+        "id": "C",
+        "text": "Rectangle Constructor"
+      },
+      {
+        "id": "D",
+        "text": "Point Constructor Rectangle Constructor"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "```img\nhttps://i.ibb.co/7dhprqLq/image.png\n```",
+    "page": 8,
+    "updated_at": "2025-08-10T05:43:43.895923"
+  },
+  {
+    "id": 229,
+    "question": "When overloading a certain function, the only way is to specify a different number of parameters for the new function.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "To overload a function, its parameter list must be unique. This can be achieved by having a different number of parameters OR by having parameters of different types. For example, `void func(int)` and `void func(double)` is valid overloading.",
+    "page": 8
+  }
+]

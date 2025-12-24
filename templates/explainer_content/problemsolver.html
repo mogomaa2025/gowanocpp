@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرح شامل لمفاهيم حل المشكلات والبرمجة والاختبارات</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --warning-gradient: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+            --info-gradient: linear-gradient(135deg, #e6f7ff 0%, #d1eaff 100%);
+        }
+
+        body {
+            background: var(--primary-gradient);
+            font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            color: #343a40;
+            text-align: right;
+            padding: 10px 0;
+        }
+
+        .lecture-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0;
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: floatPattern 40s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes floatPattern {
+            from { transform: translate(0, 0); }
+            to { transform: translate(-30px, -30px); }
+        }
+
+        .header h1, .header p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header h1 {
+            font-weight: 800;
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .content-card {
+            border: none;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 45px rgba(31, 38, 135, 0.2);
+        }
+
+        .content-card h2, .content-card h3 {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-top: 1.5rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        .content-card h3 {
+            font-size: 1.4rem;
+            border-bottom-color: #764ba2;
+        }
+
+        .content-card p, .content-card li {
+            font-size: 1.1rem;
+            line-height: 2;
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+          padding-right: 2rem;
+        }
+
+        b {
+            color: #d11a1a;
+        }
+
+        /* Inline Code */
+        code {
+            direction: ltr;
+            text-align: left;
+            display: inline-block;
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            color: #5a3a93;
+            font-weight: 600;
+            padding: 0.2em 0.5em;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+        }
+
+        /* Code Block */
+        pre {
+            direction: ltr;
+            text-align: left;
+            background: #2d3748 !important;
+            color: #e2e8f0 !important;
+            padding: 25px 20px 20px 20px;
+            border-radius: 12px;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        pre::before {
+            content: 'C++ Code';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: var(--primary-gradient);
+            color: white;
+            padding: 5px 15px;
+            border-top-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        pre code {
+            font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+            font-size: 1rem;
+            line-height: 1.6;
+            background: transparent !important;
+            color: inherit !important;
+            border: none !important;
+            font-weight: normal;
+        }
+
+        .highlight {
+            background: var(--warning-gradient);
+            color: #3f2a00;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            border-right: 7px solid #ff9800;
+            box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+            position: relative;
+        }
+
+        .highlight b {
+            color: #6d4c00;
+        }
+
+        .highlight h3::before {
+            content: '💡 ';
+        }
+
+        .highlight h3 {
+             font-size: 1.3rem;
+             border-bottom: 2px solid rgba(0,0,0,0.2);
+             color: #493300;
+        }
+
+        .real-example {
+            background: var(--info-gradient);
+            border-right: 7px solid #3399ff;
+            padding: 15px 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(51, 153, 255, 0.2);
+        }
+        .real-example b {
+            color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+<!-- === NEW BUTTON ADDED HERE === -->
+<div id="action-buttons-container">
+    <a href="#" class="btn btn-secondary shadow" onclick="window.close(); return false;">رجوع</a>
+    <a href="#" class="btn btn-info shadow" onclick="openInNewTab(); return false;">فتح في تبويب جديد</a>
+</div>
+<script>
+function openInNewTab() {
+  window.open(window.location.href );
+}
+</script>
+<div class="lecture-container">
+    <header class="header">
+        <h1><i class="bi bi-lightbulb"></i> شرح شامل لمفاهيم حل المشكلات والبرمجة والاختبارات</h1>
+    </header>
+
+    <main>
+        <div class="content-card">
+            <h2>إيه هو الـ <span dir="ltr">Problem Solving</span> (حل المشكلات)؟</h2>
+            <p>الـ <span dir="ltr">Problem Solving</span> ده عبارة عن <b>بروسيس (عملية) بنمشي عليها عشان نحل مشكلة معينة</b>.</p>
+            <p>ليه هو مهم للـ <span dir="ltr">Programming</span> (البرمجة)؟</p>
+            <ul>
+                <li>معظم الـ <span dir="ltr">Applications</span> اللي بنعملها بتبقى عبارة عن <b>مشاكل صغيرة جنب بعضها</b>. فلو عرفنا نحل المشاكل الصغيرة دي، هنعرف نعمل حاجة كبيرة.</li>
+                <li>أي أبلكيشن موجود، هو في الأساس كان عبارة عن <span dir="ltr">problem</span>. عشان كده الـ <span dir="ltr">Problem Solving</span> ده يعتبر <b>الكور (الأساس) بتاع الكمبيوتر ساينس</b>.</li>
+            </ul>
+            <div class="real-example">
+                <b>مثال عملي:</b> أبلكيشن حجز تذاكر القطر ده كان حل لمشكلة الزحمة في المحطة. أبلكيشن السوبر ماركت حل مشكلة للناس اللي مش بتعرف تتحرك عشان تروح تشتري حاجتها.
+            </div>
+            <p>الـ <span dir="ltr">Programmer</span> بيعمل إيه عشان يحل مشكلة؟</p>
+            <ol>
+                <li><b>بيفهم المشكلة</b> كويس.</li>
+                <li>بيحول فهمه ده لـ <b>ألجوريزم</b> (خطة لحل المشكلة).</li>
+                <li>بيحول الألجوريزم ده لـ <b>كود</b> الكمبيوتر يقدر يفهمه.</li>
+            </ol>
+            <p>الـ <span dir="ltr">Steps</span> اللي بنمشيها عشان نحل أي <span dir="ltr">problem</span> في الحياة أو في البرمجة:</p>
+            <ol>
+                <li><b>نديفاين واندنتيفاي المشكلة</b> (نحدد ونفهم المشكلة بالظبط).</li>
+                <li><b>نجينيريت كل الـ <span dir="ltr">Possible Solutions</span></b> (نولد كل الحلول المحتملة للمشكلة). ساعات المشكلة بيبقى ليها أكتر من حل.</li>
+                <li><b>نإيفالويت الـ <span dir="ltr">Solutions</span></b> (نقَيّم الحلول). نشوف هل فيه حل <span dir="ltr">optimized</span> (مثالي) مش هياخد وقت كتير أو موارد كتير.</li>
+                <li><b>نعمل <span dir="ltr">Implementation</span> للسليوشن ده</b> (نطبق الحل اللي اخترناه).</li>
+                <li><b>نتست الـ <span dir="ltr">Outcome</span> بتاع السليوشن</b> (نختبر النتيجة) عشان نشوف هل الحل ده فعلاً حل المشكلة ولا لأ.</li>
+            </ol>
+            <p><b>إيه اللي يحصل لو الـ <span dir="ltr">Output</span> طلع غلط؟</b></p>
+            <p>أغلبنا بيقع في مشكلة إنه لما يلاقي الـ <span dir="ltr">Output</span> مش صح، بيدور في الـ <span dir="ltr">Implementation</span> (طريقة الحل). <b>لكن ده مش صح!</b></p>
+            <p>المفروض <b>نرجع لـ <span dir="ltr">Step 1</span> تاني، ونشوف هل إحنا فاهمين المشكلة صح من الأول ولا لأ</b>. ساعات المشكلة بتبقى في فهمنا الغلط للداتا أو للمسألة.</p>
+        </div>
+
+        <div class="content-card">
+            <h2>أساسيات الـ <span dir="ltr">Programming</span> المهمة (إيه علاقتها بالـ <span dir="ltr">Testing</span>؟)</h2>
+            <h3><span dir="ltr">Data Types</span> (أنواع البيانات)</h3>
+            <p>مهم أوي نفهم الـ <span dir="ltr">Data Types</span> عشان دي أكتر حاجة بتعمل مشاكل في البرمجة.</p>
+            <ul>
+                <li><b><span dir="ltr">Primitive Data Types</span> (بيانات بسيطة):</b> ليها حجم ثابت (فيكسد سايز).
+                    <ul>
+                        <li><span dir="ltr">char</span>: حرف واحد، 1 بايت.</li>
+                        <li><span dir="ltr">boolean</span>: قيمة يا <span dir="ltr">true</span> يا <span dir="ltr">false</span> (صح أو غلط).</li>
+                        <li><span dir="ltr">int</span>: أرقام صحيحة، 4 بايت، أقصى قيمة تقريباً 10^9.</li>
+                        <li><span dir="ltr">float</span>: أرقام عشرية أو صحيحة، 4 بايت، أقصى قيمة تقريباً 10^9.</li>
+                        <li><span dir="ltr">long long</span>: أرقام صحيحة بس، 8 بايت، أقصى قيمة تقريباً 10^18.</li>
+                        <li><span dir="ltr">double</span>: زي الـ <span dir="ltr">long long</span> بس بيشيل كسور عشرية.</li>
+                    </ul>
+                </li>
+                <li><b><span dir="ltr">Non-Primitive Data Types</span> (بيانات مركبة):</b> ملهاش حجم ثابت، ينفع تزود فيها براحتك.
+                    <ul>
+                        <li><span dir="ltr">String</span>: سلسلة من الحروف.</li>
+                        <li><span dir="ltr">Arrays</span>, <span dir="ltr">Vectors</span>: مجموعات من البيانات.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="highlight">
+                <h3><b>تريكة كود: مشكلة الـ <span dir="ltr">Overflow</span> في الـ <span dir="ltr">Data Types</span></b></h3>
+                <p>لو عندك رقمين <span dir="ltr">int</span> وضربتهم في بعض والناتج طلع كبير (أكبر من أقصى قيمة للـ <span dir="ltr">int</span>، مثلاً <span dir="ltr">10^5 * 10^5 = 10^10</span>)، حتى لو حاطط الناتج في <span dir="ltr">variable</span> نوعه <span dir="ltr">long long</span>، ممكن يطلعلك <span dir="ltr">garbage value</span> (قيمة غلط).</p>
+                <p><b>السبب:</b> الكمبيوتر بيعمل العملية الحسابية (الضرب) <b>بنوع الـ <span dir="ltr">inputs</span> (الـ <span dir="ltr">int</span>) الأول</b>، فبيحصل <span dir="ltr">overflow</span> (تجاوز للحجم المسموح به) في الميموري، وبعدين يخزن الناتج الغلط ده في الـ <span dir="ltr">long long</span>.</p>
+                <p><b>الحل:</b> <b>اعمل <span dir="ltr">casting</span> (تحويل) لأي واحد من الرقمين لـ <span dir="ltr">long long</span> قبل عملية الضرب</b>، زي كده: <code><span dir="ltr">(long long)x * y</span></code>. كده الكمبيوتر هيفهم إن العملية لازم تتم بنوع أكبر.</p>
+            </div>
+
+            <h3><span dir="ltr">Mathematical Operators</span> (العوامل الرياضية)</h3>
+            <ul>
+                <li><span dir="ltr">+</span> (جمع), <span dir="ltr">-</span> (طرح), <span dir="ltr">*</span> (ضرب), <span dir="ltr">/</span> (قسمة), <span dir="ltr">%</span> (<span dir="ltr">Modulo</span> - باقي القسمة).</li>
+            </ul>
+            <div class="highlight">
+                <h3><b>تريكة كود: القسمة على الأرقام الصحيحة</b></h3>
+                <p>لو قسمت <span dir="ltr">int</span> على <span dir="ltr">int</span>، <b>الناتج دايماً هيكون <span dir="ltr">int</span></b> (رقم صحيح)، ومش هيطلع كسور عشرية.</p>
+                <p><b>الحل:</b> لو محتاج الكسور العشرية، لازم <b>تعمل <span dir="ltr">casting</span> (تحويل) لواحد من الرقمين لـ <span dir="ltr">float</span> أو <span dir="ltr">double</span></b>. زي كده: <code><span dir="ltr">(float)x / y</span></code>.</p>
+                <div class="real-example">
+                    <b>مثال عملي:</b> لو أبلكيشن بتاع حسابات مالية (زي سوبر ماركت أو بنك) بيعمل قسمة وطلع الناتج رقم صحيح والمفروض يطلع فيه كسر (زي <span dir="ltr">5.5</span>). لو اليوزر دفع <span dir="ltr">5</span> بس، صاحب الأبلكيشن هيخسر. كمختبر (تستر) لازم تفهم المعلومة دي عشان تكتب <span dir="ltr">test cases</span> تتأكد إن الكسور بتظهر صح. وكمان تتأكد لو الكسر فيه أرقام كتير (زي <span dir="ltr">10 / 3 = 3.3333...</span>)، هل الأبلكيشن بيعرض عدد معين من الأرقام بعد العلامة (مثلاً رقمين زي <span dir="ltr">3.33</span>) ولا بيعرضها كلها، عشان ما تبقاش مشكلة <span dir="tr">UI</span> (واجهة مستخدم).
+                </div>
+            </div>
+
+            <h3><span dir="ltr">Declaration, Initialization, Assignment</span> (تعريف، تهيئة، إسناد)</h3>
+            <ul>
+                <li><span dir="ltr">Declaration</span>: مجرد تعريف الـ <span dir="ltr">variable</span> (المتغير) من غير ما تدي له قيمة. زي: <code><span dir="ltr">int x;</span></code></li>
+                <li><span dir="ltr">Initialization</span>: تعريف الـ <span dir="ltr">variable</span> مع إعطاء قيمة أولية له. زي: <code><span dir="ltr">int x = 5;</span></code></li>
+                <li><span dir="ltr">Assignment</span>: تغيير قيمة الـ <span dir="ltr">variable</span> بعد ما كان متعرف. زي: <code><span dir="ltr">x = 10;</span></code></li>
+            </ul>
+
+            <h3><span dir="ltr">Conditional & Logical Operators</span> (العوامل الشرطية والمنطقية)</h3>
+            <ul>
+                <li><span dir="ltr">Conditional</span>: <code><span dir="ltr">==</span></code> (يساوي), <code><span dir="ltr"><</span></code> (أقل من), <code><span dir="ltr">></span></code> (أكبر من), <code><span dir="ltr"><=</span></code> (أقل من أو يساوي), <code><span dir="ltr">>=</span></code> (أكبر من أو يساوي), <code><span dir="ltr">!=</span></code> (لا يساوي).</li>
+                <li><span dir="ltr">Logical</span>: <code><span dir="ltr">&&</span></code> (AND - كل الشروط لازم تتحقق), <code><span dir="ltr">||</span></code> (OR - شرط واحد على الأقل يتحقق), <code><span dir="ltr">!</span></code> (NOT - عكس الشرط).</li>
+            </ul>
+
+            <h3>أنواع الـ <span dir="ltr">Loops</span> (الحلقات التكرارية)</h3>
+            <p><b>إمتى أستخدم كل نوع <span dir="ltr">Loop</span>؟</b> (سؤال انترفيو مهم)</p>
+            <ul>
+                <li><span dir="ltr"><b>For Loop</b></span>: بستخدمها لما أكون <b>عارف عدد مرات التكرار</b> بالظبط (كم <span dir="ltr">iteration</span> هعملها).</li>
+                <li><span dir="ltr"><b>While Loop</b></span>: بستخدمها لما يكون عندي <b>شرط معين عايز يتنفذ</b>، ومش عارف عدد مرات التكرار. بتفضل تتكرر طول ما الشرط ده متحقق.</li>
+                <li><span dir="ltr"><b>Do-While Loop</b></span>: بستخدمها لما أكون عايز الكود <b>يتنفذ مرة واحدة على الأقل</b>، وبعدين يبدأ يتشيك على الشرط. مثال: برامج الكاشير اللي بتعرض قائمة الأوامر مرة واحدة على الأقل.</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>مفاهيم الـ <span dir="ltr">Testing</span> (الاختبارات)</h2>
+            <h3><span dir="ltr">Software Development Life Cycle</span> (<span dir="ltr">SDLC</span>) - دور الاختبارات فيها</h3>
+            <ul>
+                <li><span dir="ltr"><b>Waterfall Model</b></span>: الاختبار بيتم <b>في آخر مرحلة خالص</b> من تطوير السوفت وير. مش مناسب للأتمتة (<span dir="ltr">Automation</span>) لأنك هتختبر مرة واحدة بس.</li>
+                <li><span dir="ltr"><b>V-Model</b></span> و <span dir="ltr"><b>Iterative Model</b></span>: دول اللي الـ <span dir="ltr">Agile</span> بيشتغل معاهم. بيسمحوا بـ <span dir="ltr">feedback</span> بدري ويقللوا المشاكل.</li>
+            </ul>
+
+            <h3><span dir="ltr">Agile</span> (منهجية العمل المرنة)</h3>
+            <p>الـ <span dir="ltr">Agile</span> ده <b>مايند ستيت (عقلية) مش <span dir="ltr">SDLC</span></b>. بنستخدمها عشان طريقة التواصل والشغل تكون منظمة أكتر.</p>
+            <p>في الـ <span dir="ltr">Agile</span>، عندنا موديلين مشهورين:</p>
+            <ul>
+                <li><span dir="ltr"><b>Kanban</b></span>: بتدخل الـ <span dir="ltr">Sprint</span> (فترة العمل) مش عارف إيه الـ <span dir="ltr">requirements</span> بالظبط، بتشتغل على حسب اللي يجيلك.</li>
+                <li><span dir="ltr"><b>Scrum</b></span>: بتدخل الـ <span dir="ltr">Sprint</span> بسكوب معين عارف هتطلع بإيه.</li>
+            </ul>
+            <div class="highlight">
+                <h3><b>سؤال انترفيو: الميتنجز في الـ <span dir="ltr">Agile</span></b></h3>
+                <p><b>مين بيحضر كل ميتنج؟</b></p>
+                <ul>
+                    <li><span dir="ltr"><b>Planning Meeting</b></span>: الـ <span dir="ltr">PO</span> (صاحب المنتج) بيشرح السكوب للـ <span dir="ltr">Testers</span> و الـ <span dir="ltr">Developers</span> و الـ <span dir="ltr">UI/UX</span>. وبيتم تحديد الـ <span dir="ltr">sizing</span> (الوقت التقديري للمهام).</li>
+                    <li><span dir="ltr"><b>Daily Stand-up Meeting</b></span>: ميتنج يومي قصير. كل واحد بيقول عمل إيه، وهيعمل إيه، وهل في مشاكل (بلوكرز) قابلته.</li>
+                    <li><span dir="ltr"><b>Review Meeting</b></span>: الـ <span dir="ltr">Dev</span> والـ <span dir="ltr">Test</span> والـ <span dir="ltr">PO</span> والـ <b><span dir="ltr">Customer</span> (العميل)</b> بيحضروا. الـ <span dir="ltr">Customer</span> بيدي <span dir="ltr">feedback</span> على الشغل.</li>
+                    <li><span dir="ltr"><b>Retrospective Meeting</b></span>: بيحضره <b>التيم الداخلي بس</b> (<span dir="ltr">Dev</span>، <span dir="ltr">Test</span>، <span dir="ltr">UI/UX</span>، <span dir="ltr">Scrum Master</span>). بيتناقشوا في المشاكل اللي حصلت خلال الـ <span dir="ltr">sprint</span> عشان يتجنبوها بعدين. <b>الـ <span dir="ltr">Customer</span> مش بيحضره</b>.</li>
+                </ul>
+            </div>
+
+            <h3><span dir="ltr">Automation Testing</span> (الأتمتة في الاختبارات)</h3>
+            <div class="highlight">
+                <h3><b>سؤال انترفيو: إمتى بنعمل <span dir="ltr">Automation</span>؟</b></h3>
+                <ul>
+                    <li>بنعمل <span dir="ltr">Automation</span> لما يكون عندنا <b>تستات <span dir="ltr">regression</span> محتاجين ننفذها كتير</b> على <span dir="ltr">component</span> (مكون) يكون <span dir="ltr">stable</span> (مستقر). عشان نوفر وقت ومجهود في الاختبارات اليدوية المتكررة.</li>
+                    <li><b>مش بنعمل <span dir="ltr">Automation</span> للـ <span dir="ltr">Waterfall Model</span></b> لأن الاختبار بيتم مرة واحدة في النهاية.</li>
+                    <li>لو الـ <span dir="ltr">feature</span> (الميزة) بتتغير كتير، <b>مش بنعملها <span dir="ltr">automation</span></b>. الـ <span dir="ltr">automation</span> بيكون للمكونات المستقرة.</li>
+                </ul>
+            </div>
+            <div class="highlight">
+                <h3><b>سؤال انترفيو: أيهما أفضل للـ <span dir="ltr">Database</span>، أجبلك كل الداتا مرة واحدة ولا أندهها كل ما أحتاجها؟</b></h3>
+                <p><b>الإجابة:</b> <b>متقولش إجابة مباشرة، إسأل الـ <span dir="ltr">Interviewer</span> يوضح السؤال الأول!</b></p>
+                <p><b>قوله:</b> "هو حضرتك محتاجني أستخدمها كام مرة؟"</p>
+                <ul>
+                    <li>لو عدد المرات قليل: <b>أفضل أنده الداتا (بالـ <span dir="ltr">query</span>) كل ما أحتاجها</b> عشان أوفر <span dir="ltr">memory</span> (ذاكرة).</li>
+                    <li>لو محتاج أستخدمها كتير: <b>أفضل أندهها كلها مرة واحدة</b> في البداية وأخزنها عندي، عشان أوفر وقت الـ <span dir="ltr">network latency</span> (تأخير الشبكة) في كل مرة أعمل <span dir="ltr">query</span>.</li>
+                </ul>
+                <div class="real-example">
+                    <b>مثال عملي:</b> لو الداتا بتاعتك كتير أوي (زي مليون صنف في السوبر ماركت)، لما بتعمل <span dir="ltr">query</span> بتجيب كل الأصناف كل مرة هتستهلك وقت وميموري. عشان كده الـ <span dir="ltr">indexing</span> (الفهرسة) في الـ <span dir="ltr">databases</span> مهم، بيسرّع الأداء وبيقلل الوقت.
+                </div>
+            </div>
+
+            <h3><span dir="ltr">Bug Life Cycle</span> (دورة حياة الـ <span dir="ltr">Bug</span> / العيب)</h3>
+            <p>الـ <span dir="ltr">Bug</span> (أو الـ <span dir="ltr">Issue</span>) بيمر بمراحل معينة من أول ما يتفتح لحد ما يتقفل:</p>
+            <ol>
+                <li><b><span dir="ltr">New</span> (جديد):</b> أول ما الـ <span dir="ltr">Tester</span> يكتشف الـ <span dir="ltr">Bug</span> وبيفتحه.</li>
+                <li><b><span dir="ltr">Assigned</span> (مسند):</b> بيتسند للـ <span dir="ltr">Developer</span> عشان يراجعه.</li>
+                <li><b><span dir="ltr">In Progress</span> (قيد التنفيذ):</b> الـ <span dir="ltr">Developer</span> بيبدأ يشتغل عليه.</li>
+                <li><b><span dir="ltr">Fixed</span> (تم الإصلاح):</b> الـ <span dir="ltr">Developer</span> بيصلح الـ <span dir="ltr">Bug</span>.</li>
+                <li><b><span dir="ltr">In Testing</span> (قيد الاختبار):</b> الـ <span dir="ltr">Bug</span> بيرجع للـ <span dir="ltr">Tester</span> عشان يتأكد إنه اتصلح.</li>
+                <li><b><span dir="ltr">Closed</span> (مغلق):</b> لو الـ <span dir="ltr">Bug</span> اتصلح والـ <span dir="ltr">Tester</span> تأكد، بيتقفل.</li>
+                <li><b><span dir="ltr">Reopen</span> (إعادة فتح):</b> لو الـ <span dir="ltr">Bug</span> مرجعش صحيح، أو إصلاحه عمل مشاكل تانية (رجريشن)، بيتفتح تاني.</li>
+            </ol>
+            <p>ممكن الـ <span dir="ltr">Developer</span> يحط الـ <span dir="ltr">Bug</span> على حالات تانية:</p>
+            <ul>
+                <li><span dir="ltr"><b>Technical Limitation</b></span>: الـ <span dir="ltr">Bug</span> مش هيتصلح بسبب قيود تقنية. لازم تتأكد من الـ <span dir="ltr">PO</span> إن دي فعلاً مشكلة تقنية.</li>
+                <li><span dir="ltr"><b>Out of Scope</b></span>: الـ <span dir="ltr">Bug</span> ده مش تبع الـ <span dir="ltr">scope</span> (نطاق) بتاع المشروع أو الـ <span dir="ltr">user story</span> دي (زي مشكلة ظهور الكسور العشرية اللي متذكرتش في الـ <span dir="ltr">requirements</span>). بتفتحها كـ <span dir="ltr">enhancement</span> (تحسين) وتوديها للـ <span dir="ltr">PO</span>.</li>
+            </ul>
+            <div class="highlight">
+                <h3><b>سؤال انترفيو: إيه المعلومات اللي بتحطها في الـ <span dir="ltr">Bug Report</span> (تقرير البج)؟</b></h3>
+                <ul>
+                    <li><b><span dir="ltr">Steps to Reproduce</span> (خطوات تكرار المشكلة):</b> تشرح بالضبط إيه الخطوات اللي عملتها عشان الـ <span dir="ltr">Bug</span> يظهر.</li>
+                    <li><b><span dir="ltr">Expected Result</span> (النتيجة المتوقعة):</b> إيه اللي كان المفروض يحصل.</li>
+                    <li><b><span dir="ltr">Actual Result</span> (النتيجة الفعلية):</b> إيه اللي حصل فعلاً.</li>
+                    <li><b><span dir="ltr">Attachments</span> (مرفقات):</b> صور (<span dir="ltr">screenshots</span>) أو فيديوهات تسجيل للمشكلة، و<span dir="ltr">logs</span> (سجلات الأخطاء) من الـ <span dir="ltr">network</span> في المتصفح أو <span dir="ltr">logs</span> من الموبايل. ده بيسهل على الـ <span dir="ltr">Developer</span> يفهم المشكلة.</li>
+                </ul>
+            </div>
+            <div class="highlight">
+                <h3><b>سؤال انترفيو: لو فتحت <span dir="ltr">Bug</span> والـ <span dir="ltr">Developer</span> مش مقتنع بيه، أعمل إيه؟</b></h3>
+                <ul>
+                    <li><b>لو أنت متأكد من الـ <span dir="ltr">Bug</span>:</b>
+                        <ul>
+                            <li><b>تكون قاري الـ <span dir="ltr">requirements</span> كويس جداً ومراجعها</b>.</li>
+                            <li><b>تدخل مع الـ <span dir="ltr">Developer</span> <span dir="ltr">call</span></b> وتحاول تشرحله.</li>
+                            <li>لو لسه مش مقتنع، <b>تصعد للـ <span dir="ltr">PO</span></b> (صاحب المنتج)، لأنه هو الـ <span dir="ltr">reference</span> بتاع الـ <span dir="ltr">requirements</span>. <b>متصعدش لـ <span dir="ltr">Team Lead</span> بتاع الـ <span dir="ltr">Dev</span> مباشرة</b>.</li>
+                            <li>مهم انك <b>متفتحش <span dir="ltr">Bug</span> عشان "تصطاد" الـ <span dir="ltr">Dev</span></b>. الهدف هو جودة المنتج مش المشاكل بين التيم.</li>
+                            <li><b>تريز الـ <span dir="ltr">edge cases</span> (الحالات الخاصة) في الـ <span dir="ltr">Planning Meeting</span></b> عشان الـ <span dir="ltr">Dev</span> ياخد باله منها من الأول.</li>
+                        </ul>
+                    </li>
+                    <li><b>لو أنت مش متأكد من الـ <span dir="ltr">Bug</span> (كتستر):</b>
+                        <ul>
+                            <li><b>ترجع للـ <span dir="ltr">Senior Tester</span></b> اللي معاك في التيم وتاخد رأيه.</li>
+                            <li>لو اتأكدتوا انتوا الاتنين، تفتح الـ <span dir="ltr">Bug</span>. كده بتوضح إنك مش بتفتح أي حاجة وخلاص.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <h3><span dir="ltr">Testing Techniques</span> (تقنيات الاختبار)</h3>
+            <ul>
+                <li><span dir="ltr"><b>Boundary Value Analysis</b></span> (تحليل القيم الحدية):
+                    <ul>
+                        <li>بتختبر القيم اللي على أطراف المدى (الـ <span dir="ltr">boundary</span>).</li>
+                        <li>مثلاً لو المدى من <span dir="ltr">0</span> لـ <span dir="ltr">10^7</span>: تختبر <span dir="ltr">0</span>، <span dir="ltr">-1</span> (قبل المدى)، <span dir="ltr">1</span> (بعد البداية)، <span dir="ltr">10^7</span>، <span dir="ltr">10^7 + 1</span> (بعد المدى).</li>
+                        <li>مهمة جداً عشان تتأكد إن الـ <span dir="ltr">developer</span> محطش <code><span dir="ltr"><</span></code> بدل <code><span dir="ltr"><=</span></code> مثلاً.</li>
+                    </ul>
+                </li>
+                <li><span dir="ltr"><b>Equivalence Partitioning</b></span> (تقسيم التكافؤ):
+                    <ul>
+                        <li>بتقسم المدخلات لمجموعات (أقسام) متكافئة، وتختار قيمة واحدة بس من كل قسم تختبرها.</li>
+                        <li>لو عندك مثلاً الأرقام من <span dir="ltr">0</span> لـ <span dir="ltr">9</span> بتتصرف بطريقة، والأرقام اللي أكبر من <span dir="ltr">9</span> بتتصرف بطريقة تانية. هنا عندك قسمين، فبتختبر قيمة من كل قسم.</li>
+                        <li>دي تعتبر تحديث أو تكملة للـ <span dir="ltr">Boundary Value Analysis</span> لما يكون عندك أكتر من <span dir="ltr">boundary</span>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>أمثلة عملية على حل المشكلات بـ <span dir="ltr">Code</span> كامل</h2>
+
+            <h3>1. طباعة آخر رقم في عدد كبير جداً</h3>
+            <p><b>المشكلة:</b> عايز أطبع آخر رقم (digit) في عدد، بس العدد ده ممكن يكون كبير أوي (أكبر من اللي الـ <span dir="ltr">long long</span> يقدر يشيله).</p>
+            <p><b>التريكة:</b> لو الرقم كبير جداً، مينفعش تستخدم أنواع الأرقام العادية (<span dir="ltr">int</span> أو <span dir="ltr">long long</span>). <b>الـ <span dir="ltr">String</span> هي اللي هتنفع هنا</b>، لأن حجمها مش ثابت.</p>
+            <p><b>الحل:</b> تاخد الرقم كـ <span dir="ltr">String</span>، وبعدين تجيب آخر حرف فيه.</p>
+            <pre><code class="language-cpp" dir="ltr">
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;algorithm&gt; // For std::reverse if needed for first digit
+
+int main() {
+    std::string num_str;
+    std::cout &lt;&lt; "Enter a number: ";
+    std::cin &gt;&gt; num_str;
+
+    if (num_str.empty()) {
+        std::cout &lt;&lt; "Please enter a number." &lt;&lt; std::endl;
+        return 1;
+    }
+
+    std::cout &lt;&lt; "Last digit: " &lt;&lt; num_str.back() &lt;&lt; std::endl; // num_str.back() gets the last character
+
+    // لو عايز الرقم قبل الأخير
+    if (num_str.length() &gt;= 2) {
+        std::cout &lt;&lt; "Second to last digit: " &lt;&lt; num_str[num_str.length() - 2] &lt;&lt; std::endl;
+    } else {
+        std::cout &lt;&lt; "Number is too short to have a second to last digit." &lt;&lt; std::endl;
+    }
+
+    return 0;
+}
+            </code></pre>
+
+            <h3>2. جمع الأرقام من صفر لـ <span dir="ltr">N</span></h3>
+            <p><b>المشكلة:</b> اجمع الأرقام من <span dir="ltr">0</span> لـ <span dir="ltr">N</span>. لو <span dir="ltr">N</span> موجب، اجمع من <span dir="ltr">1</span> لـ <span dir="ltr">N</span>. لو <span dir="ltr">N</span> سالب، اجمع من <span dir="ltr">-1</span> لـ <span dir="ltr">N</span>.</p>
+            <p><b>التريكة:</b> في البداية كنا بنستخدم <span dir="ltr">for loop</span>، بس دي بطيئة لو <span dir="ltr">N</span> كبير. <b>الـ <span dir="ltr">Mathematical Formula</span> (المعادلة الرياضية) أسرع بكتير</b>.</p>
+            <p><b>الحل:</b></p>
+            <ul>
+                <li>لو <span dir="ltr">N > 0</span>: استخدم المعادلة <code><span dir="ltr">N * (N + 1) / 2</span></code>.</li>
+                <li>لو <span dir="ltr">N < 0</span>: استخدم المعادلة <code><span dir="ltr">- (abs(N) * (abs(N) + 1) / 2)</span></code>.</li>
+                <li><b>مهم:</b> دايماً صفر الـ <span dir="ltr">variable</span> بتاع المجموع (<span dir="ltr">sum = 0</span>) قبل ما تجمع عليه عشان تتجنب <span dir="ltr">garbage values</span>.</li>
+            </ul>
+            <pre><code class="language-cpp" dir="ltr">
+#include &lt;iostream&gt;
+#include &lt;cmath&gt; // For std::abs
+
+int main() {
+    long long n; // استخدم long long لـ N عشان الأرقام الكبيرة
+    std::cout &lt;&lt; "Enter a number N: ";
+    std::cin &gt;&gt; n;
+
+    long long sum = 0; // صفر الـ sum عشان ما يطلعش garbage value
+
+    if (n &gt; 0) {
+        // المعادلة للأرقام الموجبة
+        sum = n * (n + 1) / 2;
+    } else if (n &lt; 0) {
+        // المعادلة للأرقام السالبة
+        // مثال: لو N = -3, المجموع = -1 + -2 + -3 = -6
+        // abs(-3) = 3. المعادلة لـ 3 هي 3 * (3 + 1) / 2 = 6. فـ الناتج -6.
+        sum = - (std::abs(n) * (std::abs(n) + 1) / 2);
+    }
+    // لو N = 0, الـ sum هيفضل 0، وده صح
+
+    std::cout &lt;&lt; "Sum: " &lt;&lt; sum &lt;&lt; std::endl;
+    return 0;
+}
+            </code></pre>
+
+            <h3>3. باقي القسمة بدون استخدام علامة <span dir="ltr">%</span></h3>
+            <p><b>المشكلة:</b> عايز تجيب باقي قسمة <span dir="ltr">A</span> على <span dir="ltr">B</span> من غير ما تستخدم علامة الـ <span dir="ltr">modulo (%)</span>.</p>
+            <p><b>التريكة:</b> اعتمد على إن قسمة الأرقام الصحيحة بتلغي الكسور.</p>
+            <p><b>الحل:</b> المعادلة هي <code><span dir="ltr">A - (A / B) * B</span></code>.</p>
+            <pre><code class="language-cpp" dir="ltr">
+#include &lt;iostream&gt;
+
+int main() {
+    int a, b;
+    std::cout &lt;&lt; "Enter number A: ";
+    std::cin &gt;&gt; a;
+    std::cout &lt;&lt; "Enter number B: ";
+    std::cin &gt;&gt; b;
+
+    if (b == 0) {
+        std::cout &lt;&lt; "Cannot divide by zero." &lt;&lt; std::endl;
+        return 1;
+    }
+
+    // تأكد إن القسمة هتكون قسمة أرقام صحيحة عشان الكسور تطير
+    int quotient = a / b;
+    int remainder = a - (quotient * b);
+
+    std::cout &lt;&lt; "Remainder (without %): " &lt;&lt; remainder &lt;&lt; std::endl;
+
+    return 0;
+}
+            </code></pre>
+
+            <h3>4. ضرب وقسمة رقمين مع تحديد المدى ودقة الكسر</h3>
+            <p><b>المشكلة:</b> عايز تعمل ضرب وقسمة لرقمين <span dir="ltr">X</span> و <span dir="ltr">Y</span>، في مدى معين، وتطبع القسمة بدقة رقمين بعد العلامة العشرية.</p>
+            <ul>
+                <li>المدى: <span dir="ltr">0 <= X, Y <= 10^7</span>.</li>
+                <li>لو <span dir="ltr">Y = 0</span>، اطبع "Cannot divide by zero".</li>
+                <li>لو <span dir="ltr">X</span> أو <span dir="ltr">Y</span> بره المدى، اطبع "Number out of range".</li>
+            </ul>
+            <p><b>التريكة (لدقة الكسور):</b> استخدم <code><span dir="ltr">std::fixed</span></code> و <code><span dir="ltr">std::setprecision(2)</span></code> من مكتبة <code><span dir="ltr">&lt;iomanip&gt;</span></code>.</p>
+            <p><b>التريكة (للضرب وتجنب <span dir="ltr">overflow</span>):</b> بالرغم من إن الأرقام الفردية في مدى الـ <span dir="ltr">int</span>، ناتج ضربهم ممكن يتعدى الـ <span dir="ltr">int</span>. عشان كده <b>نستخدم <span dir="ltr">long long</span> للـ <span dir="ltr">inputs</span> (أو نعمل <span dir="ltr">casting</span> قبل الضرب)</b>.</p>
+            <pre><code class="language-cpp" dir="ltr">
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; // For std::fixed and std::setprecision
+
+int main() {
+    long long x, y; // استخدم long long لـ X, Y عشان ما يحصلش overflow في الضرب
+
+    std::cout &lt;&lt; "Enter number X (0 to 10^7): ";
+    std::cin &gt;&gt; x;
+    std::cout &lt;&lt; "Enter number Y (0 to 10^7): ";
+    std::cin &gt;&gt; y;
+
+    // التحقق من المدى
+    if (x &lt; 0 || x &gt; 10000000 || y &lt; 0 || y &gt; 10000000) { // 10^7
+        std::cout &lt;&lt; "Number out of range." &lt;&lt; std::endl;
+        return 0;
+    }
+
+    // عملية الضرب: اعمل casting لـ long long عشان ما يحصلش overflow
+    long long multiplication_result = (long long)x * y;
+    std::cout &lt;&lt; "Multiplication: " &lt;&lt; multiplication_result &lt;&lt; std::endl;
+
+    // عملية القسمة
+    if (y == 0) {
+        std::cout &lt;&lt; "Cannot divide by zero." &lt;&lt; std::endl;
+    } else {
+        // اعمل casting لـ double عشان تطلع الكسور العشرية
+        double division_result = static_cast&lt;double&gt;(x) / y;
+        // حدد دقة الطباعة لرقمين بعد العلامة
+        std::cout &lt;&lt; "Division: " &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; division_result &lt;&lt; std::endl;
+    }
+
+    return 0;
+}
+            </code></pre>
+
+            <h3>5. تحديد نوع الحرف (<span dir="ltr">Digit, Uppercase, Lowercase</span>)</h3>
+            <p><b>المشكلة:</b> تعرف الحرف المدخل ده رقم (<span dir="ltr">digit</span>) ولا حرف أبجدي كبير (<span dir="ltr">uppercase</span>) ولا حرف أبجدي صغير (<span dir="ltr">lowercase</span>).</p>
+            <p><b>التريكة:</b> الحروف والأرقام ليها ترتيب معين في الـ <span dir="ltr">ASCII code</span>. ممكن تقارن الحرف بالحدود بتاعت الأرقام أو الحروف مباشرة (مثلاً <code><span dir="ltr">'0'</span></code> لـ <code><span dir="ltr">'9'</span></code>). الكومبايلر بيحولها لـ <span dir="ltr">ASCII</span> أوتوماتيك.</p>
+            <pre><code class="language-cpp" dir="ltr">
+#include &lt;iostream&gt;
+#include &lt;cctype&gt; // For isdigit, islower, isupper (اختياري، لكن أفضل عمليًا)
+
+int main() {
+    char c;
+    std::cout &lt;&lt; "Enter a character: ";
+    std::cin &gt;&gt; c;
+
+    // باستخدام مقارنة نطاق الـ ASCII
+    if (c &gt;= '0' && c &lt;= '9') {
+        std::cout &lt;&lt; "Digit" &lt;&lt; std::endl;
+    } else if (c &gt;= 'a' && c &lt;= 'z') {
+        std::cout &lt;&lt; "Alphabet (Lowercase)" &lt;&lt; std::endl;
+    } else if (c &gt;= 'A' && c &lt;= 'Z') {
+        std::cout &lt;&lt; "Alphabet (Uppercase)" &lt;&lt; std::endl;
+    } else {
+        std::cout &lt;&lt; "Special character or not an alphabet/digit." &lt;&lt; std::endl;
+    }
+
+    return 0;
+}
+            </code></pre>
+
+            <h3>6. تحويل الأيام لسنين وشهور وأيام</h3>
+            <p><b>المشكلة:</b> عندك عدد أيام، عايز تحوله لسنين وشهور وأيام.</p>
+            <ul>
+                <li>نفترض إن السنة 365 يوم، والشهر 30 يوم.</li>
+            </ul>
+            <p><b>الحل:</b> استخدم عمليات القسمة الصحيحة (<span dir="ltr">/</span>) وباقي القسمة (<span dir="ltr">%</span>) عشان تجيب كل جزء.</p>
+            <div class="real-example">
+                <b>مثال عملي:</b> أبلكيشن بيعرض استخدامك للإنترنت (الميجا بايتس). لو الميجا بايتس زادت عن حد معين (زي <span dir="ltr">1024 MB</span>)، المفروض يحولها لـ <span dir="ltr">Giga Bytes</span> عشان تبقى أسهل لليوزر يفهمها. ده بيمنع مشاكل <span dir="ltr">UI</span> لو الأرقام بقت كبيرة جداً. كمختبر (تستر) لازم تثير النقطة دي من الأول في الـ <span dir="ltr">Planning</span>.
+            </div>
+            <pre><code class="language-cpp" dir="ltr">
+#include &lt;iostream&gt;
+
+int main() {
+    int total_days;
+    std::cout &lt;&lt; "Enter total days: ";
+    std::cin &gt;&gt; total_days;
+
+    if (total_days &lt; 0) {
+        std::cout &lt;&lt; "Days cannot be negative." &lt;&lt; std::endl;
+        return 1;
+    }
+
+    int years = total_days / 365;
+    int remaining_days_after_years = total_days % 365;
+
+    int months = remaining_days_after_years / 30;
+    int remaining_days_after_months = remaining_days_after_years % 30;
+
+    std::cout &lt;&lt; years &lt;&lt; " Year(s), "
+              &lt;&lt; months &lt;&lt; " Month(s), "
+              &lt;&lt; remaining_days_after_months &lt;&lt; " Day(s)" &lt;&lt; std::endl;
+
+    return 0;
+}
+            </code></pre>
+
+            <h3>7. التحقق من صحة معادلة رياضية</h3>
+            <p><b>المشكلة:</b> عندك تعبير رياضي (<span dir="ltr">A operator B = C</span>). عايز تشوف هل الـ <span dir="ltr">expression</span> ده صح ولا لأ. لو صح تطبع <span dir="ltr">"YES"</span>. لو غلط تطبع الناتج الصحيح.</p>
+            <ul>
+                <li>الـ <span dir="ltr">operators</span> المتاحة: <span dir="ltr">+</span>, <span dir="ltr">-</span>, <span dir="ltr">*</span>.</li>
+            </ul>
+            <p><b>التريكة:</b> <b>استخدم <span dir="ltr">switch-case</span> أفضل من <span dir="ltr">if-else if</span></b> لما يكون عندك حالات معينة (زي هنا الـ <span dir="ltr">operators</span>). الـ <span dir="ltr">switch-case</span> أسرع في الأداء (<span dir="ltr">performance</span>).</p>
+            <p><b>التريكة الثانية:</b> <b>متنساش تحط <code><span dir="ltr">break;</span></code> بعد كل <code><span dir="ltr">case</span></code> في الـ <span dir="ltr">switch</span></b>. لو نسيتها، الكود هيكمل تنفيذ الـ <span dir="ltr">case</span> اللي بعدها. (ممكن تختبرها لو الـ <span dir="ltr">break</span> مش موجودة في الحالات الأولى، مش في الأخيرة).</p>
+            <pre><code class="language-cpp" dir="ltr">
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+    int a, c;
+    char op_char, eq_char; // لـ operator وعلامة =
+    int b;
+
+    std::cout &lt;&lt; "Enter expression (e.g., 5 + 10 = 15): ";
+    std::cin &gt;&gt; a &gt;&gt; op_char &gt;&gt; b &gt;&gt; eq_char &gt;&gt; c;
+
+    // تحقق من علامة =
+    if (eq_char != '=') {
+        std::cout &lt;&lt; "Invalid expression format: Missing '='." &lt;&lt; std::endl;
+        return 1;
+    }
+
+    int result;
+    bool is_valid_op = true;
+
+    switch (op_char) {
+        case '+':
+            result = a + b;
+            break; // لازم تحط break
+        case '-':
+            result = a - b;
+            break; // لازم تحط break
+        case '*':
+            result = a * b;
+            break; // لازم تحط break
+        default:
+            std::cout &lt;&lt; "Invalid operator." &lt;&lt; std::endl;
+            is_valid_op = false;
+            break;
+    }
+
+    if (is_valid_op) {
+        if (result == c) {
+            std::cout &lt;&lt; "YES" &lt;&lt; std::endl;
+        } else {
+            std::cout &lt;&lt; result &lt;&lt; std::endl;
+        }
+    }
+
+    return 0;
+}
+            </code></pre>
+        </div>
+
+        <div class="content-card">
+            <h2>أسئلة الـ <span dir="ltr">Interview</span> المهمة وتريكاتها</h2>
+
+            <h3>1. الفرق بين <span dir="ltr">Overloading</span> و <span dir="ltr">Overriding</span></h3>
+            <div class="highlight">
+                <ul>
+                    <li><span dir="ltr"><b>Overloading</b></span>:
+                        <ul>
+                            <li><b>نفس اسم الـ <span dir="ltr">Method</span></b> (الدالة).</li>
+                            <li><b>لكن الـ <span dir="ltr">Signature</span> مختلف</b> (عدد أو نوع الـ <span dir="ltr">parameters</span>).</li>
+                            <li>بيحصل <b>في نفس الـ <span dir="ltr">Class</span></b>.</li>
+                        </ul>
+                    </li>
+                    <li><span dir="ltr"><b>Overriding</b></span>:
+                        <ul>
+                            <li><b>نفس اسم الـ <span dir="ltr">Method</span> ونفس الـ <span dir="ltr">Signature</span></b>.</li>
+                            <li><b>لكن الـ <span dir="ltr">Implementation</span> (التنفيذ) مختلف</b>.</li>
+                            <li>بيحصل <b>في الـ <span dir="ltr">Child Class</span></b> (الكلاس الابن) اللي وارث من <span dir="ltr">Parent Class</span> (الكلاس الأب). ده له علاقة بمفهوم الـ <span dir="ltr">Polymorphism</span>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <h3>2. إيه هو الـ <span dir="ltr">Encapsulation</span> وليه بنعمله؟</h3>
+            <div class="highlight">
+                <ul>
+                    <li>الـ <span dir="ltr">Encapsulation</span> هو إنك <b>بتخفي البيانات</b> (<span dir="ltr">Data Hiding</span>).</li>
+                    <li>بتخلي الـ <span dir="ltr">Variables</span> بتاعتك <span dir="ltr">private</span>.</li>
+                    <li>لو اليوزر عايز يتعامل معاها، بيتعامل عن طريق <span dir="ltr"><b>Getters</b></span> (عشان يجيب قيمتها) و <span dir="ltr"><b>Setters</b></span> (عشان يغير قيمتها).</li>
+                    <li><b>ليه بنعمله؟</b> عشان تتحكم في طريقة تغيير البيانات. مثلاً، لو مش عايز اليوزر يحط قيمة معينة، ممكن تحط <span dir="ltr">conditions</span> (شروط) في الـ <span dir="ltr">Setter</span>. ده بيمنع اليوزر إنه يغير قيمة الـ <span dir="ltr">variable</span> لأي حاجة وخلاص.</li>
+                </ul>
+            </div>
+
+            <h3>3. أسئلة الـ <span dir="ltr">Behavioral</span> (السلوكية)</h3>
+            <div class="highlight">
+                <p><b>سؤال:</b> حصل <span dir="ltr">conflict</span> بينك وبين <span dir="ltr">Tester</span> زميلك، هو دايماً مش بيخلص شغله وانت بتضطر تكمل مكانه عشان الـ <span dir="ltr">sprint</span> يقفل. هتعمل إيه؟ هل هتصعد ده للـ <span dir="ltr">Team Lead</span>؟</p>
+                <p><b>الإجابة:</b></p>
+                <ul>
+                    <li><b>أول حاجة:</b> <b>تتكلم مع زميلك مباشرة</b> في الأول. يمكن يكون عنده عذر.</li>
+                    <li><b>لو الموضوع اتكرر:</b> <b>تبلغ الـ <span dir="ltr">Team Lead</span></b>، بس بأسلوب يدل على أنك <span dir="ltr">team player</span> (لاعب فريق). يعني تقول: "أنا كفرت مكان <span dir="ltr">X</span> النهارده عشان كان تعبان."</li>
+                    <li><b>ليه الأسلوب ده؟</b> عشان الـ <span dir="ltr">Team Lead</span> يبقى عنده علم من البداية. لو بلغت بعد مرات كتير، ممكن ميصدقكش أو يحس إنك بتشكي زميلك بس. هدفك مصلحة الشغل في الأول والآخر.</li>
+                </ul>
+            </div>
+
+            <h3>4. أسئلة حل المشكلات بأسلوب غير مباشر</h3>
+            <div class="highlight">
+                <p><b>سؤال:</b> أنت الـ <span dir="ltr">Tester</span> الوحيد في التيم. وكل يوم بيطلع <span dir="ltr">build</span> (نسخة من السوفت وير). آخر <span dir="ltr">build</span> كانت <span dir="ltr">stable</span> (مستقرة) قبل إجازتك بشهر. رجعت لقيت الـ <span dir="ltr">build</span> بايظة. معاك يوم واحد بس ترجع لآخر <span dir="ltr">stable build</span>. هتعمل إيه؟ هل هتمشي على <span dir="ltr">build</span> <span dir="ltr">build</span>؟</p>
+                <p><b>الإجابة:</b></p>
+                <ul>
+                    <li><b>لا، مش هتمشي على <span dir="ltr">build</span> <span dir="ltr">build</span>.</b> ده هياخد وقت كتير جداً (مثلاً <span dir="ltr">19</span> يوم = <span dir="ltr">19</span> ساعة اختبار).</li>
+                    <li><b>الحل:</b> هتستخدم تكنيك الـ <span dir="ltr"><b>Binary Search</b></span> (البحث الثنائي).
+                        <ul>
+                            <li>تمسك نص عدد الـ <span dir="ltr">builds</span> اللي حصلت في الشهر (مثلاً <span dir="ltr">build</span> رقم <span dir="ltr">15</span>).</li>
+                            <li>لو لقيت <span dir="ltr">build</span> <span dir="ltr">15</span> بايظة، يبقى المشكلة في الفترة من <span dir="ltr">1</span> لـ <span dir="ltr">15</span>.</li>
+                            <li>لو لقيتها سليمة، يبقى المشكلة في الفترة من <span dir="ltr">15</span> لـ <span dir="ltr">30</span>.</li>
+                            <li>وهتفضل تقسم المدى ده للنص لحد ما توصل للـ <span dir="ltr">build</span> اللي فيها المشكلة بسرعة جداً (مثلاً في <span dir="ltr">5</span> ساعات).</li>
+                        </ul>
+                    </li>
+                    <li>الفكرة إن <b>الإجابة بتكون تكنيك برمجي</b>، حتى لو السؤال مش برمجي مباشر.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>نصائح لـ <span dir="ltr">LinkedIn</span> (مهم جداً للتقديم على الشغل)</h2>
+            <p>لينكد إن ده أهم وسيلة الـ <span dir="ltr">HRs</span> (مسؤولي التوظيف) بيدوروا بيها على الناس.</p>
+            <ul>
+                <li><b><span dir="ltr">Profile Optimization</span> (تحسين البروفايل):</b>
+                    <ul>
+                        <li><span dir="ltr"><b>Headline</b></span> (العنوان الرئيسي): اكتب فيه وظيفتك ومهاراتك الأساسية (زي <span dir="ltr">Senior Test Automation Engineer, ISTQB Certified</span>). ده بيخلي الـ <span dir="ltr">HR</span> يلاقيك بسرعة لما يدور على المهارات دي.</li>
+                        <li><span dir="ltr"><b>"Open to Work"</b></span> (متاح للعمل): فعل الخاصية دي، واختار إنها تظهر للـ <span dir="ltr">recruiters only</span> عشان شركتك الحالية متشوفهاش.</li>
+                        <li><span dir="ltr"><b>"About"</b></span> (نبذة عني): لخص مهاراتك وإمكانياتك باستخدام <span dir="tr">keywords</span> (كلمات مفتاحية) عشان الـ <span dir="ltr">HR</span> يفهم أنت بتعرف تعمل إيه بسرعة.</li>
+                        <li><span dir="ltr"><b>"Featured"</b></span> (مميز): حط هنا أهم شهاداتك أو مشاريعك أو أي بوستات مهمة.</li>
+                        <li><span dir="ltr"><b>"Experience"</b></span> (الخبرة) و <span dir="ltr"><b>"Education"</b></span> (التعليم): دول أقسام أساسية لازم تكون موجودة ومحدثة.</li>
+                        <li><span dir="ltr"><b>"Licenses & Certifications"</b></span> (الشهادات): ضيف كل الشهادات اللي خدتها، حتى لو كورسات بسيطة بتضيف قيمة.</li>
+                        <li><span dir="ltr"><b>"Skills"</b></span> (المهارات): ضيف كل مهاراتك الفنية والشخصية، مهمة جداً عشان تظهر في البحث.</li>
+                        <li><span dir="ltr"><b>"Projects"</b></span> (المشاريع): <b>مهم جداً لأدوار الأتمتة</b>. اربطها بحسابك على <span dir="ltr">GitHub</span>. <b>لازم تحط ملف <span dir="ltr">README.md</span></b> في كل مشروع يشرح:
+                            <ul>
+                                <li>إيه المشروع ده.</li>
+                                <li>إيه الـ <span dir="ltr">technologies</span> اللي استخدمتها.</li>
+                                <li>إزاي تعمل <span dir="ltr">setup</span> وتشغل المشروع عندك.</li>
+                                <li>إزاي ترن الـ <span dir="ltr">tests</span> أو الكود.</li>
+                            </ul>
+                        </li>
+                        <li><span dir="ltr"><b>"Courses"</b></span> (كورسات): لو واخد كورسات مش ضمن تعليمك الرسمي، ضيفها هنا. الـ <span dir="ltr">HR</span> مش شرط يعرف كل منهج.</li>
+                        <li><span dir="ltr"><b>"Languages"</b></span> (اللغات): لو بتعرف تتكلم لغات تانية.</li>
+                    </ul>
+                </li>
+                <li><b>منصات الشهادات والتدريب:</b>
+                    <ul>
+                        <li><span dir="ltr"><b>HackerRank</b></span>: موقع بيخليك تحل مشاكل برمجية وتعمل <span dir="ltr">assessments</span> لنفسك. لو حليت صح في وقت معين، بتاخد شهادة.</li>
+                        <li><span dir="ltr"><b>Guru99</b></span>: موقع فيه أسئلة وأجوبة كتير عن كل مجالات الـ <span dir="ltr">Testing</span> (مانوال، أتمتة، <span dir="ltr">API</span>، <span dir="ltr">SQL</span>).</li>
+                        <li><span dir="ltr"><b>Test Automation University</b></span>: كورسات متخصصة في الأتمتة.</li>
+                    </ul>
+                </li>
+                <li><b>متابعة الوظائف:</b>
+                    <ul>
+                        <li><b>فعل <span dir="ltr">Job Alerts</span> (تنبيهات الوظائف)</b> للشركات أو الوظائف اللي مهتم بيها. كده هيجيلك إيميل أو <span dir="ltr">notification</span> أول ما وظيفة تنزل عشان تقدم بسرعة.</li>
+                        <li><b><span dir="ltr">HRs</span> بيكلموا الـ <span dir="ltr">Juniors</span>:</b> متقولش إن الـ <span dir="ltr">HR</span> مش بيكلم الـ <span dir="ltr">Juniors</span>. لو بروفايلك قوي ومنظم، هتوصلك فرص كتير.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>

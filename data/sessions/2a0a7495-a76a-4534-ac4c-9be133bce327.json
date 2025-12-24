@@ -1,0 +1,16 @@
+[
+  {
+    "sessionId": "2a0a7495-a76a-4534-ac4c-9be133bce327",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "197.48.199.194",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "0",
+      "url": "/quiz/page/0",
+      "timestamp": 1755713953526
+    }
+  }
+]

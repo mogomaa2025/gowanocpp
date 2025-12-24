@@ -1,0 +1,16 @@
+[
+  {
+    "sessionId": "6058f656-8000-462e-9cb7-177b1dd8647c",
+    "deviceInfo": {
+      "os": "Android",
+      "model": "6.0.1"
+    },
+    "ip": "66.249.79.130",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "explainer",
+      "url": "/explainer",
+      "timestamp": 1757844823022
+    }
+  }
+]

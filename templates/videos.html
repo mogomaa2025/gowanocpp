@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Video Lectures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .video-container {
+            margin-bottom: 30px;
+        }
+        #loading-spinner {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        .video-row {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h1 class="text-white mb-0">C++ Video Lectures</h1>
+            <a href="{{ url_for('home') }}" class="btn btn-primary">
+                <i class="bi bi-house-door"></i> Back to Home
+            </a>
+        </div>
+        <div id="loading-spinner" class="text-center">
+            <div class="spinner-border text-light" style="width: 3rem; height: 3rem;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="row video-row">
+            {% for video in videos %}
+            <div class="col-md-6">
+                <div class="video-container">
+                    <h4 class="text-white">{{ video.arabic_title }}</h4>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/{{ video.arabic_id }}" title="{{ video.arabic_title }}" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="video-container">
+                    <h4 class="text-white">{{ video.english_title }}</h4>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/{{ video.english_id }}" title="{{ video.english_title }}" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center mt-4">
+            <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg">
+                <i class="bi bi-house-door"></i> Back to Home
+            </a>
+        </div>
+    </div>
+    <script>
+        // Show videos after first two iframes have loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            var iframes = document.querySelectorAll('.video-row iframe');
+            var spinner = document.getElementById('loading-spinner');
+            var videoRow = document.querySelector('.video-row');
+            var loaded = 0;
+            // Only consider the first two iframes
+            var firstTwo = Array.prototype.slice.call(iframes, 0, 2);
+            function showVideos() {
+                spinner.style.display = 'none';
+                videoRow.style.display = 'flex';
+            }
+            firstTwo.forEach(function(iframe) {
+                // If already loaded (from cache), count it
+                if (iframe.contentWindow && iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
+                    loaded++;
+                    if (loaded === 2) showVideos();
+                } else {
+                    iframe.addEventListener('load', function handler() {
+                        loaded++;
+                        if (loaded === 2) showVideos();
+                        iframe.removeEventListener('load', handler);
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="{{ url_for('static', filename='tracking.js') }}"></script>
+</body>
+</html>

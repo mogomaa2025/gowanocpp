@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المحاضرة السادسة: مقدمة في البرمجة الشيئية (OOP)</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+   body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Traditional Arabic';
+        direction: rtl;
+        /* This is key: we align the container itself to the right */
+        text-align: right;
+        background-color: #f8f9fa;
+        line-height: 1.8;
+        padding: 1rem;
+        /* Important: Prevents the body from creating its own scrollbars prematurely */
+        overflow-x: hidden;
+    }
+
+    /* --- START OF THE MAIN FIX --- */
+    .container {
+        /* This makes the container shrink-to-fit its widest child (the code block) */
+        display: inline-block;
+        /* Ensure text inside the container is aligned right by default */
+        text-align: right;
+
+        /* These are from your original Bootstrap, we keep them */
+        padding-left: 15px;
+        padding-right: 15px;
+
+        /* We remove any 'max-width' that might limit the container from growing */
+        max-width: none;
+    }
+    /* --- END OF THE MAIN FIX --- */
+
+    /* العناوين */
+    h1, h2, h3, h4, h5 {
+        color: #0d6efd;
+        margin-top: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.5rem;
+    }
+
+    /* الفقرات والقوائم */
+    p, li {
+        margin-bottom: 1rem;
+    }
+    ol, ul {
+          padding-left: 0rem;
+
+    }
+
+    /* كود البرمجة */
+    code {
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 90%;
+        color: #d63384;
+        direction: ltr;
+        text-align: left;
+        display: inline-block;
+    }
+    pre code {
+        color: inherit;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    pre {
+        /* 'display: block' is fine now, it will just fill the width of its parent (.container) */
+        display: block;
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        white-space: pre;
+        text-align: left;
+
+        /* We still let the code content overflow */
+        overflow-x: visible;
+    }
+
+    /* ملاحظات توضيحية */
+    .note, .warning {
+
+        background-color: #fff3cd;
+        border-right: 5px solid #ffc107;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 3px;
+    }
+    .summary-box {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+
+</style>
+</head>
+<body>
+    <!-- === NEW BUTTON ADDED HERE === -->
+<div id="action-buttons-container">
+    <a href="#" class="btn btn-secondary shadow" onclick="window.close(); return false;">رجوع</a>
+    <a href="#" class="btn btn-info shadow" onclick="openInNewTab(); return false;">فتح في تبويب جديد</a>
+</div>
+<script>
+function openInNewTab() {
+  window.open(window.location.href );
+}
+</script>
+<!-- ======================================= -->
+<div class="container py-4">
+
+    <h3>المحاضرة السادسة: مقدمة في البرمجة الشيئية (OOP) وميزات لغة C++</h3>
+
+    <h4>1. مقدمة عن البرمجة الشيئية (OOP)</h4>
+    <p>قبل ظهور البرمجة الشيئية، كان المطورون يعملون بأسلوب البرمجة الهيكلية (<code>Structured Programming</code>)، حيث يتم التركيز على الدوال (<code>functions</code>) وعلاقاتها. ولكن مع التطور، وجد المبرمجون أن كل شيء في الواقع حولنا تم خلقه في صورة أشياء (<code>Objects</code>). لذلك، قرروا تبني نموذج البرمجة الشيئية لكونه "النموذج الجميل".</p>
+
+    <h5>ما هو الـ <code>Object</code>؟</h5>
+    <p>الـ <code>Object</code> هو أي شيء له خصائص (<code>Properties</code>) وسلوكيات (<code>Behaviors</code>).</p>
+    <ul>
+        <li><strong>Properties (الخصائص):</strong> هي مجموعة الصفات التي تصف الـ <code>Object</code>. برمجيًا، هي بيانات (<code>Data</code>) موجودة داخل الـ <code>Class</code>، وتُسمى <code>Member Data</code>.
+            <br><em>مثال:</em> الإنسان كـ <code>Object</code> له خصائص مثل: الاسم (<code>Name</code>)، الطول (<code>Height</code>)، لون الشعر (<code>Hair Color</code>).</li>
+        <li><strong>Behaviors (السلوكيات):</strong> هي الطريقة التي يتعامل بها الـ <code>Object</code> مع العالم الخارجي أو يستجيب بها للمؤثرات الخارجية. برمجيًا، هي عبارة عن مجموعة من الدوال (<code>Functions</code>) أو العمليات التي يقوم بها الـ <code>Object</code>، وتُسمى <code>Member Functions</code> أو <code>Methods</code>.
+            <br><em>مثال:</em> إذا شعرتم بالبرد (أنتم <code>Objects</code>)، أرسلتم رسالة (<code>Message</code>) تقول "الجو ساقع". أنا (<code>Object</code> آخر) استجبت لهذه الرسالة بتنفيذ سلوك معين (<code>Behavior</code>)، مثل الذهاب إلى التكييف ورفع درجة الحرارة.</li>
+    </ul>
+
+    <h5>كيف يفكر مطورو الـ OOP لحل المشكلات؟</h5>
+    <ol>
+        <li><strong>تقسيم المشكلة (Problem) إلى مشكلات فرعية (Sub-Problems):</strong> يتم تقسيم المشكلة الكبيرة إلى أجزاء أصغر.
+            <br><em>مثال:</em> لإنشاء تطبيق يحتوي على (<code>Form</code>) و (<code>Text Box</code>) و (<code>Button</code>)، نقسمها إلى ثلاث مشكلات فرعية.</li>
+        <li><strong>إيجاد نموذج عام للحل (General Template for Solution - GTS):</strong> لكل مشكلة فرعية، يتم إيجاد نموذج عام للحل يصف المكونات الأساسية للشيء وسلوكياته.
+            <div class="note"><strong>ملاحظة هامة للاختبار:</strong> هذا النموذج العام (General Template for Solution) هو ما يطلق عليه لاحقًا <strong><code>Class</code></strong>.</div>
+        </li>
+        <li><strong>تطبيق النموذج على البيانات (Apply the GTS to Data):</strong> بعد إيجاد النموذج العام، يتم تطبيق هذا النموذج على البيانات المحددة للمشكلة، مما ينتج عنه حلول فردية (<code>Solutions</code>) لكل جزء.</li>
+        <li><strong>دمج الحلول الفردية (Combine Solutions):</strong> يتم جمع كل هذه الحلول الفردية معًا لتشكيل الحل النهائي للمشكلة.</li>
+    </ol>
+
+    <h4>2. فوائد البرمجة الشيئية (Reusability - إعادة الاستخدام)</h4>
+    <p>الميزة الأهم والأولى للبرمجة الشيئية هي <strong>إعادة الاستخدام (Reusability)</strong>. بمجرد أن تقوم بإنشاء النموذج العام للحل (الـ <code>Class</code>)، يمكنك إعادة استخدامه في مشاريع أو أجزاء أخرى.</p>
+    <div class="note">
+        <strong>مثال توضيحي (من المحاضر، قد يأتي في الاختبار):</strong>
+        <p>شركة برمجة قررت العمل بنموذج الـ OOP في تطبيقات مالية.</p>
+        <ul>
+            <li><strong>المشروع الأول:</strong> تم تقسيمه إلى 6 وحدات (<code>Modules</code>). استغرق كل <code>Module</code> شهرًا لإنشاء الـ <code>GTS</code> الخاص به. المشروع سيستغرق 6 أشهر بتكلفة 10,000 جنيه.</li>
+            <li><strong>المشروع الثاني:</strong> مشابه للأول. اكتشفوا أن 3 وحدات من الـ <code>GTS</code> تم إنشاؤها بالفعل في المشروع الأول.</li>
+            <li><strong>النتيجة:</strong> سيستغرق المشروع 3 أشهر فقط.</li>
+            <li><strong>التكلفة:</strong> ستقل إلى 6,000 جنيه، مما يزيد من هامش الربح.</li>
+            <li><strong>المكسب الأهم:</strong> يصبح لدى الشركة "مكتبة (<code>Library</code>)" من الـ <code>GTS</code> الجاهزة (<code>Classes</code>)، مما يقلل من الوقت والتكلفة للمشاريع المستقبلية.</li>
+        </ul>
+    </div>
+
+    <h4>3. الكائنات (Objects) والفئات (Classes)</h4>
+    <p>خلاصة العلاقة بينهما:</p>
+    <ul>
+        <li><strong><code>Class</code>:</strong> هو قالب (<code>Template</code>) أو نوع بيانات معرّف من قبل المستخدم (<code>User-defined Data Type</code>). هو فكرة مجردة وغير ملموسة، موجودة في الذهن فقط.
+            <br><em>مثال:</em> عندما تقرر شركة توظيف البيانات الأساسية للمتقدمين (الاسم، الكلية، التقدير)، هذه الفكرة هي الـ <code>Class</code>. برمجيًا، هذا مثل تعريف <code>int</code>.</li>
+        <li><strong><code>Object</code>:</strong> هو متغير (<code>Variable</code>) يتم إنشاؤه من الـ <code>Class</code>. هو تطبيق ملموس وواقعي للنموذج العام.
+            <br><em>مثال:</em> عندما تكتب بيانات متقدم فعلي على ورقة، تصبح هذه البيانات شيئًا حقيقيًا، وهو الـ <code>Object</code>. برمجيًا، هذا مثل قول <code>int x;</code>.</li>
+    </ul>
+
+    <h4>4. أسس البرمجة الشيئية (OOP Pillars)</h4>
+    <p>البرمجة الشيئية تقوم على ثلاثة أسس رئيسية:</p>
+    <ol>
+        <li><strong>التغليف (Encapsulation):</strong>
+            <ul>
+                <li><strong>الفكرة الأساسية:</strong> إخفاء البيانات (<code>Data</code>) وجعلها غير قابلة للوصول المباشر من الخارج، والتحكم في كيفية التعامل معها من خلال الدوال (<code>Methods</code>) المحددة.</li>
+                <li><strong>السبب:</strong> البيانات هي أهم شيء، ولضمان سلامتها والتحكم بها (<code>Managed and Controlled</code>).</li>
+                <li><strong>كيفية التطبيق (Access Modifiers - معدلات الوصول):</strong>
+                    <ul>
+                        <li><code>private</code>: لا يمكن لأي كائن (<code>Object</code>) أو دالة (<code>Function</code>) خارج الـ <code>Class</code> التعامل مع الأعضاء المعرفة كـ <code>private</code>.</li>
+                        <li><code>public</code>: يمكن لأي كائن أو دالة من أي مكان التعامل مع الأعضاء المعرفة كـ <code>public</code>.</li>
+                    </ul>
+                </li>
+                <li class="note"><strong>ملاحظة هامة للاختبار:</strong> إذا لم يتم تحديد معدل وصول (<code>Access Modifier</code>)، فإن الافتراضي (<code>By Default</code>) في C++ هو <strong><code>private</code></strong>.</li>
+            </ul>
+        </li>
+        <li><strong>الوراثة (Inheritance):</strong>
+            <ul>
+                <li>تسمح لـ <code>Class</code> أن يرث بعض الخصائص والسلوكيات من <code>Class</code> آخر (يسمى الـ <code>Parent Class</code> أو <code>Base Class</code>).</li>
+                <li><em>مثال:</em> المربع (<code>Square</code>) يرث من المستطيل (<code>Rectangle</code>) خاصية حساب المساحة، لكن لديه خاصية إضافية أن الطول يساوي العرض.</li>
+            </ul>
+        </li>
+        <li><strong>تعدد الأشكال (Polymorphism):</strong>
+            <ul>
+                <li>تعني "متعدد الأشكال أو الأوجه (Multiple Forms/Shapes)".</li>
+                <li>تُطبق بطريقتين: <code>Overloading</code> (تحميل زائد) و <code>Overriding</code> (تجاوز). سيتم الحديث عنهما بالتفصيل لاحقًا.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h5>مفهوم التجريد (Abstraction)</h5>
+    <p>التجريد يعني عدم الدخول في التفاصيل الداخلية، والتركيز على الواجهة العامة. أنواع البيانات مثل <code>int</code> و <code>float</code> هي نوع من التجريد. أي <code>Class</code> هو نوع من أنواع التجريد.</p>
+
+    <h4>5. ميزات لغة C++ ذات صلة</h4>
+    <ul>
+        <li><strong>الوسائط الافتراضية (Default Arguments):</strong>
+            <p>تسمح بتحديد قيمة افتراضية للمعاملات (<code>Parameters</code>). لها شروط هامة للاختبار:</p>
+            <ol>
+                <li>عند تعريف الدالة، إذا أخذ أي معامل قيمة افتراضية، يجب أن تكون جميع المعاملات التي تليه (على يمينه) لها قيم افتراضية أيضًا.</li>
+                <li>عند استدعاء الدالة، بمجرد تخطي معامل له قيمة افتراضية، يجب تخطي جميع المعاملات التالية له.</li>
+            </ol>
+        </li>
+        <li><strong>المراجع (References - <code>&</code>):</strong>
+            <p>الـ <code>Reference</code> هو "اسم بديل" أو "اسم مستعار" (<code>Alias</code>) لنفس المتغير الموجود بالفعل. <strong>خصائصه الهامة للاختبار:</strong></p>
+            <ul>
+                <li>يجب تهيئته (ربطه بمتغير) عند تعريفه مباشرة.</li>
+                <li>لا يمكن إعادة إسناده ليشير إلى متغير آخر.</li>
+                <li>يستخدم في <strong><code>Call by Reference</code></strong> لتغيير قيم المتغيرات الأصلية، وهو "أخف وأسهل وأسرع" من استخدام المؤشرات (<code>Pointers</code>).</li>
+            </ul>
+        </li>
+        <li><strong>تحميل الدوال الزائد (Function Overloading):</strong>
+            <p>يسمح بتعريف أكثر من دالة بنفس الاسم، بشرط أن تختلف في <strong>التوقيع (<code>Function Signature</code>)</strong>. التوقيع هو اسم الدالة + قائمة المعاملات (عددها أو نوعها). <strong>ملاحظة هامة للاختبار:</strong> نوع الإرجاع (<code>Return Type</code>) ليس جزءًا من التوقيع.</p>
+        </li>
+    </ul>
+
+    <h4>6. مثال عملي على الفئات (Classes) والمؤشر <code>this</code></h4>
+    <p>عند إنشاء <code>Class</code> في C++، يتم تنفيذ الدوال (<code>Methods</code>) عادةً خارج نطاق الـ <code>Class</code> لتنظيم الكود، باستخدام معامل النطاق (<code>:: Scope Operator</code>).</p>
+    <div class="note">
+        <strong>نقطة هامة جدًا (محتملة في الامتحان): المؤشر <code>this</code> (أو المعامل الضمني الأول)</strong>
+        <ul>
+            <li>عندما يتم استدعاء دالة (<code>Method</code>) تابعة لـ <code>Class</code>، فإن الـ <code>Object</code> الذي قام بالاستدعاء (<code>The Caller Object</code>) يتم تمريره <strong>ضمنيًا (Implicitly)</strong> كأول معامل لهذه الدالة.</li>
+            <li>هذا المعامل الضمني يُعرف باسم <strong><code>this pointer</code></strong>.</li>
+            <li><strong>النتيجة:</strong> العدد الفعلي للمعاملات في أي دالة داخل <code>Class</code> هو أكثر بواحد من العدد الظاهري (الذي تراه في التعريف).</li>
+            <li><strong>الاستفادة:</strong> هذا يسمح للدوال بالتعامل مباشرة مع أعضاء الـ <code>Object</code> الذي استدعاها دون الحاجة إلى تمرير هذا الـ <code>Object</code> كمعامل صريح.</li>
+        </ul>
+        <em>مثال:</em> استدعاء <code>c1.Add(c2)</code>، يتم تحويله ضمنيًا بواسطة المترجم إلى ما يشبه <code>Add(&c1, c2)</code>، حيث <code>&c1</code> هو المؤشر <code>this</code>.
+    </div>
+
+    <div class="summary-box">
+        <h4>النقاط الضرورية للامتحان</h4>
+        <ul>
+            <li><strong>Reusability (إعادة الاستخدام):</strong> واحدة من أهم وأول فوائد الـ OOP. (ركز على مثال الشركة والمشاريع).</li>
+            <li><strong>Class vs. Object:</strong> مفهوم أن الـ <code>Class</code> هو قالب (<code>Template</code>) وأن الـ <code>Object</code> هو متغير (<code>Variable</code>) من هذا الـ <code>Class</code>.</li>
+            <li><strong>Pillars of OOP:</strong> أسس الـ OOP الثلاثة (<code>Encapsulation</code>, <code>Inheritance</code>, <code>Polymorphism</code>).</li>
+            <li><strong>Encapsulation (التغليف):</strong> مفهومها الأساسي (إخفاء البيانات)، أهمية <code>public</code> و <code>private</code>، والقيمة الافتراضية لـ <code>Access Modifiers</code> (وهي <code>private</code>).</li>
+            <li><strong>Default Arguments (الوسائط الافتراضية):</strong> شروط استخدامها عند التعريف وعند الاستدعاء.</li>
+            <li><strong>References (المراجع):</strong> تعريفها، خصائصها (يجب تهيئتها، لا يمكن إعادة إسنادها)، وفائدتها في <code>Call by Reference</code> ومقارنتها بـ <code>Pointers</code>.</li>
+            <li><strong>Function Overloading (تحميل الدوال الزائد):</strong> مفهومه (نفس الاسم، اختلاف في التوقيع)، وتعريف <code>Function Signature</code> (لا يشمل نوع الإرجاع).</li>
+            <li><strong>Implicit <code>this</code> pointer (المؤشر <code>this</code> الضمني):</strong> فكرة أن الـ <code>Object</code> الذي يقوم بالاستدعاء يتم تمريره ضمنيًا كأول معامل للدالة، وكيف يتم استخدامه للوصول إلى الأعضاء.</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

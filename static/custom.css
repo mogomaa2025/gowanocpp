@@ -1,0 +1,31 @@
+/* Place for custom CSS if needed in the future */
+
+.question-card {
+    overflow: visible !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn-custom {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .btn-explainer {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .d-flex.justify-content-between.align-items-center {
+        flex-direction: column;
+    }
+    .d-flex.justify-content-between.align-items-center .btn {
+        margin-top: 1rem;
+    }
+}

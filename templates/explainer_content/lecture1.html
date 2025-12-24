@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المحاضرة الأولى: مقدمة في البرمجة وأساسيات لغة C++</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+ body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Traditional Arabic';
+        direction: rtl;
+        /* This is key: we align the container itself to the right */
+        text-align: right;
+        background-color: #f8f9fa;
+        line-height: 1.8;
+        padding: 1rem;
+        /* Important: Prevents the body from creating its own scrollbars prematurely */
+        overflow-x: hidden;
+    }
+
+    /* --- START OF THE MAIN FIX --- */
+    .container {
+        /* This makes the container shrink-to-fit its widest child (the code block) */
+        display: inline-block;
+        /* Ensure text inside the container is aligned right by default */
+        text-align: right;
+
+        /* These are from your original Bootstrap, we keep them */
+        padding-left: 15px;
+        padding-right: 15px;
+
+        /* We remove any 'max-width' that might limit the container from growing */
+        max-width: none;
+    }
+    /* --- END OF THE MAIN FIX --- */
+
+    /* العناوين */
+    h1, h2, h3, h4, h5 {
+        color: #0d6efd;
+        margin-top: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.5rem;
+    }
+
+    /* الفقرات والقوائم */
+    p, li {
+        margin-bottom: 1rem;
+    }
+    ol, ul {
+          padding-left: 0rem;
+
+    }
+
+    /* كود البرمجة */
+    code {
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 90%;
+        color: #d63384;
+        direction: ltr;
+        text-align: left;
+        display: inline-block;
+    }
+    pre code {
+        color: inherit;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    pre {
+        /* 'display: block' is fine now, it will just fill the width of its parent (.container) */
+        display: block;
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        white-space: pre;
+        text-align: left;
+
+        /* We still let the code content overflow */
+        overflow-x: visible;
+    }
+
+    /* ملاحظات توضيحية */
+    .note, .warning {
+
+        background-color: #fff3cd;
+        border-right: 5px solid #ffc107;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 3px;
+    }
+    .summary-box {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+
+<!-- === NEW BUTTON ADDED HERE === -->
+<div id="action-buttons-container">
+    <a href="#" class="btn btn-secondary shadow" onclick="window.close(); return false;">رجوع</a>
+    <a href="#" class="btn btn-info shadow" onclick="openInNewTab(); return false;">فتح في تبويب جديد</a>
+</div>
+<script>
+function openInNewTab() {
+  window.open(window.location.href );
+}
+</script>
+<!-- ======================================= -->
+
+<div class="container py-4">
+
+    <h3>المحاضرة الأولى: مقدمة في البرمجة وأساسيات لغة C++</h3>
+
+    <h4>ما هو البرنامج (Program)؟</h4>
+    <p>البرنامج هو مجموعة من التعليمات (<code>Instructions</code>) التي يتم تنفيذها بالترتيب لحل مشكلة معينة. يؤكد المحاضر أن الكمبيوتر "يسمع كلامك" حرفياً، فهو ينفذ ما تأمره به بغض النظر عن النتيجة، لذلك يجب أن تكون على دراية بكيفية حل المشكلة يدوياً قبل محاولة برمجتها.</p>
+
+    <h4>لغات البرمجة (Programming Languages) مقابل لغات السكريبت (Scripting Languages)</h4>
+    <p>يوجد نوعان رئيسيان من اللغات:</p>
+    <ul>
+        <li><strong>Programming Languages:</strong> مثل <code>C++</code>, <code>C#</code>, <code>Java</code>.</li>
+        <li><strong>Scripting Languages:</strong> مثل <code>Python</code>, <code>PHP</code>. تركز المحاضرة بشكل أساسي على <code>Programming Languages</code>.</li>
+    </ul>
+
+    <h4>عملية الترجمة (Compilation Process)</h4>
+    <p>عند كتابة كود بلغة <code>C++</code>، يمر بعدة مراحل ليصبح برنامجاً قابلاً للتنفيذ:</p>
+    <ol>
+        <li><strong>Source Code:</strong> هو الملف الذي تكتب فيه الكود الخاص بك (مثلاً، ملف <code>.cpp</code>).</li>
+        <li><strong>Compilation:</strong> تتم هذه المرحلة بواسطة <code>Compiler</code>.
+            <ul>
+                <li><strong>Syntax Check:</strong> يتأكد الـ <code>Compiler</code> من صحة قواعد اللغة (<code>Syntax</code>) التي كتبتها.</li>
+                <li><strong>Intermediate File:</strong> يقوم الـ <code>Compiler</code> بتحويل الـ <code>Source Code</code> إلى ملف وسيط يُعرف باسم <code>Object File</code> (بامتداد <code>.obj</code>). هذا الملف يكون بلغة وسيطة (<code>Intermediate Language</code>) ليست مفهومة مباشرة لنظام التشغيل، ولكنها مفهومة لـ <code>Linker</code>.</li>
+            </ul>
+        </li>
+        <li><strong>Linking:</strong> تتم هذه المرحلة بواسطة <code>Linker</code>.
+            <ul>
+                <li>يقوم الـ <code>Linker</code> بدمج الـ <code>Object File</code> مع <code>Library Files</code> (ملفات المكتبة). تحتوي ملفات الـ <code>Library</code> على وصف وتفاصيل كيفية عمل كل أمر تستخدمه في الكود.</li>
+                <li>ينتج عن عملية الـ <code>Linking</code> ملف <code>Executable File</code> (ملف قابل للتنفيذ، بامتداد <code>.exe</code> في Windows، أو ملف بدون امتداد في Linux). هذا الـ <code>Executable File</code> هو ملف <code>Self-Contained</code>، أي أنه يحتوي على كل ما يحتاجه للعمل على نظام التشغيل الذي تم إنشاؤه من أجله.</li>
+                <li><strong>Static Linking:</strong> النوع الذي تم شرحه، حيث يتم تضمين كل أوامر الـ <code>Library</code> داخل الـ <code>Executable File</code>.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <pre><code>// Source Code Example (MyProgram.cpp)
+#include &lt;iostream&gt; // Pre-processor directive to include iostream library
+
+int main() { // Program Body, entry point
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl; // Output statement
+    return 0; // Return value to the OS
+}
+
+// After compilation and linking, this becomes MyProgram.exe</code></pre>
+
+    <h4>أدوات البرمجة (Programming Tools)</h4>
+    <p>لكتابة وتشغيل برنامج <code>C++</code>، تحتاج إلى:</p>
+    <ul>
+        <li><strong>Editor:</strong> لكتابة الـ <code>Source Code</code> (مثل <code>Notepad</code>, <code>GEdit</code>).</li>
+        <li><strong>Compiler/Linker:</strong> لتحويل الـ <code>Source Code</code> إلى <code>Executable File</code>. غالباً ما يتم دمج هذه الأدوات في بيئة تطوير متكاملة تسمى <code>IDE (Integrated Development Environment)</code> مثل <code>Visual Studio Code</code> أو <code>Dev-C++</code>. تتميز الـ <code>IDEs</code> بوجود <code>IntelliSense</code> التي تساعد في اكتشاف الأخطاء النحوية أثناء الكتابة.</li>
+    </ul>
+
+    <h4>أنواع الأخطاء (Types of Errors)</h4>
+    <p>يوجد نوعان رئيسيان من الأخطاء:</p>
+    <ol>
+        <li><strong>Syntax Errors (أخطاء نحوية):</strong>
+            <ul>
+                <li>أخطاء في قواعد اللغة.</li>
+                <li>تظهر أثناء مرحلة الـ <code>Compilation</code> أو الـ <code>Linking</code>.</li>
+                <li class="note"><strong>هام للامتحان:</strong> يجب عليك قراءة رسالة الخطأ لفهمها وحلها.</li>
+            </ul>
+        </li>
+        <li><strong>Logical Errors (أخطاء منطقية):</strong>
+            <ul>
+                <li>أخطاء تحدث في منطق البرنامج، مثل كتابة <code>x > 5</code> بدلاً من <code>x < 5</code>.</li>
+                <li>تظهر أثناء مرحلة <code>Runtime</code> (وقت التشغيل).</li>
+                <li class="note"><strong>هام للامتحان:</strong> لا تتعجل في حل المشكلات، خذ وقتك لتجنب الأخطاء المنطقية.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>لغة C++ هي Case-Sensitive (حساسة لحالة الأحرف)</h4>
+    <p>هذا يعني أن <code>Main</code> تختلف عن <code>main</code>، وأن <code>cout</code> تختلف عن <code>COUT</code>. اللغة نفسها تستخدم أحرف صغيرة (<code>lowercase</code>).</p>
+
+    <h4>هيكل برنامج C++ (C++ Program Structure)</h4>
+    <p>يتكون أي برنامج <code>C++</code> من جزئين رئيسيين:</p>
+    <ol>
+        <li><strong>Pre-Processor Directives:</strong>
+            <ul>
+                <li>أوامر يتم تنفيذها قبل بدء عملية الـ <code>Compilation</code>.</li>
+                <li>أشهرها <code>#include</code>، التي تقوم بتضمين ملفات الـ <code>Header</code> (مثل <code>&lt;iostream&gt;</code>) التي تحتوي على تعريفات الأوامر مثل <code>std::cout</code>.</li>
+                <li><strong>Namespaces:</strong> هي وسيلة تنظيمية لتجميع الأوامر ذات الصلة معاً. مثلاً، <code>std</code> هو الـ <code>Namespace</code> القياسي الذي يحتوي على <code>cout</code> و <code>cin</code>. يمكن استخدام <code>using namespace std;</code> لتجنب كتابة <code>std::</code> قبل كل أمر.</li>
+            </ul>
+        </li>
+        <li><strong>Program Body:</strong>
+            <ul>
+                <li>يُعرف أيضاً بـ <code>main function</code> (دالة <code>main</code>).</li>
+                <li><strong>Entry Point (نقطة الدخول):</strong> <code>main</code> هي الدالة التي يبدأ منها تنفيذ البرنامج عند تشغيله.</li>
+                <li>يتكون جسم البرنامج من:
+                    <ul>
+                        <li><strong>Constants and Variables Declarations</strong> (تعريف الثوابت والمتغيرات).</li>
+                        <li><strong>Expressions</strong> (تعبيرات).</li>
+                        <li><strong>Control Statements</strong> (أوامر التحكم).</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+<pre><code>// Pre-processor Directives
+#include &lt;iostream&gt; // Includes the I/O stream library
+using namespace std; // Uses the standard namespace
+
+// Program Body
+int main() { // The entry point of the program
+    // Constants and Variables Declarations
+    int number = 5; // Declares and initializes an integer variable
+
+    // Expressions (Input/Output, Operations)
+    cout &lt;&lt; "The number is: " &lt;&lt; number &lt;&lt; endl; // Output statement
+
+    // Control Statements (covered in later lectures)
+    // if (number > 0) { ... }
+
+    return 0; // Indicates successful execution to the operating system
+}</code></pre>
+
+    <h4>المتغيرات (Variables)</h4>
+    <ul>
+        <li><strong>تعريف المتغير (Declaring a Variable):</strong> هو حجز مكان في الذاكرة (<code>Memory</code>) لتخزين البيانات.
+            <ul>
+                <li>الصيغة العامة: <code>data_type variable_name;</code></li>
+                <li>مثال: <code>int x;</code></li>
+                <li>عند تعريف المتغير دون إعطائه قيمة مبدئية، فإنه يحتوي على <code>Garbage Value</code> (قيمة عشوائية غير معروفة). لا يوجد في البرمجة مفهوم "الفارغ" أو "اللاشيء".</li>
+            </ul>
+        </li>
+        <li><strong>تهيئة المتغير (Initializing a Variable):</strong> إعطاء قيمة أولية للمتغير عند تعريفه.
+            <ul>
+                <li>مثال: <code>char ch = 'A'; </code></li>
+                <li>يمكن تعريف وتهيئة عدة متغيرات من نفس النوع في نفس السطر: <code>float p, m=2.3;</code></li>
+            </ul>
+        </li>
+        <li><strong>قواعد تسمية المتغيرات (Variable Naming Rules):</strong>
+            <ul>
+                <li><strong>Must (يجب):</strong>
+                    <ul>
+                        <li>يتكون الاسم من حروف (Letters)، أرقام (Numbers)، و <code>_</code> (underscore) فقط.</li>
+                        <li>لا يمكن أن يبدأ برقم.</li>
+                        <li>لا يمكن أن يكون كلمة محجوزة (<code>Reserved Word</code>) في اللغة.</li>
+                    </ul>
+                </li>
+                <li><strong>Prefer (يفضل):</strong>
+                    <ul>
+                        <li>أن يكون الاسم معبراً (<code>Meaningful</code>) عن وظيفته.</li>
+                        <li>أن يبدأ بحرف كبير (<code>Capital Letter</code>). (يساعد هذا في تمييز المتغيرات عن الكلمات المحجوزة التي تكون كلها بأحرف صغيرة في <code>C++</code>).</li>
+                        <li>إذا كان الاسم يتكون من عدة مقاطع، يفضل أن يبدأ كل مقطع بحرف كبير وتُفصل الكلمات بهذا الشكل (<code>CamelCase</code>).</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>أنواع البيانات (Data Types)</h4>
+    <p>تحدد أنواع البيانات حجم المكان المحجوز في الذاكرة ونوع القيم التي يمكن تخزينها.</p>
+    <ul>
+        <li><strong>الأعداد الصحيحة (Integers):</strong>
+            <ul>
+                <li><code>char</code>: 1 byte (يخزن حرفاً واحداً أو رقماً صغيراً).</li>
+                <li><code>short int</code>: 2 bytes.</li>
+                <li><code>int</code>: 4 bytes.</li>
+                <li><code>long int</code>: 4 bytes.</li>
+                <li><code>long long int</code>: 8 bytes.</li>
+            </ul>
+        </li>
+        <li><strong><code>unsigned</code> Data Types:</strong> تستخدم لتخزين القيم الموجبة فقط (من 0 إلى أقصى قيمة موجبة)، مما يضاعف نطاق القيم الموجبة التي يمكن تخزينها دون تغيير الحجم.
+            <ul>
+                <li><code>unsigned int</code>: 4 bytes (من 0 إلى حوالي 4 مليار).</li>
+                <li><code>unsigned short int</code>: 2 bytes (من 0 إلى 65535).</li>
+                <li><code>unsigned long int</code>: 4 bytes.</li>
+                <li><code>unsigned long long int</code>: 8 bytes.</li>
+            </ul>
+        </li>
+        <li><strong>الأعداد العشرية (Floating-Point Numbers):</strong>
+            <ul>
+                <li><code>float</code>: 4 bytes (دقة تصل إلى 7 أرقام عشرية).</li>
+                <li><code>double</code>: 8 bytes (دقة تصل إلى 15 رقم عشري).</li>
+                <li><code>long double</code>: 10 bytes (دقة أعلى).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>الثوابت (Constants)</h4>
+    <ul>
+        <li><strong>تعريف الثابت (Defining a Constant):</strong> قيمة لا يمكن تغييرها بعد تعريفها.
+            <ul>
+                <li>الطريقة الصحيحة الوحيدة: استخدام كلمة <code>const</code>.</li>
+                <li>الصيغة: <code>const data_type CONSTANT_NAME = value;</code></li>
+                <li>مثال: <code>const double PI = 3.14;</code></li>
+                <li>ملاحظة: يفضل كتابة أسماء الثوابت بأحرف كبيرة كلها (<code>all caps</code>) كـ <code>Convention</code>.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>الـ <code>#define</code> (Macros)</h4>
+    <ul>
+        <li>يستخدمها بعض المبرمجين كبديل لـ <code>const</code> للحصول على نفس التأثير.</li>
+        <li><strong>مفهوم:</strong> هي <code>Text Replacement</code> يتم بواسطة الـ <code>Pre-processor</code> قبل الـ <code>Compilation</code>.</li>
+        <li>مثال: <code>#define PI 3.14</code></li>
+        <li class="note"><strong>ميزة (للامتحان):</strong> من ناحية الميموري (<code>Memory</code>) والسرعة (<code>Speed</code>)، استخدام الـ <code>Macro</code> أفضل من <code>const</code>. الـ <code>Macro</code> لا يحجز مكاناً في الذاكرة، ويتم استبدال النص بقيمته قبل الترجمة، مما يقلل من عدد الـ <code>Steps</code> أثناء الـ <code>Execution</code>.</li>
+    </ul>
+<pre><code>#include &lt;iostream&gt;
+
+// Using a Macro
+#define PI_MACRO 3.14159 // PI_MACRO does not occupy memory, just text replacement
+
+// Using const
+const double PI_CONST = 3.14159; // PI_CONST occupies memory
+
+int main() {
+    double radius = 5.0;
+
+    // Accesses PI_CONST from memory
+    double area_const = PI_CONST * radius * radius;
+
+    // PI_MACRO is replaced by its value here before compilation
+    double area_macro = PI_MACRO * radius * radius;
+
+    std::cout &lt;&lt; "Area (const): " &lt;&lt; area_const &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Area (macro): " &lt;&lt; area_macro &lt;&lt; std::endl;
+
+    return 0;
+}</code></pre>
+
+    <h4>العمليات (Operations) والعوامل (Operators)</h4>
+    <p>تتكون العملية من <code>Operands</code> (البيانات) و <code>Operator</code> (العامل). الـ <code>Operator</code> هو المسؤول عن تنفيذ العملية. <strong>هام:</strong> أي عملية بعد انتهائها يتم استبدالها بقيمة واحدة.</p>
+
+    <h4>أنواع العوامل (Types of Operators) بناءً على الوظيفة:</h4>
+    <ol>
+        <li><strong>Mathematical Operators (العوامل الرياضية):</strong>
+            <ul>
+                <li><code>+</code> (جمع), <code>-</code> (طرح), <code>*</code> (ضرب), <code>/</code> (قسمة), <code>%</code> (باقي القسمة - <code>Modulus</code>).</li>
+                <li class="note"><strong>ملاحظة (للامتحان):</strong> قسمة عدد صحيح على عدد صحيح (<code>Integer / Integer</code>) ينتج عنها عدد صحيح (<code>Integer</code>). مثلاً <code>13 / 3</code> تساوي <code>4</code> وليس <code>4.33</code>.</li>
+            </ul>
+        </li>
+        <li><strong>Relational Operators (عوامل المقارنة/العلاقات):</strong>
+            <ul>
+                <li>تستخدم للمقارنة بين قيمتين.</li>
+                <li><code>&gt;</code> (أكبر من), <code>&lt;</code> (أصغر من), <code>&gt;=</code> (أكبر من أو يساوي), <code>&lt;=</code> (أصغر من أو يساوي), <code>==</code> (يساوي), <code>!=</code> (لا يساوي).</li>
+                <li>قيمة العملية تكون دائماً <code>0</code> (<code>False</code>) أو قيمة غير صفرية <code>Non-Zero</code> (<code>True</code>).</li>
+            </ul>
+        </li>
+        <li><strong>Logical Operators (عوامل المنطق):</strong>
+            <ul>
+                <li><code>&&</code> (AND): تعطي <code>True</code> (<code>Non-Zero</code>) فقط إذا كان كلا الـ <code>Operands</code> هما <code>Non-Zero</code>.</li>
+                <li><code>||</code> (OR): تعطي <code>True</code> (<code>Non-Zero</code>) إذا كان أحد الـ <code>Operands</code> أو كلاهما <code>Non-Zero</code>.</li>
+                <li><code>!</code> (NOT): عامل <code>Unary</code> (يعمل على <code>Operand</code> واحد). يعكس قيمة الـ <code>Operand</code> (إذا كان <code>0</code> يصبح <code>Non-Zero</code> والعكس) دون تغيير قيمة الـ <code>Operand</code> الأصلية.</li>
+            </ul>
+        </li>
+        <li><strong>Increment/Decrement Operators (عوامل الزيادة والنقصان):</strong>
+            <ul>
+                <li><code>++</code> (Increment): يزيد قيمة الـ <code>Operand</code> بواحد.</li>
+                <li><code>--</code> (Decrement): ينقص قيمة الـ <code>Operand</code> بواحد.</li>
+                <li class="note"><strong>هام للامتحان:</strong> هذه العوامل هي <code>Unary Operators</code>. يوجد نوعان:
+                    <ul>
+
+                        <li><strong>Pre-increment/decrement (<code>++x</code> أو <code>--x</code>):</strong> تتم عملية الزيادة/النقصان أولاً، ثم تُستخدم القيمة الجديدة في التعبير.</li>
+                        <li><strong>Post-increment/decrement (<code>x++</code> أو <code>x--</code>):</strong> تُستخدم القيمة الأصلية في التعبير أولاً، ثم تتم عملية الزيادة/النقصان بعد ذلك.</li>
+                    </ul>
+                </li>
+            </ul>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x = 10;
+    int y;
+
+    // Pre-increment example
+    y = ++x; // x becomes 11, then y becomes 11
+    cout &lt;&lt; "Pre-increment: x = " &lt;&lt; x &lt;&lt; ", y = " &lt;&lt; y &lt;&lt; endl; // Output: x = 11, y = 11
+
+    x = 10; // Reset x
+
+    // Post-increment example
+    y = x++; // y becomes 10, then x becomes 11
+    cout &lt;&lt; "Post-increment: x = " &lt;&lt; x &lt;&lt; ", y = " &lt;&lt; y &lt;&lt; endl; // Output: x = 11, y = 10
+
+    return 0;
+}</code></pre>
+        </li>
+        <li><strong>Assignment Operators (عوامل الإسناد):</strong>
+            <ul>
+                <li><code>=</code> (Assignment): يسند القيمة من الطرف اليمين إلى الطرف الشمال.</li>
+                <li class="note"><strong>هام للامتحان:</strong>
+                    <ul>
+                        <li>عامل الـ <code>=</code> ينفذ من اليمين إلى الشمال (<code>Right-to-Left</code>).</li>
+                        <li>بعد انتهاء عملية الإسناد، العملية بأكملها يكون لها قيمة (<code>Value</code>)، وهي القيمة التي تم إسنادها للطرف الأيسر. هذا يسمح بسلسلة الإسناد (<code>Chained Assignment</code>): <code>x = y = z = 20;</code>.</li>
+                    </ul>
+                </li>
+                <li><strong>Short-hand Assignment Operators:</strong> اختصارات لعمليات رياضية مع الإسناد:
+                    <ul>
+                        <li><code>+=</code> (مثال: <code>x += 3;</code> هي نفسها <code>x = x + 3;</code>)</li>
+                        <li><code>-=</code> (مثال: <code>y -= 2;</code> هي نفسها <code>y = y - 2;</code>)</li>
+                        <li><code>*=</code> (مثال: <code>z *= 5;</code> هي نفسها <code>z = z * 5;</code>)</li>
+                        <li><code>/=</code> (مثال: <code>a /= 2;</code> هي نفسها <code>a = a / 2;</code>)</li>
+                        <li><code>%=</code> (مثال: <code>b %= 7;</code> هي نفسها <code>b = b % 7;</code>)</li>
+                    </ul>
+                </li>
+                <li><strong>هام:</strong> لا يمكن للطرف الأيسر من عملية الإسناد أن يكون تعبيراً (<code>Expression</code>). مثلاً <code>x + 1 = 3;</code> هو خطأ.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>ميزات إضافية في C++</h4>
+    <ol>
+        <li><strong>Default Arguments (الـ Parameters الافتراضية):</strong>
+            <ul>
+                <li>تسمح بتحديد قيمة افتراضية لـ <code>Parameters</code> في الدالة.</li>
+                <li>إذا لم يتم تمرير قيمة لهذا الـ <code>Parameter</code> عند استدعاء الدالة، فإنه يأخذ القيمة الافتراضية.</li>
+                <li class="note"><strong>هام للامتحان (الشروط):</strong>
+                    <ul>
+                        <li>إذا أخذ أي <code>Parameter</code> قيمة افتراضية، فيجب على جميع الـ <code>Parameters</code> التي تليه أن تأخذ قيماً افتراضية أيضاً.</li>
+                        <li>عند استدعاء الدالة، إذا تم حذف أي <code>Parameter</code> يأخذ قيمة افتراضية، فيجب حذف جميع الـ <code>Parameters</code> التي تليه.</li>
+                        <li>الـ <code>Parameters</code> التي تتغير قيمتها باستمرار يجب أن توضع في البداية، والـ <code>Parameters</code> ذات القيم الثابتة (أو الأقل تغيراً) توضع في النهاية مع قيمها الافتراضية.</li>
+                    </ul>
+                </li>
+            </ul>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+// Function with default arguments
+// Rule: If a parameter has a default value, all subsequent parameters must also have a default value.
+int BoxVolume(int length, int width = 1, int height = 2) { // Correct order
+    return length * width * height;
+}
+
+int main() {
+    // length=10, width=1 (default), height=2 (default)
+    cout &lt;&lt; "Volume 1: " &lt;&lt; BoxVolume(10) &lt;&lt; endl;
+
+    // length=7, width=8, height=2 (default)
+    cout &lt;&lt; "Volume 2: " &lt;&lt; BoxVolume(7, 8) &lt;&lt; endl;
+
+    // length=9, width=1, height=2
+    cout &lt;&lt; "Volume 3: " &lt;&lt; BoxVolume(9, 1, 2) &lt;&lt; endl;
+
+    // Incorrect calls (will result in compilation errors based on the rule)
+    // int result = BoxVolume(7, , 2); // Cannot skip a parameter in the middle
+    // int result = BoxVolume(7, 8, ); // This would be fine if height was last and omitted
+
+    return 0;
+}</code></pre>
+        </li>
+        <li><strong>Scope Resolution Operator (<code>::</code>):</strong>
+            <ul>
+                <li>يستخدم للوصول إلى <code>Global Variable</code> (متغير عام) له نفس اسم <code>Local Variable</code> (متغير محلي).</li>
+                <li><strong>مفهوم:</strong> البرنامج دائماً يتعامل مع المتغير الأقرب (<code>The Closest</code>) في النطاق.</li>
+                <li>الصيغة: <code>::variable_name</code></li>
+                <li class="note"><strong>هام للامتحان:</strong> <code>::</code> تعني أن ما يليها ينتمي إلى ما قبلها. إذا لم يكن هناك شيء قبل <code>::</code>، فإنها تشير إلى النطاق العام (<code>Global Scope</code>).</li>
+            </ul>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int x = 100; // Global variable
+
+int main() {
+    int x = 50; // Local variable (closer scope)
+
+    cout &lt;&lt; "Local x: " &lt;&lt; x &lt;&lt; endl;     // Accesses the local x (50)
+    cout &lt;&lt; "Global x: " &lt;&lt; ::x &lt;&lt; endl; // Accesses the global x (100)
+
+    return 0;
+}</code></pre>
+        </li>
+        <li><strong>References (<code>&</code>):</strong>
+            <ul>
+                <li><strong>مفهوم:</strong> الـ <code>Reference</code> هو اسم بديل (<code>Alternate Name</code>) أو اسم مستعار (<code>Alias</code>) لمتغير موجود بالفعل. ليس متغيراً جديداً أو مكاناً جديداً في الذاكرة، بل هو مجرد تسمية أخرى لنفس المكان.</li>
+                <li>لا يمكن إعادة تعيين الـ <code>Reference</code> بعد تهيئته (لا يمكن أن يشير إلى متغير آخر).</li>
+                <li class="note"><strong>هام للامتحان (فائدته):</strong> يستخدم بشكل أساسي لتمرير المتغيرات إلى الدوال بـ <code>Call by Reference</code>.
+                    <ul>
+                        <li><strong>Call by Value (أو Call by Copy):</strong> يتم تمرير نسخة (<code>Copy</code>) من قيمة المتغير إلى الدالة. أي تغيير يحدث على المتغير داخل الدالة لا يؤثر على المتغير الأصلي خارج الدالة.</li>
+                        <li><strong>Call by Reference (أو Call by Address):</strong> يتم تمرير <code>Reference</code> (اسم بديل) أو عنوان (<code>Address</code>) المتغير الأصلي إلى الدالة. أي تغيير يحدث على المتغير داخل الدالة يؤثر على المتغير الأصلي خارج الدالة.</li>
+                    </ul>
+                </li>
+            </ul>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+// Function using Call by Reference
+// The '&' indicates that x and y are references to the original variables
+void Swap(int &x, int &y) {
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
+int main() {
+    int a = 3;
+    int b = 4;
+    cout &lt;&lt; "Before swap: a = " &lt;&lt; a &lt;&lt; ", b = " &lt;&lt; b &lt;&lt; endl; // Output: a = 3, b = 4
+
+    Swap(a, b); // Passing a and b by reference
+
+    cout &lt;&lt; "After swap: a = " &lt;&lt; a &lt;&lt; ", b = " &lt;&lt; b &lt;&lt; endl;  // Output: a = 4, b = 3
+
+    // To demonstrate Reference is an alias
+    int originalVar = 10;
+    int &aliasVar = originalVar; // aliasVar is now another name for originalVar
+
+    cout &lt;&lt; "originalVar: " &lt;&lt; originalVar &lt;&lt; endl; // Output: 10
+    cout &lt;&lt; "aliasVar: " &lt;&lt; aliasVar &lt;&lt; endl;       // Output: 10
+
+    aliasVar = 20; // Changing aliasVar also changes originalVar
+    cout &lt;&lt; "originalVar after alias change: " &lt;&lt; originalVar &lt;&lt; endl; // Output: 20
+    cout &lt;&lt; "aliasVar after alias change: " &lt;&lt; aliasVar &lt;&lt; endl;       // Output: 20
+
+    // Printing addresses to prove they are the same memory location
+    cout &lt;&lt; "Address of originalVar: " &lt;&lt; &originalVar &lt;&lt; endl;
+    cout &lt;&lt; "Address of aliasVar: " &lt;&lt; &aliasVar &lt;&lt; endl; // Will output the same address
+
+    return 0;
+}</code></pre>
+        </li>
+        <li><strong>Function Overloading (تحميل الدوال الزائد):</strong>
+            <ul>
+                <li><strong>مفهوم:</strong> السماح بوجود أكثر من دالة (<code>Function</code>) بنفس الاسم.</li>
+                <li><strong>الشرط:</strong> يجب أن تختلف هذه الدوال في <code>Function Signature</code> (توقيع الدالة).</li>
+                <li><strong>Function Signature:</strong> هو اسم الدالة بالإضافة إلى قائمة الـ <code>Parameters</code> الخاصة بها (عدد ونوع الـ <code>Parameters</code>).</li>
+                <li class="note"><strong>هام للامتحان:</strong> لا يعتمد <code>Overloading</code> على نوع القيمة المرجعة (<code>Return Type</code>).</li>
+            </ul>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+// Overloaded function: Sum for two integers
+int Sum(int a, int b) {
+    return a + b;
+}
+
+// Overloaded function: Sum for two floats
+// Same name, different parameter types -> Overloading
+float Sum(float a, float b) {
+    return a + b;
+}
+
+// Overloaded function: Sum for three integers
+// Same name, different number of parameters -> Overloading
+int Sum(int a, int b, int c) {
+    return a + b + c;
+}
+
+int main() {
+    // Calls int Sum(int, int)
+    cout &lt;&lt; "Sum(3, 4): " &lt;&lt; Sum(3, 4) &lt;&lt; endl;
+
+    // Calls float Sum(float, float)
+    cout &lt;&lt; "Sum(2.3f, 4.7f): " &lt;&lt; Sum(2.3f, 4.7f) &lt;&lt; endl;
+
+    // Calls int Sum(int, int, int)
+    cout &lt;&lt; "Sum(1, 2, 3): " &lt;&lt; Sum(1, 2, 3) &lt;&lt; endl;
+
+    // Ambiguity example (will result in a compilation error if uncommented)
+    // cout &lt;&lt; Sum(5, 6.0f) &lt;&lt; endl; // Ambiguous: could be (int, int) after conversion, or (float, float) after conversion.
+    // Compiler cannot decide which one to call.
+
+    return 0;
+}</code></pre>
+        </li>
+    </ol>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+[
+  {
+    "sessionId": "955fac14-0fed-4656-b5d2-3a55c3248fa9",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.113",
+    "eventName": "pageView",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755434551884
+    }
+  },
+  {
+    "sessionId": "955fac14-0fed-4656-b5d2-3a55c3248fa9",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.113",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 16,
+      "url": "/",
+      "timestamp": 1755434567711
+    }
+  },
+  {
+    "sessionId": "955fac14-0fed-4656-b5d2-3a55c3248fa9",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.113",
+    "eventName": "pageVisible",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755434578482
+    }
+  },
+  {
+    "sessionId": "955fac14-0fed-4656-b5d2-3a55c3248fa9",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.113",
+    "eventName": "timeSpent",
+    "eventData": {
+      "duration": 30,
+      "url": "/",
+      "timestamp": 1755434581884
+    }
+  },
+  {
+    "sessionId": "955fac14-0fed-4656-b5d2-3a55c3248fa9",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.113",
+    "eventName": "pageFocus",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755434582431
+    }
+  },
+  {
+    "sessionId": "955fac14-0fed-4656-b5d2-3a55c3248fa9",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.113",
+    "eventName": "pageHidden",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755434588535
+    }
+  },
+  {
+    "sessionId": "955fac14-0fed-4656-b5d2-3a55c3248fa9",
+    "deviceInfo": {
+      "os": "Windows",
+      "model": "Desktop"
+    },
+    "ip": "31.13.115.113",
+    "eventName": "pageUnload",
+    "eventData": {
+      "page": "home",
+      "url": "/",
+      "timestamp": 1755434589936
+    }
+  }
+]

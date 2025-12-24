@@ -1,0 +1,65 @@
+[
+  {
+    "id": 165,
+    "question": "When a certain value is assigned to a static member variable at some point of the program, then it is not possible to assign a different value to this variable at a further point in the program.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. This describes the behavior of a `const` (constant) variable. A `static` member variable can be modified throughout the program's execution unless it is also declared as `const`.",
+    "page": 3
+  },
+  {
+    "id": 166,
+    "question": "When we overload a function, we declare another function with the same name and we must specify a different number of parameters.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "This statement is false. To overload a function, it must have a different signature. A different signature can mean a different number of parameters OR different types of parameters. For example, `void func(int)` and `void func(double)` is valid overloading, even though the number of parameters is the same.",
+    "page": 3
+  },
+  {
+    "id": 167,
+    "question": "A derived class can directly access:",
+    "options": [
+      {
+        "id": "A",
+        "text": "The protected and public members of the base class."
+      },
+      {
+        "id": "B",
+        "text": "The private and protected members of the base class."
+      },
+      {
+        "id": "C",
+        "text": "Only the protected members of the base class."
+      },
+      {
+        "id": "D",
+        "text": "Only the private members of the base class."
+      },
+      {
+        "id": "E",
+        "text": "The public, private, and protected members of the base class."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A derived class inherits from a base class and can directly access its `public` and `protected` members. It cannot directly access the `private` members of the base class; they are accessible only within the base class itself.",
+    "page": 3
+  }
+]
